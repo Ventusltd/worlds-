@@ -1,0 +1,50 @@
+{
+ "anonymised": "No project, site, client, maker or model anywhere.",
+ "any_rule": {
+  "surface": 21726944,
+  "surface_over_volume": 0.26749,
+  "volume": 81225150
+ },
+ "body_sha256": "090c146c7362da218f0d67abe4e303529d2fd04752bff1e6c85302cd7b407c91",
+ "cases": 81225150,
+ "excluded_formulations_parted": 0,
+ "how_to_read": "The ratio is the share of a rule's region that is one step from a different answer. Near zero means a fat region with a thin skin and a robust rule. Near one means the verdict is settled by the last digit of an input rather than by the design, and no site instrument will resolve it.",
+ "not_claimed": "A surface is a property of the RULE over the SWEPT SPACE at the chosen step size, not of any installation. Halve the step and the surface halves; that is geometry, not physics. And two of the four rules measured here rest on constants with no source, so their regions are shapes in a space nobody has shown to be the right space.",
+ "rules": [
+  {
+   "provenance": "DATASHEET, all ten bins",
+   "rule": "over the 1500 V equipment rating",
+   "surface": 8775889,
+   "surface_over_volume": 0.33788,
+   "volume": 25973417
+  },
+  {
+   "provenance": "NO SOURCE ANYWHERE",
+   "rule": "over the 20 A string input",
+   "surface": 7420340,
+   "surface_over_volume": 0.26131,
+   "volume": 28396680
+  },
+  {
+   "provenance": "ABSENT from both documents",
+   "rule": "over the 40 A machine input",
+   "surface": 15002122,
+   "surface_over_volume": 0.305161,
+   "volume": 49161255
+  },
+  {
+   "provenance": "DATASHEET, per bin",
+   "rule": "over the max series fuse",
+   "surface": 0,
+   "surface_over_volume": null,
+   "volume": 0
+  }
+ ],
+ "schema": "ggs.geometry/1",
+ "step_sizes": {
+  "assessment_temp_c": 0.05,
+  "rear_gain_pct": 0.05
+ },
+ "verdicts_computed": 812251500,
+ "what_a_surface_is": "A case is on the surface when at least one of its eight neighbours - one step up or down each axis - carries a different verdict. The edge of the swept box is NOT counted as a surface: that is a boundary of the question, not of the rule."
+}
