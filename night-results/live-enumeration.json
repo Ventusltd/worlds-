@@ -1,0 +1,35 @@
+{
+ "anonymised": "No project, site, client, maker or model anywhere.",
+ "body_sha256": "c057751d7143ca8f62d3b34e6b4a919277e762bfcaf803c00fa92efc6edfc76e",
+ "cases_per_second": 1111618411,
+ "channels_parted": 0,
+ "coverage_caveat": "Coverage is of the swept lattice, not of the box between its points, and not of the world. A count without its space beside it is not a measurement.",
+ "coverage_of_space": 1.0,
+ "evaluated": 1470560,
+ "generated_utc": "2026-09-21T15:42:48Z",
+ "judging_current_cold_is_optimistic_in": 0,
+ "judging_current_cold_is_pessimistic_in": 0,
+ "limits_used": {
+  "equipment rating": {
+   "sourced": true,
+   "value": 1500.0,
+   "where": "printed on the module sheets"
+  },
+  "module fuse": {
+   "sourced": true,
+   "value": "per class, from the feed",
+   "where": "printed on the module sheets"
+  }
+ },
+ "not_claimed": "Every number here was computed twice by independent routes and the run aborts if they differ. That proves the arithmetic is consistent with itself. It is not evidence that the question is right, nor that the inputs are.",
+ "not_used_because_they_have_no_source": "The string input and the machine input appear in no document in the evidence base, and the second is the same inequality as the first once its constant is halved. No count here rests on either.",
+ "over_the_equipment_rating": 442078,
+ "over_the_module_fuse_when_hot": 0,
+ "provenance_tags_seen": [
+  "FROM-DATASHEET"
+ ],
+ "schema": "ggs.live/1",
+ "seconds": 0.001,
+ "space": 1470560,
+ "what_that_pair_means": "The first count is cases the cold assessment calls acceptable and the hot one calls a failure. The second is the reverse. If the second is zero the error runs one way only, which means it does not average out and every affected design has been assessed as safer than it is."
+}
