@@ -72,6 +72,9 @@ OUT = os.path.join(ROOT, "night-results", "harvest-crunch.json")
 
 MODULES = r"E:\swarm\feed\MODULES.json"
 HARVEST_DIR = r"E:\swarm\harvest"
+# ROUND TWO writes to its own directory, so a re-run of round one cannot
+# collide with it and neither sheet has to be moved to be read.
+HARVEST_DIRS = [HARVEST_DIR, r"E:\swarm\harvest2"]
 NIGHT_WORKSHEET = os.path.join(ROOT, "night-results", "worksheet.geojson")
 CARTRIDGE_DIR = (r"C:\Users\vikra\Documents\GitHub\globalgrid2050\kuiper-grid"
                  r"\i0073\cartridges")
@@ -886,12 +889,12 @@ def read_worksheets():
     its own id. Nothing is ever skipped quietly, because a quiet skip is how a
     finding vanishes while everybody assumes somebody else counted it."""
     paths = []
-    if os.path.isdir(HARVEST_DIR):
-        paths += [os.path.join(HARVEST_DIR, f)
-                  for f in sorted(os.listdir(HARVEST_DIR))
-                  if f.lower().endswith(".geojson")]
-    else:
-        refuse(HARVEST_DIR, "the worksheet directory does not exist")
+    for d in HARVEST_DIRS:
+        if os.path.isdir(d):
+            paths += [os.path.join(d, f) for f in sorted(os.listdir(d))
+                      if f.lower().endswith(".geojson")]
+        else:
+            refuse(d, "the worksheet directory does not exist")
     paths.append(NIGHT_WORKSHEET)
 
     built, seen, stats = [], set(), {"files": 0, "features": 0,
@@ -919,7 +922,13 @@ def read_worksheets():
             stats["features"] += 1
             fid = str(props.get("id") or props.get("what") or
                       "%s#%d" % (base, n))[:80]
-            if not props.get("gpu_crunchable"):
+            # A FEATURE IS JUDGED BY ITS SENTENCE, NOT BY A FLAG. Round one set
+            # gpu_crunchable and wrote prose; round two dropped the flag and wrote a
+            # sweep sentence. Gating on the flag meant 157 features were read and
+            # none translated - the reader was asking the wrong question. If there is
+            # a maths sentence, try it; if it does not parse it is refused BY NAME
+            # below, which is the honest outcome either way.
+            if not (props.get("gpu_crunchable") or props.get("maths")):
                 continue
             stats["crunchable"] += 1
             if fid in seen:

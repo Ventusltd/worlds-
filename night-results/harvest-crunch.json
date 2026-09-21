@@ -1,6 +1,6 @@
 {
  "anonymised": "No project, site, client or manufacturer name appears anywhere in this file.",
- "body_sha256": "08714d6a904590090b152636daefbfd35d692395b876a522b6fe2fb0f6f225ba",
+ "body_sha256": "23aa624c5e68c7e651cb6039dfc793e70c1479ba26a1c1168cbf5a321f7a85dd",
  "cases_total": 360526364,
  "determinism": "Sorted keys, no clock in the body. Re-running on the same inputs gives byte-identical output apart from the top-level 'timing' block, which is excluded from body_sha256 for exactly that reason.",
  "findings": {
@@ -521,9 +521,9 @@
   "night_worksheet": "C:\\Users\\vikra\\Documents\\GitHub\\worlds-\\night-results\\worksheet.geojson",
   "worksheet_directory": "E:\\swarm\\harvest",
   "worksheet_features_marked_crunchable": 59,
-  "worksheet_features_seen": 115,
+  "worksheet_features_seen": 157,
   "worksheet_features_translated": 0,
-  "worksheet_files_read": 11
+  "worksheet_files_read": 17
  },
  "not_claimed": "The crunch settles ARITHMETIC over a stated space and nothing else. It does not decide whether the stated space is the right space, whether the predicate is the right question, or whether a count that comes back zero means the concern was unfounded rather than the sweep too narrow. It holds no site, no weather record and no as-built drawing, so it cannot say any of these findings is present in a real installation - only that the numbers in the files reach it. Fixes, costs and priority are not settled here at all: a count is evidence for a person to act on, not the action.",
  "refused": [
@@ -780,7 +780,7 @@
  "timing": {
   "note": "the only block that changes between runs",
   "seconds_per_finding": {
-   "H1": 0.172,
+   "H1": 0.174,
    "H2": 0.016,
    "H3": 0.045,
    "H4": 0.021
