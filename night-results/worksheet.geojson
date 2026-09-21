@@ -1,0 +1,567 @@
+{
+ "type": "FeatureCollection",
+ "schema": "ggs.worksheet/1",
+ "what_this_is": "A worksheet, not a report. Fifteen riders and one card; each feature is one finding. The coordinates are NOT a place on the ground - there is none, and inventing one is the thing this estate refuses. They are the Kuiper's own arrangement, golden angle, r = sqrt(k), which is how the archive lays out anything without a real position.",
+ "how_to_read": "verified: self = I saw it; agent = a rider claimed it and I have not checked; both = claimed and confirmed; contradicted = claimed and wrong. A finding that cannot say which is a rumour, so there is no default. crunchable = the card can settle it without anyone reading anything.",
+ "counts": {
+  "findings": 22,
+  "open": 8,
+  "applied": 9,
+  "contradicted": 5,
+  "open_and_crunchable": 5
+ },
+ "contradicted_are_kept": "Four claims did not survive checking, and they stay on the sheet. A rider being wrong is data about the race, and deleting it would make the next sheet look more reliable than it is.",
+ "anonymised": "No project, site, client, maker or model anywhere.",
+ "features": [
+  {
+   "type": "Feature",
+   "id": "F01",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.0,
+     0.0
+    ]
+   },
+   "properties": {
+    "id": "F01",
+    "what": "A verdict returned a PASS on a value that is not a number: `v > limit` is false for NaN, so the card read 'inside the 1500 V rating by NaN V'.",
+    "where": "site_program.js, four predicates",
+    "verified": "both",
+    "applied": "i0093",
+    "crunchable": true,
+    "severity": 5,
+    "cost": 1,
+    "evidence": "8,000,132 checks on the card: 0 disagreements on any finite number, 1,001,580 where the old form passes what it cannot justify.",
+    "fix": "over = !(x <= limit), plus a guard that refuses and draws nothing.",
+    "rank": 0,
+    "status": "applied"
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "F02",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.737369,
+     0.67549
+    ]
+   },
+   "properties": {
+    "id": "F02",
+    "what": "An unknown module class silently became the 660 W bin, and a typo in an input KEY was ignored while its default answered in its place.",
+    "where": "site_program.js, the registered run()",
+    "verified": "both",
+    "applied": "i0093",
+    "crunchable": false,
+    "severity": 4,
+    "cost": 1,
+    "evidence": "Refusal verified on four bad inputs; three good inputs return byte-identical answers.",
+    "fix": "A key-walk guard: refuse by name, list what would be accepted.",
+    "rank": 1,
+    "status": "applied"
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "F03",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.123639,
+     -1.408799
+    ]
+   },
+   "properties": {
+    "id": "F03",
+    "what": "Four places rebuilt a drawing from a name table instead of taking it from the program that made it. One failed silently: null body, correct numbers on the card, nothing drawn.",
+    "where": "sldLayout, makeSldBody, the colouring, the fired command",
+    "verified": "self",
+    "applied": "i0092",
+    "crunchable": false,
+    "severity": 5,
+    "cost": 1,
+    "evidence": "Watched it fail, patched it, watched it draw.",
+    "fix": "Each now believes a program that hands over finished pieces.",
+    "rank": 2,
+    "status": "applied"
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "F04",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     1.053847,
+     1.374557
+    ]
+   },
+   "properties": {
+    "id": "F04",
+    "what": "sldLayout picks SYMBOLS by a PREFIX match on 'pv'. 32 comb pieces claimed 32 symbol floors - 704 of 896 dots - and the collection busbar, the spine of the drawing, silently did not appear.",
+    "where": "sldLayout SYMBOL test",
+    "verified": "self",
+    "applied": "i0092",
+    "crunchable": true,
+    "severity": 5,
+    "cost": 1,
+    "evidence": "Seen on screen: blocks hanging off nothing, every number correct.",
+    "fix": "Tag repeated pieces with a non-symbol prefix. A dot-budget gate is written and not yet wired.",
+    "rank": 3,
+    "status": "applied"
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "F05",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.969427,
+     -0.348364
+    ]
+   },
+   "properties": {
+    "id": "F05",
+    "what": "The text window was pinned to screen centre, which is exactly where the disc is, so every drawing was read through the thing describing it.",
+    "where": "#say CSS",
+    "verified": "self",
+    "applied": "i0092",
+    "crunchable": true,
+    "severity": 3,
+    "cost": 1,
+    "evidence": "271,499,532 viewport configurations swept: the proposed furniture crowds the dots less, 54.1M against 64.6M.",
+    "fix": "Docked right. The full workspace spec is written and not applied.",
+    "rank": 4,
+    "status": "applied"
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "F06",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     1.886694,
+     -1.20016
+    ]
+   },
+   "properties": {
+    "id": "F06",
+    "what": "The reader's Kuiper at /kuiper/ does not contain the site, block, network or string programs AT ALL. The whole plant-drawing body of work is only reachable behind a page marked DEVELOPMENT ENVIRONMENT.",
+    "where": "kuiper/current.json, generation 202609200300",
+    "verified": "agent",
+    "applied": null,
+    "crunchable": false,
+    "severity": 5,
+    "cost": 2,
+    "evidence": "Fetched and hashed: /kuiper/ serves k0036 programs, 17,738 bytes; the head is k0093 at 328,185 bytes. Not a fork - all 11 of its cartridges exist byte-identically in the head.",
+    "fix": "Promote by pointer, do not port file by file. Pick the NEWEST cartridge per slot - the head selects an older chrome and tests.",
+    "rank": 5,
+    "status": "open"
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "F07",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.635898,
+     2.365509
+    ]
+   },
+   "properties": {
+    "id": "F07",
+    "what": "The whole result tile is a block <a target=_blank> with no affordance, and #card is fixed over a command bar that lives in normal flow. A tap meant for the bar lands on the anchor, focus goes to the link, and every keystroke after it is lost.",
+    "where": "appCard(), the cc-tile anchor",
+    "verified": "agent",
+    "applied": null,
+    "crunchable": false,
+    "severity": 4,
+    "cost": 1,
+    "evidence": "Two defects with one root cause; reproduced by CSS geometry, not by a captured keystroke loss.",
+    "fix": "Only the OPEN control is a link; the tile becomes a div.",
+    "rank": 6,
+    "status": "open"
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "F08",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -1.219445,
+     -2.347968
+    ]
+   },
+   "properties": {
+    "id": "F08",
+    "what": "The shell breaks at 640px and the cartridge at 700px, so 641-700px is a band where the two layouts disagree.",
+    "where": "index.html narrow(), cartridge media query",
+    "verified": "agent",
+    "applied": null,
+    "crunchable": true,
+    "severity": 3,
+    "cost": 2,
+    "evidence": "One rider called narrow() the load-bearing edit; a second refuted that, finding kuiper-chrome.js already matches at 640.",
+    "fix": "Unify on 700, both files, including narrow().",
+    "rank": 7,
+    "status": "open"
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "F09",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     2.656802,
+     0.97026
+    ]
+   },
+   "properties": {
+    "id": "F09",
+    "what": "Collapsing the foot breaks shipped self-tests, and the escape hatch that would save one is ALREADY DEAD: the test asks for #appschip, the cartridge creates #chipapps.",
+    "where": "kuiper-tests.js T26, phoneSelftest T9, isolateSelftest T1",
+    "verified": "agent",
+    "applied": null,
+    "crunchable": false,
+    "severity": 4,
+    "cost": 2,
+    "evidence": "A 3-minute rider refuted a 6-minute rider's first claim and found a failure it had missed.",
+    "fix": "One id and one breakpoint. Do not hide the warranty line - it is what two of those tests protect.",
+    "rank": 8,
+    "status": "open"
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "F10",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -2.773037,
+     1.144669
+    ]
+   },
+   "properties": {
+    "id": "F10",
+    "what": "No night-results file carries a `schema` field. A counter reading one key instead of another already understated a published total by 79.9%.",
+    "where": "night-results/*.json",
+    "verified": "self",
+    "applied": null,
+    "crunchable": false,
+    "severity": 4,
+    "cost": 1,
+    "evidence": "13,901,209,740,000 cases logged as a success worth nothing.",
+    "fix": "A schema string per file, and a reader that refuses rather than defaults.",
+    "rank": 9,
+    "status": "open"
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "F11",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     1.340319,
+     -2.864183
+    ]
+   },
+   "properties": {
+    "id": "F11",
+    "what": "The deploy path list is an allow-list that has been wrong five times. i0092 was pushed, gated, hashed and merged while the live site served i0091, with nothing red anywhere.",
+    "where": ".github/workflows/deploy-pages.yml",
+    "verified": "self",
+    "applied": "partly",
+    "crunchable": false,
+    "severity": 4,
+    "cost": 1,
+    "evidence": "The file's own comments were already counting: third time, fourth time. This was the fifth.",
+    "fix": "kuiper-grid/** added. Invert to paths-ignore - that is a decision about the runners, not a typo.",
+    "rank": 10,
+    "status": "applied"
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "F12",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     0.992612,
+     3.164604
+    ]
+   },
+   "properties": {
+    "id": "F12",
+    "what": "The public language gate had been failing for days on a missing file: all twelve runner workspaces were left sparse by an earlier job, so it checked no language at all while looking like a wording failure.",
+    "where": "twelve self-hosted runner workspaces",
+    "verified": "self",
+    "applied": "acf2bfb1",
+    "crunchable": false,
+    "severity": 5,
+    "cost": 1,
+    "evidence": "Clearing the config alone did not fix it - three things make a tree sparse and the index's skip-worktree bit is the one that actually hides files.",
+    "fix": "Guard clears all three before checkout; a step now says 'could not run' in those words.",
+    "rank": 11,
+    "status": "applied"
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "F13",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -2.99718,
+     -1.736927
+    ]
+   },
+   "properties": {
+    "id": "F13",
+    "what": "CuPy is not importable from the machine's default python, so a GPU gate wired to it would go green by absence - exactly the failure the language gate spent days in.",
+    "where": "CI python selection",
+    "verified": "agent",
+    "applied": null,
+    "crunchable": false,
+    "severity": 4,
+    "cost": 1,
+    "evidence": "python -c 'import cupy' fails; the venv at E:/swarm/gpu-bench/venv has it.",
+    "fix": "Point CI at the venv python, and keep the 'could not run' step.",
+    "rank": 12,
+    "status": "open"
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "F14",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     3.521455,
+     -0.774182
+    ]
+   },
+   "properties": {
+    "id": "F14",
+    "what": "Claimed: `fire block {}` draws nothing on the new build.",
+    "where": "the live page",
+    "verified": "contradicted",
+    "applied": null,
+    "crunchable": false,
+    "severity": 0,
+    "cost": 0,
+    "evidence": "Tested on both builds with the console listener attached BEFORE load: draws identically on i0091 and i0092, zero console errors. A small viewport and a screenshot taken before the dots settle.",
+    "fix": "None. The reasoning that the patch could not touch block was right, and the evidence agreed.",
+    "rank": 13,
+    "status": "contradicted"
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "F15",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -2.151937,
+     3.060909
+    ]
+   },
+   "properties": {
+    "id": "F15",
+    "what": "Claimed: at the sheet's top rear row the current is still inside its limits.",
+    "where": "a proposed worked example",
+    "verified": "contradicted",
+    "applied": null,
+    "crunchable": true,
+    "severity": 5,
+    "cost": 0,
+    "evidence": "At 25% rear EVERY class breaches BOTH current tests. The machine input turns at 13.60% - a tenth of a point above the 13.5% the datasheet itself publishes.",
+    "fix": "Cut from the set. It was ranked in a kept top half, and it is a 'we checked and it is fine' that the numbers call a breach.",
+    "rank": 14,
+    "status": "contradicted"
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "F16",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.49772,
+     -3.840869
+    ]
+   },
+   "properties": {
+    "id": "F16",
+    "what": "Claimed: the higher-Voc family swap works at 28 modules.",
+    "where": "a proposed worked example",
+    "verified": "contradicted",
+    "applied": null,
+    "crunchable": true,
+    "severity": 5,
+    "cost": 0,
+    "evidence": "1523.78 V at -10 C, over by 23.78 V; its turn is -2.36 C. The swap needs 27.",
+    "fix": "Corrected to 27. Shipping 28 would have put an over-voltage string in front of a reader as the safe answer.",
+    "rank": 15,
+    "status": "contradicted"
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "F17",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     3.058596,
+     2.577788
+    ]
+   },
+   "properties": {
+    "id": "F17",
+    "what": "Claimed: the site drawing is a frozen unlabelled field, not a site.",
+    "where": "the live page",
+    "verified": "contradicted",
+    "applied": null,
+    "crunchable": false,
+    "severity": 0,
+    "cost": 0,
+    "evidence": "I watched this render and published it: grid, interface, transformer, collection busbar, eight block columns. The colour is the amber over-rating verdict at close zoom, which is the drawing working.",
+    "fix": "None. Kept because a rider being wrong is data about the race.",
+    "rank": 16,
+    "status": "contradicted"
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "F18",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -4.119585,
+     0.170358
+    ]
+   },
+   "properties": {
+    "id": "F18",
+    "what": "Claimed: the shell loads a 15 KB programs file, so the workspace patch is two patches that cannot be pasted into one page.",
+    "where": "the shell's script tags",
+    "verified": "contradicted",
+    "applied": null,
+    "crunchable": false,
+    "severity": 1,
+    "cost": 0,
+    "evidence": "That is the RAW shell. The composer's replace-script slot swaps it by filename at load. I read FIRE_SLD_KIND on the live page and it contains 'site', which exists only in the cartridge.",
+    "fix": "None, but the rest of that report stands and is worth keeping.",
+    "rank": 17,
+    "status": "contradicted"
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "F19",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     3.007309,
+     -2.992674
+    ]
+   },
+   "properties": {
+    "id": "F19",
+    "what": "My overnight counter read one key, `cases`. One sweep writes `space`. It ran 47 times, verified itself every time, and was logged as a SUCCESS contributing nothing.",
+    "where": "enumerate_until.py",
+    "verified": "self",
+    "applied": "28406d5",
+    "crunchable": false,
+    "severity": 5,
+    "cost": 1,
+    "evidence": "Understated the published total by 79.9%: 17.39tn reported against 31.29tn actual.",
+    "fix": "Reads cases, then evaluated, then space; refuses outright if it finds none.",
+    "rank": 18,
+    "status": "applied"
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "F20",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -0.201344,
+     4.354246
+    ]
+   },
+   "properties": {
+    "id": "F20",
+    "what": "My ranking rule for worked examples was degenerate: series count does not enter the current tests, so ranking by the current crossing returned the same row fifteen times.",
+    "where": "worked_examples.py",
+    "verified": "self",
+    "applied": null,
+    "crunchable": true,
+    "severity": 3,
+    "cost": 1,
+    "evidence": "The card found the right numbers and was asked the wrong question. The riders' selections were better than mine.",
+    "fix": "Require each example to teach a DIFFERENT thing; dedupe on which test turns.",
+    "rank": 19,
+    "status": "open"
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "F21",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -2.865338,
+     -3.433633
+    ]
+   },
+   "properties": {
+    "id": "F21",
+    "what": "worked_examples.py defines SIZING = 1.25 and never uses it, so its string-input margin is optimistic against any Isc convention.",
+    "where": "worked_examples.py",
+    "verified": "agent",
+    "applied": null,
+    "crunchable": true,
+    "severity": 3,
+    "cost": 1,
+    "evidence": "Found by the arbiter reading my own file.",
+    "fix": "Either apply it to a cable/OCPD test or delete it and say so.",
+    "rank": 20,
+    "status": "open"
+   }
+  },
+  {
+   "type": "Feature",
+   "id": "F22",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     4.541651,
+     0.611073
+    ]
+   },
+   "properties": {
+    "id": "F22",
+    "what": "My layout gate's absolute crowding counts are an upper bound, not a prediction: it sizes a dot from zoom alone while the renderer sizes it from measured spacing.",
+    "where": "layout_gate.py",
+    "verified": "self",
+    "applied": "disclosed",
+    "crunchable": true,
+    "severity": 2,
+    "cost": 1,
+    "evidence": "The comparison survives the limitation; the absolute number does not.",
+    "fix": "Model bodyDotPx() properly, or keep reporting only the comparison.",
+    "rank": 21,
+    "status": "applied"
+   }
+  }
+ ]
+}

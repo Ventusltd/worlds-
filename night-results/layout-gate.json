@@ -1,0 +1,38 @@
+{
+ "cases": 271499532,
+ "seconds": 0.13,
+ "gate": "layout",
+ "question": "Across every viewport, does the workspace ever put a dot closer than three radii from its neighbour?",
+ "model": "safe = viewport minus banner, top furniture, foot and the text window; R = min(safe.w, safe.h)/2 * 0.80; z = R/sqrt(SPACE); dotPx = clamp(z*0.34, 1, 9); the drawing is scaled until its farthest dot is at the rim.",
+ "why_it_is_not_obvious": "Giving the drawing more room RAISES the zoom, which makes every dot bigger, which can close the very gap the rule protects. More space is not automatically safer, and one screen cannot show that.",
+ "furniture": [
+  {
+   "furniture": "before",
+   "banner_top_foot_px": [
+    30.0,
+    130.0,
+    195.0
+   ],
+   "legal": 71155650,
+   "crowded": 64594116,
+   "no_room_at_all": 0,
+   "worst_gap_over_three_radii": 0.1048,
+   "crowded_pct": 47.5832
+  },
+  {
+   "furniture": "after",
+   "banner_top_foot_px": [
+    6.0,
+    30.0,
+    44.0
+   ],
+   "legal": 81661994,
+   "crowded": 54087772,
+   "no_room_at_all": 0,
+   "worst_gap_over_three_radii": 0.1664,
+   "crowded_pct": 39.8437
+  }
+ ],
+ "not_claimed": "The absolute crowded counts are an UPPER BOUND, not a prediction. This model sizes a dot from zoom alone; the renderer's bodyDotPx() sizes it from the measured spacing of the dots it is about to draw, so the real renderer adapts where this model does not and will crowd less. What survives is the COMPARISON - same model, same 271 million configurations, one furniture set against the other. It renders nothing, and says nothing about whether a layout is pleasant, only whether the spacing rule survives it.",
+ "anonymised": "No project, site, maker or model anywhere."
+}
