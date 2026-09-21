@@ -1,0 +1,789 @@
+{
+ "anonymised": "No project, site, client or manufacturer name appears anywhere in this file.",
+ "body_sha256": "08714d6a904590090b152636daefbfd35d692395b876a522b6fe2fb0f6f225ba",
+ "cases_total": 360526364,
+ "determinism": "Sorted keys, no clock in the body. Re-running on the same inputs gives byte-identical output apart from the top-level 'timing' block, which is excluded from body_sha256 for exactly that reason.",
+ "findings": {
+  "H1": {
+   "axes": [
+    {
+     "name": "value",
+     "range": "ordinary sweep -100..1700, raw bit patterns, and every special",
+     "steps": 2000033
+    },
+    {
+     "name": "limit",
+     "range": "the 1500 V equipment rating, the 20 A string input, the 40 A machine input, the 35 A maximum series fuse",
+     "steps": 4
+    }
+   ],
+   "cases": 8000132,
+   "checked": 200000,
+   "counts": {
+    "agree": 6998552,
+    "disagree_on_a_finite_number": 0,
+    "disagree_on_a_non_finite_number": 1001580,
+    "limits": 4,
+    "old_predicate_calls_it_inside_the_rating": 1001580,
+    "specials_per_limit": 33,
+    "values_per_limit": 2000033
+   },
+   "maths": "sweep value over 1,000,000 ordinary x 1,000,000 raw bit patterns x 33 specials, x 4 limits, count where (x > limit) differs from !(x <= limit)",
+   "not_claimed": "This settles a comparison, not a design. It says nothing about whether the limits themselves are right and nothing about any physics.",
+   "question": "Does a verdict ever report a value it cannot justify as inside a rating?",
+   "settled": "SETTLED: on every finite number the two forms agree exactly (0 disagreements), so this changes no real design; they part only where the value is not a number, and there the live form reports 1,001,580 passes it cannot justify across 4 limits.",
+   "source": "seeded",
+   "state": "FINDING STANDS",
+   "verified_differ": 0
+  },
+  "H2": {
+   "axes": [
+    {
+     "name": "module bin",
+     "range": "every class in the file, Voc and beta taken together per bin",
+     "steps": 10
+    },
+    {
+     "name": "beta swept",
+     "range": "-0.30..-0.20 %/K",
+     "steps": 101
+    },
+    {
+     "name": "modules in series",
+     "range": "20..34",
+     "steps": 15
+    },
+    {
+     "name": "assessment temperature",
+     "range": "-20..0 C",
+     "steps": 81
+    }
+   ],
+   "cases": 1227150,
+   "checked": 200000,
+   "counts": {
+    "cases_where_the_two_coefficients_disagree": 23929,
+    "clear_on_both": 748521,
+    "coefficients_read_from_the_file": {
+     "T645": -0.25,
+     "T650": -0.25,
+     "T655": -0.25,
+     "T660": -0.25,
+     "T665": -0.25,
+     "W750": -0.22,
+     "W755": -0.22,
+     "W760": -0.22,
+     "W765": -0.22,
+     "W770": -0.22
+    },
+    "cost_of_pairing_the_wrong_coefficient_v_at_30_series": {
+     "T645 with -0.22 in place of -0.25": {
+      "-10.0 C": 14.269,
+      "-10.6 C": 14.514,
+      "-15.0 C": 16.308,
+      "-20.0 C": 18.346,
+      "-5.0 C": 12.231,
+      "0.0 C": 10.192
+     },
+     "T650 with -0.22 in place of -0.25": {
+      "-10.0 C": 14.332,
+      "-10.6 C": 14.578,
+      "-15.0 C": 16.38,
+      "-20.0 C": 18.427,
+      "-5.0 C": 12.285,
+      "0.0 C": 10.237
+     },
+     "T655 with -0.22 in place of -0.25": {
+      "-10.0 C": 14.395,
+      "-10.6 C": 14.642,
+      "-15.0 C": 16.452,
+      "-20.0 C": 18.508,
+      "-5.0 C": 12.339,
+      "0.0 C": 10.282
+     },
+     "T660 with -0.22 in place of -0.25": {
+      "-10.0 C": 14.458,
+      "-10.6 C": 14.706,
+      "-15.0 C": 16.524,
+      "-20.0 C": 18.589,
+      "-5.0 C": 12.393,
+      "0.0 C": 10.327
+     },
+     "T665 with -0.22 in place of -0.25": {
+      "-10.0 C": 14.521,
+      "-10.6 C": 14.77,
+      "-15.0 C": 16.596,
+      "-20.0 C": 18.671,
+      "-5.0 C": 12.447,
+      "0.0 C": 10.373
+     },
+     "W750 with -0.25 in place of -0.22": {
+      "-10.0 C": -15.917,
+      "-10.6 C": -16.19,
+      "-15.0 C": -18.191,
+      "-20.0 C": -20.465,
+      "-5.0 C": -13.643,
+      "0.0 C": -11.369
+     },
+     "W755 with -0.25 in place of -0.22": {
+      "-10.0 C": -15.926,
+      "-10.6 C": -16.199,
+      "-15.0 C": -18.202,
+      "-20.0 C": -20.477,
+      "-5.0 C": -13.651,
+      "0.0 C": -11.376
+     },
+     "W760 with -0.25 in place of -0.22": {
+      "-10.0 C": -15.936,
+      "-10.6 C": -16.209,
+      "-15.0 C": -18.212,
+      "-20.0 C": -20.489,
+      "-5.0 C": -13.659,
+      "0.0 C": -11.383
+     },
+     "W765 with -0.25 in place of -0.22": {
+      "-10.0 C": -15.945,
+      "-10.6 C": -16.219,
+      "-15.0 C": -18.223,
+      "-20.0 C": -20.501,
+      "-5.0 C": -13.667,
+      "0.0 C": -11.389
+     },
+     "W770 with -0.25 in place of -0.22": {
+      "-10.0 C": -15.955,
+      "-10.6 C": -16.228,
+      "-15.0 C": -18.234,
+      "-20.0 C": -20.513,
+      "-5.0 C": -13.675,
+      "0.0 C": -11.396
+     }
+    },
+    "exact_crossing_temperature_C": {
+     "T645": {
+      "20": -237.252,
+      "21": -205.716,
+      "22": -177.047,
+      "23": -150.871,
+      "24": -126.876,
+      "25": -104.801,
+      "26": -84.424,
+      "27": -65.557,
+      "28": -48.037,
+      "29": -31.725,
+      "30": -16.501,
+      "31": -2.259,
+      "32": 11.093,
+      "33": 23.635,
+      "34": "over the rating at 25 C already"
+     },
+     "T650": {
+      "20": -234.341,
+      "21": -202.943,
+      "22": -174.401,
+      "23": -148.34,
+      "24": -124.451,
+      "25": -102.473,
+      "26": -82.185,
+      "27": -63.4,
+      "28": -45.958,
+      "29": -29.718,
+      "30": -14.56,
+      "31": -0.381,
+      "32": 12.912,
+      "33": "over the rating at 25 C already",
+      "34": "over the rating at 25 C already"
+     },
+     "T655": {
+      "20": -231.455,
+      "21": -200.195,
+      "22": -171.777,
+      "23": -145.831,
+      "24": -122.046,
+      "25": -100.164,
+      "26": -79.965,
+      "27": -61.263,
+      "28": -43.897,
+      "29": -27.728,
+      "30": -12.637,
+      "31": 1.481,
+      "32": 14.716,
+      "33": "over the rating at 25 C already",
+      "34": "over the rating at 25 C already"
+     },
+     "T660": {
+      "20": -228.595,
+      "21": -197.471,
+      "22": -169.177,
+      "23": -143.343,
+      "24": -119.662,
+      "25": -97.876,
+      "26": -77.765,
+      "27": -59.144,
+      "28": -41.853,
+      "29": -25.755,
+      "30": -10.73,
+      "31": 3.326,
+      "32": 16.503,
+      "33": "over the rating at 25 C already",
+      "34": "over the rating at 25 C already"
+     },
+     "T665": {
+      "20": -225.759,
+      "21": -194.771,
+      "22": -166.599,
+      "23": -140.878,
+      "24": -117.299,
+      "25": -95.607,
+      "26": -75.584,
+      "27": -57.044,
+      "28": -39.828,
+      "29": -23.799,
+      "30": -8.839,
+      "31": 5.155,
+      "32": 18.275,
+      "33": "over the rating at 25 C already",
+      "34": "over the rating at 25 C already"
+     },
+     "W750": {
+      "20": -195.121,
+      "21": -162.994,
+      "22": -133.788,
+      "23": -107.121,
+      "24": -82.677,
+      "25": -60.188,
+      "26": -39.429,
+      "27": -20.208,
+      "28": -2.359,
+      "29": 14.258,
+      "30": "over the rating at 25 C already",
+      "31": "over the rating at 25 C already",
+      "32": "over the rating at 25 C already",
+      "33": "over the rating at 25 C already",
+      "34": "over the rating at 25 C already"
+     },
+     "W755": {
+      "20": -194.721,
+      "21": -162.613,
+      "22": -133.424,
+      "23": -106.773,
+      "24": -82.343,
+      "25": -59.868,
+      "26": -39.121,
+      "27": -19.911,
+      "28": -2.073,
+      "29": 14.534,
+      "30": "over the rating at 25 C already",
+      "31": "over the rating at 25 C already",
+      "32": "over the rating at 25 C already",
+      "33": "over the rating at 25 C already",
+      "34": "over the rating at 25 C already"
+     },
+     "W760": {
+      "20": -194.321,
+      "21": -162.232,
+      "22": -133.061,
+      "23": -106.425,
+      "24": -82.01,
+      "25": -59.548,
+      "26": -38.813,
+      "27": -19.615,
+      "28": -1.788,
+      "29": 14.81,
+      "30": "over the rating at 25 C already",
+      "31": "over the rating at 25 C already",
+      "32": "over the rating at 25 C already",
+      "33": "over the rating at 25 C already",
+      "34": "over the rating at 25 C already"
+     },
+     "W765": {
+      "20": -193.922,
+      "21": -161.852,
+      "22": -132.697,
+      "23": -106.078,
+      "24": -81.677,
+      "25": -59.228,
+      "26": -38.506,
+      "27": -19.319,
+      "28": -1.503,
+      "29": 15.085,
+      "30": "over the rating at 25 C already",
+      "31": "over the rating at 25 C already",
+      "32": "over the rating at 25 C already",
+      "33": "over the rating at 25 C already",
+      "34": "over the rating at 25 C already"
+     },
+     "W770": {
+      "20": -193.523,
+      "21": -161.472,
+      "22": -132.335,
+      "23": -105.731,
+      "24": -81.345,
+      "25": -58.909,
+      "26": -38.199,
+      "27": -19.024,
+      "28": -1.218,
+      "29": 15.36,
+      "30": "over the rating at 25 C already",
+      "31": "over the rating at 25 C already",
+      "32": "over the rating at 25 C already",
+      "33": "over the rating at 25 C already",
+      "34": "over the rating at 25 C already"
+     }
+    },
+    "over_1500_with_each_bin_s_own_coefficient": 460863,
+    "over_1500_with_the_swept_coefficient": 472466
+   },
+   "maths": "sweep beta -0.30..-0.20 x series 20..34 x temperature -20..0 C x 10 module bins, count where N*Voc*(1+beta/100*(T-25)) > 1500",
+   "not_claimed": "This settles where a printed Voc and a printed coefficient put the string voltage. It does not settle the site's design minimum temperature, which is a meteorological input this file does not hold, and it does not model the rise of Voc with irradiance, which makes the real answer worse rather than better.",
+   "question": "Where does the series string cross the 1500 V rating, and how much of the answer depends on which temperature coefficient is paired with which Voc?",
+   "settled": "SETTLED: 460,863 of 1,227,150 cases cross 1500 V on each bin's own printed coefficient, and the exact crossing temperature is solved for every bin and series count; 23,929 cases turn on WHICH coefficient is used, which is the whole of the earlier mistake.",
+   "source": "seeded",
+   "state": "FINDING STANDS",
+   "verified_differ": 0
+  },
+  "H3": {
+   "axes": [
+    {
+     "name": "pieces",
+     "range": "1..384",
+     "steps": 384
+    },
+    {
+     "name": "symbol pieces",
+     "range": "0..96, matched by a PREFIX test on the tag",
+     "steps": 97
+    },
+    {
+     "name": "symbol rings",
+     "range": "0..96 of the symbols",
+     "steps": 97
+    },
+    {
+     "name": "plain rings",
+     "range": "0..96 of the rest",
+     "steps": 97
+    }
+   ],
+   "cases": 350466432,
+   "checked": 200000,
+   "counts": {
+    "budget": 896,
+    "combinations_that_are_not_shapes": 224602240,
+    "floor_plain_line": 2,
+    "floor_plain_ring": 5,
+    "floor_symbol_line": 6,
+    "floor_symbol_ring": 16,
+    "floors_read_from": "007300000000-kuiper-programs.js",
+    "shapes_examined": 125864192,
+    "shapes_that_fit": 27632634,
+    "shapes_where_the_floors_alone_exceed_the_budget": 98231558,
+    "smallest_starving_count": {
+     "note": "the count at which the floors first exceed the budget, so the rounding loop cannot give every piece its floor and a piece receives zero dots",
+     "plain lines alone": 449,
+     "plain rings alone": 180,
+     "symbol lines alone": 150,
+     "symbol rings alone": 57
+    }
+   },
+   "maths": "sweep pieces 1..384 x symbols 0..96 x symbol rings 0..96 x plain rings 0..96, count where SR*16 + (S-SR)*6 + NR*5 + (P-S-NR)*2 > 896",
+   "not_claimed": "This settles the arithmetic of the floors against the budget. It does not say which real drawings reach those shapes, and it does not check that a piece given its floor is legible - only that it is given something.",
+   "question": "Can a drawing ask for more floor dots than the budget holds, so that a piece of it is drawn with nothing?",
+   "settled": "SETTLED: of 125,864,192 real shapes, 98,231,558 leave the floors alone over the 896 dot budget, so a piece of the drawing is handed zero dots; 57 symbol rings on their own are enough to do it.",
+   "source": "seeded",
+   "state": "FINDING STANDS",
+   "verified_differ": 0
+  },
+  "H4": {
+   "axes": [
+    {
+     "name": "module bin",
+     "range": "every class in the file",
+     "steps": 10
+    },
+    {
+     "name": "rear gain",
+     "range": "0..30%, the sheet's table tops at 25%",
+     "steps": 61
+    },
+    {
+     "name": "assessment temperature",
+     "range": "-20..25 C",
+     "steps": 91
+    },
+    {
+     "name": "modules in series",
+     "range": "20..34",
+     "steps": 15
+    }
+   ],
+   "cases": 832650,
+   "checked": 200000,
+   "counts": {
+    "at_the_sheets_own_top_rear_row": {
+     "condition": "25 C, the condition the row is printed for",
+     "every_bin_over_both_inputs": true,
+     "per_bin": {
+      "T645": {
+       "over_the_20_a_string_input": true,
+       "over_the_40_a_machine_input": true,
+       "phi_derived": 0.7,
+       "sized_machine_current_a": 53.786,
+       "string_current_a": 20.245
+      },
+      "T650": {
+       "over_the_20_a_string_input": true,
+       "over_the_40_a_machine_input": true,
+       "phi_derived": 0.6985,
+       "sized_machine_current_a": 53.886,
+       "string_current_a": 20.286
+      },
+      "T655": {
+       "over_the_20_a_string_input": true,
+       "over_the_40_a_machine_input": true,
+       "phi_derived": 0.7007,
+       "sized_machine_current_a": 54.059,
+       "string_current_a": 20.342
+      },
+      "T660": {
+       "over_the_20_a_string_input": true,
+       "over_the_40_a_machine_input": true,
+       "phi_derived": 0.6985,
+       "sized_machine_current_a": 54.18,
+       "string_current_a": 20.38
+      },
+      "T665": {
+       "over_the_20_a_string_input": true,
+       "over_the_40_a_machine_input": true,
+       "phi_derived": 0.7007,
+       "sized_machine_current_a": 54.352,
+       "string_current_a": 20.436
+      },
+      "W750": {
+       "over_the_20_a_string_input": true,
+       "over_the_40_a_machine_input": true,
+       "phi_derived": 0.8504,
+       "sized_machine_current_a": 56.264,
+       "string_current_a": 21.463
+      },
+      "W755": {
+       "over_the_20_a_string_input": true,
+       "over_the_40_a_machine_input": true,
+       "phi_derived": 0.8526,
+       "sized_machine_current_a": 56.381,
+       "string_current_a": 21.57
+      },
+      "W760": {
+       "over_the_20_a_string_input": true,
+       "over_the_40_a_machine_input": true,
+       "phi_derived": 0.8511,
+       "sized_machine_current_a": 56.455,
+       "string_current_a": 21.648
+      },
+      "W765": {
+       "over_the_20_a_string_input": true,
+       "over_the_40_a_machine_input": true,
+       "phi_derived": 0.8541,
+       "sized_machine_current_a": 56.58,
+       "string_current_a": 21.758
+      },
+      "W770": {
+       "over_the_20_a_string_input": true,
+       "over_the_40_a_machine_input": true,
+       "phi_derived": 0.8526,
+       "sized_machine_current_a": 56.654,
+       "string_current_a": 21.837
+      }
+     },
+     "rear_gain": 0.25
+    },
+    "clears_everything": 0,
+    "over_both_current_inputs": 292950,
+    "over_the_machine_input": 832650,
+    "over_the_string_input": 292950,
+    "over_the_voltage_rating": 266265,
+    "phi_source": "(K_Corr - 1) / 0.135, both printed on the sheet"
+   },
+   "maths": "sweep rear gain 0..30% x temperature -20..25 C x series 20..34 x 10 bins, count where Imp*(1+phi*rear)*(1+alpha/100*(T-25)) > 20 or 1.25*Isc*(1+phi*rear)*(1+alpha/100*(T-25))*2 > 40",
+   "not_claimed": "This settles current against two printed input ratings. It does not model non-uniform rear illumination along a string, the transient, or the fact that high albedo and low ambient are the same weather - which means the joint corner is present in the count but its real likelihood is understated by reading either axis on its own.",
+   "question": "Where does rear-side irradiance take the string current past the string and machine inputs?",
+   "settled": "SETTLED: 292,950 of 832,650 cases exceed the 20 A string input and 832,650 the 40 A machine input; at the sheet's own 25% rear row EVERY bin exceeds both.",
+   "source": "seeded",
+   "state": "FINDING STANDS",
+   "verified_differ": 0
+  }
+ },
+ "house_rule": "Every finding carries two implementations of the same sum - a kernel on the card and a reference on the processor - and is probed against itself before any count is reported. A finding whose implementations differ is reported FAILING and its counts are withheld.",
+ "inputs": {
+  "dot_budget": 896,
+  "dot_floors_read_from": "007300000000-kuiper-programs.js",
+  "module_classes": 10,
+  "module_file": "E:\\swarm\\feed\\MODULES.json",
+  "night_worksheet": "C:\\Users\\vikra\\Documents\\GitHub\\worlds-\\night-results\\worksheet.geojson",
+  "worksheet_directory": "E:\\swarm\\harvest",
+  "worksheet_features_marked_crunchable": 59,
+  "worksheet_features_seen": 115,
+  "worksheet_features_translated": 0,
+  "worksheet_files_read": 11
+ },
+ "not_claimed": "The crunch settles ARITHMETIC over a stated space and nothing else. It does not decide whether the stated space is the right space, whether the predicate is the right question, or whether a count that comes back zero means the concern was unfounded rather than the sweep too narrow. It holds no site, no weather record and no as-built drawing, so it cannot say any of these findings is present in a real installation - only that the numbers in the files reach it. Fixes, costs and priority are not settled here at all: a count is evidence for a person to act on, not the action.",
+ "refused": [
+  {
+   "name": "54 slice files declare source_of_modules MODULES.json yet their module block is ",
+   "reason": "not translated (findings-data.geojson): no axis of the form 'name lo..hi' in the maths"
+  },
+  {
+   "name": "A <script src=\"kuiper-controls.js\"> in the frozen shell is claimed by no cartrid",
+   "reason": "not translated (findings-composer.geojson): no axis of the form 'name lo..hi' in the maths"
+  },
+  {
+   "name": "A cartridge dropped from cartridge_order but left in cartridges is skipped in to",
+   "reason": "not translated (findings-composer.geojson): no axis of the form 'name lo..hi' in the maths"
+  },
+  {
+   "name": "An empty cartridge_order passes Array.isArray, the loop body never runs, and the",
+   "reason": "not translated (findings-composer.geojson): 'in 0..5' names no quantity - 'in' is a word, so the axis cannot be built"
+  },
+  {
+   "name": "An unterminated brace makes the whole optional group fail, so \"fire cable-run {\\",
+   "reason": "not translated (findings-parser.geojson): no axis of the form 'name lo..hi' in the maths"
+  },
+  {
+   "name": "At the home camera every key dot is pinned to the 1 px floor of clamp(u_zoom*0.3",
+   "reason": "not translated (findings-shell.geojson): the maths states no countable predicate: no 'count ... where' and no 'predicate:'"
+  },
+  {
+   "name": "Both compare green pixel counts with no positive control, so a census that finds",
+   "reason": "not translated (findings-tests.geojson): the maths states no countable predicate: no 'count ... where' and no 'predicate:'"
+  },
+  {
+   "name": "Every current test is evaluated at the cold assessment temperature, where the po",
+   "reason": "not translated (findings-site-program.geojson): the predicate names at, false, is, over_fuse, over_mppt, over_string, tmin, true, which is not an axis and not a number from a file"
+  },
+  {
+   "name": "FIRE.register writes straight into RUN[name] with no collision check, so a secon",
+   "reason": "not translated (findings-composer.geojson): no axis of the form 'name lo..hi' in the maths"
+  },
+  {
+   "name": "For 641 <= innerWidth <= 759 layout() sets card.style.bottom='auto' while the CS",
+   "reason": "not translated (findings-shell.geojson): the maths states no countable predicate: no 'count ... where' and no 'predicate:'"
+  },
+  {
+   "name": "In all ten classes the BNPI Voc and BNPI Vmp are byte-identical to the STC Voc a",
+   "reason": "not translated (findings-data.geojson): no axis of the form 'name lo..hi' in the maths"
+  },
+  {
+   "name": "MODULES.json records contradiction C-1 unresolved: the headline N_max of 30 modu",
+   "reason": "not translated (findings-data.geojson): the predicate names N, Voc, beta, which is not an axis and not a number from a file"
+  },
+  {
+   "name": "Nothing compares generation with previous_generation, so a pointer put back to a",
+   "reason": "not translated (findings-composer.geojson): no axis of the form 'name lo..hi' in the maths"
+  },
+  {
+   "name": "On a wide screen the card's top is the hard-coded 96px of the stylesheet while e",
+   "reason": "not translated (findings-shell.geojson): the maths states no countable predicate: no 'count ... where' and no 'predicate:'"
+  },
+  {
+   "name": "PASS sweeps only keys matching /^T\\d+_/, so the assertion keyed T14b_ (a letter ",
+   "reason": "not translated (findings-tests.geojson): the maths states no countable predicate: no 'count ... where' and no 'predicate:'"
+  },
+  {
+   "name": "RUN is a bare object literal, so a name that is an Object.prototype key resolves",
+   "reason": "not translated (findings-parser.geojson): no axis of the form 'name lo..hi' in the maths"
+  },
+  {
+   "name": "The 093 cut script splices with js[:at] + site, which throws away every byte aft",
+   "reason": "not translated (findings-composer.geojson): no axis of the form 'name lo..hi' in the maths"
+  },
+  {
+   "name": "The CPU references in substation.py and arc_break.py multiply in a different ord",
+   "reason": "not translated (findings-gpu-src.geojson): no axis of the form 'name lo..hi' in the maths"
+  },
+  {
+   "name": "The approved-statement amnesty is a 400-character blanket around one phrase, mat",
+   "reason": "not translated (findings-ci.geojson): no axis of the form 'name lo..hi' in the maths"
+  },
+  {
+   "name": "The clause begins !narrow(), so on any desktop-width run the whole assertion is ",
+   "reason": "not translated (findings-tests.geojson): the maths states no countable predicate: no 'count ... where' and no 'predicate:'"
+  },
+  {
+   "name": "The disjuncts ox === 'auto' || ox === 'scroll' pass on the stylesheet's own sett",
+   "reason": "not translated (findings-tests.geojson): the maths states no countable predicate: no 'count ... where' and no 'predicate:'"
+  },
+  {
+   "name": "The empty-surface guard is all-or-nothing: it fails only when the globs match ze",
+   "reason": "not translated (findings-ci.geojson): no axis of the form 'name lo..hi' in the maths"
+  },
+  {
+   "name": "The gate's surface is six single-star globs while the deploy publishes the whole",
+   "reason": "not translated (findings-ci.geojson): no axis of the form 'name lo..hi' in the maths"
+  },
+  {
+   "name": "The guard checks only that a number is finite, so the min and max declared on ev",
+   "reason": "not translated (findings-site-program.geojson): the maths states no countable predicate: no 'count ... where' and no 'predicate:'"
+  },
+  {
+   "name": "The k_corr of the W family implies an Isc bifaciality of (1.1148-1)/0.135 = 0.85",
+   "reason": "not translated (findings-data.geojson): no axis of the form 'name lo..hi' in the maths"
+  },
+  {
+   "name": "The key-to-code workflow declares forty lanes at max-parallel forty on the same ",
+   "reason": "not translated (findings-ci.geojson): no axis of the form 'name lo..hi' in the maths"
+  },
+  {
+   "name": "The rear-gain input accepts up to 30 percent while the same program's own how te",
+   "reason": "not translated (findings-site-program.geojson): the maths states no countable predicate: no 'count ... where' and no 'predicate:'"
+  },
+  {
+   "name": "The replace-script slot matches on basename and stops at the first hit, and a ca",
+   "reason": "not translated (findings-composer.geojson): the maths states no countable predicate: no 'count ... where' and no 'predicate:'"
+  },
+  {
+   "name": "The string-input test compares the working current Imp against the 20 A input ra",
+   "reason": "not translated (findings-site-program.geojson): the predicate names imp_e, isc_e, which is not an axis and not a number from a file"
+  },
+  {
+   "name": "The test named for the line SHOWN only asserts that the file's array holds a str",
+   "reason": "not translated (findings-tests.geojson): the maths states no countable predicate: no 'count ... where' and no 'predicate:'"
+  },
+  {
+   "name": "The top-bin warning fires on a hard-coded 25 V margin that is not derived from t",
+   "reason": "not translated (findings-site-program.geojson): the predicate names V, by, differs, from, more, than, that, value, which is not an axis and not a number from a file"
+  },
+  {
+   "name": "The verdicts map is a set of overlapping test masks summing to 207466873589 agai",
+   "reason": "not translated (findings-data.geojson): no axis of the form 'name lo..hi' in the maths"
+  },
+  {
+   "name": "The wafer workflow fans a ten-by-five matrix into fifty self-hosted jobs on a pu",
+   "reason": "not translated (findings-ci.geojson): no axis of the form 'name lo..hi' in the maths"
+  },
+  {
+   "name": "Two entries in cartridges sharing an id are collapsed by new Map(): the last sil",
+   "reason": "not translated (findings-composer.geojson): no axis of the form 'name lo..hi' in the maths"
+  },
+  {
+   "name": "Two escapes: a blank mid-file line satisfies want.trim()==='' with nothing check",
+   "reason": "not translated (findings-tests.geojson): the maths states no countable predicate: no 'count ... where' and no 'predicate:'"
+  },
+  {
+   "name": "With the shipped narrow chrome the collapse threshold lands inside real phone la",
+   "reason": "not translated (findings-shell.geojson): the maths states no countable predicate: no 'count ... where' and no 'predicate:'"
+  },
+  {
+   "name": "a diagram's state is built with frac hard-set to BODY_RADIUS_MAX and unresolved:",
+   "reason": "not translated (findings-drawing.geojson): no axis of the form 'name lo..hi' in the maths"
+  },
+  {
+   "name": "a drawing whose dots are collinear gives a zero-area bounding box, so the cell s",
+   "reason": "not translated (findings-drawing.geojson): no axis of the form 'name lo..hi' in the maths"
+  },
+  {
+   "name": "a ring's start angle is 2*PI*u + i, the piece's array index taken as radians, so",
+   "reason": "not translated (findings-drawing.geojson): no axis of the form 'name lo..hi' in the maths"
+  },
+  {
+   "name": "atlas_lattice.py decodes station, voltage class, conductor csa and routing and t",
+   "reason": "not translated (findings-gpu-src.geojson): the predicate holds characters this translator will not compile: :"
+  },
+  {
+   "name": "beta is a single value copied across all five bins of each family and alpha is t",
+   "reason": "not translated (findings-site-program.geojson): the predicate names at, but, carried, in, some, sweep, the, v, which is not an axis and not a number from a file"
+  },
+  {
+   "name": "bifacial_chain.py applies the 1.25 continuous-current factor to the MPPT test bu",
+   "reason": "not translated (findings-gpu-src.geojson): no axis of the form 'name lo..hi' in the maths"
+  },
+  {
+   "name": "layout() stacks the HUD under the header only when narrow(), so the top chrome i",
+   "reason": "not translated (findings-shell.geojson): the maths states no countable predicate: no 'count ... where' and no 'predicate:'"
+  },
+  {
+   "name": "loop_geometry.py's headline percentage for extra conductor divides medians that ",
+   "reason": "not translated (findings-gpu-src.geojson): the predicate names against, both, compare, current, enumerate, grid, home, n, only, over, pitch, ratio, routing, the, which is not an axis and not a number from a file"
+  },
+  {
+   "name": "over_fuse is computed but is left out of the state object and out of the returne",
+   "reason": "not translated (findings-site-program.geojson): the predicate names is, over_fuse, over_volts, true, which is not an axis and not a number from a file"
+  },
+  {
+   "name": "register() validates nothing about the name, so a name with an underscore, a cap",
+   "reason": "not translated (findings-parser.geojson): no axis of the form 'name lo..hi' in the maths"
+  },
+  {
+   "name": "runsHere's fallback pattern is /^fire\\s+([a-z][a-z-]*)/ while parse() accepts [a",
+   "reason": "not translated (findings-parser.geojson): no axis of the form 'name lo..hi' in the maths"
+  },
+  {
+   "name": "safeBox() can never invert, because y1 is clamped by Math.max(top+24, bot-8), so",
+   "reason": "not translated (findings-shell.geojson): the maths states no countable predicate: no 'count ... where' and no 'predicate:'"
+  },
+  {
+   "name": "settle() gives up after 60 x 5 ms and carries on whether or not the animations f",
+   "reason": "not translated (findings-tests.geojson): the maths states no countable predicate: no 'count ... where' and no 'predicate:'"
+  },
+  {
+   "name": "substation.py's kernel divides MU0 by a pi truncated to 15 digits (3.14159265358",
+   "reason": "not translated (findings-gpu-src.geojson): no axis of the form 'name lo..hi' in the maths"
+  },
+  {
+   "name": "the dot size is taken from lay.spacing = total/m, the AVERAGE spacing, but a sym",
+   "reason": "not translated (findings-drawing.geojson): no axis of the form 'name lo..hi' in the maths"
+  },
+  {
+   "name": "the rounding loop's decrement floor is a flat 3, below the construction floor of",
+   "reason": "not translated (findings-drawing.geojson): no axis of the form 'name lo..hi' in the maths"
+  },
+  {
+   "name": "the writer stops at j < m, so when the budget overflows the pieces at the END of",
+   "reason": "not translated (findings-drawing.geojson): no axis of the form 'name lo..hi' in the maths"
+  },
+  {
+   "name": "verdict_gate.py draws its raw bit patterns from rng.integers(0, 1 << 63), whose ",
+   "reason": "not translated (findings-gpu-src.geojson): no axis of the form 'name lo..hi' in the maths"
+  },
+  {
+   "name": "visible() deletes every script block before scanning, so a page whose words are ",
+   "reason": "not translated (findings-ci.geojson): no axis of the form 'name lo..hi' in the maths"
+  },
+  {
+   "name": "when every piece already sits at its floor the balance loop spins 10*m times, ex",
+   "reason": "not translated (findings-drawing.geojson): no axis of the form 'name lo..hi' in the maths"
+  },
+  {
+   "name": "worked_examples.py reduces cleanRear with atomicMax over the rear index across e",
+   "reason": "not translated (findings-gpu-src.geojson): the predicate names case, exists, g, with, which is not an axis and not a number from a file"
+  },
+  {
+   "name": "worked_examples.py verifies the reduction over the first 20,000,000 contiguous i",
+   "reason": "not translated (findings-gpu-src.geojson): no axis of the form 'name lo..hi' in the maths"
+  },
+  {
+   "name": "zHome multiplies the measured camera by a hard 0.62 whenever narrow(), but safeB",
+   "reason": "not translated (findings-shell.geojson): the maths states no countable predicate: no 'count ... where' and no 'predicate:'"
+  }
+ ],
+ "refused_count": 59,
+ "registered": [
+  "H1",
+  "H2",
+  "H3",
+  "H4"
+ ],
+ "states": {
+  "H1": "FINDING STANDS",
+  "H2": "FINDING STANDS",
+  "H3": "FINDING STANDS",
+  "H4": "FINDING STANDS"
+ },
+ "timing": {
+  "note": "the only block that changes between runs",
+  "seconds_per_finding": {
+   "H1": 0.172,
+   "H2": 0.016,
+   "H3": 0.045,
+   "H4": 0.021
+  }
+ }
+}
