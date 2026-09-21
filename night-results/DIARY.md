@@ -14,9 +14,12 @@ it is not born.
 ## What actually happened
 
 The first half of the night was building. A GPU-enumerated engine that turns
-engineering questions into swept parameter spaces: 31.29 trillion verified
-cases across the night, 48 passes, every sweep re-checking itself before
-reporting. Bifaciality derived from a datasheet's own printed condition rather
+engineering questions into swept parameter spaces. A **661.7-billion-case
+space, re-enumerated and re-verified 47 times** through the night - 31.29
+trillion case-evaluations in total, of which 0.66 trillion are distinct. That
+is a soak test, not 47 times the coverage. The 48th pass was partial, and an
+earlier aborted session holds three genuinely failed runs.
+Bifaciality derived from a datasheet's own printed condition rather
 than assumed. A 500 MW plant reduced to one substation and enumerated at
 170,827,590,600 cases. An arc-suppression transient swept at 5.2 billion.
 
@@ -30,8 +33,9 @@ checks. Fixed.
 
 **The counter that logged 13.9 trillion cases as a success worth nothing.** It
 read the key `cases`; one sweep writes `space`. That sweep ran 47 times,
-self-verified every time, contributed zero. The published total was understated
-by 79.9%.
+self-verified every time, contributed zero. The published total missed 13.9
+trillion case-evaluations: 44% of the true total, and 80% again on top of what
+had been published.
 
 **The provenance claim true of one module family and false of the other.** One
 datasheet prints its rear-irradiance condition; the other heads a column BNPI
@@ -45,10 +49,11 @@ recorded ABSENT from both source documents and contradicted by a 60 A figure
 whose architecture is attested twice. At 60 A no bin can reach the limit, so
 the entire fail-on-machine-input class is an artefact of the constant.
 
-**"Verified 0 differ on 200,000 cases" reads like proof and is not.** Measured
-over 18,980,843,400 cases: zero flips, but the probability such a probe misses
-a difference thin enough to matter is 0.999400. It was a smoke alarm in a
-building it could not smell. Replaced with a billion cases computed three ways
+**"Verified 0 differ on 200,000 cases" reads like proof and is not.** Full
+enumeration over 18,980,843,400 cases found **zero flips anywhere** - nothing
+was wrong. What was wrong was the probe: had a difference that thin existed, a
+200,000-case sample would have missed it with probability 0.999968 over that
+space. Luck, not rigour.
 — a fused kernel, an array-operator graph, and the same voltage by the
 distributive law, which rounds twice where the factored form rounds once. Two
 implementations can agree by sharing a habit. Three written differently cannot.
@@ -63,13 +68,14 @@ shown it, because it has no failures.
 
 ## What we achieved
 
-An instrument that finds its own errors faster than it makes them. Fifty-eight
+An instrument whose errors get found - not always by itself: the fused Fifty-eight
+kernel manufactured 161 false partings and only an outside compiler caught it.
 predicates fuse into one kernel launch — 5,315,908,358 cases, every case
-computed twice, in 2.3 seconds across 107,520 concurrent channels. A grammar in
+computed twice, in 2.3 seconds. A grammar in
 which an agent writes axes and a predicate and the card produces the number, so
 a model labels and explains but is never the source of a number. A worksheet of
-115 findings as geometry. A billion-case certificate. A measure of how fragile
-each rule is — about a third of every region is one step from a different
+ A billion-case certificate. A measure of how fragile
+each rule is — about 27 per cent of every region is one step from a different
 answer at 0.05 resolution.
 
 And a habit that held all night: every correction was published with its cause,
