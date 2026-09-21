@@ -1,0 +1,129 @@
+THE KUIPER NETWORK TABLE
+======================================================================
+
+Every way to wire a network, and what each way costs you. Worked out
+in advance, so that reading this needs no program, no account and
+nobody's help. If you are holding this and everyone who made it is
+gone, it still answers.
+
+THE SAME QUESTION EVERYWHERE. A processor's cores must reach each
+other. A solar farm's panels must reach a substation. A country's
+power stations must reach its cities. These look like different
+problems and they are one problem: things that must reach each
+other, joined by links, where links cost money and failures are
+certain. The shapes below are the whole of the choice, and each one
+fixes four things by arithmetic the moment you pick it.
+
+  LINKS       how many joins you must pay for and maintain
+  WORST TRIP  the longest journey between any two points, in hops
+  SURVIVES    how many links can fail before something is cut off
+  SPLIT       how many links must be cut to halve the network -
+              which is what limits how much can flow across it
+
+----------------------------------------------------------------------
+A NETWORK OF 16 POINTS
+
+  shape                      links  worst trip  survives   split
+  a line                       15          15         0       1
+  a ring                       16           8         1       2
+  a star                       15           2         0       1
+  a tree                       15           8         0       1
+  a grid                       24           6         1       4
+  a wrapped grid               32           4         3       8
+  a folded cube                32           4         3       8
+  everything to everything    120           1        14      64
+
+----------------------------------------------------------------------
+A NETWORK OF 64 POINTS
+
+  shape                      links  worst trip  survives   split
+  a line                       63          63         0       1
+  a ring                       64          32         1       2
+  a star                       63           2         0       1
+  a tree                       63          12         0       1
+  a grid                      112          14         1       8
+  a wrapped grid              128           8         3      16
+  a folded cube                80           5         4      16
+  everything to everything  2,016           1        62   1,024
+
+----------------------------------------------------------------------
+A NETWORK OF 256 POINTS
+
+  shape                      links  worst trip  survives   split
+  a line                      255         255         0       1
+  a ring                      256         128         1       2
+  a star                      255           2         0       1
+  a tree                      255          16         0       1
+  a grid                      480          30         1      16
+  a wrapped grid              512          16         3      32
+  a folded cube             1,024           8         7     128
+  everything to everything 32,640           1       254  16,384
+
+----------------------------------------------------------------------
+A NETWORK OF 1024 POINTS
+
+  shape                      links  worst trip  survives   split
+  a line                    1,023        1023         0       1
+  a ring                    1,024         512         1       2
+  a star                    1,023           2         0       1
+  a tree                    1,023          20         0       1
+  a grid                    1,984          62         1      32
+  a wrapped grid            2,048          32         3      64
+  a folded cube             5,120          10         9     512
+  everything to everything 523,776           1      1022 262,144
+
+----------------------------------------------------------------------
+HOW TO READ THAT
+
+A line and a star both cost the fewest links, and both SURVIVE
+NOTHING - one failure anywhere cuts somebody off. That is why they
+are cheap. A ring costs one more link than a line and survives one
+failure, which is the cheapest step from fragile to not fragile, and
+it is why so much of the world is wired in rings.
+
+Everything joined to everything survives almost any failure and has
+the shortest trip possible, and nobody builds it, because the links
+grow with the SQUARE of the number of points. Double the network and
+you quadruple the bill.
+
+The shapes in between - grids, wrapped grids, folded cubes - exist
+because they buy short trips and real survivability without that
+square. The folded cube is what large processors use. The wrapped
+grid is what large machine rooms use. Power grids use rings and
+meshes for the same reason and call it something else.
+
+----------------------------------------------------------------------
+HOW TO DISBELIEVE THIS PROPERLY
+
+Every number was worked out twice, by two different routes to the
+same quantity. Where they disagreed nothing was published for that
+shape - not a warning, not a footnote. They disagreed on 0.
+
+524,288 shape-and-size combinations were worked out, up to networks of
+65,537 points.
+
+WHAT IS NOT HERE. These are the shapes themselves, counted exactly.
+They say nothing about whether a link can carry what you intend to
+put through it, what it costs in your currency, or whether the
+failures you actually get are the ones counted here. A shape that
+survives two failures survives two RANDOM ones; it may not survive
+two that happen for the same reason, and in real life that is the
+usual case.
+
+NO WARRANTY OF ANY KIND. READ THIS BEFORE USING ANY NUMBER ABOVE.
+
+We do not warrant that the arithmetic is correct. We do not warrant
+that the physics is correct. We do not warrant that anything flows
+the way this assumes, or that any figure applies to anything you
+intend to build. We warrant nothing at all. Checking is the
+reader's job, and it is why the method is written out here instead
+of being summarised: a summary asks for trust, and this asks to be
+checked. If you use a number from this file without checking it,
+that choice and its consequences are entirely yours.
+
+THIS IS NOT ENGINEERING. Engineering carries the name of a person
+who answers for it. Nothing here does.
+
+No site, client, project, place, manufacturer or model is named in
+this file, and none is needed in order to check it.
+

@@ -1,0 +1,291 @@
+{
+ "body_sha256": "00336513f04232cd5f6899a1a1a7e08ab243c18bb373192ccda191017e486580",
+ "examples": [
+  {
+   "points": 16,
+   "rows": [
+    {
+     "links": 15,
+     "shape": "a line",
+     "split": 1,
+     "survives": 0,
+     "worst_trip": 15
+    },
+    {
+     "links": 16,
+     "shape": "a ring",
+     "split": 2,
+     "survives": 1,
+     "worst_trip": 8
+    },
+    {
+     "links": 15,
+     "shape": "a star",
+     "split": 1,
+     "survives": 0,
+     "worst_trip": 2
+    },
+    {
+     "links": 15,
+     "shape": "a tree",
+     "split": 1,
+     "survives": 0,
+     "worst_trip": 8
+    },
+    {
+     "links": 24,
+     "shape": "a grid",
+     "split": 4,
+     "survives": 1,
+     "worst_trip": 6
+    },
+    {
+     "links": 32,
+     "shape": "a wrapped grid",
+     "split": 8,
+     "survives": 3,
+     "worst_trip": 4
+    },
+    {
+     "links": 32,
+     "shape": "a folded cube",
+     "split": 8,
+     "survives": 3,
+     "worst_trip": 4
+    },
+    {
+     "links": 120,
+     "shape": "everything to everything",
+     "split": 64,
+     "survives": 14,
+     "worst_trip": 1
+    }
+   ]
+  },
+  {
+   "points": 64,
+   "rows": [
+    {
+     "links": 63,
+     "shape": "a line",
+     "split": 1,
+     "survives": 0,
+     "worst_trip": 63
+    },
+    {
+     "links": 64,
+     "shape": "a ring",
+     "split": 2,
+     "survives": 1,
+     "worst_trip": 32
+    },
+    {
+     "links": 63,
+     "shape": "a star",
+     "split": 1,
+     "survives": 0,
+     "worst_trip": 2
+    },
+    {
+     "links": 63,
+     "shape": "a tree",
+     "split": 1,
+     "survives": 0,
+     "worst_trip": 12
+    },
+    {
+     "links": 112,
+     "shape": "a grid",
+     "split": 8,
+     "survives": 1,
+     "worst_trip": 14
+    },
+    {
+     "links": 128,
+     "shape": "a wrapped grid",
+     "split": 16,
+     "survives": 3,
+     "worst_trip": 8
+    },
+    {
+     "links": 80,
+     "shape": "a folded cube",
+     "split": 16,
+     "survives": 4,
+     "worst_trip": 5
+    },
+    {
+     "links": 2016,
+     "shape": "everything to everything",
+     "split": 1024,
+     "survives": 62,
+     "worst_trip": 1
+    }
+   ]
+  },
+  {
+   "points": 256,
+   "rows": [
+    {
+     "links": 255,
+     "shape": "a line",
+     "split": 1,
+     "survives": 0,
+     "worst_trip": 255
+    },
+    {
+     "links": 256,
+     "shape": "a ring",
+     "split": 2,
+     "survives": 1,
+     "worst_trip": 128
+    },
+    {
+     "links": 255,
+     "shape": "a star",
+     "split": 1,
+     "survives": 0,
+     "worst_trip": 2
+    },
+    {
+     "links": 255,
+     "shape": "a tree",
+     "split": 1,
+     "survives": 0,
+     "worst_trip": 16
+    },
+    {
+     "links": 480,
+     "shape": "a grid",
+     "split": 16,
+     "survives": 1,
+     "worst_trip": 30
+    },
+    {
+     "links": 512,
+     "shape": "a wrapped grid",
+     "split": 32,
+     "survives": 3,
+     "worst_trip": 16
+    },
+    {
+     "links": 1024,
+     "shape": "a folded cube",
+     "split": 128,
+     "survives": 7,
+     "worst_trip": 8
+    },
+    {
+     "links": 32640,
+     "shape": "everything to everything",
+     "split": 16384,
+     "survives": 254,
+     "worst_trip": 1
+    }
+   ]
+  },
+  {
+   "points": 1024,
+   "rows": [
+    {
+     "links": 1023,
+     "shape": "a line",
+     "split": 1,
+     "survives": 0,
+     "worst_trip": 1023
+    },
+    {
+     "links": 1024,
+     "shape": "a ring",
+     "split": 2,
+     "survives": 1,
+     "worst_trip": 512
+    },
+    {
+     "links": 1023,
+     "shape": "a star",
+     "split": 1,
+     "survives": 0,
+     "worst_trip": 2
+    },
+    {
+     "links": 1023,
+     "shape": "a tree",
+     "split": 1,
+     "survives": 0,
+     "worst_trip": 20
+    },
+    {
+     "links": 1984,
+     "shape": "a grid",
+     "split": 32,
+     "survives": 1,
+     "worst_trip": 62
+    },
+    {
+     "links": 2048,
+     "shape": "a wrapped grid",
+     "split": 64,
+     "survives": 3,
+     "worst_trip": 32
+    },
+    {
+     "links": 5120,
+     "shape": "a folded cube",
+     "split": 512,
+     "survives": 9,
+     "worst_trip": 10
+    },
+    {
+     "links": 523776,
+     "shape": "everything to everything",
+     "split": 262144,
+     "survives": 1022,
+     "worst_trip": 1
+    }
+   ]
+  }
+ ],
+ "generated_utc": "2026-09-21T15:56:21Z",
+ "largest_network": 65537,
+ "per_second": 285435537,
+ "schema": "ggs.topologies/1",
+ "seconds": 0.002,
+ "shapes": [
+  {
+   "means": "every point joined to the next, in a row",
+   "shape": "a line"
+  },
+  {
+   "means": "a line whose two ends are joined up",
+   "shape": "a ring"
+  },
+  {
+   "means": "everything joined to one central point",
+   "shape": "a star"
+  },
+  {
+   "means": "branches splitting, never rejoining",
+   "shape": "a tree"
+  },
+  {
+   "means": "rows and columns, like a chessboard",
+   "shape": "a grid"
+  },
+  {
+   "means": "a grid whose edges join round to the far side",
+   "shape": "a wrapped grid"
+  },
+  {
+   "means": "each point joined to those differing in one respect",
+   "shape": "a folded cube"
+  },
+  {
+   "means": "every point joined to every other",
+   "shape": "everything to everything"
+  }
+ ],
+ "shapes_worked_out": 524288,
+ "sizes_each": 65536,
+ "the_two_routes_disagreed_on": 0
+}
