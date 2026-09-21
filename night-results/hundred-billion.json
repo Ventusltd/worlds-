@@ -1,0 +1,29 @@
+{
+ "cases": 125659333800,
+ "seconds": 45.14,
+ "verified_differ": 0,
+ "axes": {
+  "module bin": 10,
+  "modules in series": 15,
+  "strings (machine variant)": 3,
+  "site min temp": 6,
+  "hot cell temp": 3,
+  "ambient-derated rating": 3,
+  "Voc tolerance": 1001,
+  "beta tolerance": 41,
+  "gamma tolerance": 21,
+  "bifacial gain": 2,
+  "conductor mm2": 3
+ },
+ "module_bins": 10,
+ "verdicts": {
+  "buildable, both readings": 11841187365,
+  "disputed: the clause decides it": 5487956712,
+  "fails cold voltage": 41827576392,
+  "below the MPPT floor": 0,
+  "over the string current limit": 39171900348,
+  "DC:AC outside the band": 27330712983
+ },
+ "what_this_is_not": "DC sizing arithmetic. Not a design, not a study, not a connection assessment. Both readings of the cold-voltage clause are kept.",
+ "anonymised": "Architecture only. No project, client, site, maker or model anywhere."
+}
