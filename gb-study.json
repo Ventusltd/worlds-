@@ -1,0 +1,31 @@
+{
+ "source": {
+  "publisher": "NESO",
+  "publication": "Electricity Ten Year Statement 2025",
+  "appendices": [
+   "B - system technical data",
+   "D - fault levels (peak and minimum)"
+  ],
+  "note": "parameters as published; no power flow is solved here"
+ },
+ "sites": 921,
+ "nodes": 1820,
+ "branches": 2721,
+ "skipped": {
+  "no_x": 30,
+  "self_loop": 13,
+  "unknown_node": 0
+ },
+ "islands": 763,
+ "factor_nnz": 10284,
+ "bbus_nnz": 6291,
+ "fill_in": 1.6347,
+ "factorise_s": 0.0012,
+ "ptdf_s": 0.316,
+ "radial_branches_excluded": 528,
+ "lodf_pairs": 5967153,
+ "n1_cases": 2193,
+ "n2_pairs": 2403528,
+ "what_this_is": "DC linearised sensitivity from one factorisation. Not an AC study, not a connection assessment. No voltage magnitude, reactive power, losses or stability. Ratings compared are winter MVA where published.",
+ "rated_branches": 2721
+}
