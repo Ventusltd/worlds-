@@ -1,0 +1,56 @@
+{
+ "body_sha256": "b58585bcfb3beee8623cdacf30cf1f1554ebcc3aa475a4361e6ccc7ab99e2fb2",
+ "circuits_per_second": 2148000298,
+ "circuits_that_work": 1318085440,
+ "circuits_tried": 5574220800,
+ "conditions": {
+  "morning_temperatures": 401,
+  "part_temperatures": 181
+ },
+ "generated_utc": "2026-09-21T15:54:15Z",
+ "largest_shape": {
+  "end_to_end": 120,
+  "side_by_side": 64
+ },
+ "most_parts_in_one_working_circuit": [
+  1792,
+  1792,
+  1792,
+  1792,
+  1792,
+  1984,
+  1984,
+  1984,
+  1984,
+  1984
+ ],
+ "of_a_possible": 5574220800,
+ "rings": {
+  "broken_ring_over_the_fuse": 0,
+  "closed_ring_over_the_fuse": 0,
+  "closed_ring_within_the_fuse": 13355990,
+  "largest_segment_current_tenths": [
+   237,
+   237,
+   238,
+   238,
+   239,
+   234,
+   234,
+   235,
+   236,
+   236
+  ],
+  "rings_tried": 26064000,
+  "seconds": 0.02,
+  "the_two_ways_round_disagreed_on": 0
+ },
+ "seconds": 2.6,
+ "shapes_per_part_type": 7680,
+ "the_two_methods_disagreed_on": 0,
+ "too_much_current": 0,
+ "too_much_voltage": 4256135360,
+ "trustworthy": true,
+ "volts_allowed": 1500.0,
+ "working_but_within_25_volts": 21777920
+}

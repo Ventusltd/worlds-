@@ -1,0 +1,110 @@
+THE KUIPER CIRCUIT TABLE
+======================================================================
+
+Every circuit that can be built from identical parts, and what each
+one adds up to. Worked out in advance, so that reading this needs no
+program, no account and nobody's help. If you are holding this and
+everyone who made it is gone, it still answers.
+
+THE WHOLE OF IT IN TWO SENTENCES. Join parts END TO END and their
+voltages add while the current stays as one part's. Join them SIDE
+BY SIDE and their currents add while the voltage stays as one
+part's. Every power system built from repeated parts is those two
+moves, nested - so the list of possible circuits is finite, and what
+each one does is fixed by arithmetic rather than by judgement.
+
+HOW MANY WERE TRIED. 5,574,220,800 circuits, across 7,680 shapes per part type
+and every combination of morning temperature and part temperature.
+Not a sample of them. That many, one at a time.
+
+----------------------------------------------------------------------
+WHAT CAME BACK
+
+  Circuits that work                1,318,085,440
+  Too much voltage                  4,256,135,360
+  Too much current                  0
+    READ THIS ZERO CAREFULLY. It does not mean the current is
+    safe. It means the current test never fires anywhere in all
+    the circuits above - not once. The printed fuse figure sits
+    so far above anything these parts can produce that no
+    arrangement reaches it. This is not a clean bill of health;
+    it is a test with nothing to catch. The current limits that
+    WOULD catch something are the two that could not be traced
+    to any document, and they are excluded for that reason. So
+    current is UNANSWERED here, and a zero that reads like
+    safety is how people get hurt.
+  Working, but within 25 volts      21,777,920
+    of the limit - the ones a cold snap would take out
+
+  Most parts in one working circuit, by part type:
+    1792, 1792, 1792, 1792, 1792, 1984, 1984, 1984, 1984, 1984
+
+----------------------------------------------------------------------
+HOW TO DISBELIEVE THIS PROPERLY
+
+Every figure was worked out twice, by two methods written to be
+different from one another. Where they disagreed, nothing at all
+was published for that circuit. They disagreed on 0.
+
+A count means nothing without knowing what it counts OUT OF: these
+come from 5,574,220,800 circuits of a possible 5,574,220,800.
+
+WHAT 'ALL POSSIBLE CIRCUITS' HONESTLY MEANS, because the phrase can
+be stretched. This covers every SERIES-PARALLEL arrangement: any
+circuit built by joining groups end to end or side by side. That is
+the shape of essentially every power system made from repeated
+parts. It does NOT cover bridge circuits, meshed networks or rings,
+where a path exists that is neither. Those need a different method
+and nothing here pretends to them.
+
+WHAT IS DELIBERATELY MISSING, and hold it against us. This work
+measures against four limits. Two are printed on the manufacturers'
+documents and anyone may check them. TWO COULD NOT BE TRACED TO ANY
+DOCUMENT AT ALL, and one of those two turned out to be the same
+test as a third, written twice with the number halved. So there are
+three limits, not four, and one of the three is invented. No answer
+above rests on either untraceable one.
+
+----------------------------------------------------------------------
+RINGS, because most of a power system is not a straight line
+
+A ring feeds from a source both ways round and meets itself. The
+current divides between the two paths, so no single length carries
+all of it - which is the whole reason rings are built. But a ring
+is only a ring while it is CLOSED. Break it anywhere and the whole
+load goes the long way round, and every length must be able to
+carry that. A ring sized only for the closed case is two dead ends
+pretending to be a ring.
+
+  Rings tried                       26,064,000
+  Closed, within the fuse figure    13,355,990
+  Closed, over it                   0
+  BROKEN, over it                   0
+    this last row is the one that matters: rings that are fine
+    until the day something opens them
+  The two ways round disagreed on   0
+
+----------------------------------------------------------------------
+NO WARRANTY OF ANY KIND. READ THIS BEFORE USING ANY NUMBER ABOVE.
+
+We do not warrant that the arithmetic is correct. We do not warrant
+that the physics is correct. We do not warrant that the current
+flows the way this assumes, that the parts behave as their
+documents say, or that any figure here applies to anything you
+intend to build. We warrant nothing at all.
+
+Checking is the reader's job, and it is why everything here is
+written down in the open instead of summarised: every figure, the
+method behind it, and what could not be traced. A summary asks for
+trust. This asks to be checked, and gives you what you need to do
+it. If you use a number from this file without checking it, that
+choice and its consequences are entirely yours.
+
+THIS IS NOT ENGINEERING. It says what a circuit adds up to and
+whether that sits inside a rating printed by the people who made
+the parts. Engineering carries the name of a person who answers for
+it. Nothing here does.
+
+No site, client, project, place, manufacturer or model is named in
+this file, and none is needed in order to check it.
+
