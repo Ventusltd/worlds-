@@ -5,176 +5,154 @@ Every answer worked out in advance, so that reading this needs no
 program, no account and nobody's help. If you are holding this and
 everyone who made it is gone, it still answers.
 
-WHAT THIS IS ABOUT. Solar panels wired end to end in a row add up
-their voltage, and COLD WEATHER RAISES IT. Every panel carries a
-printed figure for the most voltage its system may carry. So there
-is a limit to how many you may put in one row, and that limit is
-set by the coldest morning of the year, not the hottest afternoon.
-Separately, sunlight bouncing off the ground onto the backs of the
-panels adds CURRENT, and current is judged when the panels are hot.
-Voltage is a cold problem. Current is a hot one. Both are below.
-
-HOW MUCH WAS TRIED. 197,638,099,200 combinations of panel type, panels in a row,
-rows joined together, morning temperature, panel temperature and
-rear light. Not a sample of them. That many, one at a time.
+WHAT IT ANSWERS. A row of solar panels wired end to end adds up its
+voltage, and cold weather RAISES that voltage. Every panel has a
+figure printed on it for the most voltage its system may carry. So
+there is a limit to how many you may put in one row, and the limit
+is set by the coldest morning, not the hottest afternoon. That is
+the question below, asked four ways.
 
 ----------------------------------------------------------------------
 PANEL TYPE 1
 
-  Panels you may put in one row     26
-  On a morning of                   -30.0 degrees
-  The row then reaches              1472.7 volts
-  The equipment allows              1500.0 volts
-  Add one more and you go over by   29.4 volts
-  It can get this much colder       9.43 degrees, then that row stops
-  Can you trust these               yes - every figure is printed on a document
+  How many panels in one row      26
+  At what temperature             -30.0 degrees
+  Voltage that row reaches        1472.7
+  Voltage the equipment allows    1500.0
+  Add one more and it goes over   by 29.4 volts
+  Degrees colder it can get       9.43 before that row stops working
+  Can you trust this              yes - every number is printed on a document
 
 ----------------------------------------------------------------------
 PANEL TYPE 2
 
-  Panels you may put in one row     26
-  On a morning of                   -30.0 degrees
-  The row then reaches              1473.6 volts
-  The equipment allows              1500.0 volts
-  Add one more and you go over by   30.3 volts
-  It can get this much colder       9.12 degrees, then that row stops
-  Can you trust these               yes - every figure is printed on a document
+  How many panels in one row      26
+  At what temperature             -30.0 degrees
+  Voltage that row reaches        1473.6
+  Voltage the equipment allows    1500.0
+  Add one more and it goes over   by 30.3 volts
+  Degrees colder it can get       9.12 before that row stops working
+  Can you trust this              yes - every number is printed on a document
 
 ----------------------------------------------------------------------
 PANEL TYPE 3
 
-  Panels you may put in one row     26
-  On a morning of                   -30.0 degrees
-  The row then reaches              1474.5 volts
-  The equipment allows              1500.0 volts
-  Add one more and you go over by   31.2 volts
-  It can get this much colder       8.81 degrees, then that row stops
-  Can you trust these               yes - every figure is printed on a document
+  How many panels in one row      26
+  At what temperature             -30.0 degrees
+  Voltage that row reaches        1474.5
+  Voltage the equipment allows    1500.0
+  Add one more and it goes over   by 31.2 volts
+  Degrees colder it can get       8.81 before that row stops working
+  Can you trust this              yes - every number is printed on a document
 
 ----------------------------------------------------------------------
 PANEL TYPE 4
 
-  Panels you may put in one row     26
-  On a morning of                   -30.0 degrees
-  The row then reaches              1475.4 volts
-  The equipment allows              1500.0 volts
-  Add one more and you go over by   32.1 volts
-  It can get this much colder       8.51 degrees, then that row stops
-  Can you trust these               yes - every figure is printed on a document
+  How many panels in one row      26
+  At what temperature             -30.0 degrees
+  Voltage that row reaches        1475.4
+  Voltage the equipment allows    1500.0
+  Add one more and it goes over   by 32.1 volts
+  Degrees colder it can get       8.51 before that row stops working
+  Can you trust this              yes - every number is printed on a document
 
 ----------------------------------------------------------------------
 PANEL TYPE 5
 
-  Panels you may put in one row     26
-  On a morning of                   -30.0 degrees
-  The row then reaches              1476.2 volts
-  The equipment allows              1500.0 volts
-  Add one more and you go over by   33.0 volts
-  It can get this much colder       8.2 degrees, then that row stops
-  Can you trust these               yes - every figure is printed on a document
+  How many panels in one row      26
+  At what temperature             -30.0 degrees
+  Voltage that row reaches        1476.2
+  Voltage the equipment allows    1500.0
+  Add one more and it goes over   by 33.0 volts
+  Degrees colder it can get       8.2 before that row stops working
+  Can you trust this              yes - every number is printed on a document
 
 ----------------------------------------------------------------------
 PANEL TYPE 6
 
-  Panels you may put in one row     29
-  On a morning of                   -30.0 degrees
-  The row then reaches              1494.3 volts
-  The equipment allows              1500.0 volts
-  Add one more and you go over by   45.9 volts
-  It can get this much colder       1.73 degrees, then that row stops
-  Can you trust these               yes - every figure is printed on a document
+  How many panels in one row      29
+  At what temperature             -30.0 degrees
+  Voltage that row reaches        1494.3
+  Voltage the equipment allows    1500.0
+  Add one more and it goes over   by 45.9 volts
+  Degrees colder it can get       1.73 before that row stops working
+  Can you trust this              yes - every number is printed on a document
 
 ----------------------------------------------------------------------
 PANEL TYPE 7
 
-  Panels you may put in one row     28
-  On a morning of                   -30.0 degrees
-  The row then reaches              1449.2 volts
-  The equipment allows              1500.0 volts
-  Add one more and you go over by   0.9 volts
-  It can get this much colder       15.96 degrees, then that row stops
-  Can you trust these               yes - every figure is printed on a document
+  How many panels in one row      28
+  At what temperature             -30.0 degrees
+  Voltage that row reaches        1449.2
+  Voltage the equipment allows    1500.0
+  Add one more and it goes over   by 0.9 volts
+  Degrees colder it can get       15.96 before that row stops working
+  Can you trust this              yes - every number is printed on a document
 
 ----------------------------------------------------------------------
 PANEL TYPE 8
 
-  Panels you may put in one row     28
-  On a morning of                   -30.0 degrees
-  The row then reaches              1455.5 volts
-  The equipment allows              1500.0 volts
-  Add one more and you go over by   7.5 volts
-  It can get this much colder       13.9 degrees, then that row stops
-  Can you trust these               yes - every figure is printed on a document
+  How many panels in one row      28
+  At what temperature             -30.0 degrees
+  Voltage that row reaches        1455.5
+  Voltage the equipment allows    1500.0
+  Add one more and it goes over   by 7.5 volts
+  Degrees colder it can get       13.9 before that row stops working
+  Can you trust this              yes - every number is printed on a document
 
 ----------------------------------------------------------------------
 PANEL TYPE 9
 
-  Panels you may put in one row     28
-  On a morning of                   -30.0 degrees
-  The row then reaches              1461.9 volts
-  The equipment allows              1500.0 volts
-  Add one more and you go over by   14.1 volts
-  It can get this much colder       11.85 degrees, then that row stops
-  Can you trust these               yes - every figure is printed on a document
+  How many panels in one row      28
+  At what temperature             -30.0 degrees
+  Voltage that row reaches        1461.9
+  Voltage the equipment allows    1500.0
+  Add one more and it goes over   by 14.1 volts
+  Degrees colder it can get       11.85 before that row stops working
+  Can you trust this              yes - every number is printed on a document
 
 ----------------------------------------------------------------------
 PANEL TYPE 10
 
-  Panels you may put in one row     28
-  On a morning of                   -30.0 degrees
-  The row then reaches              1468.3 volts
-  The equipment allows              1500.0 volts
-  Add one more and you go over by   20.7 volts
-  It can get this much colder       9.83 degrees, then that row stops
-  Can you trust these               yes - every figure is printed on a document
+  How many panels in one row      28
+  At what temperature             -30.0 degrees
+  Voltage that row reaches        1468.3
+  Voltage the equipment allows    1500.0
+  Add one more and it goes over   by 20.7 volts
+  Degrees colder it can get       9.83 before that row stops working
+  Can you trust this              yes - every number is printed on a document
 
 ======================================================================
 
-THE WHOLE PICTURE, counted across every combination tried.
+HOW THESE WERE WORKED OUT, so you can disbelieve them properly.
 
-  Designs that work                 93,466,453,888
-  Too much voltage                  104,171,645,312
-  Too much current                  0
-    READ THIS ZERO CAREFULLY. It does not mean the current is
-    safe. It means the current test NEVER FIRES ANYWHERE in all
-    the combinations above - not once. The printed fuse figure
-    sits so far above anything these panels can produce that no
-    arrangement of them can reach it. So this row is not a clean
-    bill of health; it is a test with nothing to catch. The
-    current limits that WOULD catch something are the two that
-    could not be traced to any document, and they are excluded
-    for that reason. Current is therefore UNANSWERED here, and
-    a zero that reads like safety is how people get hurt.
-  Both at once                      0
-  Working, but within 25 volts      1,544,587,392
-    of the limit - these are the ones a cold snap would take out
+Every count above was found twice, by two methods written to be
+different from each other. Where the two disagreed, nothing was
+published at all - not a warning, not a footnote. A number that
+cannot be got twice is not reported here.
 
-HOW TO DISBELIEVE THIS PROPERLY.
+12,000,000,600 combinations were examined at 20000001 temperature points across
+the range -30.0 to 10.0 degrees.
 
-Every figure was worked out twice, by two methods written to be
-different from one another. Where they disagreed, nothing at all
-was published for that case. They disagreed on 0 cases here.
+WHAT IS DELIBERATELY MISSING, and you should hold this against us.
 
-A count is meaningless without knowing what it is a count OF, so:
-the figures above come from 197,638,099,200 combinations out of a possible
-197,638,099,200. That is 1.0 of the whole.
+This work measures against four limits. Two of them are printed on
+the manufacturers' own documents and can be checked by anyone who
+obtains those documents. TWO OF THEM COULD NOT BE TRACED TO ANY
+DOCUMENT AT ALL - and one of those two turned out to be the same
+test as a third, written twice. No answer above rests on either of
+the untraceable ones. That is why some questions are not answered
+here rather than answered badly.
 
-WHAT IS DELIBERATELY MISSING, and hold it against us.
+The current a row carries is a separate question from how many
+panels fit in it, and it is not answered here.
 
-This work measures against four limits. Two are printed on the
-manufacturers' documents and anyone may check them. TWO COULD NOT
-BE TRACED TO ANY DOCUMENT AT ALL, and one of those two turned out
-to be the same test as a third, written twice with the number
-halved. So there are three limits, not four, and one of the three
-is invented. No answer above rests on either untraceable one. That
-is why some questions are missing rather than answered badly.
-
-THIS IS NOT ENGINEERING. It says whether a design sits inside a
-rating printed by the people who made the equipment. It is not an
-offer of connection, not an assessment of whether a thing can be
+THIS IS NOT ENGINEERING. It says whether a row of panels sits
+inside a rating printed by the people who made them. It is not a
+connection offer, not an assessment of whether a thing can be
 built, and not a design anyone may consent. Engineering carries
-the name of a person who answers for it. Nothing here does.
+the name of a person who is answerable for it. Nothing here does.
 
 No site, client, project, place, manufacturer or model is named in
-this file, and none is needed in order to check it.
+this file, and none is needed to check it.
 
