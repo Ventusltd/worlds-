@@ -1,0 +1,84 @@
+{
+ "axes_pass_a": {
+  "module bin": 10,
+  "modules in series": 15,
+  "temperature points": 60001,
+  "temperature range C": [
+   -14.0,
+   4.0
+  ]
+ },
+ "axes_pass_b": {
+  "break time": 51,
+  "conductor mm2": 3,
+  "conductor separation": 41,
+  "home run length": 41,
+  "interrupted current": 41,
+  "module bin": 10,
+  "modules in series": 15,
+  "routing": 2,
+  "site min temp": 6
+ },
+ "changes_published_counts": false,
+ "differences_measured": {
+  "a_pi": "kernel divides MU0 by 3.14159265358979, reference by math.pi; relative size of the divisor difference 9.895e-16",
+  "b_association": "kernel se*(voc*k) via a voc_cold intermediate, reference (se*voc)*k"
+ },
+ "fix": [
+  "substation.py:118 - double L = (%(MU0).17g / %(PI).17g) * (log(d / rad) + 0.25) * len;",
+  "substation.py:131-137 - add \"PI\": math.pi to the dict",
+  "substation.py:157 - vs = se * (voc * (1 + bet / 100 * (tm - 25)))"
+ ],
+ "last_bit_differ_pass_a": {
+  "card": 2659568,
+  "processor": 2659273
+ },
+ "probe": {
+  "certified": "0 differ",
+  "model": "P(no flip in the sample) drawing without replacement, C(m-k,n)/C(m,n), computed twice: by log-gamma and by an exact 50-digit decimal product. The binomial (1-f)^n is reported alongside as an approximation only - the probe takes 200,000 DISTINCT cases, so the binomial sits a few parts in ten thousand high",
+  "n": 200000
+ },
+ "results": {
+  "v1500_string_voltage_space": {
+   "cases": 9000150,
+   "expected_flips_in_probe_of_200000": 0.0,
+   "flips": 0,
+   "fraction_of_space": 0.0,
+   "fraction_upper_bound_95pct": 3.3332777787036883e-07,
+   "note": "no flip anywhere in this enumerated space. The rule of three caps the fraction at 3/m with 95 per cent confidence; even at that cap a probe of 200,000 sees nothing with probability 0.934805, which is what the certificate is worth against a difference this thin.",
+   "p_binomial_approximation": 0.9355080140728875,
+   "p_by_second_implementation": 0.934804896056087,
+   "p_probe_of_200000_sees_nothing": 1.0,
+   "p_probe_sees_nothing_at_that_upper_bound": 0.9348048960560863,
+   "two_implementations_agree": true
+  },
+  "v1500_transient_space": {
+   "cases": 18980843400,
+   "expected_flips_in_probe_of_200000": 0.0,
+   "flips": 0,
+   "fraction_of_space": 0.0,
+   "fraction_upper_bound_95pct": 1.5805409363421648e-10,
+   "note": "no flip anywhere in this enumerated space. The rule of three caps the fraction at 3/m with 95 per cent confidence; even at that cap a probe of 200,000 sees nothing with probability 0.999968, which is what the certificate is worth against a difference this thin.",
+   "p_binomial_approximation": 0.9999683896808873,
+   "p_by_second_implementation": 0.9999683895143516,
+   "p_probe_of_200000_sees_nothing": 1.0,
+   "p_probe_sees_nothing_at_that_upper_bound": 0.9999683895143516,
+   "two_implementations_agree": true
+  },
+  "v3000_transient_space": {
+   "cases": 18980843400,
+   "expected_flips_in_probe_of_200000": 0.0,
+   "flips": 0,
+   "fraction_of_space": 0.0,
+   "fraction_upper_bound_95pct": 1.5805409363421648e-10,
+   "note": "no flip anywhere in this enumerated space. The rule of three caps the fraction at 3/m with 95 per cent confidence; even at that cap a probe of 200,000 sees nothing with probability 0.999968, which is what the certificate is worth against a difference this thin.",
+   "p_binomial_approximation": 0.9999683896808873,
+   "p_by_second_implementation": 0.9999683895143516,
+   "p_probe_of_200000_sees_nothing": 1.0,
+   "p_probe_sees_nothing_at_that_upper_bound": 0.9999683895143516,
+   "two_implementations_agree": true
+  }
+ },
+ "verified": "every number carries two independent implementations: pass A on the card and in NumPy on the processor, pass B by two kernels decoding the axes in opposite order plus a pure-python recheck of sampled flips, and each probability by log-gamma and by 60-digit decimal",
+ "what_this_is_not": "Arithmetic about arithmetic. It does not say which side of a threshold is correct - both forms are valid doubles and a flip is a margin thinner than the arithmetic. It does not show any published count is wrong; it shows the check printed above those counts could not have caught a difference this thin. The fix changes the processor reference, not the card, so no published total moves. No project, site, client or manufacturer appears anywhere."
+}

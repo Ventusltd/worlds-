@@ -1,0 +1,2946 @@
+{
+ "anonymised": "No project, site, client, maker or model anywhere.",
+ "body_sha256": "dd5063995f65817d0278bccf8987ee75389b959ed0da7d7a86cf170976cfdae2",
+ "category_counts": {
+  "a_names_a_non_axis": 10,
+  "b_no_countable_predicate": 51,
+  "c_axis_is_a_word_not_a_quantity": 32
+ },
+ "enumerated_rewrites": [
+  {
+   "agree": false,
+   "error": "cpu: invalid syntax (<string>, line 1)",
+   "id": "CO06"
+  },
+  {
+   "agree": true,
+   "cases": 3333,
+   "cpu_held": 867,
+   "gpu_held": 867,
+   "id": "DA04",
+   "predicate": "(N_series >= 27) and (Tmin >= -15)",
+   "predicate_is_a_placeholder": true,
+   "proves": "the axis geometry only - that the ranges this sentence stated make a grid the card can walk, counted twice and agreeing"
+  },
+  {
+   "agree": true,
+   "cases": 35937,
+   "cpu_held": 4913,
+   "gpu_held": 4913,
+   "id": "GS01",
+   "predicate": "(kv >= 2) and (csa >= 5) and (routing >= 0.5)",
+   "predicate_is_a_placeholder": true,
+   "proves": "the axis geometry only - that the ranges this sentence stated make a grid the card can walk, counted twice and agreeing"
+  },
+  {
+   "agree": true,
+   "cases": 1089,
+   "cpu_held": 289,
+   "gpu_held": 289,
+   "id": "GS05",
+   "predicate": "(ri >= 1500) and (ti >= 1000)",
+   "predicate_is_a_placeholder": true,
+   "proves": "the axis geometry only - that the ranges this sentence stated make a grid the card can walk, counted twice and agreeing"
+  },
+  {
+   "agree": true,
+   "cases": 33,
+   "cpu_held": 17,
+   "gpu_held": 17,
+   "id": "GS10",
+   "predicate": "(SERIES >= 27)",
+   "predicate_is_a_placeholder": true,
+   "proves": "the axis geometry only - that the ranges this sentence stated make a grid the card can walk, counted twice and agreeing"
+  },
+  {
+   "agree": true,
+   "cases": 21483,
+   "cpu_held": 2992,
+   "gpu_held": 2992,
+   "id": "SP01",
+   "predicate": "(site_min_c >= -10) and (modules_in_series >= 27) and (rear_gain_pct >= 15)",
+   "predicate_is_a_placeholder": true,
+   "proves": "the axis geometry only - that the ranges this sentence stated make a grid the card can walk, counted twice and agreeing"
+  },
+  {
+   "agree": true,
+   "cases": 1891,
+   "cpu_held": 496,
+   "gpu_held": 496,
+   "id": "SP02",
+   "predicate": "(rear_gain_pct >= 15) and (temperature >= 10)",
+   "predicate_is_a_placeholder": true,
+   "proves": "the axis geometry only - that the ranges this sentence stated make a grid the card can walk, counted twice and agreeing"
+  },
+  {
+   "agree": true,
+   "cases": 62403,
+   "cpu_held": 8432,
+   "gpu_held": 8432,
+   "id": "SP03",
+   "predicate": "(rear_gain_pct >= 15) and (temperature >= 10) and (modules_in_series >= 27)",
+   "predicate_is_a_placeholder": true,
+   "proves": "the axis geometry only - that the ranges this sentence stated make a grid the card can walk, counted twice and agreeing"
+  },
+  {
+   "agree": true,
+   "cases": 32160000,
+   "cpu_held": 4040000,
+   "gpu_held": 4040000,
+   "id": "SP04",
+   "predicate": "(modules_in_series >= 200) and (rear_gain_pct >= 225) and (site_min_c >= 0)",
+   "predicate_is_a_placeholder": true,
+   "proves": "the axis geometry only - that the ranges this sentence stated make a grid the card can walk, counted twice and agreeing"
+  },
+  {
+   "agree": true,
+   "cases": 14553,
+   "cpu_held": 2057,
+   "gpu_held": 2057,
+   "id": "SP05",
+   "predicate": "(beta >= -0.25) and (modules_in_series >= 27) and (site_min_c >= -10)",
+   "predicate_is_a_placeholder": true,
+   "proves": "the axis geometry only - that the ranges this sentence stated make a grid the card can walk, counted twice and agreeing"
+  },
+  {
+   "agree": false,
+   "error": "cpu: invalid syntax (<string>, line 1)",
+   "id": "SP06"
+  },
+  {
+   "agree": true,
+   "cases": 1089,
+   "cpu_held": 289,
+   "gpu_held": 289,
+   "id": "SP08",
+   "predicate": "(modules_in_series >= 27) and (site_min_c >= -10)",
+   "predicate_is_a_placeholder": true,
+   "proves": "the axis geometry only - that the ranges this sentence stated make a grid the card can walk, counted twice and agreeing"
+  }
+ ],
+ "every_number_has_two_implementations": "Each enumerated rewrite is counted twice: once by a CUDA kernel built from annihilate's own to_c, and once by numpy meshgrid on the host, which shares no code with the kernel. A row is reported only with both counts and whether they agree.",
+ "missing_vocabulary": [
+  {
+   "sentences": 13,
+   "symbol": "n"
+  },
+  {
+   "sentences": 11,
+   "symbol": "enumerate"
+  },
+  {
+   "sentences": 9,
+   "symbol": "name"
+  },
+  {
+   "sentences": 8,
+   "symbol": "g"
+  },
+  {
+   "sentences": 8,
+   "symbol": "s"
+  },
+  {
+   "sentences": 8,
+   "symbol": "i"
+  },
+  {
+   "sentences": 6,
+   "symbol": "k"
+  },
+  {
+   "sentences": 5,
+   "symbol": "file"
+  },
+  {
+   "sentences": 5,
+   "symbol": "minimum"
+  },
+  {
+   "sentences": 4,
+   "symbol": "p"
+  },
+  {
+   "sentences": 4,
+   "symbol": "counts"
+  },
+  {
+   "sentences": 4,
+   "symbol": "run"
+  },
+  {
+   "sentences": 4,
+   "symbol": "more"
+  },
+  {
+   "sentences": 4,
+   "symbol": "sum"
+  },
+  {
+   "sentences": 4,
+   "symbol": "Enumerate"
+  },
+  {
+   "sentences": 4,
+   "symbol": "full"
+  },
+  {
+   "sentences": 4,
+   "symbol": "set"
+  },
+  {
+   "sentences": 4,
+   "symbol": "exactly"
+  },
+  {
+   "sentences": 4,
+   "symbol": "v"
+  },
+  {
+   "sentences": 4,
+   "symbol": "q"
+  },
+  {
+   "sentences": 4,
+   "symbol": "group"
+  },
+  {
+   "sentences": 3,
+   "symbol": "zero"
+  },
+  {
+   "sentences": 3,
+   "symbol": "reduction"
+  },
+  {
+   "sentences": 3,
+   "symbol": "difference"
+  },
+  {
+   "sentences": 3,
+   "symbol": "composer"
+  },
+  {
+   "sentences": 3,
+   "symbol": "function"
+  },
+  {
+   "sentences": 3,
+   "symbol": "after"
+  },
+  {
+   "sentences": 3,
+   "symbol": "bin"
+  },
+  {
+   "sentences": 3,
+   "symbol": "test"
+  },
+  {
+   "sentences": 3,
+   "symbol": "piece"
+  },
+  {
+   "sentences": 3,
+   "symbol": "drawn"
+  },
+  {
+   "sentences": 3,
+   "symbol": "m"
+  },
+  {
+   "sentences": 3,
+   "symbol": "find"
+  },
+  {
+   "sentences": 3,
+   "symbol": "grid"
+  },
+  {
+   "sentences": 3,
+   "symbol": "PI"
+  },
+  {
+   "sentences": 3,
+   "symbol": "verdict"
+  },
+  {
+   "sentences": 3,
+   "symbol": "home"
+  },
+  {
+   "sentences": 2,
+   "symbol": "boolean"
+  },
+  {
+   "sentences": 2,
+   "symbol": "match"
+  },
+  {
+   "sentences": 2,
+   "symbol": "path"
+  },
+  {
+   "sentences": 2,
+   "symbol": "gate"
+  },
+  {
+   "sentences": 2,
+   "symbol": "reading"
+  },
+  {
+   "sentences": 2,
+   "symbol": "nothing"
+  },
+  {
+   "sentences": 2,
+   "symbol": "page"
+  },
+  {
+   "sentences": 2,
+   "symbol": "floor"
+  },
+  {
+   "sentences": 2,
+   "symbol": "matches"
+  },
+  {
+   "sentences": 2,
+   "symbol": "span"
+  },
+  {
+   "sentences": 2,
+   "symbol": "distinct"
+  },
+  {
+   "sentences": 2,
+   "symbol": "max_parallel"
+  },
+  {
+   "sentences": 2,
+   "symbol": "deploy"
+  },
+  {
+   "sentences": 2,
+   "symbol": "against"
+  },
+  {
+   "sentences": 2,
+   "symbol": "cap"
+  },
+  {
+   "sentences": 2,
+   "symbol": "pool_size"
+  },
+  {
+   "sentences": 2,
+   "symbol": "S"
+  },
+  {
+   "sentences": 2,
+   "symbol": "C"
+  },
+  {
+   "sentences": 2,
+   "symbol": "pair"
+  },
+  {
+   "sentences": 2,
+   "symbol": "non"
+  },
+  {
+   "sentences": 2,
+   "symbol": "O"
+  },
+  {
+   "sentences": 2,
+   "symbol": "accepted"
+  },
+  {
+   "sentences": 2,
+   "symbol": "correct"
+  },
+  {
+   "sentences": 2,
+   "symbol": "accepts"
+  },
+  {
+   "sentences": 2,
+   "symbol": "ids"
+  },
+  {
+   "sentences": 2,
+   "symbol": "composition"
+  },
+  {
+   "sentences": 2,
+   "symbol": "completes"
+  },
+  {
+   "sentences": 2,
+   "symbol": "position"
+  },
+  {
+   "sentences": 2,
+   "symbol": "behaviour"
+  },
+  {
+   "sentences": 2,
+   "symbol": "length"
+  },
+  {
+   "sentences": 2,
+   "symbol": "case"
+  },
+  {
+   "sentences": 2,
+   "symbol": "same"
+  },
+  {
+   "sentences": 2,
+   "symbol": "yields"
+  },
+  {
+   "sentences": 2,
+   "symbol": "different"
+  },
+  {
+   "sentences": 2,
+   "symbol": "before"
+  },
+  {
+   "sentences": 2,
+   "symbol": "module"
+  },
+  {
+   "sentences": 2,
+   "symbol": "expected"
+  },
+  {
+   "sentences": 2,
+   "symbol": "verdicts"
+  },
+  {
+   "sentences": 2,
+   "symbol": "N"
+  },
+  {
+   "sentences": 2,
+   "symbol": "beta"
+  },
+  {
+   "sentences": 2,
+   "symbol": "five"
+  },
+  {
+   "sentences": 2,
+   "symbol": "bins"
+  },
+  {
+   "sentences": 2,
+   "symbol": "ring"
+  },
+  {
+   "sentences": 2,
+   "symbol": "len_i"
+  },
+  {
+   "sentences": 2,
+   "symbol": "substation"
+  },
+  {
+   "sentences": 2,
+   "symbol": "first"
+  },
+  {
+   "sentences": 2,
+   "symbol": "such"
+  },
+  {
+   "sentences": 2,
+   "symbol": "ratio"
+  },
+  {
+   "sentences": 2,
+   "symbol": "spacing"
+  },
+  {
+   "sentences": 2,
+   "symbol": "sldGap"
+  },
+  {
+   "sentences": 2,
+   "symbol": "stops"
+  },
+  {
+   "sentences": 2,
+   "symbol": "rings"
+  },
+  {
+   "sentences": 2,
+   "symbol": "idx"
+  },
+  {
+   "sentences": 2,
+   "symbol": "four"
+  },
+  {
+   "sentences": 2,
+   "symbol": "v_str"
+  },
+  {
+   "sentences": 2,
+   "symbol": "cur"
+  },
+  {
+   "sentences": 2,
+   "symbol": "brk"
+  },
+  {
+   "sentences": 2,
+   "symbol": "sign"
+  },
+  {
+   "sentences": 2,
+   "symbol": "fl64"
+  },
+  {
+   "sentences": 2,
+   "symbol": "se"
+  },
+  {
+   "sentences": 2,
+   "symbol": "voc"
+  },
+  {
+   "sentences": 2,
+   "symbol": "how"
+  },
+  {
+   "sentences": 2,
+   "symbol": "cleanRear"
+  },
+  {
+   "sentences": 2,
+   "symbol": "claim"
+  },
+  {
+   "sentences": 2,
+   "symbol": "sample"
+  },
+  {
+   "sentences": 2,
+   "symbol": "space"
+  },
+  {
+   "sentences": 2,
+   "symbol": "imp_e"
+  },
+  {
+   "sentences": 2,
+   "symbol": "isc_e"
+  },
+  {
+   "sentences": 2,
+   "symbol": "currently"
+  },
+  {
+   "sentences": 2,
+   "symbol": "pitch"
+  },
+  {
+   "sentences": 2,
+   "symbol": "RUN"
+  },
+  {
+   "sentences": 2,
+   "symbol": "hit"
+  },
+  {
+   "sentences": 2,
+   "symbol": "z0"
+  },
+  {
+   "sentences": 2,
+   "symbol": "fire"
+  },
+  {
+   "sentences": 2,
+   "symbol": "z"
+  },
+  {
+   "sentences": 2,
+   "symbol": "over_string"
+  },
+  {
+   "sentences": 2,
+   "symbol": "over_mppt"
+  },
+  {
+   "sentences": 2,
+   "symbol": "over_fuse"
+  },
+  {
+   "sentences": 1,
+   "symbol": "published"
+  },
+  {
+   "sentences": 1,
+   "symbol": "fnmatch"
+  },
+  {
+   "sentences": 1,
+   "symbol": "SURFACE"
+  },
+  {
+   "sentences": 1,
+   "symbol": "Build"
+  },
+  {
+   "sentences": 1,
+   "symbol": "matrix"
+  },
+  {
+   "sentences": 1,
+   "symbol": "M"
+  },
+  {
+   "sentences": 1,
+   "symbol": "html"
+  },
+  {
+   "sentences": 1,
+   "symbol": "md"
+  },
+  {
+   "sentences": 1,
+   "symbol": "tree"
+  },
+  {
+   "sentences": 1,
+   "symbol": "reduce"
+  },
+  {
+   "sentences": 1,
+   "symbol": "along"
+  },
+  {
+   "sentences": 1,
+   "symbol": "zeros"
+  },
+  {
+   "sentences": 1,
+   "symbol": "honest"
+  },
+  {
+   "sentences": 1,
+   "symbol": "visible_bytes"
+  },
+  {
+   "sentences": 1,
+   "symbol": "total_bytes"
+  },
+  {
+   "sentences": 1,
+   "symbol": "almost"
+  },
+  {
+   "sentences": 1,
+   "symbol": "Three"
+  },
+  {
+   "sentences": 1,
+   "symbol": "threshold"
+  },
+  {
+   "sentences": 1,
+   "symbol": "flag"
+  },
+  {
+   "sentences": 1,
+   "symbol": "median"
+  },
+  {
+   "sentences": 1,
+   "symbol": "earlier"
+  },
+  {
+   "sentences": 1,
+   "symbol": "runs"
+  },
+  {
+   "sentences": 1,
+   "symbol": "silent"
+  },
+  {
+   "sentences": 1,
+   "symbol": "shrink"
+  },
+  {
+   "sentences": 1,
+   "symbol": "dimensional"
+  },
+  {
+   "sentences": 1,
+   "symbol": "cheap"
+  },
+  {
+   "sentences": 1,
+   "symbol": "enough"
+  },
+  {
+   "sentences": 1,
+   "symbol": "simply"
+  },
+  {
+   "sentences": 1,
+   "symbol": "pinned"
+  },
+  {
+   "sentences": 1,
+   "symbol": "script"
+  },
+  {
+   "sentences": 1,
+   "symbol": "number"
+  },
+  {
+   "sentences": 1,
+   "symbol": "assistant"
+  },
+  {
+   "sentences": 1,
+   "symbol": "suppressed"
+  },
+  {
+   "sentences": 1,
+   "symbol": "suppressing"
+  },
+  {
+   "sentences": 1,
+   "symbol": "wide"
+  },
+  {
+   "sentences": 1,
+   "symbol": "Interval"
+  },
+  {
+   "sentences": 1,
+   "symbol": "containment"
+  },
+  {
+   "sentences": 1,
+   "symbol": "offset"
+  },
+  {
+   "sentences": 1,
+   "symbol": "vector"
+  },
+  {
+   "sentences": 1,
+   "symbol": "concurrently"
+  },
+  {
+   "sentences": 1,
+   "symbol": "triggered"
+  },
+  {
+   "sentences": 1,
+   "symbol": "workflows"
+  },
+  {
+   "sentences": 1,
+   "symbol": "cardinality"
+  },
+  {
+   "sentences": 1,
+   "symbol": "Pages"
+  },
+  {
+   "sentences": 1,
+   "symbol": "gets"
+  },
+  {
+   "sentences": 1,
+   "symbol": "slot"
+  },
+  {
+   "sentences": 1,
+   "symbol": "Fifty"
+  },
+  {
+   "sentences": 1,
+   "symbol": "lanes"
+  },
+  {
+   "sentences": 1,
+   "symbol": "twenty"
+  },
+  {
+   "sentences": 1,
+   "symbol": "total"
+  },
+  {
+   "sentences": 1,
+   "symbol": "occupancy"
+  },
+  {
+   "sentences": 1,
+   "symbol": "safe"
+  },
+  {
+   "sentences": 1,
+   "symbol": "minus"
+  },
+  {
+   "sentences": 1,
+   "symbol": "jobs"
+  },
+  {
+   "sentences": 1,
+   "symbol": "needs"
+  },
+  {
+   "sentences": 1,
+   "symbol": "twelve"
+  },
+  {
+   "sentences": 1,
+   "symbol": "here"
+  },
+  {
+   "sentences": 1,
+   "symbol": "absolute"
+  },
+  {
+   "sentences": 1,
+   "symbol": "released"
+  },
+  {
+   "sentences": 1,
+   "symbol": "shell"
+  },
+  {
+   "sentences": 1,
+   "symbol": "pointer"
+  },
+  {
+   "sentences": 1,
+   "symbol": "empty"
+  },
+  {
+   "sentences": 1,
+   "symbol": "executes"
+  },
+  {
+   "sentences": 1,
+   "symbol": "fingerprint"
+  },
+  {
+   "sentences": 1,
+   "symbol": "cartridges"
+  },
+  {
+   "sentences": 1,
+   "symbol": "reaches"
+  },
+  {
+   "sentences": 1,
+   "symbol": "document"
+  },
+  {
+   "sentences": 1,
+   "symbol": "write"
+  },
+  {
+   "sentences": 1,
+   "symbol": "Today"
+  },
+  {
+   "sentences": 1,
+   "symbol": "Set"
+  },
+  {
+   "sentences": 1,
+   "symbol": "id"
+  },
+  {
+   "sentences": 1,
+   "symbol": "sequences"
+  },
+  {
+   "sentences": 1,
+   "symbol": "duplicate"
+  },
+  {
+   "sentences": 1,
+   "symbol": "record"
+  },
+  {
+   "sentences": 1,
+   "symbol": "sha256"
+  },
+  {
+   "sentences": 1,
+   "symbol": "wins"
+  },
+  {
+   "sentences": 1,
+   "symbol": "array"
+  },
+  {
+   "sentences": 1,
+   "symbol": "G"
+  },
+  {
+   "sentences": 1,
+   "symbol": "pairs"
+  },
+  {
+   "sentences": 1,
+   "symbol": "accepting"
+  },
+  {
+   "sentences": 1,
+   "symbol": "region"
+  },
+  {
+   "sentences": 1,
+   "symbol": "strict"
+  },
+  {
+   "sentences": 1,
+   "symbol": "upper"
+  },
+  {
+   "sentences": 1,
+   "symbol": "triangle"
+  },
+  {
+   "sentences": 1,
+   "symbol": "loaded"
+  },
+  {
+   "sentences": 1,
+   "symbol": "states"
+  },
+  {
+   "sentences": 1,
+   "symbol": "today"
+  },
+  {
+   "sentences": 1,
+   "symbol": "occurs"
+  },
+  {
+   "sentences": 1,
+   "symbol": "once"
+  },
+  {
+   "sentences": 1,
+   "symbol": "surviving"
+  },
+  {
+   "sentences": 1,
+   "symbol": "implementation"
+  },
+  {
+   "sentences": 1,
+   "symbol": "load"
+  },
+  {
+   "sentences": 1,
+   "symbol": "order"
+  },
+  {
+   "sentences": 1,
+   "symbol": "byte"
+  },
+  {
+   "sentences": 1,
+   "symbol": "identical"
+  },
+  {
+   "sentences": 1,
+   "symbol": "reordering"
+  },
+  {
+   "sentences": 1,
+   "symbol": "bytes"
+  },
+  {
+   "sentences": 1,
+   "symbol": "lost"
+  },
+  {
+   "sentences": 1,
+   "symbol": "block"
+  },
+  {
+   "sentences": 1,
+   "symbol": "offsets"
+  },
+  {
+   "sentences": 1,
+   "symbol": "diff"
+  },
+  {
+   "sentences": 1,
+   "symbol": "F"
+  },
+  {
+   "sentences": 1,
+   "symbol": "register"
+  },
+  {
+   "sentences": 1,
+   "symbol": "names"
+  },
+  {
+   "sentences": 1,
+   "symbol": "splice"
+  },
+  {
+   "sentences": 1,
+   "symbol": "present"
+  },
+  {
+   "sentences": 1,
+   "symbol": "absent"
+  },
+  {
+   "sentences": 1,
+   "symbol": "silently"
+  },
+  {
+   "sentences": 1,
+   "symbol": "deleted"
+  },
+  {
+   "sentences": 1,
+   "symbol": "command"
+  },
+  {
+   "sentences": 1,
+   "symbol": "class_id"
+  },
+  {
+   "sentences": 1,
+   "symbol": "MODULES"
+  },
+  {
+   "sentences": 1,
+   "symbol": "json"
+  },
+  {
+   "sentences": 1,
+   "symbol": "classes"
+  },
+  {
+   "sentences": 1,
+   "symbol": "source"
+  },
+  {
+   "sentences": 1,
+   "symbol": "source_of_modules"
+  },
+  {
+   "sentences": 1,
+   "symbol": "list"
+  },
+  {
+   "sentences": 1,
+   "symbol": "bnpi"
+  },
+  {
+   "sentences": 1,
+   "symbol": "stc"
+  },
+  {
+   "sentences": 1,
+   "symbol": "actual"
+  },
+  {
+   "sentences": 1,
+   "symbol": "values"
+  },
+  {
+   "sentences": 1,
+   "symbol": "fails"
+  },
+  {
+   "sentences": 1,
+   "symbol": "Voc"
+  },
+  {
+   "sentences": 1,
+   "symbol": "report"
+  },
+  {
+   "sentences": 1,
+   "symbol": "take"
+  },
+  {
+   "sentences": 1,
+   "symbol": "top"
+  },
+  {
+   "sentences": 1,
+   "symbol": "k_corr"
+  },
+  {
+   "sentences": 1,
+   "symbol": "bifaciality_pct"
+  },
+  {
+   "sentences": 1,
+   "symbol": "isc"
+  },
+  {
+   "sentences": 1,
+   "symbol": "W"
+  },
+  {
+   "sentences": 1,
+   "symbol": "fail"
+  },
+  {
+   "sentences": 1,
+   "symbol": "T"
+  },
+  {
+   "sentences": 1,
+   "symbol": "printed"
+  },
+  {
+   "sentences": 1,
+   "symbol": "Isc"
+  },
+  {
+   "sentences": 1,
+   "symbol": "bifaciality"
+  },
+  {
+   "sentences": 1,
+   "symbol": "SYMBOL"
+  },
+  {
+   "sentences": 1,
+   "symbol": "below"
+  },
+  {
+   "sentences": 1,
+   "symbol": "own"
+  },
+  {
+   "sentences": 1,
+   "symbol": "declared"
+  },
+  {
+   "sentences": 1,
+   "symbol": "floor_i"
+  },
+  {
+   "sentences": 1,
+   "symbol": "round"
+  },
+  {
+   "sentences": 1,
+   "symbol": "pv"
+  },
+  {
+   "sentences": 1,
+   "symbol": "gen"
+  },
+  {
+   "sentences": 1,
+   "symbol": "presence"
+  },
+  {
+   "sentences": 1,
+   "symbol": "exceeds"
+  },
+  {
+   "sentences": 1,
+   "symbol": "cumsum"
+  },
+  {
+   "sentences": 1,
+   "symbol": "smallest"
+  },
+  {
+   "sentences": 1,
+   "symbol": "short"
+  },
+  {
+   "sentences": 1,
+   "symbol": "reports"
+  },
+  {
+   "sentences": 1,
+   "symbol": "pieces"
+  },
+  {
+   "sentences": 1,
+   "symbol": "real"
+  },
+  {
+   "sentences": 1,
+   "symbol": "overstates"
+  },
+  {
+   "sentences": 1,
+   "symbol": "divided"
+  },
+  {
+   "sentences": 1,
+   "symbol": "x1"
+  },
+  {
+   "sentences": 1,
+   "symbol": "x0"
+  },
+  {
+   "sentences": 1,
+   "symbol": "y1"
+  },
+  {
+   "sentences": 1,
+   "symbol": "y0"
+  },
+  {
+   "sentences": 1,
+   "symbol": "e"
+  },
+  {
+   "sentences": 1,
+   "symbol": "generally"
+  },
+  {
+   "sentences": 1,
+   "symbol": "area"
+  },
+  {
+   "sentences": 1,
+   "symbol": "aspect"
+  },
+  {
+   "sentences": 1,
+   "symbol": "ratios"
+  },
+  {
+   "sentences": 1,
+   "symbol": "finding"
+  },
+  {
+   "sentences": 1,
+   "symbol": "neighbours"
+  },
+  {
+   "sentences": 1,
+   "symbol": "two"
+  },
+  {
+   "sentences": 1,
+   "symbol": "sharing"
+  },
+  {
+   "sentences": 1,
+   "symbol": "centre"
+  },
+  {
+   "sentences": 1,
+   "symbol": "angular"
+  },
+  {
+   "sentences": 1,
+   "symbol": "mod"
+  },
+  {
+   "sentences": 1,
+   "symbol": "near"
+  },
+  {
+   "sentences": 1,
+   "symbol": "dots"
+  },
+  {
+   "sentences": 1,
+   "symbol": "radially"
+  },
+  {
+   "sentences": 1,
+   "symbol": "aligned"
+  },
+  {
+   "sentences": 1,
+   "symbol": "zHome"
+  },
+  {
+   "sentences": 1,
+   "symbol": "DOT_MIN_PX"
+  },
+  {
+   "sentences": 1,
+   "symbol": "window"
+  },
+  {
+   "sentences": 1,
+   "symbol": "width"
+  },
+  {
+   "sentences": 1,
+   "symbol": "diagram"
+  },
+  {
+   "sentences": 1,
+   "symbol": "resolving"
+  },
+  {
+   "sentences": 1,
+   "symbol": "those"
+  },
+  {
+   "sentences": 1,
+   "symbol": "indices"
+  },
+  {
+   "sentences": 1,
+   "symbol": "changed"
+  },
+  {
+   "sentences": 1,
+   "symbol": "ci"
+  },
+  {
+   "sentences": 1,
+   "symbol": "ti"
+  },
+  {
+   "sentences": 1,
+   "symbol": "si"
+  },
+  {
+   "sentences": 1,
+   "symbol": "ni"
+  },
+  {
+   "sentences": 1,
+   "symbol": "vt"
+  },
+  {
+   "sentences": 1,
+   "symbol": "axes"
+  },
+  {
+   "sentences": 1,
+   "symbol": "inert"
+  },
+  {
+   "sentences": 1,
+   "symbol": "denominator"
+  },
+  {
+   "sentences": 1,
+   "symbol": "too"
+  },
+  {
+   "sentences": 1,
+   "symbol": "large"
+  },
+  {
+   "sentences": 1,
+   "symbol": "L_pi15"
+  },
+  {
+   "sentences": 1,
+   "symbol": "L_pi17"
+  },
+  {
+   "sentences": 1,
+   "symbol": "flips"
+  },
+  {
+   "sentences": 1,
+   "symbol": "safety"
+  },
+  {
+   "sentences": 1,
+   "symbol": "net"
+  },
+  {
+   "sentences": 1,
+   "symbol": "cannot"
+  },
+  {
+   "sentences": 1,
+   "symbol": "see"
+  },
+  {
+   "sentences": 1,
+   "symbol": "tm"
+  },
+  {
+   "sentences": 1,
+   "symbol": "series"
+  },
+  {
+   "sentences": 1,
+   "symbol": "temp"
+  },
+  {
+   "sentences": 1,
+   "symbol": "triple"
+  },
+  {
+   "sentences": 1,
+   "symbol": "ulp"
+  },
+  {
+   "sentences": 1,
+   "symbol": "differences"
+  },
+  {
+   "sentences": 1,
+   "symbol": "many"
+  },
+  {
+   "sentences": 1,
+   "symbol": "straddle"
+  },
+  {
+   "sentences": 1,
+   "symbol": "tripping"
+  },
+  {
+   "sentences": 1,
+   "symbol": "trips"
+  },
+  {
+   "sentences": 1,
+   "symbol": "minTripRi"
+  },
+  {
+   "sentences": 1,
+   "symbol": "mis"
+  },
+  {
+   "sentences": 1,
+   "symbol": "stated"
+  },
+  {
+   "sentences": 1,
+   "symbol": "ti_max"
+  },
+  {
+   "sentences": 1,
+   "symbol": "VN"
+  },
+  {
+   "sentences": 1,
+   "symbol": "NB"
+  },
+  {
+   "sentences": 1,
+   "symbol": "NS"
+  },
+  {
+   "sentences": 1,
+   "symbol": "NR"
+  },
+  {
+   "sentences": 1,
+   "symbol": "N_REAR"
+  },
+  {
+   "sentences": 1,
+   "symbol": "N_TEMP"
+  },
+  {
+   "sentences": 1,
+   "symbol": "coprime"
+  },
+  {
+   "sentences": 1,
+   "symbol": "stride"
+  },
+  {
+   "sentences": 1,
+   "symbol": "index"
+  },
+  {
+   "sentences": 1,
+   "symbol": "sides"
+  },
+  {
+   "sentences": 1,
+   "symbol": "xor"
+  },
+  {
+   "sentences": 1,
+   "symbol": "designs"
+  },
+  {
+   "sentences": 1,
+   "symbol": "reported"
+  },
+  {
+   "sentences": 1,
+   "symbol": "having"
+  },
+  {
+   "sentences": 1,
+   "symbol": "string"
+  },
+  {
+   "sentences": 1,
+   "symbol": "headroom"
+  },
+  {
+   "sentences": 1,
+   "symbol": "standard"
+  },
+  {
+   "sentences": 1,
+   "symbol": "other"
+  },
+  {
+   "sentences": 1,
+   "symbol": "pattern"
+  },
+  {
+   "sentences": 1,
+   "symbol": "bits"
+  },
+  {
+   "sentences": 1,
+   "symbol": "fix"
+  },
+  {
+   "sentences": 1,
+   "symbol": "compare"
+  },
+  {
+   "sentences": 1,
+   "symbol": "routing"
+  },
+  {
+   "sentences": 1,
+   "symbol": "current"
+  },
+  {
+   "sentences": 1,
+   "symbol": "gap"
+  },
+  {
+   "sentences": 1,
+   "symbol": "much"
+  },
+  {
+   "sentences": 1,
+   "symbol": "making"
+  },
+  {
+   "sentences": 1,
+   "symbol": "truthy"
+  },
+  {
+   "sentences": 1,
+   "symbol": "typeof"
+  },
+  {
+   "sentences": 1,
+   "symbol": "prototype"
+  },
+  {
+   "sentences": 1,
+   "symbol": "keys"
+  },
+  {
+   "sentences": 1,
+   "symbol": "constructor"
+  },
+  {
+   "sentences": 1,
+   "symbol": "__proto__"
+  },
+  {
+   "sentences": 1,
+   "symbol": "toString"
+  },
+  {
+   "sentences": 1,
+   "symbol": "excluded"
+  },
+  {
+   "sentences": 1,
+   "symbol": "character"
+  },
+  {
+   "sentences": 1,
+   "symbol": "class"
+  },
+  {
+   "sentences": 1,
+   "symbol": "lowercasing"
+  },
+  {
+   "sentences": 1,
+   "symbol": "toLowerCase"
+  },
+  {
+   "sentences": 1,
+   "symbol": "satisfying"
+  },
+  {
+   "sentences": 1,
+   "symbol": "unreachable"
+  },
+  {
+   "sentences": 1,
+   "symbol": "bar"
+  },
+  {
+   "sentences": 1,
+   "symbol": "parse"
+  },
+  {
+   "sentences": 1,
+   "symbol": "throws"
+  },
+  {
+   "sentences": 1,
+   "symbol": "message"
+  },
+  {
+   "sentences": 1,
+   "symbol": "does"
+  },
+  {
+   "sentences": 1,
+   "symbol": "contain"
+  },
+  {
+   "sentences": 1,
+   "symbol": "valid"
+  },
+  {
+   "sentences": 1,
+   "symbol": "word"
+  },
+  {
+   "sentences": 1,
+   "symbol": "brace"
+  },
+  {
+   "sentences": 1,
+   "symbol": "truncation"
+  },
+  {
+   "sentences": 1,
+   "symbol": "removes"
+  },
+  {
+   "sentences": 1,
+   "symbol": "final"
+  },
+  {
+   "sentences": 1,
+   "symbol": "containing"
+  },
+  {
+   "sentences": 1,
+   "symbol": "digit"
+  },
+  {
+   "sentences": 1,
+   "symbol": "entry"
+  },
+  {
+   "sentences": 1,
+   "symbol": "dropped"
+  },
+  {
+   "sentences": 1,
+   "symbol": "pre"
+  },
+  {
+   "sentences": 1,
+   "symbol": "FIRE"
+  },
+  {
+   "sentences": 1,
+   "symbol": "tmin"
+  },
+  {
+   "sentences": 1,
+   "symbol": "over_volts"
+  },
+  {
+   "sentences": 1,
+   "symbol": "sweep"
+  },
+  {
+   "sentences": 1,
+   "symbol": "carried"
+  },
+  {
+   "sentences": 1,
+   "symbol": "value"
+  },
+  {
+   "sentences": 1,
+   "symbol": "differs"
+  },
+  {
+   "sentences": 1,
+   "symbol": "V"
+  }
+ ],
+ "not_claimed": "An enumerated row marked predicate_is_a_placeholder proves only that the axes the sentence stated make a grid this machine can walk; its predicate is each axis at or above its own midpoint and is NOT the sentence's question. This does not prove a rewrite template asks the right question; the ranges are the sentence's own but the predicate is assembled from its words, and every template is marked unconfirmed. It does not examine the predicates that already fuse. Category (c) is not shown to be unanswerable - only that this grammar, which sweeps intervals, cannot hold a categorical axis. An agreeing count is arithmetic over a stated space and says nothing about any real installation: no site, no weather record, no as-built drawing is read here. Only the sheets present on this machine are read.",
+ "parser_defects": 0,
+ "paste_ready_parse_fix": "PASTE-READY FIX for annihilate.py parse(). Apply ONLY if the (d) count below is\nnon-zero; the count says how many sentences this recovers. Replace the two\nmodule-level lines\n\n    SENT = re.compile(r\"^\\s*sweep\\s+(.+?),\\s*count\\s+where\\s+(.+?)\\s*$\", re.S)\n\nwith\n\n    SENT = re.compile(\n        r\"^\\s*sweep\\s+(.+?)[,;.]\\s*count\\s+(?:cases\\s+)?where\\s+(.+?)\\s*$\",\n        re.S)\n\nand insert, as the first two statements of parse(), before SENT.match:\n\n    sentence = re.sub(r\",\\s*i\\.e\\..*$\", \"\", sentence or \"\", flags=re.S)\n    sentence = re.sub(r\"\\bcount\\s+cases\\s+where\\b\", \"count where\", sentence)\n\nThat accepts a semicolon or a full stop where the grammar demanded a comma, the\nsynonym 'count cases where', and a trailing ', i.e. ...' gloss written for a\nhuman reader. None of the three changes which cases a sentence selects.",
+ "predicates_annihilate_fuses": 58,
+ "refusals": [
+  {
+   "axes_the_sentence_stated": [],
+   "category": "b_no_countable_predicate",
+   "id": "AN01",
+   "refused_by_annihilate": "no 'sweep ... , count where ...'",
+   "rewrite_template": "sweep TODO_AXIS_1 lo..hi step s x TODO_AXIS_2 lo..hi step s, count where TODO_AXIS_1 >= TODO_THRESHOLD and TODO_AXIS_2 >= TODO_THRESHOLD",
+   "symbols_that_are_not_axes": [],
+   "template_is_confirmed_by_a_human": false
+  },
+  {
+   "axes_the_sentence_stated": [],
+   "category": "b_no_countable_predicate",
+   "id": "AN02",
+   "refused_by_annihilate": "no 'sweep ... , count where ...'",
+   "rewrite_template": "sweep TODO_AXIS_1 lo..hi step s x TODO_AXIS_2 lo..hi step s, count where TODO_AXIS_1 >= TODO_THRESHOLD and TODO_AXIS_2 >= TODO_THRESHOLD",
+   "symbols_that_are_not_axes": [],
+   "template_is_confirmed_by_a_human": false
+  },
+  {
+   "axes_the_sentence_stated": [],
+   "category": "b_no_countable_predicate",
+   "id": "AN03",
+   "refused_by_annihilate": "no 'sweep ... , count where ...'",
+   "rewrite_template": "sweep TODO_AXIS_1 lo..hi step s x TODO_AXIS_2 lo..hi step s, count where TODO_AXIS_1 >= TODO_THRESHOLD and TODO_AXIS_2 >= TODO_THRESHOLD",
+   "symbols_that_are_not_axes": [],
+   "template_is_confirmed_by_a_human": false
+  },
+  {
+   "axes_the_sentence_stated": [],
+   "category": "b_no_countable_predicate",
+   "id": "AN04",
+   "refused_by_annihilate": "no 'sweep ... , count where ...'",
+   "rewrite_template": "sweep TODO_AXIS_1 lo..hi step s x TODO_AXIS_2 lo..hi step s, count where TODO_AXIS_1 >= TODO_THRESHOLD and TODO_AXIS_2 >= TODO_THRESHOLD",
+   "symbols_that_are_not_axes": [],
+   "template_is_confirmed_by_a_human": false
+  },
+  {
+   "axes_the_sentence_stated": [],
+   "category": "b_no_countable_predicate",
+   "id": "AN05",
+   "refused_by_annihilate": "no 'sweep ... , count where ...'",
+   "rewrite_template": "sweep TODO_AXIS_1 lo..hi step s x TODO_AXIS_2 lo..hi step s, count where TODO_AXIS_1 >= TODO_THRESHOLD and TODO_AXIS_2 >= TODO_THRESHOLD",
+   "symbols_that_are_not_axes": [],
+   "template_is_confirmed_by_a_human": false
+  },
+  {
+   "axes_the_sentence_stated": [],
+   "category": "b_no_countable_predicate",
+   "id": "AN06",
+   "refused_by_annihilate": "no 'sweep ... , count where ...'",
+   "rewrite_template": "sweep TODO_AXIS_1 lo..hi step s x TODO_AXIS_2 lo..hi step s, count where TODO_AXIS_1 >= TODO_THRESHOLD and TODO_AXIS_2 >= TODO_THRESHOLD",
+   "symbols_that_are_not_axes": [],
+   "template_is_confirmed_by_a_human": false
+  },
+  {
+   "axes_the_sentence_stated": [],
+   "category": "b_no_countable_predicate",
+   "id": "AN07",
+   "refused_by_annihilate": "no 'sweep ... , count where ...'",
+   "rewrite_template": "sweep TODO_AXIS_1 lo..hi step s x TODO_AXIS_2 lo..hi step s, count where TODO_AXIS_1 >= TODO_THRESHOLD and TODO_AXIS_2 >= TODO_THRESHOLD",
+   "symbols_that_are_not_axes": [],
+   "template_is_confirmed_by_a_human": false
+  },
+  {
+   "axes_the_sentence_stated": [],
+   "category": "b_no_countable_predicate",
+   "id": "AN08",
+   "refused_by_annihilate": "no 'sweep ... , count where ...'",
+   "rewrite_template": "sweep TODO_AXIS_1 lo..hi step s x TODO_AXIS_2 lo..hi step s, count where TODO_AXIS_1 >= TODO_THRESHOLD and TODO_AXIS_2 >= TODO_THRESHOLD",
+   "symbols_that_are_not_axes": [],
+   "template_is_confirmed_by_a_human": false
+  },
+  {
+   "axes_the_sentence_stated": [],
+   "category": "b_no_countable_predicate",
+   "id": "AN09",
+   "refused_by_annihilate": "no 'sweep ... , count where ...'",
+   "rewrite_template": "sweep TODO_AXIS_1 lo..hi step s x TODO_AXIS_2 lo..hi step s, count where TODO_AXIS_1 >= TODO_THRESHOLD and TODO_AXIS_2 >= TODO_THRESHOLD",
+   "symbols_that_are_not_axes": [],
+   "template_is_confirmed_by_a_human": false
+  },
+  {
+   "axes_the_sentence_stated": [],
+   "category": "b_no_countable_predicate",
+   "id": "CI01",
+   "refused_by_annihilate": "no 'sweep ... , count where ...'",
+   "rewrite_template": "sweep TODO_AXIS_1 lo..hi step s x TODO_AXIS_2 lo..hi step s, count where TODO_AXIS_1 >= TODO_THRESHOLD and TODO_AXIS_2 >= TODO_THRESHOLD",
+   "symbols_that_are_not_axes": [],
+   "template_is_confirmed_by_a_human": false
+  },
+  {
+   "axes_the_sentence_stated": [],
+   "category": "c_axis_is_a_word_not_a_quantity",
+   "id": "CI02",
+   "refused_by_annihilate": "no 'sweep ... , count where ...'",
+   "rewrite_template": "sweep TODO_AXIS_1 lo..hi step s x TODO_AXIS_2 lo..hi step s, count where TODO the axes here are categories, not intervals; index each category 0..k-1 and compare: TODO_AXIS_1 >= TODO_THRESHOLD and TODO_AXIS_2 >= TODO_THRESHOLD",
+   "symbols_that_are_not_axes": [
+    "Build",
+    "M",
+    "SURFACE",
+    "along",
+    "boolean",
+    "fnmatch",
+    "g",
+    "gate"
+   ],
+   "template_is_confirmed_by_a_human": false
+  },
+  {
+   "axes_the_sentence_stated": [],
+   "category": "c_axis_is_a_word_not_a_quantity",
+   "id": "CI03",
+   "refused_by_annihilate": "no 'sweep ... , count where ...'",
+   "rewrite_template": "sweep TODO_AXIS_1 lo..hi step s x TODO_AXIS_2 lo..hi step s, count where TODO the axes here are categories, not intervals; index each category 0..k-1 and compare: TODO_AXIS_1 >= TODO_THRESHOLD and TODO_AXIS_2 >= TODO_THRESHOLD",
+   "symbols_that_are_not_axes": [
+    "Three",
+    "almost",
+    "counts",
+    "file",
+    "flag",
+    "gate",
+    "nothing",
+    "page"
+   ],
+   "template_is_confirmed_by_a_human": false
+  },
+  {
+   "axes_the_sentence_stated": [],
+   "category": "c_axis_is_a_word_not_a_quantity",
+   "id": "CI04",
+   "refused_by_annihilate": "no 'sweep ... , count where ...'",
+   "rewrite_template": "sweep TODO_AXIS_1 lo..hi step s x TODO_AXIS_2 lo..hi step s, count where TODO the axes here are categories, not intervals; index each category 0..k-1 and compare: TODO_AXIS_1 >= TODO_THRESHOLD and TODO_AXIS_2 >= TODO_THRESHOLD",
+   "symbols_that_are_not_axes": [
+    "cheap",
+    "dimensional",
+    "earlier",
+    "enough",
+    "floor",
+    "median",
+    "pinned",
+    "reduction"
+   ],
+   "template_is_confirmed_by_a_human": false
+  },
+  {
+   "axes_the_sentence_stated": [],
+   "category": "c_axis_is_a_word_not_a_quantity",
+   "id": "CI05",
+   "refused_by_annihilate": "no 'sweep ... , count where ...'",
+   "rewrite_template": "sweep TODO_AXIS_1 lo..hi step s x TODO_AXIS_2 lo..hi step s, count where TODO the axes here are categories, not intervals; index each category 0..k-1 and compare: TODO_AXIS_1 >= TODO_THRESHOLD and TODO_AXIS_2 >= TODO_THRESHOLD",
+   "symbols_that_are_not_axes": [
+    "Interval",
+    "assistant",
+    "boolean",
+    "containment",
+    "distinct",
+    "file",
+    "match",
+    "matches"
+   ],
+   "template_is_confirmed_by_a_human": false
+  },
+  {
+   "axes_the_sentence_stated": [],
+   "category": "c_axis_is_a_word_not_a_quantity",
+   "id": "CI06",
+   "refused_by_annihilate": "no 'sweep ... , count where ...'",
+   "rewrite_template": "sweep TODO_AXIS_1 lo..hi step s x TODO_AXIS_2 lo..hi step s, count where TODO the axes here are categories, not intervals; index each category 0..k-1 and compare: TODO_AXIS_1 >= TODO_THRESHOLD and TODO_AXIS_2 >= TODO_THRESHOLD",
+   "symbols_that_are_not_axes": [
+    "Fifty",
+    "Pages",
+    "against",
+    "cap",
+    "cardinality",
+    "concurrently",
+    "deploy",
+    "gets"
+   ],
+   "template_is_confirmed_by_a_human": false
+  },
+  {
+   "axes_the_sentence_stated": [],
+   "category": "c_axis_is_a_word_not_a_quantity",
+   "id": "CI07",
+   "refused_by_annihilate": "no 'sweep ... , count where ...'",
+   "rewrite_template": "sweep TODO_AXIS_1 lo..hi step s x TODO_AXIS_2 lo..hi step s, count where TODO the axes here are categories, not intervals; index each category 0..k-1 and compare: TODO_AXIS_1 >= TODO_THRESHOLD and TODO_AXIS_2 >= TODO_THRESHOLD",
+   "symbols_that_are_not_axes": [
+    "cap",
+    "deploy",
+    "here",
+    "jobs",
+    "max_parallel",
+    "minus",
+    "needs",
+    "occupancy"
+   ],
+   "template_is_confirmed_by_a_human": false
+  },
+  {
+   "axes_the_sentence_stated": [],
+   "category": "b_no_countable_predicate",
+   "id": "CI08",
+   "refused_by_annihilate": "no 'sweep ... , count where ...'",
+   "rewrite_template": "sweep TODO_AXIS_1 lo..hi step s x TODO_AXIS_2 lo..hi step s, count where TODO_AXIS_1 >= TODO_THRESHOLD and TODO_AXIS_2 >= TODO_THRESHOLD",
+   "symbols_that_are_not_axes": [],
+   "template_is_confirmed_by_a_human": false
+  },
+  {
+   "axes_the_sentence_stated": [],
+   "category": "b_no_countable_predicate",
+   "id": "CI09",
+   "refused_by_annihilate": "no 'sweep ... , count where ...'",
+   "rewrite_template": "sweep TODO_AXIS_1 lo..hi step s x TODO_AXIS_2 lo..hi step s, count where TODO_AXIS_1 >= TODO_THRESHOLD and TODO_AXIS_2 >= TODO_THRESHOLD",
+   "symbols_that_are_not_axes": [],
+   "template_is_confirmed_by_a_human": false
+  },
+  {
+   "axes_the_sentence_stated": [],
+   "category": "b_no_countable_predicate",
+   "id": "CI10",
+   "refused_by_annihilate": "no 'sweep ... , count where ...'",
+   "rewrite_template": "sweep TODO_AXIS_1 lo..hi step s x TODO_AXIS_2 lo..hi step s, count where TODO_AXIS_1 >= TODO_THRESHOLD and TODO_AXIS_2 >= TODO_THRESHOLD",
+   "symbols_that_are_not_axes": [],
+   "template_is_confirmed_by_a_human": false
+  },
+  {
+   "axes_the_sentence_stated": [],
+   "category": "c_axis_is_a_word_not_a_quantity",
+   "id": "CO01",
+   "refused_by_annihilate": "no 'sweep ... , count where ...'",
+   "rewrite_template": "sweep TODO_AXIS_1 lo..hi step s x TODO_AXIS_2 lo..hi step s, count where TODO the axes here are categories, not intervals; index each category 0..k-1 and compare: TODO_AXIS_1 >= TODO_THRESHOLD and TODO_AXIS_2 >= TODO_THRESHOLD",
+   "symbols_that_are_not_axes": [
+    "C",
+    "Enumerate",
+    "S",
+    "absolute",
+    "difference",
+    "empty",
+    "executes",
+    "file"
+   ],
+   "template_is_confirmed_by_a_human": false
+  },
+  {
+   "axes_the_sentence_stated": [],
+   "category": "c_axis_is_a_word_not_a_quantity",
+   "id": "CO02",
+   "refused_by_annihilate": "no 'sweep ... , count where ...'",
+   "rewrite_template": "sweep TODO_AXIS_1 lo..hi step s x TODO_AXIS_2 lo..hi step s, count where TODO the axes here are categories, not intervals; index each category 0..k-1 and compare: TODO_AXIS_1 >= TODO_THRESHOLD and TODO_AXIS_2 >= TODO_THRESHOLD",
+   "symbols_that_are_not_axes": [
+    "O",
+    "Today",
+    "accepted",
+    "accepts",
+    "cartridges",
+    "composer",
+    "correct",
+    "document"
+   ],
+   "template_is_confirmed_by_a_human": false
+  },
+  {
+   "axes_the_sentence_stated": [],
+   "category": "c_axis_is_a_word_not_a_quantity",
+   "id": "CO03",
+   "refused_by_annihilate": "no 'sweep ... , count where ...'",
+   "rewrite_template": "sweep TODO_AXIS_1 lo..hi step s x TODO_AXIS_2 lo..hi step s, count where TODO the axes here are categories, not intervals; index each category 0..k-1 and compare: TODO_AXIS_1 >= TODO_THRESHOLD and TODO_AXIS_2 >= TODO_THRESHOLD",
+   "symbols_that_are_not_axes": [
+    "Enumerate",
+    "Set",
+    "array",
+    "completes",
+    "composition",
+    "duplicate",
+    "function",
+    "id"
+   ],
+   "template_is_confirmed_by_a_human": false
+  },
+  {
+   "axes_the_sentence_stated": [],
+   "category": "b_no_countable_predicate",
+   "id": "CO04",
+   "refused_by_annihilate": "no 'sweep ... , count where ...'",
+   "rewrite_template": "sweep TODO_AXIS_1 lo..hi step s x TODO_AXIS_2 lo..hi step s, count where TODO_AXIS_1 >= TODO_THRESHOLD and TODO_AXIS_2 >= TODO_THRESHOLD",
+   "symbols_that_are_not_axes": [],
+   "template_is_confirmed_by_a_human": false
+  },
+  {
+   "axes_the_sentence_stated": [],
+   "category": "c_axis_is_a_word_not_a_quantity",
+   "id": "CO05",
+   "refused_by_annihilate": "no 'sweep ... , count where ...'",
+   "rewrite_template": "sweep TODO_AXIS_1 lo..hi step s x TODO_AXIS_2 lo..hi step s, count where TODO the axes here are categories, not intervals; index each category 0..k-1 and compare: TODO_AXIS_1 >= TODO_THRESHOLD and TODO_AXIS_2 >= TODO_THRESHOLD",
+   "symbols_that_are_not_axes": [
+    "Enumerate",
+    "G",
+    "accepting",
+    "accepts",
+    "behaviour",
+    "composer",
+    "correct",
+    "g"
+   ],
+   "template_is_confirmed_by_a_human": false
+  },
+  {
+   "axes_the_sentence_stated": [
+    "in",
+    "x"
+   ],
+   "axis_geometry_enumerated": true,
+   "category": "a_names_a_non_axis",
+   "id": "CO06",
+   "refused_by_annihilate": "no 'sweep ... , count where ...'",
+   "rewrite_template": "sweep in 0..5 step 0.15625 x x 0..5 step 0.15625, count where TODO define accepted, completes, composition, length as an expression in in and x, then: in >= TODO_THRESHOLD and x >= TODO_THRESHOLD",
+   "symbols_that_are_not_axes": [
+    "accepted",
+    "completes",
+    "composition",
+    "length",
+    "loaded",
+    "n",
+    "states",
+    "today"
+   ],
+   "template_is_confirmed_by_a_human": false
+  },
+  {
+   "axes_the_sentence_stated": [],
+   "category": "c_axis_is_a_word_not_a_quantity",
+   "id": "CO07",
+   "refused_by_annihilate": "no 'sweep ... , count where ...'",
+   "rewrite_template": "sweep TODO_AXIS_1 lo..hi step s x TODO_AXIS_2 lo..hi step s, count where TODO the axes here are categories, not intervals; index each category 0..k-1 and compare: TODO_AXIS_1 >= TODO_THRESHOLD and TODO_AXIS_2 >= TODO_THRESHOLD",
+   "symbols_that_are_not_axes": [
+    "behaviour",
+    "byte",
+    "case",
+    "different",
+    "file",
+    "function",
+    "identical",
+    "implementation"
+   ],
+   "template_is_confirmed_by_a_human": false
+  },
+  {
+   "axes_the_sentence_stated": [],
+   "category": "b_no_countable_predicate",
+   "id": "CO08",
+   "refused_by_annihilate": "no 'sweep ... , count where ...'",
+   "rewrite_template": "sweep TODO_AXIS_1 lo..hi step s x TODO_AXIS_2 lo..hi step s, count where TODO_AXIS_1 >= TODO_THRESHOLD and TODO_AXIS_2 >= TODO_THRESHOLD",
+   "symbols_that_are_not_axes": [],
+   "template_is_confirmed_by_a_human": false
+  },
+  {
+   "axes_the_sentence_stated": [],
+   "category": "c_axis_is_a_word_not_a_quantity",
+   "id": "CO09",
+   "refused_by_annihilate": "no 'sweep ... , count where ...'",
+   "rewrite_template": "sweep TODO_AXIS_1 lo..hi step s x TODO_AXIS_2 lo..hi step s, count where TODO the axes here are categories, not intervals; index each category 0..k-1 and compare: TODO_AXIS_1 >= TODO_THRESHOLD and TODO_AXIS_2 >= TODO_THRESHOLD",
+   "symbols_that_are_not_axes": [
+    "Enumerate",
+    "F",
+    "absent",
+    "after",
+    "before",
+    "block",
+    "bytes",
+    "command"
+   ],
+   "template_is_confirmed_by_a_human": false
+  },
+  {
+   "axes_the_sentence_stated": [],
+   "category": "b_no_countable_predicate",
+   "id": "CO10",
+   "refused_by_annihilate": "no 'sweep ... , count where ...'",
+   "rewrite_template": "sweep TODO_AXIS_1 lo..hi step s x TODO_AXIS_2 lo..hi step s, count where TODO_AXIS_1 >= TODO_THRESHOLD and TODO_AXIS_2 >= TODO_THRESHOLD",
+   "symbols_that_are_not_axes": [],
+   "template_is_confirmed_by_a_human": false
+  },
+  {
+   "axes_the_sentence_stated": [],
+   "category": "c_axis_is_a_word_not_a_quantity",
+   "id": "DA01",
+   "refused_by_annihilate": "no 'sweep ... , count where ...'",
+   "rewrite_template": "sweep TODO_AXIS_1 lo..hi step s x TODO_AXIS_2 lo..hi step s, count where TODO the axes here are categories, not intervals; index each category 0..k-1 and compare: TODO_AXIS_1 >= TODO_THRESHOLD and TODO_AXIS_2 >= TODO_THRESHOLD",
+   "symbols_that_are_not_axes": [
+    "MODULES",
+    "class_id",
+    "classes",
+    "json",
+    "list",
+    "module",
+    "name",
+    "source"
+   ],
+   "template_is_confirmed_by_a_human": false
+  },
+  {
+   "axes_the_sentence_stated": [],
+   "category": "c_axis_is_a_word_not_a_quantity",
+   "id": "DA02",
+   "refused_by_annihilate": "no 'sweep ... , count where ...'",
+   "rewrite_template": "sweep TODO_AXIS_1 lo..hi step s x TODO_AXIS_2 lo..hi step s, count where TODO the axes here are categories, not intervals; index each category 0..k-1 and compare: TODO_AXIS_1 >= TODO_THRESHOLD and TODO_AXIS_2 >= TODO_THRESHOLD",
+   "symbols_that_are_not_axes": [
+    "actual",
+    "bnpi",
+    "exactly",
+    "expected",
+    "k",
+    "stc",
+    "v"
+   ],
+   "template_is_confirmed_by_a_human": false
+  },
+  {
+   "axes_the_sentence_stated": [],
+   "category": "c_axis_is_a_word_not_a_quantity",
+   "id": "DA03",
+   "refused_by_annihilate": "no 'sweep ... , count where ...'",
+   "rewrite_template": "sweep TODO_AXIS_1 lo..hi step s x TODO_AXIS_2 lo..hi step s, count where TODO the axes here are categories, not intervals; index each category 0..k-1 and compare: TODO_AXIS_1 >= TODO_THRESHOLD and TODO_AXIS_2 >= TODO_THRESHOLD",
+   "symbols_that_are_not_axes": [
+    "fails",
+    "file",
+    "sum",
+    "values",
+    "verdicts"
+   ],
+   "template_is_confirmed_by_a_human": false
+  },
+  {
+   "axes_the_sentence_stated": [
+    "N_series",
+    "Tmin"
+   ],
+   "axis_geometry_enumerated": true,
+   "category": "a_names_a_non_axis",
+   "id": "DA04",
+   "refused_by_annihilate": "no 'sweep ... , count where ...'",
+   "rewrite_template": "sweep N_series 20..34 step 0.4375 x Tmin -40..10 step 0.5, count where TODO define N, Voc, beta, bin as an expression in N_series and Tmin, then: N_series >= TODO_THRESHOLD and Tmin >= TODO_THRESHOLD",
+   "symbols_that_are_not_axes": [
+    "N",
+    "Voc",
+    "beta",
+    "bin",
+    "report",
+    "take",
+    "top"
+   ],
+   "template_is_confirmed_by_a_human": false
+  },
+  {
+   "axes_the_sentence_stated": [],
+   "category": "b_no_countable_predicate",
+   "id": "DA05",
+   "refused_by_annihilate": "no 'sweep ... , count where ...'",
+   "rewrite_template": "sweep TODO_AXIS_1 lo..hi step s x TODO_AXIS_2 lo..hi step s, count where TODO_AXIS_1 >= TODO_THRESHOLD and TODO_AXIS_2 >= TODO_THRESHOLD",
+   "symbols_that_are_not_axes": [],
+   "template_is_confirmed_by_a_human": false
+  },
+  {
+   "axes_the_sentence_stated": [],
+   "category": "c_axis_is_a_word_not_a_quantity",
+   "id": "DA06",
+   "refused_by_annihilate": "no 'sweep ... , count where ...'",
+   "rewrite_template": "sweep TODO_AXIS_1 lo..hi step s x TODO_AXIS_2 lo..hi step s, count where TODO the axes here are categories, not intervals; index each category 0..k-1 and compare: TODO_AXIS_1 >= TODO_THRESHOLD and TODO_AXIS_2 >= TODO_THRESHOLD",
+   "symbols_that_are_not_axes": [
+    "Isc",
+    "T",
+    "W",
+    "bifaciality",
+    "bifaciality_pct",
+    "bins",
+    "fail",
+    "five"
+   ],
+   "template_is_confirmed_by_a_human": false
+  },
+  {
+   "axes_the_sentence_stated": [],
+   "category": "b_no_countable_predicate",
+   "id": "DA07",
+   "refused_by_annihilate": "no 'sweep ... , count where ...'",
+   "rewrite_template": "sweep TODO_AXIS_1 lo..hi step s x TODO_AXIS_2 lo..hi step s, count where TODO_AXIS_1 >= TODO_THRESHOLD and TODO_AXIS_2 >= TODO_THRESHOLD",
+   "symbols_that_are_not_axes": [],
+   "template_is_confirmed_by_a_human": false
+  },
+  {
+   "axes_the_sentence_stated": [],
+   "category": "b_no_countable_predicate",
+   "id": "DA08",
+   "refused_by_annihilate": "no 'sweep ... , count where ...'",
+   "rewrite_template": "sweep TODO_AXIS_1 lo..hi step s x TODO_AXIS_2 lo..hi step s, count where TODO_AXIS_1 >= TODO_THRESHOLD and TODO_AXIS_2 >= TODO_THRESHOLD",
+   "symbols_that_are_not_axes": [],
+   "template_is_confirmed_by_a_human": false
+  },
+  {
+   "axes_the_sentence_stated": [],
+   "category": "c_axis_is_a_word_not_a_quantity",
+   "id": "DR01",
+   "refused_by_annihilate": "no 'sweep ... , count where ...'",
+   "rewrite_template": "sweep TODO_AXIS_1 lo..hi step s x TODO_AXIS_2 lo..hi step s, count where TODO the axes here are categories, not intervals; index each category 0..k-1 and compare: TODO_AXIS_1 >= TODO_THRESHOLD and TODO_AXIS_2 >= TODO_THRESHOLD",
+   "symbols_that_are_not_axes": [
+    "SYMBOL",
+    "below",
+    "counts",
+    "declared",
+    "drawn",
+    "i",
+    "minimum",
+    "own"
+   ],
+   "template_is_confirmed_by_a_human": false
+  },
+  {
+   "axes_the_sentence_stated": [],
+   "category": "c_axis_is_a_word_not_a_quantity",
+   "id": "DR02",
+   "refused_by_annihilate": "no 'sweep ... , count where ...'",
+   "rewrite_template": "sweep TODO_AXIS_1 lo..hi step s x TODO_AXIS_2 lo..hi step s, count where TODO the axes here are categories, not intervals; index each category 0..k-1 and compare: TODO_AXIS_1 >= TODO_THRESHOLD and TODO_AXIS_2 >= TODO_THRESHOLD",
+   "symbols_that_are_not_axes": [
+    "enumerate",
+    "exceeds",
+    "find",
+    "first",
+    "floor_i",
+    "gen",
+    "len_i",
+    "m"
+   ],
+   "template_is_confirmed_by_a_human": false
+  },
+  {
+   "axes_the_sentence_stated": [],
+   "category": "c_axis_is_a_word_not_a_quantity",
+   "id": "DR03",
+   "refused_by_annihilate": "no 'sweep ... , count where ...'",
+   "rewrite_template": "sweep TODO_AXIS_1 lo..hi step s x TODO_AXIS_2 lo..hi step s, count where TODO the axes here are categories, not intervals; index each category 0..k-1 and compare: TODO_AXIS_1 >= TODO_THRESHOLD and TODO_AXIS_2 >= TODO_THRESHOLD",
+   "symbols_that_are_not_axes": [
+    "after",
+    "counts",
+    "cumsum",
+    "drawn",
+    "first",
+    "full",
+    "i",
+    "length"
+   ],
+   "template_is_confirmed_by_a_human": false
+  },
+  {
+   "axes_the_sentence_stated": [],
+   "category": "b_no_countable_predicate",
+   "id": "DR04",
+   "refused_by_annihilate": "no 'sweep ... , count where ...'",
+   "rewrite_template": "sweep TODO_AXIS_1 lo..hi step s x TODO_AXIS_2 lo..hi step s, count where TODO_AXIS_1 >= TODO_THRESHOLD and TODO_AXIS_2 >= TODO_THRESHOLD",
+   "symbols_that_are_not_axes": [],
+   "template_is_confirmed_by_a_human": false
+  },
+  {
+   "axes_the_sentence_stated": [],
+   "category": "c_axis_is_a_word_not_a_quantity",
+   "id": "DR05",
+   "refused_by_annihilate": "no 'sweep ... , count where ...'",
+   "rewrite_template": "sweep TODO_AXIS_1 lo..hi step s x TODO_AXIS_2 lo..hi step s, count where TODO the axes here are categories, not intervals; index each category 0..k-1 and compare: TODO_AXIS_1 >= TODO_THRESHOLD and TODO_AXIS_2 >= TODO_THRESHOLD",
+   "symbols_that_are_not_axes": [
+    "counts",
+    "divided",
+    "i",
+    "len_i",
+    "minimum",
+    "overstates",
+    "pieces",
+    "ratio"
+   ],
+   "template_is_confirmed_by_a_human": false
+  },
+  {
+   "axes_the_sentence_stated": [],
+   "category": "c_axis_is_a_word_not_a_quantity",
+   "id": "DR06",
+   "refused_by_annihilate": "no 'sweep ... , count where ...'",
+   "rewrite_template": "sweep TODO_AXIS_1 lo..hi step s x TODO_AXIS_2 lo..hi step s, count where TODO the axes here are categories, not intervals; index each category 0..k-1 and compare: TODO_AXIS_1 >= TODO_THRESHOLD and TODO_AXIS_2 >= TODO_THRESHOLD",
+   "symbols_that_are_not_axes": [
+    "area",
+    "aspect",
+    "e",
+    "enumerate",
+    "find",
+    "finding",
+    "generally",
+    "grid"
+   ],
+   "template_is_confirmed_by_a_human": false
+  },
+  {
+   "axes_the_sentence_stated": [],
+   "category": "b_no_countable_predicate",
+   "id": "DR07",
+   "refused_by_annihilate": "no 'sweep ... , count where ...'",
+   "rewrite_template": "sweep TODO_AXIS_1 lo..hi step s x TODO_AXIS_2 lo..hi step s, count where TODO_AXIS_1 >= TODO_THRESHOLD and TODO_AXIS_2 >= TODO_THRESHOLD",
+   "symbols_that_are_not_axes": [],
+   "template_is_confirmed_by_a_human": false
+  },
+  {
+   "axes_the_sentence_stated": [],
+   "category": "b_no_countable_predicate",
+   "id": "DR08",
+   "refused_by_annihilate": "no 'sweep ... , count where ...'",
+   "rewrite_template": "sweep TODO_AXIS_1 lo..hi step s x TODO_AXIS_2 lo..hi step s, count where TODO_AXIS_1 >= TODO_THRESHOLD and TODO_AXIS_2 >= TODO_THRESHOLD",
+   "symbols_that_are_not_axes": [],
+   "template_is_confirmed_by_a_human": false
+  },
+  {
+   "axes_the_sentence_stated": [],
+   "category": "c_axis_is_a_word_not_a_quantity",
+   "id": "DR09",
+   "refused_by_annihilate": "no 'sweep ... , count where ...'",
+   "rewrite_template": "sweep TODO_AXIS_1 lo..hi step s x TODO_AXIS_2 lo..hi step s, count where TODO the axes here are categories, not intervals; index each category 0..k-1 and compare: TODO_AXIS_1 >= TODO_THRESHOLD and TODO_AXIS_2 >= TODO_THRESHOLD",
+   "symbols_that_are_not_axes": [
+    "PI",
+    "aligned",
+    "angular",
+    "centre",
+    "difference",
+    "dots",
+    "i",
+    "mod"
+   ],
+   "template_is_confirmed_by_a_human": false
+  },
+  {
+   "axes_the_sentence_stated": [],
+   "category": "c_axis_is_a_word_not_a_quantity",
+   "id": "DR10",
+   "refused_by_annihilate": "no 'sweep ... , count where ...'",
+   "rewrite_template": "sweep TODO_AXIS_1 lo..hi step s x TODO_AXIS_2 lo..hi step s, count where TODO the axes here are categories, not intervals; index each category 0..k-1 and compare: TODO_AXIS_1 >= TODO_THRESHOLD and TODO_AXIS_2 >= TODO_THRESHOLD",
+   "symbols_that_are_not_axes": [
+    "DOT_MIN_PX",
+    "diagram",
+    "enumerate",
+    "find",
+    "resolving",
+    "sldGap",
+    "stops",
+    "substation"
+   ],
+   "template_is_confirmed_by_a_human": false
+  },
+  {
+   "axes_the_sentence_stated": [
+    "kv",
+    "csa",
+    "routing"
+   ],
+   "axis_geometry_enumerated": true,
+   "category": "a_names_a_non_axis",
+   "id": "GS01",
+   "refused_by_annihilate": "no 'sweep ... , count where ...'",
+   "rewrite_template": "sweep kv 0..4 step 0.125 x csa 0..10 step 0.3125 x routing 0..1 step 0.03125, count where TODO define axes, changed, ci, denominator as an expression in kv and csa and routing, then: kv >= TODO_THRESHOLD and csa >= TODO_THRESHOLD and routing >= TODO_THRESHOLD",
+   "symbols_that_are_not_axes": [
+    "axes",
+    "changed",
+    "ci",
+    "denominator",
+    "distinct",
+    "enumerate",
+    "exactly",
+    "four"
+   ],
+   "template_is_confirmed_by_a_human": false
+  },
+  {
+   "axes_the_sentence_stated": [],
+   "category": "b_no_countable_predicate",
+   "id": "GS02",
+   "refused_by_annihilate": "no 'sweep ... , count where ...'",
+   "rewrite_template": "sweep TODO_AXIS_1 lo..hi step s x TODO_AXIS_2 lo..hi step s, count where TODO_AXIS_1 >= TODO_THRESHOLD and TODO_AXIS_2 >= TODO_THRESHOLD",
+   "symbols_that_are_not_axes": [],
+   "template_is_confirmed_by_a_human": false
+  },
+  {
+   "axes_the_sentence_stated": [],
+   "category": "c_axis_is_a_word_not_a_quantity",
+   "id": "GS03",
+   "refused_by_annihilate": "no 'sweep ... , count where ...'",
+   "rewrite_template": "sweep TODO_AXIS_1 lo..hi step s x TODO_AXIS_2 lo..hi step s, count where TODO the axes here are categories, not intervals; index each category 0..k-1 and compare: TODO_AXIS_1 >= TODO_THRESHOLD and TODO_AXIS_2 >= TODO_THRESHOLD",
+   "symbols_that_are_not_axes": [
+    "L_pi15",
+    "L_pi17",
+    "brk",
+    "cannot",
+    "cur",
+    "enumerate",
+    "flips",
+    "full"
+   ],
+   "template_is_confirmed_by_a_human": false
+  },
+  {
+   "axes_the_sentence_stated": [],
+   "category": "c_axis_is_a_word_not_a_quantity",
+   "id": "GS04",
+   "refused_by_annihilate": "no 'sweep ... , count where ...'",
+   "rewrite_template": "sweep TODO_AXIS_1 lo..hi step s x TODO_AXIS_2 lo..hi step s, count where TODO the axes here are categories, not intervals; index each category 0..k-1 and compare: TODO_AXIS_1 >= TODO_THRESHOLD and TODO_AXIS_2 >= TODO_THRESHOLD",
+   "symbols_that_are_not_axes": [
+    "beta",
+    "bin",
+    "differences",
+    "enumerate",
+    "fl64",
+    "how",
+    "k",
+    "many"
+   ],
+   "template_is_confirmed_by_a_human": false
+  },
+  {
+   "axes_the_sentence_stated": [
+    "ri",
+    "ti"
+   ],
+   "axis_geometry_enumerated": true,
+   "category": "a_names_a_non_axis",
+   "id": "GS05",
+   "refused_by_annihilate": "no 'sweep ... , count where ...'",
+   "rewrite_template": "sweep ri 0..3000 step 93.75 x ti 0..2000 step 62.5, count where TODO define case, claim, cleanRear, enumerate as an expression in ri and ti, then: ri >= TODO_THRESHOLD and ti >= TODO_THRESHOLD",
+   "symbols_that_are_not_axes": [
+    "case",
+    "claim",
+    "cleanRear",
+    "enumerate",
+    "g",
+    "group",
+    "minTripRi",
+    "minimum"
+   ],
+   "template_is_confirmed_by_a_human": false
+  },
+  {
+   "axes_the_sentence_stated": [],
+   "category": "c_axis_is_a_word_not_a_quantity",
+   "id": "GS06",
+   "refused_by_annihilate": "no 'sweep ... , count where ...'",
+   "rewrite_template": "sweep TODO_AXIS_1 lo..hi step s x TODO_AXIS_2 lo..hi step s, count where TODO the axes here are categories, not intervals; index each category 0..k-1 and compare: TODO_AXIS_1 >= TODO_THRESHOLD and TODO_AXIS_2 >= TODO_THRESHOLD",
+   "symbols_that_are_not_axes": [
+    "NB",
+    "NR",
+    "NS",
+    "N_REAR",
+    "N_TEMP",
+    "VN",
+    "coprime",
+    "enumerate"
+   ],
+   "template_is_confirmed_by_a_human": false
+  },
+  {
+   "axes_the_sentence_stated": [],
+   "category": "b_no_countable_predicate",
+   "id": "GS07",
+   "refused_by_annihilate": "no 'sweep ... , count where ...'",
+   "rewrite_template": "sweep TODO_AXIS_1 lo..hi step s x TODO_AXIS_2 lo..hi step s, count where TODO_AXIS_1 >= TODO_THRESHOLD and TODO_AXIS_2 >= TODO_THRESHOLD",
+   "symbols_that_are_not_axes": [],
+   "template_is_confirmed_by_a_human": false
+  },
+  {
+   "axes_the_sentence_stated": [],
+   "category": "c_axis_is_a_word_not_a_quantity",
+   "id": "GS08",
+   "refused_by_annihilate": "no 'sweep ... , count where ...'",
+   "rewrite_template": "sweep TODO_AXIS_1 lo..hi step s x TODO_AXIS_2 lo..hi step s, count where TODO the axes here are categories, not intervals; index each category 0..k-1 and compare: TODO_AXIS_1 >= TODO_THRESHOLD and TODO_AXIS_2 >= TODO_THRESHOLD",
+   "symbols_that_are_not_axes": [
+    "currently",
+    "designs",
+    "difference",
+    "enumerate",
+    "having",
+    "headroom",
+    "imp_e",
+    "isc_e"
+   ],
+   "template_is_confirmed_by_a_human": false
+  },
+  {
+   "axes_the_sentence_stated": [],
+   "category": "c_axis_is_a_word_not_a_quantity",
+   "id": "GS09",
+   "refused_by_annihilate": "no 'sweep ... , count where ...'",
+   "rewrite_template": "sweep TODO_AXIS_1 lo..hi step s x TODO_AXIS_2 lo..hi step s, count where TODO the axes here are categories, not intervals; index each category 0..k-1 and compare: TODO_AXIS_1 >= TODO_THRESHOLD and TODO_AXIS_2 >= TODO_THRESHOLD",
+   "symbols_that_are_not_axes": [
+    "bits",
+    "currently",
+    "enumerate",
+    "exactly",
+    "expected",
+    "fix",
+    "pattern",
+    "sample"
+   ],
+   "template_is_confirmed_by_a_human": false
+  },
+  {
+   "axes_the_sentence_stated": [
+    "SERIES"
+   ],
+   "axis_geometry_enumerated": true,
+   "category": "a_names_a_non_axis",
+   "id": "GS10",
+   "refused_by_annihilate": "no 'sweep ... , count where ...'",
+   "rewrite_template": "sweep SERIES 20..34 step 0.4375, count where TODO define against, claim, compare, current as an expression in SERIES, then: SERIES >= TODO_THRESHOLD",
+   "symbols_that_are_not_axes": [
+    "against",
+    "claim",
+    "compare",
+    "current",
+    "enumerate",
+    "gap",
+    "grid",
+    "home"
+   ],
+   "template_is_confirmed_by_a_human": false
+  },
+  {
+   "axes_the_sentence_stated": [],
+   "category": "b_no_countable_predicate",
+   "id": "PA01",
+   "refused_by_annihilate": "no 'sweep ... , count where ...'",
+   "rewrite_template": "sweep TODO_AXIS_1 lo..hi step s x TODO_AXIS_2 lo..hi step s, count where TODO_AXIS_1 >= TODO_THRESHOLD and TODO_AXIS_2 >= TODO_THRESHOLD",
+   "symbols_that_are_not_axes": [],
+   "template_is_confirmed_by_a_human": false
+  },
+  {
+   "axes_the_sentence_stated": [],
+   "category": "c_axis_is_a_word_not_a_quantity",
+   "id": "PA02",
+   "refused_by_annihilate": "no 'sweep ... , count where ...'",
+   "rewrite_template": "sweep TODO_AXIS_1 lo..hi step s x TODO_AXIS_2 lo..hi step s, count where TODO the axes here are categories, not intervals; index each category 0..k-1 and compare: TODO_AXIS_1 >= TODO_THRESHOLD and TODO_AXIS_2 >= TODO_THRESHOLD",
+   "symbols_that_are_not_axes": [
+    "RUN",
+    "__proto__",
+    "character",
+    "class",
+    "constructor",
+    "excluded",
+    "function",
+    "hit"
+   ],
+   "template_is_confirmed_by_a_human": false
+  },
+  {
+   "axes_the_sentence_stated": [],
+   "category": "c_axis_is_a_word_not_a_quantity",
+   "id": "PA03",
+   "refused_by_annihilate": "no 'sweep ... , count where ...'",
+   "rewrite_template": "sweep TODO_AXIS_1 lo..hi step s x TODO_AXIS_2 lo..hi step s, count where TODO the axes here are categories, not intervals; index each category 0..k-1 and compare: TODO_AXIS_1 >= TODO_THRESHOLD and TODO_AXIS_2 >= TODO_THRESHOLD",
+   "symbols_that_are_not_axes": [
+    "bar",
+    "name",
+    "satisfying",
+    "test",
+    "toLowerCase",
+    "unreachable",
+    "z0"
+   ],
+   "template_is_confirmed_by_a_human": false
+  },
+  {
+   "axes_the_sentence_stated": [],
+   "category": "c_axis_is_a_word_not_a_quantity",
+   "id": "PA04",
+   "refused_by_annihilate": "no 'sweep ... , count where ...'",
+   "rewrite_template": "sweep TODO_AXIS_1 lo..hi step s x TODO_AXIS_2 lo..hi step s, count where TODO the axes here are categories, not intervals; index each category 0..k-1 and compare: TODO_AXIS_1 >= TODO_THRESHOLD and TODO_AXIS_2 >= TODO_THRESHOLD",
+   "symbols_that_are_not_axes": [
+    "brace",
+    "contain",
+    "does",
+    "final",
+    "hit",
+    "message",
+    "parse",
+    "removes"
+   ],
+   "template_is_confirmed_by_a_human": false
+  },
+  {
+   "axes_the_sentence_stated": [],
+   "category": "b_no_countable_predicate",
+   "id": "PA05",
+   "refused_by_annihilate": "no 'sweep ... , count where ...'",
+   "rewrite_template": "sweep TODO_AXIS_1 lo..hi step s x TODO_AXIS_2 lo..hi step s, count where TODO_AXIS_1 >= TODO_THRESHOLD and TODO_AXIS_2 >= TODO_THRESHOLD",
+   "symbols_that_are_not_axes": [],
+   "template_is_confirmed_by_a_human": false
+  },
+  {
+   "axes_the_sentence_stated": [],
+   "category": "b_no_countable_predicate",
+   "id": "PA06",
+   "refused_by_annihilate": "no 'sweep ... , count where ...'",
+   "rewrite_template": "sweep TODO_AXIS_1 lo..hi step s x TODO_AXIS_2 lo..hi step s, count where TODO_AXIS_1 >= TODO_THRESHOLD and TODO_AXIS_2 >= TODO_THRESHOLD",
+   "symbols_that_are_not_axes": [],
+   "template_is_confirmed_by_a_human": false
+  },
+  {
+   "axes_the_sentence_stated": [],
+   "category": "c_axis_is_a_word_not_a_quantity",
+   "id": "PA07",
+   "refused_by_annihilate": "no 'sweep ... , count where ...'",
+   "rewrite_template": "sweep TODO_AXIS_1 lo..hi step s x TODO_AXIS_2 lo..hi step s, count where TODO the axes here are categories, not intervals; index each category 0..k-1 and compare: TODO_AXIS_1 >= TODO_THRESHOLD and TODO_AXIS_2 >= TODO_THRESHOLD",
+   "symbols_that_are_not_axes": [
+    "FIRE",
+    "containing",
+    "different",
+    "digit",
+    "dropped",
+    "entry",
+    "fire",
+    "i"
+   ],
+   "template_is_confirmed_by_a_human": false
+  },
+  {
+   "axes_the_sentence_stated": [],
+   "category": "b_no_countable_predicate",
+   "id": "SH01",
+   "refused_by_annihilate": "no 'sweep ... , count where ...'",
+   "rewrite_template": "sweep TODO_AXIS_1 lo..hi step s x TODO_AXIS_2 lo..hi step s, count where TODO_AXIS_1 >= TODO_THRESHOLD and TODO_AXIS_2 >= TODO_THRESHOLD",
+   "symbols_that_are_not_axes": [],
+   "template_is_confirmed_by_a_human": false
+  },
+  {
+   "axes_the_sentence_stated": [],
+   "category": "b_no_countable_predicate",
+   "id": "SH02",
+   "refused_by_annihilate": "no 'sweep ... , count where ...'",
+   "rewrite_template": "sweep TODO_AXIS_1 lo..hi step s x TODO_AXIS_2 lo..hi step s, count where TODO_AXIS_1 >= TODO_THRESHOLD and TODO_AXIS_2 >= TODO_THRESHOLD",
+   "symbols_that_are_not_axes": [],
+   "template_is_confirmed_by_a_human": false
+  },
+  {
+   "axes_the_sentence_stated": [],
+   "category": "b_no_countable_predicate",
+   "id": "SH03",
+   "refused_by_annihilate": "no 'sweep ... , count where ...'",
+   "rewrite_template": "sweep TODO_AXIS_1 lo..hi step s x TODO_AXIS_2 lo..hi step s, count where TODO_AXIS_1 >= TODO_THRESHOLD and TODO_AXIS_2 >= TODO_THRESHOLD",
+   "symbols_that_are_not_axes": [],
+   "template_is_confirmed_by_a_human": false
+  },
+  {
+   "axes_the_sentence_stated": [],
+   "category": "b_no_countable_predicate",
+   "id": "SH04",
+   "refused_by_annihilate": "no 'sweep ... , count where ...'",
+   "rewrite_template": "sweep TODO_AXIS_1 lo..hi step s x TODO_AXIS_2 lo..hi step s, count where TODO_AXIS_1 >= TODO_THRESHOLD and TODO_AXIS_2 >= TODO_THRESHOLD",
+   "symbols_that_are_not_axes": [],
+   "template_is_confirmed_by_a_human": false
+  },
+  {
+   "axes_the_sentence_stated": [],
+   "category": "b_no_countable_predicate",
+   "id": "SH05",
+   "refused_by_annihilate": "no 'sweep ... , count where ...'",
+   "rewrite_template": "sweep TODO_AXIS_1 lo..hi step s x TODO_AXIS_2 lo..hi step s, count where TODO_AXIS_1 >= TODO_THRESHOLD and TODO_AXIS_2 >= TODO_THRESHOLD",
+   "symbols_that_are_not_axes": [],
+   "template_is_confirmed_by_a_human": false
+  },
+  {
+   "axes_the_sentence_stated": [],
+   "category": "b_no_countable_predicate",
+   "id": "SH06",
+   "refused_by_annihilate": "no 'sweep ... , count where ...'",
+   "rewrite_template": "sweep TODO_AXIS_1 lo..hi step s x TODO_AXIS_2 lo..hi step s, count where TODO_AXIS_1 >= TODO_THRESHOLD and TODO_AXIS_2 >= TODO_THRESHOLD",
+   "symbols_that_are_not_axes": [],
+   "template_is_confirmed_by_a_human": false
+  },
+  {
+   "axes_the_sentence_stated": [],
+   "category": "b_no_countable_predicate",
+   "id": "SH07",
+   "refused_by_annihilate": "no 'sweep ... , count where ...'",
+   "rewrite_template": "sweep TODO_AXIS_1 lo..hi step s x TODO_AXIS_2 lo..hi step s, count where TODO_AXIS_1 >= TODO_THRESHOLD and TODO_AXIS_2 >= TODO_THRESHOLD",
+   "symbols_that_are_not_axes": [],
+   "template_is_confirmed_by_a_human": false
+  },
+  {
+   "axes_the_sentence_stated": [],
+   "category": "b_no_countable_predicate",
+   "id": "SH08",
+   "refused_by_annihilate": "no 'sweep ... , count where ...'",
+   "rewrite_template": "sweep TODO_AXIS_1 lo..hi step s x TODO_AXIS_2 lo..hi step s, count where TODO_AXIS_1 >= TODO_THRESHOLD and TODO_AXIS_2 >= TODO_THRESHOLD",
+   "symbols_that_are_not_axes": [],
+   "template_is_confirmed_by_a_human": false
+  },
+  {
+   "axes_the_sentence_stated": [],
+   "category": "b_no_countable_predicate",
+   "id": "SH09",
+   "refused_by_annihilate": "no 'sweep ... , count where ...'",
+   "rewrite_template": "sweep TODO_AXIS_1 lo..hi step s x TODO_AXIS_2 lo..hi step s, count where TODO_AXIS_1 >= TODO_THRESHOLD and TODO_AXIS_2 >= TODO_THRESHOLD",
+   "symbols_that_are_not_axes": [],
+   "template_is_confirmed_by_a_human": false
+  },
+  {
+   "axes_the_sentence_stated": [
+    "site_min_c",
+    "modules_in_series",
+    "rear_gain_pct"
+   ],
+   "axis_geometry_enumerated": true,
+   "category": "a_names_a_non_axis",
+   "id": "SP01",
+   "refused_by_annihilate": "no 'sweep ... , count where ...'",
+   "rewrite_template": "sweep site_min_c -20..0 step 1 x modules_in_series 20..34 step 0.4375 x rear_gain_pct 0..30 step 1, count where TODO define over_fuse, over_mppt, over_string, tmin as an expression in site_min_c and modules_in_series and rear_gain_pct, then: site_min_c >= TODO_THRESHOLD and modules_in_series >= TODO_THRESHOLD and rear_gain_pct >= TODO_THRESHOLD",
+   "symbols_that_are_not_axes": [
+    "over_fuse",
+    "over_mppt",
+    "over_string",
+    "tmin"
+   ],
+   "template_is_confirmed_by_a_human": false
+  },
+  {
+   "axes_the_sentence_stated": [
+    "rear_gain_pct",
+    "temperature"
+   ],
+   "axis_geometry_enumerated": true,
+   "category": "a_names_a_non_axis",
+   "id": "SP02",
+   "refused_by_annihilate": "no 'sweep ... , count where ...'",
+   "rewrite_template": "sweep rear_gain_pct 0..30 step 1 x temperature -20..40 step 1, count where TODO define imp_e, isc_e as an expression in rear_gain_pct and temperature, then: rear_gain_pct >= TODO_THRESHOLD and temperature >= TODO_THRESHOLD",
+   "symbols_that_are_not_axes": [
+    "imp_e",
+    "isc_e"
+   ],
+   "template_is_confirmed_by_a_human": false
+  },
+  {
+   "axes_the_sentence_stated": [
+    "rear_gain_pct",
+    "temperature",
+    "modules_in_series"
+   ],
+   "axis_geometry_enumerated": true,
+   "category": "a_names_a_non_axis",
+   "id": "SP03",
+   "refused_by_annihilate": "no 'sweep ... , count where ...'",
+   "rewrite_template": "sweep rear_gain_pct 0..30 step 1 x temperature -20..40 step 1 x modules_in_series 20..34 step 0.4375, count where TODO define over_fuse, over_mppt, over_string, over_volts as an expression in rear_gain_pct and temperature and modules_in_series, then: rear_gain_pct >= TODO_THRESHOLD and temperature >= TODO_THRESHOLD and modules_in_series >= TODO_THRESHOLD",
+   "symbols_that_are_not_axes": [
+    "over_fuse",
+    "over_mppt",
+    "over_string",
+    "over_volts"
+   ],
+   "template_is_confirmed_by_a_human": false
+  },
+  {
+   "axes_the_sentence_stated": [
+    "modules_in_series",
+    "rear_gain_pct",
+    "site_min_c"
+   ],
+   "axis_geometry_enumerated": true,
+   "category": "b_no_countable_predicate",
+   "id": "SP04",
+   "refused_by_annihilate": "no 'sweep ... , count where ...'",
+   "rewrite_template": "sweep modules_in_series -100..500 step 1 x rear_gain_pct -50..500 step 1 x site_min_c -100..100 step 1, count where modules_in_series >= TODO_THRESHOLD and rear_gain_pct >= TODO_THRESHOLD and site_min_c >= TODO_THRESHOLD",
+   "symbols_that_are_not_axes": [],
+   "template_is_confirmed_by_a_human": false
+  },
+  {
+   "axes_the_sentence_stated": [
+    "beta",
+    "modules_in_series",
+    "site_min_c"
+   ],
+   "axis_geometry_enumerated": true,
+   "category": "a_names_a_non_axis",
+   "id": "SP05",
+   "refused_by_annihilate": "no 'sweep ... , count where ...'",
+   "rewrite_template": "sweep beta -0.3..-0.2 step 0.005 x modules_in_series 20..34 step 0.4375 x site_min_c -20..0 step 1, count where TODO define carried, sweep, v as an expression in beta and modules_in_series and site_min_c, then: beta >= TODO_THRESHOLD and modules_in_series >= TODO_THRESHOLD and site_min_c >= TODO_THRESHOLD",
+   "symbols_that_are_not_axes": [
+    "carried",
+    "sweep",
+    "v"
+   ],
+   "template_is_confirmed_by_a_human": false
+  },
+  {
+   "axes_the_sentence_stated": [
+    "rear_gain_pct",
+    "in"
+   ],
+   "axis_geometry_enumerated": true,
+   "category": "b_no_countable_predicate",
+   "id": "SP06",
+   "refused_by_annihilate": "no 'sweep ... , count where ...'",
+   "rewrite_template": "sweep rear_gain_pct 0..30 step 1 x in 26..30 step 0.125, count where rear_gain_pct >= TODO_THRESHOLD and in >= TODO_THRESHOLD",
+   "symbols_that_are_not_axes": [],
+   "template_is_confirmed_by_a_human": false
+  },
+  {
+   "axes_the_sentence_stated": [],
+   "category": "b_no_countable_predicate",
+   "id": "SP07",
+   "refused_by_annihilate": "no 'sweep ... , count where ...'",
+   "rewrite_template": "sweep TODO_AXIS_1 lo..hi step s x TODO_AXIS_2 lo..hi step s, count where TODO_AXIS_1 >= TODO_THRESHOLD and TODO_AXIS_2 >= TODO_THRESHOLD",
+   "symbols_that_are_not_axes": [],
+   "template_is_confirmed_by_a_human": false
+  },
+  {
+   "axes_the_sentence_stated": [
+    "modules_in_series",
+    "site_min_c"
+   ],
+   "axis_geometry_enumerated": true,
+   "category": "a_names_a_non_axis",
+   "id": "SP08",
+   "refused_by_annihilate": "no 'sweep ... , count where ...'",
+   "rewrite_template": "sweep modules_in_series 20..34 step 0.4375 x site_min_c -20..0 step 0.625, count where TODO define V, differs, more, value as an expression in modules_in_series and site_min_c, then: modules_in_series >= TODO_THRESHOLD and site_min_c >= TODO_THRESHOLD",
+   "symbols_that_are_not_axes": [
+    "V",
+    "differs",
+    "more",
+    "value"
+   ],
+   "template_is_confirmed_by_a_human": false
+  },
+  {
+   "axes_the_sentence_stated": [],
+   "category": "b_no_countable_predicate",
+   "id": "SP09",
+   "refused_by_annihilate": "no 'sweep ... , count where ...'",
+   "rewrite_template": "sweep TODO_AXIS_1 lo..hi step s x TODO_AXIS_2 lo..hi step s, count where TODO_AXIS_1 >= TODO_THRESHOLD and TODO_AXIS_2 >= TODO_THRESHOLD",
+   "symbols_that_are_not_axes": [],
+   "template_is_confirmed_by_a_human": false
+  },
+  {
+   "axes_the_sentence_stated": [],
+   "category": "b_no_countable_predicate",
+   "id": "SP10",
+   "refused_by_annihilate": "no 'sweep ... , count where ...'",
+   "rewrite_template": "sweep TODO_AXIS_1 lo..hi step s x TODO_AXIS_2 lo..hi step s, count where TODO_AXIS_1 >= TODO_THRESHOLD and TODO_AXIS_2 >= TODO_THRESHOLD",
+   "symbols_that_are_not_axes": [],
+   "template_is_confirmed_by_a_human": false
+  },
+  {
+   "axes_the_sentence_stated": [],
+   "category": "b_no_countable_predicate",
+   "id": "TS01",
+   "refused_by_annihilate": "no 'sweep ... , count where ...'",
+   "rewrite_template": "sweep TODO_AXIS_1 lo..hi step s x TODO_AXIS_2 lo..hi step s, count where TODO_AXIS_1 >= TODO_THRESHOLD and TODO_AXIS_2 >= TODO_THRESHOLD",
+   "symbols_that_are_not_axes": [],
+   "template_is_confirmed_by_a_human": false
+  },
+  {
+   "axes_the_sentence_stated": [],
+   "category": "b_no_countable_predicate",
+   "id": "TS02",
+   "refused_by_annihilate": "no 'sweep ... , count where ...'",
+   "rewrite_template": "sweep TODO_AXIS_1 lo..hi step s x TODO_AXIS_2 lo..hi step s, count where TODO_AXIS_1 >= TODO_THRESHOLD and TODO_AXIS_2 >= TODO_THRESHOLD",
+   "symbols_that_are_not_axes": [],
+   "template_is_confirmed_by_a_human": false
+  },
+  {
+   "axes_the_sentence_stated": [],
+   "category": "b_no_countable_predicate",
+   "id": "TS03",
+   "refused_by_annihilate": "no 'sweep ... , count where ...'",
+   "rewrite_template": "sweep TODO_AXIS_1 lo..hi step s x TODO_AXIS_2 lo..hi step s, count where TODO_AXIS_1 >= TODO_THRESHOLD and TODO_AXIS_2 >= TODO_THRESHOLD",
+   "symbols_that_are_not_axes": [],
+   "template_is_confirmed_by_a_human": false
+  },
+  {
+   "axes_the_sentence_stated": [],
+   "category": "b_no_countable_predicate",
+   "id": "TS04",
+   "refused_by_annihilate": "no 'sweep ... , count where ...'",
+   "rewrite_template": "sweep TODO_AXIS_1 lo..hi step s x TODO_AXIS_2 lo..hi step s, count where TODO_AXIS_1 >= TODO_THRESHOLD and TODO_AXIS_2 >= TODO_THRESHOLD",
+   "symbols_that_are_not_axes": [],
+   "template_is_confirmed_by_a_human": false
+  },
+  {
+   "axes_the_sentence_stated": [],
+   "category": "b_no_countable_predicate",
+   "id": "TS05",
+   "refused_by_annihilate": "no 'sweep ... , count where ...'",
+   "rewrite_template": "sweep TODO_AXIS_1 lo..hi step s x TODO_AXIS_2 lo..hi step s, count where TODO_AXIS_1 >= TODO_THRESHOLD and TODO_AXIS_2 >= TODO_THRESHOLD",
+   "symbols_that_are_not_axes": [],
+   "template_is_confirmed_by_a_human": false
+  },
+  {
+   "axes_the_sentence_stated": [],
+   "category": "b_no_countable_predicate",
+   "id": "TS06",
+   "refused_by_annihilate": "no 'sweep ... , count where ...'",
+   "rewrite_template": "sweep TODO_AXIS_1 lo..hi step s x TODO_AXIS_2 lo..hi step s, count where TODO_AXIS_1 >= TODO_THRESHOLD and TODO_AXIS_2 >= TODO_THRESHOLD",
+   "symbols_that_are_not_axes": [],
+   "template_is_confirmed_by_a_human": false
+  },
+  {
+   "axes_the_sentence_stated": [],
+   "category": "b_no_countable_predicate",
+   "id": "TS07",
+   "refused_by_annihilate": "no 'sweep ... , count where ...'",
+   "rewrite_template": "sweep TODO_AXIS_1 lo..hi step s x TODO_AXIS_2 lo..hi step s, count where TODO_AXIS_1 >= TODO_THRESHOLD and TODO_AXIS_2 >= TODO_THRESHOLD",
+   "symbols_that_are_not_axes": [],
+   "template_is_confirmed_by_a_human": false
+  },
+  {
+   "axes_the_sentence_stated": [],
+   "category": "b_no_countable_predicate",
+   "id": "TS08",
+   "refused_by_annihilate": "no 'sweep ... , count where ...'",
+   "rewrite_template": "sweep TODO_AXIS_1 lo..hi step s x TODO_AXIS_2 lo..hi step s, count where TODO_AXIS_1 >= TODO_THRESHOLD and TODO_AXIS_2 >= TODO_THRESHOLD",
+   "symbols_that_are_not_axes": [],
+   "template_is_confirmed_by_a_human": false
+  },
+  {
+   "axes_the_sentence_stated": [],
+   "category": "b_no_countable_predicate",
+   "id": "TS09",
+   "refused_by_annihilate": "no 'sweep ... , count where ...'",
+   "rewrite_template": "sweep TODO_AXIS_1 lo..hi step s x TODO_AXIS_2 lo..hi step s, count where TODO_AXIS_1 >= TODO_THRESHOLD and TODO_AXIS_2 >= TODO_THRESHOLD",
+   "symbols_that_are_not_axes": [],
+   "template_is_confirmed_by_a_human": false
+  },
+  {
+   "axes_the_sentence_stated": [],
+   "category": "b_no_countable_predicate",
+   "id": "TS10",
+   "refused_by_annihilate": "no 'sweep ... , count where ...'",
+   "rewrite_template": "sweep TODO_AXIS_1 lo..hi step s x TODO_AXIS_2 lo..hi step s, count where TODO_AXIS_1 >= TODO_THRESHOLD and TODO_AXIS_2 >= TODO_THRESHOLD",
+   "symbols_that_are_not_axes": [],
+   "template_is_confirmed_by_a_human": false
+  }
+ ],
+ "refusals_examined": 93,
+ "schema": "ggs.watch_refused/1"
+}

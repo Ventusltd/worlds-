@@ -115,7 +115,7 @@ double cur  = %(CLO).17g + (%(CHI).17g - %(CLO).17g) * (double)ai / (%(R8)d - 1.
 double len = (ro == 0) ? (2.006 * se + 2.0 * home)
                        : (0.63 * se + (se - 2.0) * %(PITCH).17g + 0.848 + 2.0 * home);
 /* inductance DERIVED from geometry, never swept */
-double L = (%(MU0).17g / 3.14159265358979) * (log(d / rad) + 0.25) * len;
+double L = (%(MU0).17g / %(PI).17g) * (log(d / rad) + 0.25) * len;
 
 double voc_cold = voc * (1.0 + bet / 100.0 * (tm - 25.0));
 double v_str    = se * voc_cold;
@@ -132,7 +132,7 @@ else                                             code = %(OK)d;
        "R5": RAD[5], "R6": RAD[6], "R7": RAD[7], "R8": RAD[8], "R9": RAD[9],
        "R10": RAD[10], "SLO": SEP_LO, "SHI": SEP_HI, "HLO": HOME_LO,
        "HHI": HOME_HI, "BLO": BRK_LO, "BHI": BRK_HI, "CLO": CUR_LO,
-       "CHI": CUR_HI, "PITCH": PITCH, "MU0": MU0, "MAXV": MAX_V,
+       "CHI": CUR_HI, "PITCH": PITCH, "MU0": MU0, "PI": math.pi, "MAXV": MAX_V,
        "LO": DCAC_LO, "HI": DCAC_HI, "WHI": WITH_HI, "COLD": COLD,
        "DISP": DISP, "BAND": BAND, "TRANS": TRANS, "OK": OK}
 
@@ -154,7 +154,16 @@ def reference(idx):
         ln = (2.006 * se + 2 * home) if ro == 0 else \
              (0.63 * se + (se - 2) * PITCH + 0.848 + 2 * home)
         L = (MU0 / math.pi) * (math.log(d / rad) + 0.25) * ln
-        vs = se * voc * (1 + bet / 100 * (tm - 25))
+        # ASSOCIATE EXACTLY AS THE KERNEL DOES. The kernel forms the cold
+        # voltage through a voc_cold intermediate, se * (voc * k); this read
+        # (se * voc) * k. Both are valid IEEE doubles and they differ at the
+        # last bit constantly - 2,659,568 of 9,000,150 cases in one sweep.
+        # Enumerating 18,980,843,400 cases found ZERO that land on opposite
+        # sides of 1500 V or 3000 V, so no published count moves. What moves
+        # is what '0 differ' MEANS: a probe of 200,000 would have missed a
+        # difference this thin with probability 0.999968. The certificate was
+        # nearly powerless; it simply had nothing to catch.
+        vs = se * (voc * (1 + bet / 100 * (tm - 25)))
         va = se * voc * (1 + bet / 100 * (tm + 10 - 25))
         dcac = (se * w / 1000.0) * sn / kva
         vk = L * cur / brk
