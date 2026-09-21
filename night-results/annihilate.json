@@ -1,0 +1,800 @@
+{
+ "agreed": 5315886734,
+ "anonymised": "No project, site, client, maker or model anywhere.",
+ "body_sha256": "916f035382c0c4470be64b6099f4c92a33b4fc51f80b6c5d59b2b683803e7f05",
+ "cases": 5315908358,
+ "did_not_annihilate": 21624,
+ "evaluations": 10631816716,
+ "not_claimed": "This settles arithmetic over the spaces the worksheets state. It does not say a space is the right space or a predicate the right question. A zero here means no case in THIS grid parted, not that none exists. It holds no site, no weather record and no as-built drawing, so it says nothing about any real installation.",
+ "per_predicate": [
+  {
+   "cases": 46965,
+   "did_not_annihilate": 0,
+   "held": 17135,
+   "id": "K01-01",
+   "what": "The string voltage is worked out at the standard-test open-circuit voltage and corrected f"
+  },
+  {
+   "cases": 1515,
+   "did_not_annihilate": 0,
+   "held": 12,
+   "id": "K01-02",
+   "what": "The voltage test uses the open-circuit voltage of the bin that was asked for, while the po"
+  },
+  {
+   "cases": 8415,
+   "did_not_annihilate": 0,
+   "held": 5368,
+   "id": "K01-03",
+   "what": "The ceiling the string voltage is judged against is a single constant written into the pro"
+  },
+  {
+   "cases": 4590,
+   "did_not_annihilate": 0,
+   "held": 3512,
+   "id": "K01-04",
+   "what": "Only the module's own system-voltage rating is tested; the connector and the string cable "
+  },
+  {
+   "cases": 31365,
+   "did_not_annihilate": 0,
+   "held": 13767,
+   "id": "K01-05",
+   "what": "The temperature correction is a straight line taken from a coefficient printed at one refe"
+  },
+  {
+   "cases": 615,
+   "did_not_annihilate": 0,
+   "held": 234,
+   "id": "K01-06",
+   "what": "The temperature the voltage is assessed at is clamped by the input box to a floor that is "
+  },
+  {
+   "cases": 13005,
+   "did_not_annihilate": 0,
+   "held": 4004,
+   "id": "K01-07",
+   "what": "The temperature coefficient of open-circuit voltage is carried as a single printed figure "
+  },
+  {
+   "cases": 1515,
+   "did_not_annihilate": 0,
+   "held": 726,
+   "id": "K01-08",
+   "what": "The number of modules a string may hold is offered as one fixed range for every class, alt"
+  },
+  {
+   "cases": 31365,
+   "did_not_annihilate": 0,
+   "held": 9628,
+   "id": "K01-09",
+   "what": "The temperature typed in is labelled an assessment temperature without saying whether it i"
+  },
+  {
+   "cases": 11041,
+   "did_not_annihilate": 0,
+   "held": 9760,
+   "id": "K02-01",
+   "what": "Both currents are evaluated only at the COLD assessment temperature, with a POSITIVE Isc c"
+  },
+  {
+   "cases": 11041,
+   "did_not_annihilate": 0,
+   "held": 3563,
+   "id": "K02-02",
+   "what": "One machine, two limits, judged on two different currents: the string-input test is writte"
+  },
+  {
+   "cases": 11041,
+   "did_not_annihilate": 0,
+   "held": 0,
+   "id": "K02-03",
+   "what": "The continuous-current factor is applied to the fuse and cable number only, and that numbe"
+  },
+  {
+   "cases": 2501,
+   "did_not_annihilate": 0,
+   "held": 0,
+   "id": "K02-04",
+   "what": "The only temperature the operator can type is bounded at or below freezing, so the hot cas"
+  },
+  {
+   "cases": 11041,
+   "did_not_annihilate": 0,
+   "held": 3563,
+   "id": "K02-05",
+   "what": "Because the two limits are judged on two different currents, the pair of strings can be ov"
+  },
+  {
+   "cases": 765,
+   "did_not_annihilate": 0,
+   "held": 587,
+   "id": "K03-01",
+   "what": "The voltage ceiling is the only one of the four limits carried as a bare constant with a c"
+  },
+  {
+   "cases": 256,
+   "did_not_annihilate": 0,
+   "held": 144,
+   "id": "K03-02",
+   "what": "Of the four numbers only the series fuse is printed on every datasheet and reproduced per "
+  },
+  {
+   "cases": 176,
+   "did_not_annihilate": 0,
+   "held": 87,
+   "id": "K03-03",
+   "what": "The string input limit has no provenance anywhere in the estate: not a datasheet, not the "
+  },
+  {
+   "cases": 224,
+   "did_not_annihilate": 0,
+   "held": 124,
+   "id": "K03-04",
+   "what": "The machine input limit is recorded in the estate's own standards note as absent from both"
+  },
+  {
+   "cases": 338,
+   "did_not_annihilate": 0,
+   "held": 132,
+   "id": "K03-05",
+   "what": "Strings per tracker input sits on the same line as the limits as though it were one, but t"
+  },
+  {
+   "cases": 399,
+   "did_not_annihilate": 0,
+   "held": 390,
+   "id": "K03-06",
+   "what": "The fuse verdict compares one string's sized current against the datasheet maximum series "
+  },
+  {
+   "cases": 806,
+   "did_not_annihilate": 0,
+   "held": 286,
+   "id": "K03-07",
+   "what": "The band a user may type is narrower than the band over which the voltage ceiling decides "
+  },
+  {
+   "cases": 121,
+   "did_not_annihilate": 0,
+   "held": 121,
+   "id": "K03-08",
+   "what": "The ceiling is taken from the module alone. A DC circuit is held to the lowest maximum sys"
+  },
+  {
+   "cases": 25536,
+   "did_not_annihilate": 18,
+   "held": 3390,
+   "id": "K04-01",
+   "what": "A plain ring is built with a floor of dots the comment calls the least that reads as a cir"
+  },
+  {
+   "cases": 802816,
+   "did_not_annihilate": 0,
+   "held": 754444,
+   "id": "K04-02",
+   "what": "The balance loop is capped at ten turns per dot and burns a turn on every piece already si"
+  },
+  {
+   "cases": 320000,
+   "did_not_annihilate": 0,
+   "held": 4278,
+   "id": "K04-03",
+   "what": "The layout reports one spacing for the whole drawing, the average length per dot, and the "
+  },
+  {
+   "cases": 40000,
+   "did_not_annihilate": 0,
+   "held": 38773,
+   "id": "K04-04",
+   "what": "The same reported spacing is wrong in the other direction for a floored ring that is long "
+  },
+  {
+   "cases": 320000,
+   "did_not_annihilate": 0,
+   "held": 317960,
+   "id": "K04-05",
+   "what": "Rounding, not the floor, decides a plain piece once its length passes a fraction of the to"
+  },
+  {
+   "cases": 400000000,
+   "did_not_annihilate": 0,
+   "held": 372695561,
+   "id": "K05-01",
+   "what": "the point-size floor fires: the shader clamps the dot up, so a dot is drawn wider than the"
+  },
+  {
+   "cases": 400000000,
+   "did_not_annihilate": 0,
+   "held": 6076,
+   "id": "K05-02",
+   "what": "the point-size ceiling fires: past it the dot stops growing with zoom, so zooming in no lo"
+  },
+  {
+   "cases": 400000000,
+   "did_not_annihilate": 0,
+   "held": 298661477,
+   "id": "K05-03",
+   "what": "nearest-neighbour gap falls below three dot radii: neighbouring keys touch or overlap at t"
+  },
+  {
+   "cases": 922341,
+   "did_not_annihilate": 213,
+   "held": 22578,
+   "id": "K05-04",
+   "what": "the safe band is the 16 px clamp rather than the real space: max(top+24, bot-8) inverts th"
+  },
+  {
+   "cases": 400000000,
+   "did_not_annihilate": 18231,
+   "held": 29685938,
+   "id": "K05-05",
+   "what": "the 640/641 step: one CSS pixel changes which furniture counts, because narrow() restacks "
+  },
+  {
+   "cases": 400000000,
+   "did_not_annihilate": 0,
+   "held": 23965547,
+   "id": "K05-06",
+   "what": "the wide branch is width-bound while the narrow branch is height-bound, so crossing 640 sw"
+  },
+  {
+   "cases": 16123107,
+   "did_not_annihilate": 0,
+   "held": 16102761,
+   "id": "K05-07",
+   "what": "home re-fit on rotation uses the same clamped band, so a phone turned to landscape lands o"
+  },
+  {
+   "cases": 6030,
+   "did_not_annihilate": 0,
+   "held": 439,
+   "id": "K06-01",
+   "what": "The card kernel divides the permeability constant by a pi literal truncated to 15 digits w"
+  },
+  {
+   "cases": 4221,
+   "did_not_annihilate": 161,
+   "held": 0,
+   "id": "K06-02",
+   "what": "The kernel forms the cold string voltage as series count times an already-multiplied modul"
+  },
+  {
+   "cases": 1600,
+   "did_not_annihilate": 0,
+   "held": 0,
+   "id": "K06-03",
+   "what": "The declared block power and the per-inverter DC power implied by the printed configuratio"
+  },
+  {
+   "cases": 60,
+   "did_not_annihilate": 0,
+   "held": 0,
+   "id": "K06-04",
+   "what": "The plant is divided into blocks by a ceiling on the target divided by the block power, an"
+  },
+  {
+   "cases": 2265,
+   "did_not_annihilate": 0,
+   "held": 317,
+   "id": "K06-05",
+   "what": "The DC-to-AC band is chosen by the author and published by no maker and no standard, and t"
+  },
+  {
+   "cases": 28341,
+   "did_not_annihilate": 0,
+   "held": 4640,
+   "id": "K06-06",
+   "what": "The DC-to-AC band test is evaluated before the transient test in both the kernel and the r"
+  },
+  {
+   "cases": 8000,
+   "did_not_annihilate": 0,
+   "held": 0,
+   "id": "K06-07",
+   "what": "The agreement between card and processor is asserted from a strided probe of a fixed, smal"
+  },
+  {
+   "cases": 55034919,
+   "did_not_annihilate": 0,
+   "held": 29683044,
+   "id": "K07-01",
+   "what": "One file sweeps the loop inductance as an invented input band while the other derives the "
+  },
+  {
+   "cases": 400000000,
+   "did_not_annihilate": 0,
+   "held": 399914642,
+   "id": "K07-02",
+   "what": "The break time at which the derived-inductance transient plus the standing string voltage "
+  },
+  {
+   "cases": 400000000,
+   "did_not_annihilate": 0,
+   "held": 400000000,
+   "id": "K07-03",
+   "what": "Against the conservative lower withstand the admissible break time is longer still, and th"
+  },
+  {
+   "cases": 400000000,
+   "did_not_annihilate": 0,
+   "held": 400000000,
+   "id": "K07-04",
+   "what": "The declared sub-microsecond break target is asserted in the prose but never tested agains"
+  },
+  {
+   "cases": 400000000,
+   "did_not_annihilate": 0,
+   "held": 75000,
+   "id": "K07-05",
+   "what": "The derived model depends on the logarithm of separation over radius, but the separation l"
+  },
+  {
+   "cases": 400000000,
+   "did_not_annihilate": 0,
+   "held": 289144,
+   "id": "K07-06",
+   "what": "Conductor radius enters the same logarithm and is taken from a bare cross-section with no "
+  },
+  {
+   "cases": 400000000,
+   "did_not_annihilate": 0,
+   "held": 0,
+   "id": "K07-07",
+   "what": "The two files can be made to disagree on the same case: the invented band admits inductanc"
+  },
+  {
+   "cases": 400000000,
+   "did_not_annihilate": 0,
+   "held": 0,
+   "id": "K07-08",
+   "what": "The interrupted current is swept over a wide band in one file and pinned to a short list i"
+  },
+  {
+   "cases": 400000000,
+   "did_not_annihilate": 0,
+   "held": 0,
+   "id": "K07-09",
+   "what": "The separation that distinguishes the two routings is the only axis that moves the inducta"
+  },
+  {
+   "cases": 6005001,
+   "did_not_annihilate": 0,
+   "held": 1495765,
+   "id": "K08-01",
+   "what": "the clean-rear reduction is a max over the WHOLE temperature axis, so a group that breache"
+  },
+  {
+   "cases": 6005001,
+   "did_not_annihilate": 0,
+   "held": 135073,
+   "id": "K08-02",
+   "what": "how far the max-over-temperature answer overstates the current-limited gain: every rear ga"
+  },
+  {
+   "cases": 6005001,
+   "did_not_annihilate": 3001,
+   "held": 66022,
+   "id": "K08-03",
+   "what": "the verification probe walks the first contiguous indices, and with the bin, series and ro"
+  },
+  {
+   "cases": 6005001,
+   "did_not_annihilate": 0,
+   "held": 1147793,
+   "id": "K08-04",
+   "what": "the probe therefore never exercises the warm end, where the current tests bind; the reduct"
+  },
+  {
+   "cases": 6005001,
+   "did_not_annihilate": 0,
+   "held": 3436367,
+   "id": "K08-05",
+   "what": "a sizing ratio is defined and never applied, so the string-input test compares the module "
+  },
+  {
+   "cases": 6005001,
+   "did_not_annihilate": 0,
+   "held": 137063,
+   "id": "K08-06",
+   "what": "the warmest-temperature justification in the kernel comment is inverted for the two curren"
+  },
+  {
+   "cases": 6005001,
+   "did_not_annihilate": 0,
+   "held": 0,
+   "id": "K08-07",
+   "what": "the string-input test can never be the binding one: the machine-input test on short-circui"
+  },
+  {
+   "cases": 45015,
+   "did_not_annihilate": 0,
+   "held": 45015,
+   "id": "K08-08",
+   "what": "the routing axis is read into the group index but voided in the kernel, so every case is e"
+  }
+ ],
+ "predicates": 58,
+ "refused": [
+  {
+   "id": "AN01",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "AN02",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "AN03",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "AN04",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "AN05",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "AN06",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "AN07",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "AN08",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "AN09",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "CI01",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "CI02",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "CI03",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "CI04",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "CI05",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "CI06",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "CI07",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "CI08",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "CI09",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "CI10",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "CO01",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "CO02",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "CO03",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "CO04",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "CO05",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "CO06",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "CO07",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "CO08",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "CO09",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "CO10",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "DA01",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "DA02",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "DA03",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "DA04",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "DA05",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "DA06",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "DA07",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "DA08",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "DR01",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "DR02",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "DR03",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "DR04",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "DR05",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "DR06",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "DR07",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "DR08",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "DR09",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "DR10",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "GS01",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "GS02",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "GS03",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "GS04",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "GS05",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "GS06",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "GS07",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "GS08",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "GS09",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "GS10",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "PA01",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "PA02",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "PA03",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "PA04",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "PA05",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "PA06",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "PA07",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "SH01",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "SH02",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "SH03",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "SH04",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "SH05",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "SH06",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "SH07",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "SH08",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "SH09",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "SP01",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "SP02",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "SP03",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "SP04",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "SP05",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "SP06",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "SP07",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "SP08",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "SP09",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "SP10",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "TS01",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "TS02",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "TS03",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "TS04",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "TS05",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "TS06",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "TS07",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "TS08",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "TS09",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "TS10",
+   "why": "no 'sweep ... , count where ...'"
+  }
+ ],
+ "refused_count": 93,
+ "schema": "ggs.annihilate/1",
+ "the_pair": "Each case is computed twice in the same thread. The electron channel evaluates the predicate as the worksheet wrote it. The positron channel makes every comparison STRICT: <= becomes <, >= becomes >. Those differ on exactly one set of cases - where the two sides are EQUAL. So a pair that does not annihilate is a case sitting exactly on its threshold, where the verdict is decided by whether the rule says 'or equal to'. That is a convention, not a measurement. An earlier version of this file described the positron as computing the complement of its opposite, which is a no-op and would have detected nothing; the description was wrong and has been corrected to match the code.",
+ "timing_not_in_digest": {
+  "cases_per_second": 2335975775,
+  "observed": false,
+  "seconds": 2.2757
+ }
+}
