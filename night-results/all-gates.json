@@ -1,0 +1,58 @@
+{
+ "anonymised": "No project, site, client, maker or model anywhere.",
+ "gates": [
+  {
+   "cases": 0,
+   "does_not_cover": "~915 other tracked pages, all of src/, and the whole other repository",
+   "exit": 0,
+   "gate": "language",
+   "reads": "8 files of the published surface",
+   "seconds": 0.08
+  },
+  {
+   "cases": 2026125150,
+   "does_not_cover": "that the limits it compares against are right",
+   "exit": 0,
+   "gate": "furnace",
+   "reads": "a billion cases, three channels: a fused kernel, an array graph, and the same voltage by the distributive law",
+   "seconds": 7.74
+  },
+  {
+   "cases": 81225150,
+   "does_not_cover": "anything outside the swept box, or between grid points",
+   "exit": 0,
+   "gate": "geometry",
+   "reads": "the SHAPE of each rule - its volume, its surface, and how much of it is one step from a different answer",
+   "seconds": 0.59
+  },
+  {
+   "cases": 100860000,
+   "does_not_cover": "whether the rules are the right rules - redundancy between two invented constants is a fact about the constants",
+   "exit": 0,
+   "gate": "logic-loop",
+   "reads": "the rules against EACH OTHER: implication, exclusion, dead rules, and which one binds first",
+   "seconds": 0.73
+  },
+  {
+   "cases": 5315908358,
+   "does_not_cover": "the 93 sentences it refused; they were never evaluated, so they are absent rather than clean",
+   "exit": 0,
+   "gate": "annihilate",
+   "reads": "every worksheet predicate in ONE launch, each case computed twice",
+   "seconds": 2.75
+  },
+  {
+   "cases": 2000033,
+   "does_not_cover": "ANYTHING ABOUT THIS REPOSITORY. It reads no source file. It measures IEEE arithmetic, which is true for ever, so it can never pass",
+   "exit": 1,
+   "gate": "verdict",
+   "reads": "whether a comparison can report a non-number as inside a rating",
+   "seconds": 0.56
+  }
+ ],
+ "not_claimed": "Every gate here checks that an implementation agrees with another implementation of the same arithmetic. None checks that the arithmetic is the right question, and two of the four limits they all rest on have no source.",
+ "passed": 5,
+ "schema": "ggs.allgates/1",
+ "total_cases": 7526118691,
+ "wall_seconds": 12.45
+}

@@ -793,8 +793,8 @@
  "schema": "ggs.annihilate/1",
  "the_pair": "Each case is computed twice in the same thread. The electron channel evaluates the predicate as the worksheet wrote it. The positron channel makes every comparison STRICT: <= becomes <, >= becomes >. Those differ on exactly one set of cases - where the two sides are EQUAL. So a pair that does not annihilate is a case sitting exactly on its threshold, where the verdict is decided by whether the rule says 'or equal to'. That is a convention, not a measurement. An earlier version of this file described the positron as computing the complement of its opposite, which is a no-op and would have detected nothing; the description was wrong and has been corrected to match the code.",
  "timing_not_in_digest": {
-  "cases_per_second": 2363238908,
+  "cases_per_second": 2334290246,
   "observed": false,
-  "seconds": 2.2494
+  "seconds": 2.2773
  }
 }
