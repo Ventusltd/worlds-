@@ -1,0 +1,66 @@
+{
+ "cases": 64177660800,
+ "seconds": 32.08,
+ "verified_differ": 0,
+ "phi_derived": {
+  "W750": 0.8504,
+  "W755": 0.8526,
+  "W760": 0.8511,
+  "W765": 0.8541,
+  "W770": 0.8526,
+  "T645": 0.7,
+  "T650": 0.6985,
+  "T655": 0.7007,
+  "T660": 0.6985,
+  "T665": 0.7007
+ },
+ "phi_source": "(K_Corr - 1) / 0.135, where K_Corr and the BNPI rear irradiance of 135 W/m2 are both printed on the datasheet. Not assumed.",
+ "datasheet_top_rear_gain_pct": 25.0,
+ "how_to_read_at_scale": "These are fractions of the design space, not per-string probabilities, and multiplying them by a string count is wrong. A plant is one design stamped out N times: for a chosen design every string is identical, so the exposed count is 0 or N with nothing in between, and the trigger is weather, which reaches a whole site inside the same hour. Common-mode exposure, not a reliability average. Margin does not divide by N - scale multiplies the consequence and never the tolerance. No plant size, string count or inverter count appears anywhere in this file, and none is needed to reach that conclusion.",
+ "verdicts": {
+  "clears every test": 1705223245,
+  "string input over 20 A": 45459176400,
+  "MPPT input over 40 A": 60422274000,
+  "over the 1500 V equipment rating": 24102277056,
+  "transient beyond the 3000 V withstand": 31666571145,
+  "no current margin AND beyond withstand": 30411491804,
+  "all three at once": 13699859939
+ },
+ "transient_ladder_v": [
+  2000.0,
+  3000.0,
+  4000.0,
+  6000.0,
+  8000.0
+ ],
+ "transient_ladder_counts": [
+  9411301909,
+  23099787746,
+  11996341487,
+  8792988953,
+  3413592839,
+  7463647866
+ ],
+ "mask_counts": [
+  1705223245,
+  0,
+  6095103830,
+  14867343649,
+  795084214,
+  0,
+  2744965639,
+  6303369078,
+  696081155,
+  0,
+  3381329818,
+  13330302047,
+  558998186,
+  0,
+  2741698313,
+  10958161626
+ ],
+ "routing_note": "Routing sets the loop inductance, and inductance appears only in the transient term. Leapfrog is a real mitigation for the transient and reaches neither the current tests nor the voltage rating.",
+ "model": "Rear gain raises current by a phi derived from the sheet's own K_Corr; cold trims it back by the printed alpha. Inductance is derived from separation, conductor radius and R6 length, never swept. NOT MODELLED, and each one makes the real answer worse rather than better: the rise in Voc with irradiance; non-uniform rear illumination along a string; stray capacitance, arc voltage, clamping and device dynamics in the transient. First-order screening. It says where to simulate, not what the simulation will say.",
+ "correlation_not_modelled": "High albedo and low ambient are the same weather. Rear gain and site minimum temperature are swept as independent axes, so the joint corner is present in the count but its real-world likelihood is understated by any marginal read of either axis on its own.",
+ "anonymised": "No maker, model, project or site anywhere."
+}
