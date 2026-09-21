@@ -220,7 +220,9 @@ def main():
                        "..", "atlas-lattice.json")
     io.open(out, "w", encoding="utf-8", newline="\n").write(json.dumps({
         "stations": n_st, "axes": [{"name": n, "steps": s} for n, s in axes],
-        "space": size, "evaluated": total, "seconds": round(sec, 3),
+        "cases": total,   # the key its four siblings write; without it
+               # this run was counted as zero for a whole night
+               "space": size, "evaluated": total, "seconds": round(sec, 3),
         "verified_differ": differ, "verdicts": dict(zip(LABEL, got)),
     }, indent=1) + "\n")
     print("\n  wrote atlas-lattice.json")

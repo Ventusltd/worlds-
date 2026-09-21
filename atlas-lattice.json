@@ -38,9 +38,10 @@
    "steps": 101
   }
  ],
+ "cases": 295770420000,
  "space": 295770420000,
  "evaluated": 295770420000,
- "seconds": 74.796,
+ "seconds": 76.384,
  "verified_differ": 0,
  "verdicts": {
   "buildable, both readings": 44113872000,

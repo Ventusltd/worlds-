@@ -71,7 +71,13 @@ GATES = [
      "IEEE arithmetic, which is true for ever, so it can never pass"),
 ]
 
-LANGUAGE = (r"C:\Users\vikra\Documents\GitHub\globalgrid2050",
+# NO ABSOLUTE PATH HERE. This repository is public, and an absolute path names
+# a machine and an account. That leak was scrubbed once and reintroduced by the
+# very next commit, because the scrub was reported done without anyone checking
+# that the old pattern returned zero hits. The sibling repository is found from
+# the environment, or from beside this one.
+LANGUAGE = (os.environ.get("GRID_SITE_REPO")
+            or os.path.join(os.path.dirname(ROOT), "globalgrid2050"),
             ["scripts/check_public_language.py"])
 
 
