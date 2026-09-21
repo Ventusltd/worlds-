@@ -1,0 +1,16 @@
+{
+ "cases": 5219153100,
+ "seconds": 1.29,
+ "verified_differ": 0,
+ "withstand_v": [
+  2000.0,
+  3000.0
+ ],
+ "verdicts": {
+  "below 2 kV - inside the conservative withstand": 2006523671,
+  "2 to 3 kV - inside the series pair, no margin": 1736217256,
+  "over 3 kV - beyond the published withstand": 1476412173
+ },
+ "model": "V = L*I/t, first order, plus the standing string voltage. Not a circuit simulation: no stray capacitance, no arc voltage, no clamping, no device dynamics. It says where to simulate, not what the simulation will say.",
+ "anonymised": "No maker, model, project or site anywhere."
+}

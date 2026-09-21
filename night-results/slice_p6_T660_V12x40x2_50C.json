@@ -1,0 +1,220 @@
+{
+ "schema": "night-gpu.slice.v1",
+ "written": "2026-09-21T02:48:12",
+ "source_of_modules": "MODULES.json",
+ "pass": 6,
+ "tmin_step_K": 0.01,
+ "module": {
+  "name": "T660",
+  "rating_W": 660.0,
+  "voc_V": 45.9,
+  "vmp_V": 38.1,
+  "imp_A": 17.35,
+  "isc_A": 18.45,
+  "beta_voc_pct_per_K": -0.25,
+  "k_corr": 1.0943,
+  "fuse_A": 35.0,
+  "note": "bin from DOC-B, solar.module.classes.bins.v1",
+  "source": "MODULES.json"
+ },
+ "inverter_variant": {
+  "name": "V12x40x2",
+  "mppts": 12,
+  "A_per_mppt": 40.0,
+  "connectors_per_mppt": 2,
+  "max_strings": 24
+ },
+ "derating_point": {
+  "ambient_C": 50.0,
+  "rating_kVA": 295.0,
+  "note": "one machine, three published ambient ratings"
+ },
+ "axes": {
+  "N_series": [
+   20,
+   34
+  ],
+  "strings": [
+   8,
+   24
+  ],
+  "Tmin_C": [
+   -40.0,
+   10.0,
+   0.01
+  ]
+ },
+ "denominator_cases": 1275255,
+ "verification": {
+  "reference": "numpy on CPU",
+  "sample_cases": 2048,
+  "comparisons": 34816,
+  "differ": 0,
+  "verdict": "AGREE"
+ },
+ "counts": {
+  "cold_pass_Tdesign_eq_Tmin": 872542,
+  "cold_pass_Tdesign_eq_Tmin_plus_10K": 929492,
+  "mppt_floor_pass": 1275255,
+  "mpp_top_pass": 1275255,
+  "dcac_in_band": 160032,
+  "string_current_op_within_20A": 0,
+  "string_current_1p25_within_20A": 0,
+  "mppt_current_pass": 1275255,
+  "config_pass_strict_reading": 104725,
+  "config_pass_plus10K_reading": 112425,
+  "all_pass_strict_reading": 0,
+  "all_pass_plus10K_reading": 0
+ },
+ "current_gates": {
+  "basis": "operating current K_corr*Isc against the 20 A string input; the 1.25 sizing factor is reported separately and is NOT collapsed into the input rating comparison",
+  "I_op_A": 20.19,
+  "I_1p25_A": 25.237,
+  "op_within_20A": false,
+  "sizing_1p25_within_20A": false,
+  "module_fuse_A": 35.0,
+  "sizing_1p25_within_module_fuse": true
+ },
+ "scalars": {
+  "i_op": 20.1898,
+  "i_design": 25.2373,
+  "vmp_hot": 33.8137
+ },
+ "dc_ac_band": [
+  1.18,
+  1.35
+ ],
+ "assumptions": {
+  "A1": "Vmp temperature coefficient taken as beta_Voc; no class publishes gamma_V",
+  "A2": "hot cell 70 C applied to all classes; only one class publishes T98<=70C"
+ },
+ "flip_table_basis": "coldest site Tmin at which cold voltage (Tdesign=Tmin) + MPPT floor + MPP top + DC:AC band all hold; current gates are temperature-independent and are in current_gates",
+ "flip_table_rows": 25,
+ "flip_table": [
+  {
+   "N_series": 22,
+   "strings": 24,
+   "coldest_Tmin_C_pass": -40.0
+  },
+  {
+   "N_series": 23,
+   "strings": 23,
+   "coldest_Tmin_C_pass": -40.0
+  },
+  {
+   "N_series": 23,
+   "strings": 24,
+   "coldest_Tmin_C_pass": -40.0
+  },
+  {
+   "N_series": 24,
+   "strings": 22,
+   "coldest_Tmin_C_pass": -40.0
+  },
+  {
+   "N_series": 24,
+   "strings": 23,
+   "coldest_Tmin_C_pass": -40.0
+  },
+  {
+   "N_series": 24,
+   "strings": 24,
+   "coldest_Tmin_C_pass": -40.0
+  },
+  {
+   "N_series": 25,
+   "strings": 22,
+   "coldest_Tmin_C_pass": -40.0
+  },
+  {
+   "N_series": 25,
+   "strings": 23,
+   "coldest_Tmin_C_pass": -40.0
+  },
+  {
+   "N_series": 25,
+   "strings": 24,
+   "coldest_Tmin_C_pass": -40.0
+  },
+  {
+   "N_series": 26,
+   "strings": 21,
+   "coldest_Tmin_C_pass": -40.0
+  },
+  {
+   "N_series": 26,
+   "strings": 22,
+   "coldest_Tmin_C_pass": -40.0
+  },
+  {
+   "N_series": 26,
+   "strings": 23,
+   "coldest_Tmin_C_pass": -40.0
+  },
+  {
+   "N_series": 27,
+   "strings": 20,
+   "coldest_Tmin_C_pass": -40.0
+  },
+  {
+   "N_series": 27,
+   "strings": 21,
+   "coldest_Tmin_C_pass": -40.0
+  },
+  {
+   "N_series": 27,
+   "strings": 22,
+   "coldest_Tmin_C_pass": -40.0
+  },
+  {
+   "N_series": 28,
+   "strings": 19,
+   "coldest_Tmin_C_pass": -40.0
+  },
+  {
+   "N_series": 28,
+   "strings": 20,
+   "coldest_Tmin_C_pass": -40.0
+  },
+  {
+   "N_series": 28,
+   "strings": 21,
+   "coldest_Tmin_C_pass": -40.0
+  },
+  {
+   "N_series": 29,
+   "strings": 19,
+   "coldest_Tmin_C_pass": -25.75
+  },
+  {
+   "N_series": 29,
+   "strings": 20,
+   "coldest_Tmin_C_pass": -25.75
+  },
+  {
+   "N_series": 30,
+   "strings": 18,
+   "coldest_Tmin_C_pass": -10.72
+  },
+  {
+   "N_series": 30,
+   "strings": 19,
+   "coldest_Tmin_C_pass": -10.72
+  },
+  {
+   "N_series": 30,
+   "strings": 20,
+   "coldest_Tmin_C_pass": -10.72
+  },
+  {
+   "N_series": 31,
+   "strings": 18,
+   "coldest_Tmin_C_pass": 3.33
+  },
+  {
+   "N_series": 31,
+   "strings": 19,
+   "coldest_Tmin_C_pass": 3.33
+  }
+ ]
+}

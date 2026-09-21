@@ -1,0 +1,42 @@
+{
+ "cases": 170827590600,
+ "seconds": 80.24,
+ "verified_differ": 0,
+ "axes": {
+  "module bin": 10,
+  "modules in series": 15,
+  "strings per inverter": 3,
+  "ambient-derated rating": 3,
+  "conductor mm2": 3,
+  "conductor separation": 41,
+  "home run length": 41,
+  "break time": 51,
+  "interrupted current": 41,
+  "site min temp": 6,
+  "routing": 2
+ },
+ "verdicts": {
+  "clears every test": 12643153508,
+  "disputed: the clause decides it": 7782145794,
+  "breaches the 1500 V rating": 56373104898,
+  "DC:AC outside our chosen band": 74447085780,
+  "transient beyond the suppressor withstand": 19582100620
+ },
+ "hierarchy": {
+  "target_dc_mw": 500.0,
+  "block_mw": 9.856,
+  "blocks": 51,
+  "ac_v": 800.0,
+  "collect_kv": 33.0,
+  "grid_kv": 400.0,
+  "blocks_per_substation": [
+   4,
+   6,
+   8
+  ]
+ },
+ "inductance": "DERIVED from conductor separation, conductor radius and R6 length. Never swept as an invented quantity.",
+ "dcac_band": "1.15-1.40 is OURS. No manufacturer and no contract read this night publishes one.",
+ "what_this_is_not": "DC sizing and a first-order transient screen. Not a design, not a study, not a connection assessment. No AC analysis, no protection coordination, no clamping or snubber modelled.",
+ "anonymised": "Architecture only. No project, client, site, maker or model. 500 MW DC is not the size of anything real."
+}

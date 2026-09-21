@@ -1,0 +1,18 @@
+{
+ "cases": 80640,
+ "median_uH": {
+  "turned": 224.5,
+  "sequential": 377.5
+ },
+ "median_metres": {
+  "turned": 144.2,
+  "sequential": 138.9
+ },
+ "verdicts": {
+  "under 2 kV": 21763,
+  "2 to 3 kV, no margin": 5902,
+  "over 3 kV, beyond withstand": 52975
+ },
+ "model": "L' = (mu0/pi)(ln(d/r) + 1/4) per metre, length from R6. First order: no coiled slack, no ground plane, no mutual coupling, no frequency dependence.",
+ "anonymised": "No maker, model, project or site."
+}
