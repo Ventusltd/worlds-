@@ -1,6 +1,6 @@
 {
- "cases": 7317674766000,
- "passes": 20,
+ "cases": 8415325980900,
+ "passes": 23,
  "failed_runs_not_counted": 0,
  "sweeps": [
   "arc_break.py",
@@ -10,6 +10,6 @@
   "atlas_lattice.py"
  ],
  "rule": "A pass is counted only if its sweep re-verified the card against the processor and recorded 0 differ. Failed or unverified passes are logged and excluded from this total.",
- "as_of": "2026-09-21T05:26:34",
+ "as_of": "2026-09-21T05:43:22",
  "anonymised": "No project, site, maker or model anywhere."
 }
