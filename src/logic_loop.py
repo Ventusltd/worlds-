@@ -7,7 +7,7 @@ exclusion, dead rules, equivalence, and which rule binds first.
 Pair rule: every count is produced twice - once by a CUDA kernel, once by a
 CuPy array path - and nothing is reported unless they agree exactly.
 
-Run with: E:\\swarm\\gpu-bench\\venv\\Scripts\\python.exe src/logic_loop.py
+Run with the CuPy interpreter named by GRID_PY: $GRID_PY src/logic_loop.py
 """
 import json
 import os
@@ -15,7 +15,12 @@ import sys
 
 import cupy as cp
 
-MODULES = r"E:\swarm\feed\MODULES.json"
+import paths
+
+# Not written down here: this repository is public and an absolute path
+# names a drive, a machine and an account. The root comes from GRID_DATA
+# in the environment; see src/paths.py for the whole argument.
+MODULES = paths.MODULES
 OUT = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
                    "night-results", "logic-loop.json")
 
@@ -37,6 +42,7 @@ I_MPPT_LIMIT = 40.0          # NO SOURCE
 
 # ---- bins -------------------------------------------------------------
 def load_bins():
+    paths.require(MODULES, "the module electrical data (MODULES.json)")
     d = json.load(open(MODULES, "r", encoding="utf-8"))
     bins = []
     for c in d["classes"]:

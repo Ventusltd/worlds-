@@ -332,7 +332,7 @@
     "crunchable": false,
     "severity": 4,
     "cost": 1,
-    "evidence": "python -c 'import cupy' fails; the venv at E:/swarm/gpu-bench/venv has it.",
+    "evidence": "python -c 'import cupy' fails; the venv named by GRID_PY has it.",
     "fix": "Point CI at the venv python, and keep the 'could not run' step.",
     "rank": 12,
     "status": "open"

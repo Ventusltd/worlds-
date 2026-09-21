@@ -41,7 +41,12 @@ import time
 
 import numpy as np
 
-MODULES = r"E:\swarm\feed\MODULES.json"
+import paths
+
+# Not written down here: this repository is public and an absolute path
+# names a drive, a machine and an account. The root comes from GRID_DATA
+# in the environment; see src/paths.py for the whole argument.
+MODULES = paths.MODULES
 
 WITHSTAND_LO, WITHSTAND_HI = 2000.0, 3000.0     # series pair of 1700 V devices
 N_L, L_LO, L_HI = 181, 40e-6, 400e-6            # loop inductance, henries
@@ -57,9 +62,7 @@ LABEL = ["below 2 kV - inside the conservative withstand",
 
 
 def bins():
-    if not os.path.isfile(MODULES):
-        raise SystemExit("FAIL: %s missing. Not enumerating on remembered "
-                         "numbers." % MODULES)
+    paths.require(MODULES, "the module electrical data (MODULES.json)")
     d = json.load(io.open(MODULES, encoding="utf-8"))
     e = d["classes"] if isinstance(d, dict) and "classes" in d else d
     if isinstance(e, dict):

@@ -62,7 +62,12 @@ import time
 
 import numpy as np
 
-MODULES = r"E:\swarm\feed\MODULES.json"
+import paths
+
+# Not written down here: this repository is public and an absolute path
+# names a drive, a machine and an account. The root comes from GRID_DATA
+# in the environment; see src/paths.py for the whole argument.
+MODULES = paths.MODULES
 MU0 = 4e-7 * math.pi
 BNPI_REAR = 0.135          # rear 135 W/m2 over front 1000 W/m2, from the sheet
 TABLE_TOP = 0.25           # highest rear gain the datasheet itself publishes
@@ -97,9 +102,7 @@ BITNAME = {B_STRING: "string input over %.0f A" % STRING_INPUT_A,
 
 
 def bins():
-    if not os.path.isfile(MODULES):
-        raise SystemExit("FAIL: %s missing. Not enumerating on remembered "
-                         "numbers." % MODULES)
+    paths.require(MODULES, "the module electrical data (MODULES.json)")
     d = json.load(io.open(MODULES, encoding="utf-8"))
     e = d["classes"] if isinstance(d, dict) and "classes" in d else d
     e = list(e.values()) if isinstance(e, dict) else e

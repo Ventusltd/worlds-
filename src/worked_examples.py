@@ -35,7 +35,12 @@ import time
 
 import numpy as np
 
-MODULES = r"E:\swarm\feed\MODULES.json"
+import paths
+
+# Not written down here: this repository is public and an absolute path
+# names a drive, a machine and an account. The root comes from GRID_DATA
+# in the environment; see src/paths.py for the whole argument.
+MODULES = paths.MODULES
 BNPI_REAR = 0.135
 V_CEIL = 1500.0
 STRING_INPUT_A = 20.0
@@ -55,9 +60,7 @@ TESTS = [(B_VOLT, "over the 1500 V equipment rating"),
 
 
 def bins():
-    if not os.path.isfile(MODULES):
-        raise SystemExit("FAIL: %s missing. Not enumerating on remembered "
-                         "numbers." % MODULES)
+    paths.require(MODULES, "the module electrical data (MODULES.json)")
     d = json.load(io.open(MODULES, encoding="utf-8"))
     e = d["classes"] if isinstance(d, dict) and "classes" in d else d
     e = list(e.values()) if isinstance(e, dict) else e

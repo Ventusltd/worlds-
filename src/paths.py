@@ -37,6 +37,10 @@ HARVEST_DIRS = [HARVEST, HARVEST2, HARVEST3]
 TUBE = os.path.join(ROOT, "grid", "tube", "out", "TUBE-DATA.js")
 NIGHT = os.path.join(ROOT, "night")
 
+# The interpreter that has CuPy is not on PATH and is not written down. Scripts
+# that need it say GRID_PY rather than naming a venv inside somebody's account.
+PY_HINT = "the CuPy interpreter named by GRID_PY"
+
 
 def require(path, what):
     """Refuse loudly rather than guess. A sweep that cannot find its numbers
@@ -49,3 +53,17 @@ def require(path, what):
             "  Set GRID_DATA to the directory that holds it. Nothing is\n"
             "  enumerated on remembered numbers." % (what, path))
     return path
+
+
+def require_any(paths, what):
+    """The same refusal for a set of directories. A sweep that reads three
+    places and finds two of them missing is not a smaller sweep, it is a
+    different one, and its counts mean something nobody asked for."""
+    found = [p for p in paths if os.path.exists(p)]
+    if not found:
+        raise SystemExit(
+            "FAIL: %s not found.\n"
+            "  looked in %d place(s) under the configured root.\n"
+            "  Set GRID_DATA to the directory that holds them. Nothing is\n"
+            "  enumerated on remembered numbers." % (what, len(paths)))
+    return found

@@ -13,7 +13,7 @@ axes that were invisible until tonight:
   295 at 50. The same array sits inside the DC:AC band at one ambient and
   outside it at another.
 
-Module bins come from E:\\swarm\\feed\\MODULES.json, reconstructed from
+Module bins come from the feed's MODULES.json, reconstructed from
 datasheets by bounding box and cross-checked (Vmp x Imp reproduces every
 printed Pmax to better than 0.2%). If that file is absent the run STOPS - it
 does not fall back to remembered numbers.
@@ -30,7 +30,12 @@ import time
 
 import numpy as np
 
-MODULES = r"E:\swarm\feed\MODULES.json"
+import paths
+
+# Not written down here: this repository is public and an absolute path
+# names a drive, a machine and an account. The root comes from GRID_DATA
+# in the environment; see src/paths.py for the whole argument.
+MODULES = paths.MODULES
 
 # real machine, from the datasheet: rating derates with ambient
 INV_KVA = [352.0, 320.0, 295.0]
@@ -57,11 +62,7 @@ LABEL = ["buildable, both readings", "disputed: the clause decides it",
 
 
 def bins():
-    if not os.path.isfile(MODULES):
-        raise SystemExit(
-            "FAIL: %s is missing. This run needs module bins read from "
-            "datasheets and will not substitute remembered numbers. A check "
-            "that reached nothing is not a pass." % MODULES)
+    paths.require(MODULES, "the module electrical data (MODULES.json)")
     d = json.load(io.open(MODULES, encoding="utf-8"))
     out = []
     ents = d if isinstance(d, list) else (d.get("classes") or d.get("modules")

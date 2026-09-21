@@ -54,8 +54,13 @@ import time
 
 import numpy as np
 
+import paths
+
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-MODULES = r"E:\swarm\feed\MODULES.json"
+# Not written down here: this repository is public and an absolute path
+# names a drive, a machine and an account. The root comes from GRID_DATA
+# in the environment; see src/paths.py for the whole argument.
+MODULES = paths.MODULES
 OUT = os.path.join(ROOT, "night-results", "geometry.json")
 
 V_CEIL, STRING_A, MPPT_A, SPM, SIZING = 1500.0, 20.0, 40.0, 2.0, 1.25
@@ -72,8 +77,7 @@ TESTS = [(1, "over the 1500 V equipment rating", "DATASHEET, all ten bins"),
 
 
 def bins():
-    if not os.path.isfile(MODULES):
-        raise SystemExit("FAIL: %s missing." % MODULES)
+    paths.require(MODULES, "the module electrical data (MODULES.json)")
     d = json.load(io.open(MODULES, encoding="utf-8"))
     e = d["classes"] if isinstance(d, dict) and "classes" in d else d
     e = list(e.values()) if isinstance(e, dict) else e

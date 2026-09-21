@@ -56,8 +56,13 @@ import time
 
 import numpy as np
 
+import paths
+
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-SHEET_DIRS = [r"E:\swarm\harvest", r"E:\swarm\harvest2"]
+# Not written down here: this repository is public and an absolute path
+# names a drive, a machine and an account. The root comes from GRID_DATA
+# in the environment; see src/paths.py for the whole argument.
+SHEET_DIRS = [paths.HARVEST, paths.HARVEST2]
 OUT = os.path.join(ROOT, "night-results", "annihilate.json")
 
 FUNCS = {"abs", "min", "max", "sqrt", "log", "exp", "pow"}
@@ -70,10 +75,13 @@ PER_MAX = 400_000_000           # no single predicate may own more than this
 
 
 def sheets():
+    """A worksheet directory that is not there is refused, not
+    skipped. A launch that quietly read one of two directories still
+    reports billions of cases, and the number means something nobody
+    asked for."""
     out = []
-    for d in SHEET_DIRS:
-        if not os.path.isdir(d):
-            continue
+    for d in paths.require_any(SHEET_DIRS, "the worksheet "
+                               "directories these predicates come from"):
         for f in sorted(os.listdir(d)):
             if f.lower().endswith(".geojson"):
                 out.append(os.path.join(d, f))

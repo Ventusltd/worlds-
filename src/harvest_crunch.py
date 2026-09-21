@@ -13,9 +13,9 @@ count over the whole space is.
 RUN IT WITH THE GPU INTERPRETER, NOT THE DEFAULT ONE
 CuPy lives in one place on this machine and it is not on PATH:
 
-    E:\\swarm\\gpu-bench\\venv\\Scripts\\python.exe src/harvest_crunch.py --list
-    E:\\swarm\\gpu-bench\\venv\\Scripts\\python.exe src/harvest_crunch.py --run
-    E:\\swarm\\gpu-bench\\venv\\Scripts\\python.exe src/harvest_crunch.py --run --ci
+    $GRID_PY src/harvest_crunch.py --list
+    $GRID_PY src/harvest_crunch.py --run
+    $GRID_PY src/harvest_crunch.py --run --ci
 
 `python` alone will import numpy and print the space; it cannot enumerate.
 
@@ -34,14 +34,14 @@ THE SHAPE OF THE FILE
      reference. Adding a finding means adding a row, not editing the runner.
   2. RUNNER   - one loop. Probe, verify, refuse or enumerate in batches,
      reduce with a bincount, write the counts down.
-  3. WORKSHEETS - the ten sprinters write features into E:\\swarm\\harvest\\.
+  3. WORKSHEETS - the ten sprinters write features into the harvest
      Each feature's `maths` is parsed into axes and a predicate and registered
      automatically. Anything that cannot be translated is REFUSED BY NAME with
      the reason. Never skipped silently: a silent skip is how a finding
      disappears and everybody assumes somebody else counted it.
 
 WHERE THE NUMBERS COME FROM
-  MODULES.json      E:\\swarm\\feed\\MODULES.json - every module electrical
+  MODULES.json      the feed's MODULES.json - every module electrical
                     number. Nothing here is remembered; if the file is missing
                     the findings that need it are refused, not guessed.
   the cartridge     the dot floors and the dot budget are read from the live
@@ -72,15 +72,20 @@ import time
 
 import numpy as np
 
+import paths
+
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
 OUT = os.path.join(ROOT, "night-results", "harvest-crunch.json")
 
-MODULES = r"E:\swarm\feed\MODULES.json"
-HARVEST_DIR = r"E:\swarm\harvest"
+# Not written down here: this repository is public and an absolute path
+# names a drive, a machine and an account. The root comes from GRID_DATA
+# in the environment; see src/paths.py for the whole argument.
+MODULES = paths.MODULES
+HARVEST_DIR = paths.HARVEST
 # ROUND TWO writes to its own directory, so a re-run of round one cannot
 # collide with it and neither sheet has to be moved to be read.
-HARVEST_DIRS = [HARVEST_DIR, r"E:\swarm\harvest2"]
+HARVEST_DIRS = [HARVEST_DIR, paths.HARVEST2]
 NIGHT_WORKSHEET = os.path.join(ROOT, "night-results", "worksheet.geojson")
 CARTRIDGE_DIR = os.environ.get("GRID_REPOS", "")
 
@@ -919,18 +924,18 @@ def read_worksheets():
     file is refused by name. A feature that cannot be translated is refused by
     its own id. Nothing is ever skipped quietly, because a quiet skip is how a
     finding vanishes while everybody assumes somebody else counted it."""
-    paths = []
+    sheet_files = []
     for d in HARVEST_DIRS:
         if os.path.isdir(d):
-            paths += [os.path.join(d, f) for f in sorted(os.listdir(d))
+            sheet_files += [os.path.join(d, f) for f in sorted(os.listdir(d))
                       if f.lower().endswith(".geojson")]
         else:
             refuse(d, "the worksheet directory does not exist")
-    paths.append(NIGHT_WORKSHEET)
+    sheet_files.append(NIGHT_WORKSHEET)
 
     built, seen, stats = [], set(), {"files": 0, "features": 0,
                                      "crunchable": 0, "translated": 0}
-    for p in paths:
+    for p in sheet_files:
         if not os.path.isfile(p):
             refuse(p, "no such file: the worksheet was not written")
             continue
@@ -1111,14 +1116,14 @@ def main():
     total = describe(specs, stats)
     if not a.run:
         print("\n  --run to enumerate on the card "
-              "(E:\\swarm\\gpu-bench\\venv\\Scripts\\python.exe).")
+              "(%s)." % paths.PY_HINT)
         return 0
 
     try:
         import cupy as cp
     except Exception as e:
         print("\n  FAIL: no CuPy here (%s)." % e)
-        print("  Run it with E:\\swarm\\gpu-bench\\venv\\Scripts\\python.exe")
+        print("  Run it with %s" % paths.PY_HINT)
         return 1
 
     findings, timing, failing = {}, {}, []

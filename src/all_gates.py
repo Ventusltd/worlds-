@@ -74,10 +74,11 @@ GATES = [
 # NO ABSOLUTE PATH HERE. This repository is public, and an absolute path names
 # a machine and an account. That leak was scrubbed once and reintroduced by the
 # very next commit, because the scrub was reported done without anyone checking
-# that the old pattern returned zero hits. The sibling repository is found from
-# the environment, or from beside this one.
-LANGUAGE = (os.environ.get("GRID_SITE_REPO")
-            or os.path.join(os.path.dirname(ROOT), "globalgrid2050"),
+# that the old pattern returned zero hits. The sibling repository comes from
+# GRID_SITE_REPO and from nowhere else: a fallback to a remembered location is
+# how the first leak got written, and a gate that silently ran somewhere other
+# than where you think it ran reports a pass about a directory nobody named.
+LANGUAGE = (os.environ.get("GRID_SITE_REPO", ""),
             ["scripts/check_public_language.py"])
 
 
@@ -121,7 +122,9 @@ def main():
                     help="seconds for the whole run")
     a = ap.parse_args()
     if not a.run:
-        print("ALL GATES: %d on the card plus the language gate" % len(GATES))
+        print("ALL GATES: %d on the card, plus the scrub gate (which is the "
+              "only one\n  whose failure changes this card's exit code) and "
+              "the language gate" % len(GATES))
         for n, c, does, _ in GATES:
             print("  %-12s %s" % (n, does[:64]))
         print("\n  --run to run them.")
@@ -131,13 +134,40 @@ def main():
     print("  interpreter %s" % os.path.basename(PY))
     rows, total_cases, t0 = [], 0, time.perf_counter()
 
-    rc, out, sec = run([sys.executable] + LANGUAGE[1], LANGUAGE[0], 30)
-    rows.append({"gate": "language", "exit": rc, "seconds": round(sec, 2),
-                 "cases": 0, "reads": "8 files of the published surface",
-                 "does_not_cover": "~915 other tracked pages, all of src/, and "
-                                   "the whole other repository"})
+    # The scrub gate runs first and is the one gate on this card whose failure
+    # changes the card's exit code. Everything else here measures arithmetic;
+    # this measures whether the repository is publishing a person.
+    rc, out, sec = run([sys.executable, os.path.join("scripts",
+                                                     "check_no_private_paths.py")],
+                       ROOT, 120)
+    leaked = rc != 0
+    rows.append({"gate": "no-private-paths", "exit": rc,
+                 "seconds": round(sec, 2), "cases": 0,
+                 "reads": "every tracked file in the working tree",
+                 "does_not_cover": "THE HISTORY. A path removed from the tip "
+                                   "is still fetchable by commit SHA."})
     print("\n  %-12s exit %-3d %6.2fs   %s"
-          % ("language", rc, sec, "PASS" if rc == 0 else "REFUSED"))
+          % ("scrub", rc, sec, "PASS" if rc == 0 else "REFUSED"))
+    if leaked:
+        print(out.rstrip())
+
+    if not LANGUAGE[0] or not os.path.isdir(LANGUAGE[0]):
+        rows.append({"gate": "language", "exit": None, "seconds": 0,
+                     "cases": 0, "reads": "nothing",
+                     "does_not_cover": "everything",
+                     "note": "NOT RUN: GRID_SITE_REPO is not set to a "
+                             "directory that exists. Not a pass and not a "
+                             "failure - the gate never looked."})
+        print("\n  %-12s NOT RUN - set GRID_SITE_REPO to the sibling "
+              "checkout" % "language")
+    else:
+        rc, out, sec = run([sys.executable] + LANGUAGE[1], LANGUAGE[0], 30)
+        rows.append({"gate": "language", "exit": rc, "seconds": round(sec, 2),
+                     "cases": 0, "reads": "8 files of the published surface",
+                     "does_not_cover": "~915 other tracked pages, all of src/, "
+                                       "and the whole other repository"})
+        print("\n  %-12s exit %-3d %6.2fs   %s"
+              % ("language", rc, sec, "PASS" if rc == 0 else "REFUSED"))
 
     for name, cmd, does, misses in GATES:
         left = a.budget - (time.perf_counter() - t0)
@@ -191,6 +221,11 @@ def main():
     io.open(OUT, "w", encoding="utf-8", newline="\n").write(
         json.dumps(body, indent=1, sort_keys=True) + "\n")
     print("\n  wrote night-results/all-gates.json")
+    if leaked:
+        print("\n  THE CARD EXITS 1: a tracked file still carries a private "
+              "path.\n  Locations are listed above; the values are not, "
+              "because this output\n  is published too.")
+        return 1
     return 0
 
 

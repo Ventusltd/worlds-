@@ -13,7 +13,7 @@ THE RULE ENFORCED HERE
     came from.
 
 WHAT COUNTS AS A DECLARED SOURCE
-    1. The value is present in the evidence base (E:\\swarm\\feed\\MODULES.json)
+    1. The value is present in the evidence base (the feed's MODULES.json)
        in a field carrying a src tag of FROM-DATASHEET  -> SOURCED.
     2. The value is present there under a src tag of DERIVED (a value the
        evidence base itself derives, with its formula printed beside it)
@@ -55,10 +55,15 @@ import os
 import re
 import sys
 
+import paths
+
 REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SRC = os.path.join(REPO, "src")
 RESULTS = os.path.join(REPO, "night-results")
-FEED = r"E:\swarm\feed"
+# Not written down here: this repository is public and an absolute path
+# names a drive, a machine and an account. The root comes from GRID_DATA
+# in the environment; see src/paths.py for the whole argument.
+FEED = paths.FEED
 MODULES_JSON = os.path.join(FEED, "MODULES.json")
 
 DISTINCTIVE = 1000.0                      # any number this big is distinctive

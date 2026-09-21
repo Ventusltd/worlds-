@@ -1,15 +1,1531 @@
 {
  "anonymised": "No project, site, client, maker or model anywhere.",
- "artefact_files": 688,
- "backed": 142,
- "body_sha256": "a5d6dd042a06c92717ffc578234c30309ec4ab0ea552967e1cba95f3960a9045",
- "derived_from_backed": 157,
- "method": "Every distinctive number (>= 1000) in the model's OWN sentences is taken from the transcript - tool results are excluded, because those are evidence and not claims. Every distinctive number in every artefact on disk is taken as the backing set. Membership is computed twice, by binary search on the card and by a hash set on the host, and nothing is reported unless they agree. What remains is tested on the card against every ordered pair of backed numbers for sum, difference and exact quotient.",
- "not_claimed": "A number being BACKED does not mean it was used correctly, only that it exists somewhere on disk. A number being UNBACKED does not mean it is false - it may be arithmetic done in a sentence. This file cannot tell those apart and does not try. It narrows what a person has to read, and that is all it does.",
- "numbers_on_disk": 2270,
- "numbers_stated": 299,
- "schema": "ggs.threadtruth/1",
- "to_read": [],
- "truly_unbacked": 0,
- "unbacked": 157
+ "artefact_files": 699,
+ "backed": 40,
+ "body_sha256": "cd50fb0702c35c9bd670261d29585d042c9edc64659eca33fed552425052f795",
+ "derived_from_numbers_beside_the_claim": 4,
+ "false_absorption_after": [
+  {
+   "band_usable": true,
+   "decoys": 1248,
+   "decoys_absorbed": 3,
+   "false_absorption_pct": 0.2,
+   "magnitude": "1e3",
+   "real_absorbed": 2,
+   "real_absorbed_pct": 1.3,
+   "real_claims": 156
+  },
+  {
+   "band_usable": true,
+   "decoys": 480,
+   "decoys_absorbed": 0,
+   "false_absorption_pct": 0.0,
+   "magnitude": "1e4",
+   "real_absorbed": 1,
+   "real_absorbed_pct": 1.7,
+   "real_claims": 60
+  },
+  {
+   "band_usable": true,
+   "decoys": 224,
+   "decoys_absorbed": 0,
+   "false_absorption_pct": 0.0,
+   "magnitude": "1e5",
+   "real_absorbed": 0,
+   "real_absorbed_pct": 0.0,
+   "real_claims": 28
+  },
+  {
+   "band_usable": true,
+   "decoys": 64,
+   "decoys_absorbed": 0,
+   "false_absorption_pct": 0.0,
+   "magnitude": "1e6",
+   "real_absorbed": 0,
+   "real_absorbed_pct": 0.0,
+   "real_claims": 8
+  },
+  {
+   "band_usable": true,
+   "decoys": 32,
+   "decoys_absorbed": 0,
+   "false_absorption_pct": 0.0,
+   "magnitude": "1e7",
+   "real_absorbed": 1,
+   "real_absorbed_pct": 25.0,
+   "real_claims": 4
+  },
+  {
+   "band_usable": true,
+   "decoys": 8,
+   "decoys_absorbed": 0,
+   "false_absorption_pct": 0.0,
+   "magnitude": "1e8",
+   "real_absorbed": 0,
+   "real_absorbed_pct": 0.0,
+   "real_claims": 1
+  },
+  {
+   "band_usable": true,
+   "decoys": 40,
+   "decoys_absorbed": 0,
+   "false_absorption_pct": 0.0,
+   "magnitude": "1e9",
+   "real_absorbed": 0,
+   "real_absorbed_pct": 0.0,
+   "real_claims": 5
+  },
+  {
+   "band_usable": true,
+   "decoys": 8,
+   "decoys_absorbed": 0,
+   "false_absorption_pct": 0.0,
+   "magnitude": "1e10",
+   "real_absorbed": 0,
+   "real_absorbed_pct": 0.0,
+   "real_claims": 1
+  },
+  {
+   "band_usable": true,
+   "decoys": 32,
+   "decoys_absorbed": 0,
+   "false_absorption_pct": 0.0,
+   "magnitude": "1e11",
+   "real_absorbed": 0,
+   "real_absorbed_pct": 0.0,
+   "real_claims": 4
+  }
+ ],
+ "false_absorption_before": [
+  {
+   "band_usable": false,
+   "decoys": 1248,
+   "decoys_absorbed": 1248,
+   "false_absorption_pct": 100.0,
+   "magnitude": "1e3",
+   "real_absorbed": 156,
+   "real_absorbed_pct": 100.0,
+   "real_claims": 156
+  },
+  {
+   "band_usable": false,
+   "decoys": 480,
+   "decoys_absorbed": 480,
+   "false_absorption_pct": 100.0,
+   "magnitude": "1e4",
+   "real_absorbed": 60,
+   "real_absorbed_pct": 100.0,
+   "real_claims": 60
+  },
+  {
+   "band_usable": false,
+   "decoys": 224,
+   "decoys_absorbed": 126,
+   "false_absorption_pct": 56.2,
+   "magnitude": "1e5",
+   "real_absorbed": 24,
+   "real_absorbed_pct": 85.7,
+   "real_claims": 28
+  },
+  {
+   "band_usable": true,
+   "decoys": 64,
+   "decoys_absorbed": 1,
+   "false_absorption_pct": 1.6,
+   "magnitude": "1e6",
+   "real_absorbed": 1,
+   "real_absorbed_pct": 12.5,
+   "real_claims": 8
+  },
+  {
+   "band_usable": true,
+   "decoys": 32,
+   "decoys_absorbed": 0,
+   "false_absorption_pct": 0.0,
+   "magnitude": "1e7",
+   "real_absorbed": 1,
+   "real_absorbed_pct": 25.0,
+   "real_claims": 4
+  },
+  {
+   "band_usable": true,
+   "decoys": 8,
+   "decoys_absorbed": 0,
+   "false_absorption_pct": 0.0,
+   "magnitude": "1e8",
+   "real_absorbed": 0,
+   "real_absorbed_pct": 0.0,
+   "real_claims": 1
+  },
+  {
+   "band_usable": true,
+   "decoys": 40,
+   "decoys_absorbed": 0,
+   "false_absorption_pct": 0.0,
+   "magnitude": "1e9",
+   "real_absorbed": 0,
+   "real_absorbed_pct": 0.0,
+   "real_claims": 5
+  },
+  {
+   "band_usable": true,
+   "decoys": 8,
+   "decoys_absorbed": 0,
+   "false_absorption_pct": 0.0,
+   "magnitude": "1e10",
+   "real_absorbed": 0,
+   "real_absorbed_pct": 0.0,
+   "real_claims": 1
+  },
+  {
+   "band_usable": true,
+   "decoys": 32,
+   "decoys_absorbed": 0,
+   "false_absorption_pct": 0.0,
+   "magnitude": "1e11",
+   "real_absorbed": 1,
+   "real_absorbed_pct": 25.0,
+   "real_claims": 4
+  }
+ ],
+ "how_the_sieve_was_measured": "Every run carries a decoy arm. For each unbacked claim, random numbers of the same magnitude that were never said and appear in no artefact are pushed through the same sieve with the same operand pool. Their absorption rate is the false absorption rate, printed per magnitude band beside the real one, for the old wide sieve and for this one. A band whose false absorption is above the ceiling cannot discriminate and its survivor count means nothing. If the decoy rate overall is not clearly below the real rate, the run declares its own verdict uninformative without being asked. Quote false_absorption_after beside any count taken from this file.",
+ "method": "Every distinctive number (>= 1000) in the model's OWN sentences is taken from the transcript - tool results are excluded, because those are evidence and not claims. Every distinctive number in every artefact on disk is taken as the backing set. Membership is computed twice, by binary search on the card and by a hash set on the host, and nothing is reported unless they agree. What remains is tested on the card against pairs of backed numbers that CO-OCCURRED with the claim - within a short window of transcript records of where it was said - for sum, difference and exact quotient. That derivation is computed twice as well, by a nested scan on the card and by set lookups on the host, and disagreement refuses the report.",
+ "not_claimed": "A number being BACKED does not mean it was used correctly, only that it exists somewhere on disk. A number being TRULY UNBACKED does not mean it is false - it may be arithmetic done in a sentence out of numbers that were never written down, or a figure quoted from outside this night's work. This file cannot tell those apart and does not try. It narrows what a person has to read, and that is all it does. It does not check whether a quantity changed value across the night.",
+ "numbers_on_disk": 2252,
+ "numbers_stated": 307,
+ "schema": "ggs.threadtruth/2",
+ "sieve": {
+  "claims_with_no_operands": 0,
+  "decoy_seed": 20260921,
+  "decoys_per_claim": 8,
+  "false_absorption_ceiling_pct": 25.0,
+  "operand_pool_largest": 37,
+  "operand_pool_median": 9,
+  "operands_kept_per_claim_at_most": 400,
+  "operands_must_co_occur_within_records": 20,
+  "operations": "sum, difference, exact quotient"
+ },
+ "to_read": [
+  {
+   "first_turn": 1568,
+   "times_said": 7,
+   "value": 202609202048
+  },
+  {
+   "first_turn": 1305,
+   "times_said": 1,
+   "value": 202609201800
+  },
+  {
+   "first_turn": 1588,
+   "times_said": 1,
+   "value": 202609192238
+  },
+  {
+   "first_turn": 1568,
+   "times_said": 1,
+   "value": 202609192215
+  },
+  {
+   "first_turn": 156,
+   "times_said": 1,
+   "value": 35484079572
+  },
+  {
+   "first_turn": 1520,
+   "times_said": 2,
+   "value": 2177890560
+  },
+  {
+   "first_turn": 1465,
+   "times_said": 2,
+   "value": 1141244160
+  },
+  {
+   "first_turn": 1442,
+   "times_said": 2,
+   "value": 1050549760
+  },
+  {
+   "first_turn": 1313,
+   "times_said": 1,
+   "value": 1001331646
+  },
+  {
+   "first_turn": 1313,
+   "times_said": 3,
+   "value": 1001329472
+  },
+  {
+   "first_turn": 1534,
+   "times_said": 1,
+   "value": 177987194
+  },
+  {
+   "first_turn": 608,
+   "times_said": 9,
+   "value": 20260920
+  },
+  {
+   "first_turn": 608,
+   "times_said": 1,
+   "value": 20260914
+  },
+  {
+   "first_turn": 1534,
+   "times_said": 1,
+   "value": 12684059
+  },
+  {
+   "first_turn": 156,
+   "times_said": 2,
+   "value": 8310070
+  },
+  {
+   "first_turn": 1578,
+   "times_said": 1,
+   "value": 3046000
+  },
+  {
+   "first_turn": 1186,
+   "times_said": 2,
+   "value": 3022721
+  },
+  {
+   "first_turn": 1217,
+   "times_said": 1,
+   "value": 2510000
+  },
+  {
+   "first_turn": 1534,
+   "times_said": 1,
+   "value": 1946532
+  },
+  {
+   "first_turn": 1158,
+   "times_said": 1,
+   "value": 1829736
+  },
+  {
+   "first_turn": 1158,
+   "times_said": 1,
+   "value": 1741824
+  },
+  {
+   "first_turn": 1158,
+   "times_said": 1,
+   "value": 1575000
+  },
+  {
+   "first_turn": 915,
+   "times_said": 1,
+   "value": 768000
+  },
+  {
+   "first_turn": 1306,
+   "times_said": 2,
+   "value": 731000
+  },
+  {
+   "first_turn": 779,
+   "times_said": 1,
+   "value": 667000
+  },
+  {
+   "first_turn": 1523,
+   "times_said": 1,
+   "value": 630553
+  },
+  {
+   "first_turn": 520,
+   "times_said": 1,
+   "value": 606660
+  },
+  {
+   "first_turn": 1158,
+   "times_said": 2,
+   "value": 537264
+  },
+  {
+   "first_turn": 1534,
+   "times_said": 1,
+   "value": 516677
+  },
+  {
+   "first_turn": 1382,
+   "times_said": 1,
+   "value": 452184
+  },
+  {
+   "first_turn": 1534,
+   "times_said": 1,
+   "value": 419257
+  },
+  {
+   "first_turn": 1158,
+   "times_said": 2,
+   "value": 304000
+  },
+  {
+   "first_turn": 1183,
+   "times_said": 1,
+   "value": 268632
+  },
+  {
+   "first_turn": 1158,
+   "times_said": 2,
+   "value": 252000
+  },
+  {
+   "first_turn": 1358,
+   "times_said": 1,
+   "value": 249198
+  },
+  {
+   "first_turn": 1365,
+   "times_said": 3,
+   "value": 226526
+  },
+  {
+   "first_turn": 1158,
+   "times_said": 2,
+   "value": 225474
+  },
+  {
+   "first_turn": 1215,
+   "times_said": 1,
+   "value": 195244
+  },
+  {
+   "first_turn": 1440,
+   "times_said": 1,
+   "value": 193446
+  },
+  {
+   "first_turn": 1435,
+   "times_said": 1,
+   "value": 186000
+  },
+  {
+   "first_turn": 1362,
+   "times_said": 1,
+   "value": 184058
+  },
+  {
+   "first_turn": 1129,
+   "times_said": 2,
+   "value": 170856
+  },
+  {
+   "first_turn": 1217,
+   "times_said": 1,
+   "value": 143188
+  },
+  {
+   "first_turn": 1186,
+   "times_said": 1,
+   "value": 142560
+  },
+  {
+   "first_turn": 1158,
+   "times_said": 1,
+   "value": 140400
+  },
+  {
+   "first_turn": 1316,
+   "times_said": 1,
+   "value": 131000
+  },
+  {
+   "first_turn": 959,
+   "times_said": 1,
+   "value": 120000
+  },
+  {
+   "first_turn": 1535,
+   "times_said": 1,
+   "value": 118000
+  },
+  {
+   "first_turn": 1217,
+   "times_said": 1,
+   "value": 107000
+  },
+  {
+   "first_turn": 871,
+   "times_said": 4,
+   "value": 100000
+  },
+  {
+   "first_turn": 915,
+   "times_said": 2,
+   "value": 96000
+  },
+  {
+   "first_turn": 1358,
+   "times_said": 1,
+   "value": 86400
+  },
+  {
+   "first_turn": 1358,
+   "times_said": 1,
+   "value": 83888
+  },
+  {
+   "first_turn": 1104,
+   "times_said": 3,
+   "value": 82944
+  },
+  {
+   "first_turn": 1292,
+   "times_said": 1,
+   "value": 80000
+  },
+  {
+   "first_turn": 1158,
+   "times_said": 3,
+   "value": 68800
+  },
+  {
+   "first_turn": 1100,
+   "times_said": 2,
+   "value": 67392
+  },
+  {
+   "first_turn": 1358,
+   "times_said": 4,
+   "value": 64000
+  },
+  {
+   "first_turn": 779,
+   "times_said": 1,
+   "value": 63727
+  },
+  {
+   "first_turn": 766,
+   "times_said": 2,
+   "value": 60228
+  },
+  {
+   "first_turn": 871,
+   "times_said": 1,
+   "value": 60000
+  },
+  {
+   "first_turn": 1383,
+   "times_said": 1,
+   "value": 56000
+  },
+  {
+   "first_turn": 1186,
+   "times_said": 1,
+   "value": 52690
+  },
+  {
+   "first_turn": 1523,
+   "times_said": 1,
+   "value": 51932
+  },
+  {
+   "first_turn": 1430,
+   "times_said": 2,
+   "value": 51000
+  },
+  {
+   "first_turn": 766,
+   "times_said": 4,
+   "value": 50618
+  },
+  {
+   "first_turn": 1347,
+   "times_said": 1,
+   "value": 43588
+  },
+  {
+   "first_turn": 1158,
+   "times_said": 1,
+   "value": 41854
+  },
+  {
+   "first_turn": 1158,
+   "times_said": 1,
+   "value": 40244
+  },
+  {
+   "first_turn": 1309,
+   "times_said": 1,
+   "value": 39674
+  },
+  {
+   "first_turn": 1349,
+   "times_said": 1,
+   "value": 35146
+  },
+  {
+   "first_turn": 1349,
+   "times_said": 1,
+   "value": 34878
+  },
+  {
+   "first_turn": 1349,
+   "times_said": 1,
+   "value": 33178
+  },
+  {
+   "first_turn": 1347,
+   "times_said": 1,
+   "value": 33089
+  },
+  {
+   "first_turn": 490,
+   "times_said": 1,
+   "value": 30000
+  },
+  {
+   "first_turn": 1349,
+   "times_said": 1,
+   "value": 28765
+  },
+  {
+   "first_turn": 1382,
+   "times_said": 1,
+   "value": 28214
+  },
+  {
+   "first_turn": 1347,
+   "times_said": 1,
+   "value": 25424
+  },
+  {
+   "first_turn": 1358,
+   "times_said": 1,
+   "value": 24429
+  },
+  {
+   "first_turn": 1347,
+   "times_said": 1,
+   "value": 24099
+  },
+  {
+   "first_turn": 779,
+   "times_said": 1,
+   "value": 23800
+  },
+  {
+   "first_turn": 1347,
+   "times_said": 1,
+   "value": 22206
+  },
+  {
+   "first_turn": 1306,
+   "times_said": 2,
+   "value": 21668
+  },
+  {
+   "first_turn": 1129,
+   "times_said": 1,
+   "value": 20520
+  },
+  {
+   "first_turn": 520,
+   "times_said": 5,
+   "value": 20222
+  },
+  {
+   "first_turn": 1347,
+   "times_said": 2,
+   "value": 18230
+  },
+  {
+   "first_turn": 1353,
+   "times_said": 1,
+   "value": 17801
+  },
+  {
+   "first_turn": 1313,
+   "times_said": 1,
+   "value": 16707
+  },
+  {
+   "first_turn": 1534,
+   "times_said": 1,
+   "value": 16667
+  },
+  {
+   "first_turn": 1349,
+   "times_said": 1,
+   "value": 16476
+  },
+  {
+   "first_turn": 1347,
+   "times_said": 1,
+   "value": 15428
+  },
+  {
+   "first_turn": 1511,
+   "times_said": 2,
+   "value": 15200
+  },
+  {
+   "first_turn": 1308,
+   "times_said": 1,
+   "value": 15126
+  },
+  {
+   "first_turn": 1358,
+   "times_said": 2,
+   "value": 14909
+  },
+  {
+   "first_turn": 1349,
+   "times_said": 1,
+   "value": 14738
+  },
+  {
+   "first_turn": 1306,
+   "times_said": 1,
+   "value": 14036
+  },
+  {
+   "first_turn": 1511,
+   "times_said": 1,
+   "value": 14000
+  },
+  {
+   "first_turn": 1349,
+   "times_said": 1,
+   "value": 13835
+  },
+  {
+   "first_turn": 650,
+   "times_said": 1,
+   "value": 13144
+  },
+  {
+   "first_turn": 1306,
+   "times_said": 2,
+   "value": 12450
+  },
+  {
+   "first_turn": 1186,
+   "times_said": 1,
+   "value": 12378
+  },
+  {
+   "first_turn": 779,
+   "times_said": 1,
+   "value": 11900
+  },
+  {
+   "first_turn": 520,
+   "times_said": 1,
+   "value": 11556
+  },
+  {
+   "first_turn": 742,
+   "times_said": 1,
+   "value": 11343
+  },
+  {
+   "first_turn": 650,
+   "times_said": 1,
+   "value": 11317
+  },
+  {
+   "first_turn": 1349,
+   "times_said": 1,
+   "value": 10862
+  },
+  {
+   "first_turn": 1308,
+   "times_said": 1,
+   "value": 10784
+  },
+  {
+   "first_turn": 1306,
+   "times_said": 1,
+   "value": 10243
+  },
+  {
+   "first_turn": 585,
+   "times_said": 3,
+   "value": 10000
+  },
+  {
+   "first_turn": 1316,
+   "times_said": 1,
+   "value": 9959
+  },
+  {
+   "first_turn": 1251,
+   "times_said": 2,
+   "value": 9940
+  },
+  {
+   "first_turn": 1251,
+   "times_said": 1,
+   "value": 9470
+  },
+  {
+   "first_turn": 1528,
+   "times_said": 1,
+   "value": 8851
+  },
+  {
+   "first_turn": 1528,
+   "times_said": 4,
+   "value": 8850
+  },
+  {
+   "first_turn": 830,
+   "times_said": 16,
+   "value": 8840
+  },
+  {
+   "first_turn": 564,
+   "times_said": 9,
+   "value": 8830
+  },
+  {
+   "first_turn": 619,
+   "times_said": 8,
+   "value": 8823
+  },
+  {
+   "first_turn": 291,
+   "times_said": 13,
+   "value": 8822
+  },
+  {
+   "first_turn": 274,
+   "times_said": 1,
+   "value": 8820
+  },
+  {
+   "first_turn": 434,
+   "times_said": 10,
+   "value": 8817
+  },
+  {
+   "first_turn": 264,
+   "times_said": 4,
+   "value": 8816
+  },
+  {
+   "first_turn": 257,
+   "times_said": 1,
+   "value": 8815
+  },
+  {
+   "first_turn": 156,
+   "times_said": 1,
+   "value": 8805
+  },
+  {
+   "first_turn": 118,
+   "times_said": 2,
+   "value": 8800
+  },
+  {
+   "first_turn": 1491,
+   "times_said": 1,
+   "value": 8414
+  },
+  {
+   "first_turn": 1186,
+   "times_said": 1,
+   "value": 8400
+  },
+  {
+   "first_turn": 830,
+   "times_said": 1,
+   "value": 7671
+  },
+  {
+   "first_turn": 1347,
+   "times_said": 1,
+   "value": 7613
+  },
+  {
+   "first_turn": 1365,
+   "times_said": 1,
+   "value": 7542
+  },
+  {
+   "first_turn": 1349,
+   "times_said": 1,
+   "value": 7432
+  },
+  {
+   "first_turn": 779,
+   "times_said": 1,
+   "value": 7023
+  },
+  {
+   "first_turn": 779,
+   "times_said": 1,
+   "value": 6962
+  },
+  {
+   "first_turn": 1347,
+   "times_said": 1,
+   "value": 6774
+  },
+  {
+   "first_turn": 779,
+   "times_said": 1,
+   "value": 6600
+  },
+  {
+   "first_turn": 1186,
+   "times_said": 1,
+   "value": 6480
+  },
+  {
+   "first_turn": 1365,
+   "times_said": 1,
+   "value": 6477
+  },
+  {
+   "first_turn": 1347,
+   "times_said": 1,
+   "value": 6447
+  },
+  {
+   "first_turn": 1282,
+   "times_said": 6,
+   "value": 6227
+  },
+  {
+   "first_turn": 1347,
+   "times_said": 2,
+   "value": 6204
+  },
+  {
+   "first_turn": 1382,
+   "times_said": 1,
+   "value": 6094
+  },
+  {
+   "first_turn": 1353,
+   "times_said": 1,
+   "value": 5994
+  },
+  {
+   "first_turn": 871,
+   "times_said": 1,
+   "value": 5400
+  },
+  {
+   "first_turn": 1215,
+   "times_said": 1,
+   "value": 5250
+  },
+  {
+   "first_turn": 1308,
+   "times_said": 1,
+   "value": 5218
+  },
+  {
+   "first_turn": 1349,
+   "times_said": 1,
+   "value": 5098
+  },
+  {
+   "first_turn": 1306,
+   "times_said": 1,
+   "value": 4469
+  },
+  {
+   "first_turn": 1282,
+   "times_said": 3,
+   "value": 4460
+  },
+  {
+   "first_turn": 1264,
+   "times_said": 5,
+   "value": 4106
+  },
+  {
+   "first_turn": 1523,
+   "times_said": 1,
+   "value": 4100
+  },
+  {
+   "first_turn": 348,
+   "times_said": 1,
+   "value": 4087
+  },
+  {
+   "first_turn": 1306,
+   "times_said": 1,
+   "value": 3793
+  },
+  {
+   "first_turn": 348,
+   "times_said": 2,
+   "value": 3621
+  },
+  {
+   "first_turn": 1274,
+   "times_said": 1,
+   "value": 3553
+  },
+  {
+   "first_turn": 520,
+   "times_said": 3,
+   "value": 3548
+  },
+  {
+   "first_turn": 1100,
+   "times_said": 1,
+   "value": 3547
+  },
+  {
+   "first_turn": 1274,
+   "times_said": 1,
+   "value": 3500
+  },
+  {
+   "first_turn": 868,
+   "times_said": 1,
+   "value": 3424
+  },
+  {
+   "first_turn": 348,
+   "times_said": 1,
+   "value": 3305
+  },
+  {
+   "first_turn": 1361,
+   "times_said": 1,
+   "value": 3200
+  },
+  {
+   "first_turn": 1358,
+   "times_said": 2,
+   "value": 3179
+  },
+  {
+   "first_turn": 1349,
+   "times_said": 2,
+   "value": 3054
+  },
+  {
+   "first_turn": 520,
+   "times_said": 1,
+   "value": 3038
+  },
+  {
+   "first_turn": 701,
+   "times_said": 3,
+   "value": 3021
+  },
+  {
+   "first_turn": 868,
+   "times_said": 1,
+   "value": 2960
+  },
+  {
+   "first_turn": 520,
+   "times_said": 3,
+   "value": 2953
+  },
+  {
+   "first_turn": 1308,
+   "times_said": 1,
+   "value": 2935
+  },
+  {
+   "first_turn": 1347,
+   "times_said": 2,
+   "value": 2802
+  },
+  {
+   "first_turn": 1308,
+   "times_said": 1,
+   "value": 2769
+  },
+  {
+   "first_turn": 1349,
+   "times_said": 1,
+   "value": 2758
+  },
+  {
+   "first_turn": 1349,
+   "times_said": 1,
+   "value": 2746
+  },
+  {
+   "first_turn": 1353,
+   "times_said": 1,
+   "value": 2664
+  },
+  {
+   "first_turn": 1349,
+   "times_said": 1,
+   "value": 2657
+  },
+  {
+   "first_turn": 742,
+   "times_said": 1,
+   "value": 2646
+  },
+  {
+   "first_turn": 1193,
+   "times_said": 1,
+   "value": 2574
+  },
+  {
+   "first_turn": 520,
+   "times_said": 3,
+   "value": 2570
+  },
+  {
+   "first_turn": 1534,
+   "times_said": 1,
+   "value": 2446
+  },
+  {
+   "first_turn": 785,
+   "times_said": 3,
+   "value": 2384
+  },
+  {
+   "first_turn": 348,
+   "times_said": 1,
+   "value": 2367
+  },
+  {
+   "first_turn": 1306,
+   "times_said": 3,
+   "value": 2243
+  },
+  {
+   "first_turn": 1382,
+   "times_said": 1,
+   "value": 2216
+  },
+  {
+   "first_turn": 1274,
+   "times_said": 1,
+   "value": 2159
+  },
+  {
+   "first_turn": 1308,
+   "times_said": 1,
+   "value": 2100
+  },
+  {
+   "first_turn": 1282,
+   "times_said": 1,
+   "value": 2075
+  },
+  {
+   "first_turn": 742,
+   "times_said": 1,
+   "value": 2030
+  },
+  {
+   "first_turn": 987,
+   "times_said": 1,
+   "value": 2027
+  },
+  {
+   "first_turn": 348,
+   "times_said": 2,
+   "value": 1975
+  },
+  {
+   "first_turn": 1313,
+   "times_said": 3,
+   "value": 1972
+  },
+  {
+   "first_turn": 868,
+   "times_said": 1,
+   "value": 1968
+  },
+  {
+   "first_turn": 257,
+   "times_said": 3,
+   "value": 1920
+  },
+  {
+   "first_turn": 1486,
+   "times_said": 1,
+   "value": 1906
+  },
+  {
+   "first_turn": 1486,
+   "times_said": 1,
+   "value": 1905
+  },
+  {
+   "first_turn": 1486,
+   "times_said": 1,
+   "value": 1904
+  },
+  {
+   "first_turn": 1486,
+   "times_said": 1,
+   "value": 1903
+  },
+  {
+   "first_turn": 1486,
+   "times_said": 1,
+   "value": 1902
+  },
+  {
+   "first_turn": 1486,
+   "times_said": 1,
+   "value": 1901
+  },
+  {
+   "first_turn": 1486,
+   "times_said": 1,
+   "value": 1900
+  },
+  {
+   "first_turn": 1349,
+   "times_said": 1,
+   "value": 1875
+  },
+  {
+   "first_turn": 520,
+   "times_said": 3,
+   "value": 1821
+  },
+  {
+   "first_turn": 701,
+   "times_said": 2,
+   "value": 1804
+  },
+  {
+   "first_turn": 1316,
+   "times_said": 1,
+   "value": 1767
+  },
+  {
+   "first_turn": 1313,
+   "times_said": 1,
+   "value": 1743
+  },
+  {
+   "first_turn": 1357,
+   "times_said": 1,
+   "value": 1741
+  },
+  {
+   "first_turn": 1358,
+   "times_said": 2,
+   "value": 1734
+  },
+  {
+   "first_turn": 1035,
+   "times_said": 1,
+   "value": 1727
+  },
+  {
+   "first_turn": 871,
+   "times_said": 1,
+   "value": 1708
+  },
+  {
+   "first_turn": 1246,
+   "times_said": 1,
+   "value": 1706
+  },
+  {
+   "first_turn": 1316,
+   "times_said": 1,
+   "value": 1703
+  },
+  {
+   "first_turn": 871,
+   "times_said": 1,
+   "value": 1644
+  },
+  {
+   "first_turn": 871,
+   "times_said": 1,
+   "value": 1627
+  },
+  {
+   "first_turn": 1349,
+   "times_said": 1,
+   "value": 1568
+  },
+  {
+   "first_turn": 1246,
+   "times_said": 2,
+   "value": 1557
+  },
+  {
+   "first_turn": 1274,
+   "times_said": 2,
+   "value": 1545
+  },
+  {
+   "first_turn": 843,
+   "times_said": 1,
+   "value": 1520
+  },
+  {
+   "first_turn": 868,
+   "times_said": 1,
+   "value": 1514
+  },
+  {
+   "first_turn": 1309,
+   "times_said": 1,
+   "value": 1508
+  },
+  {
+   "first_turn": 1598,
+   "times_said": 1,
+   "value": 1506
+  },
+  {
+   "first_turn": 1598,
+   "times_said": 1,
+   "value": 1505
+  },
+  {
+   "first_turn": 305,
+   "times_said": 1,
+   "value": 1504
+  },
+  {
+   "first_turn": 1246,
+   "times_said": 1,
+   "value": 1503
+  },
+  {
+   "first_turn": 1282,
+   "times_said": 2,
+   "value": 1498
+  },
+  {
+   "first_turn": 321,
+   "times_said": 5,
+   "value": 1497
+  },
+  {
+   "first_turn": 769,
+   "times_said": 1,
+   "value": 1478
+  },
+  {
+   "first_turn": 884,
+   "times_said": 9,
+   "value": 1463
+  },
+  {
+   "first_turn": 1308,
+   "times_said": 1,
+   "value": 1454
+  },
+  {
+   "first_turn": 1246,
+   "times_said": 1,
+   "value": 1430
+  },
+  {
+   "first_turn": 853,
+   "times_said": 1,
+   "value": 1402
+  },
+  {
+   "first_turn": 305,
+   "times_said": 2,
+   "value": 1383
+  },
+  {
+   "first_turn": 351,
+   "times_said": 1,
+   "value": 1380
+  },
+  {
+   "first_turn": 321,
+   "times_said": 6,
+   "value": 1377
+  },
+  {
+   "first_turn": 257,
+   "times_said": 4,
+   "value": 1366
+  },
+  {
+   "first_turn": 1588,
+   "times_said": 1,
+   "value": 1360
+  },
+  {
+   "first_turn": 1306,
+   "times_said": 1,
+   "value": 1331
+  },
+  {
+   "first_turn": 1598,
+   "times_said": 1,
+   "value": 1322
+  },
+  {
+   "first_turn": 785,
+   "times_said": 3,
+   "value": 1303
+  },
+  {
+   "first_turn": 1064,
+   "times_said": 1,
+   "value": 1300
+  },
+  {
+   "first_turn": 305,
+   "times_said": 1,
+   "value": 1299
+  },
+  {
+   "first_turn": 305,
+   "times_said": 1,
+   "value": 1298
+  },
+  {
+   "first_turn": 305,
+   "times_said": 1,
+   "value": 1281
+  },
+  {
+   "first_turn": 305,
+   "times_said": 1,
+   "value": 1280
+  },
+  {
+   "first_turn": 1064,
+   "times_said": 1,
+   "value": 1273
+  },
+  {
+   "first_turn": 871,
+   "times_said": 1,
+   "value": 1271
+  },
+  {
+   "first_turn": 1358,
+   "times_said": 1,
+   "value": 1268
+  },
+  {
+   "first_turn": 903,
+   "times_said": 1,
+   "value": 1264
+  },
+  {
+   "first_turn": 1306,
+   "times_said": 2,
+   "value": 1246
+  },
+  {
+   "first_turn": 871,
+   "times_said": 1,
+   "value": 1204
+  },
+  {
+   "first_turn": 608,
+   "times_said": 1,
+   "value": 1199
+  },
+  {
+   "first_turn": 305,
+   "times_said": 1,
+   "value": 1189
+  },
+  {
+   "first_turn": 1306,
+   "times_said": 2,
+   "value": 1184
+  },
+  {
+   "first_turn": 305,
+   "times_said": 2,
+   "value": 1171
+  },
+  {
+   "first_turn": 305,
+   "times_said": 1,
+   "value": 1140
+  },
+  {
+   "first_turn": 305,
+   "times_said": 1,
+   "value": 1135
+  },
+  {
+   "first_turn": 908,
+   "times_said": 1,
+   "value": 1134
+  },
+  {
+   "first_turn": 305,
+   "times_said": 1,
+   "value": 1122
+  },
+  {
+   "first_turn": 1429,
+   "times_said": 1,
+   "value": 1112
+  },
+  {
+   "first_turn": 868,
+   "times_said": 1,
+   "value": 1109
+  },
+  {
+   "first_turn": 305,
+   "times_said": 1,
+   "value": 1098
+  },
+  {
+   "first_turn": 305,
+   "times_said": 1,
+   "value": 1096
+  },
+  {
+   "first_turn": 305,
+   "times_said": 1,
+   "value": 1085
+  },
+  {
+   "first_turn": 670,
+   "times_said": 1,
+   "value": 1080
+  },
+  {
+   "first_turn": 305,
+   "times_said": 1,
+   "value": 1078
+  },
+  {
+   "first_turn": 1349,
+   "times_said": 1,
+   "value": 1067
+  },
+  {
+   "first_turn": 830,
+   "times_said": 1,
+   "value": 1040
+  },
+  {
+   "first_turn": 1246,
+   "times_said": 1,
+   "value": 1019
+  }
+ ],
+ "transcript_records": 2632,
+ "truly_unbacked": 263,
+ "unbacked": 267,
+ "uninformative_bands": [],
+ "verdict_is_informative": true,
+ "verdict_reason": "decoys 0.1% against real claims 1.5%"
 }

@@ -26,7 +26,12 @@ import time
 
 import numpy as np
 
-TUBE = r"E:\swarm\grid\tube\out\TUBE-DATA.js"
+import paths
+
+# Not written down here: this repository is public and an absolute path
+# names a drive, a machine and an account. The root comes from GRID_DATA
+# in the environment; see src/paths.py for the whole argument.
+TUBE = paths.TUBE
 
 # ---- the design axes, all from work already proven on this machine
 CLASSES = [(45.90, -0.25, 660.0), (50.59, -0.22, 760.0), (53.27, -0.25, 650.0)]
@@ -47,9 +52,7 @@ LABEL = ["buildable, both readings", "disputed: the clause decides it",
 
 def stations():
     """How many stations the atlas actually holds. Read, not assumed."""
-    if not os.path.isfile(TUBE):
-        raise SystemExit("FAIL: %s is missing. A check that reached nothing "
-                         "is not a pass." % TUBE)
+    paths.require(TUBE, "the tube-map data (TUBE-DATA.js)")
     s = io.open(TUBE, encoding="utf-8", errors="replace").read()
     m = re.search(r'"stations"\s*:\s*\[', s)
     if not m:

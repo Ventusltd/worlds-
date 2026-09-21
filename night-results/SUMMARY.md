@@ -1,6 +1,6 @@
 # The night, assembled
 
-Written at 2026-09-21 08:00 by E:\swarm\night\finalise.py. No model was involved:
+Written at 2026-09-21 08:00 by the night's finalise.py. No model was involved:
 this file only assembles numbers that were verified when they were
 written. Every run below refused to report anything unless its card
 and processor agreed exactly.
