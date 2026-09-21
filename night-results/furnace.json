@@ -1,0 +1,37 @@
+{
+ "anonymised": "No project, site, client, maker or model anywhere.",
+ "body_sha256": "0a4b2aa3e2080dca90522b1399476b9019721362258b4854ebe1167d3095bd24",
+ "coverage_pct": 49.355293,
+ "differ_factored_vs_expanded": 0,
+ "differ_kernel_vs_graph": 0,
+ "fraction_upper_bound_95": 3e-09,
+ "not_claimed": "A certificate proves two implementations of the same arithmetic agree. It says nothing about whether the limits are right. Two of the four here have no source: one appears nowhere in the evidence base, and one is recorded absent from both source documents and contradicted by a higher figure. Agreement is not authority.",
+ "old_probe_miss_probability_at_that_bound": 0.9994001799578738,
+ "previous_certificate_cases": 200000,
+ "previous_certificate_coverage_pct": 0.00987106,
+ "schema": "ggs.furnace/1",
+ "space": 2026125150,
+ "the_three_channels": "1: an NVRTC-compiled fused kernel. 2: a CuPy array-operator graph - different compiler, different execution path. 3: the same voltage by the DISTRIBUTIVE LAW, se*voc + se*voc*b instead of se*(voc*(1+b)) - algebraically identical, and not identical in floating point, because the expanded form rounds twice where the factored form rounds once. Two channels can agree by sharing a habit. Three written differently cannot.",
+ "timing_not_in_digest": {
+  "seconds": 1.699
+ },
+ "verdict_mask_counts": [
+  268096756,
+  148371909,
+  0,
+  0,
+  168337388,
+  88810962,
+  193555663,
+  132827322,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+ ],
+ "verified": 1000000000
+}
