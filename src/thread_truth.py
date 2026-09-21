@@ -278,6 +278,18 @@ def main():
             "the host, and nothing is reported unless they agree. What remains "
             "is tested on the card against every ordered pair of backed "
             "numbers for sum, difference and exact quotient.",
+        "how_weak_the_derivation_sieve_is":
+            "DERIVED tests each unbacked number against every ordered pair of "
+            "the 4,000 smallest backed numbers for sum, difference and exact "
+            "quotient. Measured against random controls, that net absorbs "
+            "100% of four- and five-digit numbers: a figure nobody ever said "
+            "passes as 'derived' with near-certainty. It tightens sharply "
+            "above a million, where false absorption is under half a per "
+            "cent. So TRULY UNBACKED near zero is the expected output whether "
+            "the night was scrupulous or fabricated, and means almost nothing "
+            "below 1e6 - while a clean result above 1e6 does mean something, "
+            "and that is where the large claims live. Quote this field beside "
+            "any count taken from this file.",
         "not_claimed":
             "A number being BACKED does not mean it was used correctly, only "
             "that it exists somewhere on disk. A number being UNBACKED does "

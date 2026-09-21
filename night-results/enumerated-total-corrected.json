@@ -1,10 +1,24 @@
 {
- "corrected_total_cases": 31292801587800,
- "as_first_published": 17391591847800,
- "understated_by_cases": 13901209740000,
- "understated_by_pct": 79.9,
- "what_went_wrong": "The overnight counter read one key, \"cases\", from each sweep's result file. One sweep writes \"space\" and \"evaluated\" instead. It ran 47 times, re-verified card against processor every time and recorded 0 differ every time - and was logged as a SUCCESS contributing nothing. That is worse than a failure: a failure is logged and looked at, while this sat in the log as '0 cases' beside a correct 0-differ and no one had to explain it. The arithmetic was never wrong; the bookkeeping was.",
- "how_it_was_found": "The per-pass figure was exactly the sum of four of the five sweeps, while the failure count read zero. Those two facts cannot both be innocent.",
- "verification_unaffected": "Every run in both figures re-verified the card against the processor before reporting and recorded 0 differ. The correction adds runs that were already proven, it does not relax anything.",
- "anonymised": "No project, site, maker or model anywhere."
+ "headline": "661,654,158,300 distinct cases, re-enumerated 48 times.",
+ "distinct_cases": 661654158300,
+ "passes": 48,
+ "case_evaluations": 31292801587800,
+ "what_the_big_number_is": "31,292,801,587,800 is a count of case EVALUATIONS, not of cases. The overnight loop runs the same five deterministic lattice sweeps over and over until a stop hour and adds the case count every pass. There is no random number generator in any of the five sweeps - a search for random, seed, choice or sample returns nothing - so they are fixed mixed-radix lattices, and pass 2 evaluates the identical set of points as pass 1. Repetition is a soak test. It is not coverage, and quoting it as a case count overstates what was examined by a factor of 48.",
+ "per_pass": {
+  "arc_break": 5219153100,
+  "bifacial_chain": 64177660800,
+  "hundred_billion": 125659333800,
+  "substation": 170827590600,
+  "atlas_lattice": 295770420000,
+  "sum": 661654158300
+ },
+ "the_two_earlier_figures_and_what_each_got_wrong": {
+  "17391591847800": "The first published figure. Wrong twice over: it is an evaluation count presented as a case count, AND it was missing one sweep entirely. The counter read the key 'cases' from each sweep's result file and one sweep writes 'space' and 'evaluated' instead. A missing key was answered with a number, 0, which then went into a total. That sweep ran 47 times, re-verified card against processor every time, recorded 0 differ every time, and was logged as a success contributing nothing.",
+  "31292801587800": "The correction to the missing key. It fixed the omission and left the deeper error in place: still an evaluation count published as though it were coverage. That is the figure this file replaces."
+ },
+ "how_the_missing_key_was_found": "The per-pass figure was exactly the sum of four of the five sweeps while the failure count read zero. Those two facts cannot both be innocent.",
+ "how_the_repetition_was_found": "The loop's own log prints the five per-sweep counts every pass, identical to the last digit 48 times. A sweep returning the same count on every pass over a lattice with no RNG is enumerating the same points.",
+ "verification_unaffected": "Every pass re-verified the card against the processor before reporting and recorded 0 differ. Nothing here relaxes a check. What changes is only what the number may be called.",
+ "not_claimed": "A distinct-case count is a count of points examined. It is not evidence that the points were the right ones, nor that the limits they were compared against have a source. Two of the four limits this estate measures against do not.",
+ "anonymised": "No project, site, client, maker or model anywhere."
 }
