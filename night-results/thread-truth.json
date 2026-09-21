@@ -1,0 +1,261 @@
+{
+ "anonymised": "No project, site, client, maker or model anywhere.",
+ "artefact_files": 681,
+ "backed": 91,
+ "body_sha256": "a3c5715922965f638a11ff3242324ca3873ddf37afe2e4d3c7449db50b149ee3",
+ "derived_from_backed": 158,
+ "method": "Every distinctive number (>= 1000) in the model's OWN sentences is taken from the transcript - tool results are excluded, because those are evidence and not claims. Every distinctive number in every artefact on disk is taken as the backing set. Membership is computed twice, by binary search on the card and by a hash set on the host, and nothing is reported unless they agree. What remains is tested on the card against every ordered pair of backed numbers for sum, difference and exact quotient.",
+ "not_claimed": "A number being BACKED does not mean it was used correctly, only that it exists somewhere on disk. A number being UNBACKED does not mean it is false - it may be arithmetic done in a sentence. This file cannot tell those apart and does not try. It narrows what a person has to read, and that is all it does.",
+ "numbers_on_disk": 2198,
+ "numbers_stated": 298,
+ "schema": "ggs.threadtruth/1",
+ "to_read": [
+  {
+   "first_turn": 560,
+   "times_said": 1,
+   "value": 2345678101112
+  },
+  {
+   "first_turn": 1047,
+   "times_said": 1,
+   "value": 661652158400
+  },
+  {
+   "first_turn": 39,
+   "times_said": 4,
+   "value": 202609202048
+  },
+  {
+   "first_turn": 765,
+   "times_said": 1,
+   "value": 119414460000
+  },
+  {
+   "first_turn": 765,
+   "times_said": 1,
+   "value": 119367886000
+  },
+  {
+   "first_turn": 765,
+   "times_said": 1,
+   "value": 44113872000
+  },
+  {
+   "first_turn": 765,
+   "times_said": 2,
+   "value": 12874202000
+  },
+  {
+   "first_turn": 765,
+   "times_said": 2,
+   "value": 3949036863
+  },
+  {
+   "first_turn": 1578,
+   "times_said": 1,
+   "value": 2335975776
+  },
+  {
+   "first_turn": 788,
+   "times_said": 1,
+   "value": 1770987855
+  },
+  {
+   "first_turn": 472,
+   "times_said": 2,
+   "value": 1020600000
+  },
+  {
+   "first_turn": 922,
+   "times_said": 1,
+   "value": 1000000000
+  },
+  {
+   "first_turn": 600,
+   "times_said": 2,
+   "value": 721030854
+  },
+  {
+   "first_turn": 1534,
+   "times_said": 4,
+   "value": 476426722
+  },
+  {
+   "first_turn": 1527,
+   "times_said": 1,
+   "value": 434346700
+  },
+  {
+   "first_turn": 984,
+   "times_said": 1,
+   "value": 309780894
+  },
+  {
+   "first_turn": 417,
+   "times_said": 2,
+   "value": 306440267
+  },
+  {
+   "first_turn": 801,
+   "times_said": 1,
+   "value": 206319972
+  },
+  {
+   "first_turn": 327,
+   "times_said": 3,
+   "value": 177289777
+  },
+  {
+   "first_turn": 961,
+   "times_said": 1,
+   "value": 103190101
+  },
+  {
+   "first_turn": 801,
+   "times_said": 1,
+   "value": 95171706
+  },
+  {
+   "first_turn": 223,
+   "times_said": 4,
+   "value": 57640569
+  },
+  {
+   "first_turn": 600,
+   "times_said": 3,
+   "value": 46822590
+  },
+  {
+   "first_turn": 801,
+   "times_said": 1,
+   "value": 27569025
+  },
+  {
+   "first_turn": 801,
+   "times_said": 1,
+   "value": 27539331
+  },
+  {
+   "first_turn": 417,
+   "times_said": 2,
+   "value": 27297270
+  },
+  {
+   "first_turn": 982,
+   "times_said": 1,
+   "value": 20680704
+  },
+  {
+   "first_turn": 137,
+   "times_said": 3,
+   "value": 20260920
+  },
+  {
+   "first_turn": 417,
+   "times_said": 1,
+   "value": 15100997
+  },
+  {
+   "first_turn": 327,
+   "times_said": 3,
+   "value": 12767553
+  },
+  {
+   "first_turn": 417,
+   "times_said": 1,
+   "value": 11016042
+  },
+  {
+   "first_turn": 417,
+   "times_said": 1,
+   "value": 7507811
+  },
+  {
+   "first_turn": 801,
+   "times_said": 1,
+   "value": 6077841
+  },
+  {
+   "first_turn": 832,
+   "times_said": 1,
+   "value": 5967153
+  },
+  {
+   "first_turn": 959,
+   "times_said": 1,
+   "value": 3811207
+  },
+  {
+   "first_turn": 327,
+   "times_said": 2,
+   "value": 3343329
+  },
+  {
+   "first_turn": 832,
+   "times_said": 1,
+   "value": 2403528
+  },
+  {
+   "first_turn": 843,
+   "times_said": 1,
+   "value": 2000160
+  },
+  {
+   "first_turn": 959,
+   "times_said": 1,
+   "value": 1980452
+  },
+  {
+   "first_turn": 589,
+   "times_said": 3,
+   "value": 1946532
+  },
+  {
+   "first_turn": 801,
+   "times_said": 1,
+   "value": 1532125
+  },
+  {
+   "first_turn": 843,
+   "times_said": 1,
+   "value": 1250640
+  },
+  {
+   "first_turn": 801,
+   "times_said": 1,
+   "value": 1211346
+  },
+  {
+   "first_turn": 417,
+   "times_said": 2,
+   "value": 1180231
+  },
+  {
+   "first_turn": 843,
+   "times_said": 1,
+   "value": 952560
+  },
+  {
+   "first_turn": 843,
+   "times_said": 1,
+   "value": 758160
+  },
+  {
+   "first_turn": 472,
+   "times_said": 1,
+   "value": 720000
+  },
+  {
+   "first_turn": 843,
+   "times_said": 1,
+   "value": 625680
+  },
+  {
+   "first_turn": 679,
+   "times_said": 1,
+   "value": 576000
+  }
+ ],
+ "truly_unbacked": 49,
+ "unbacked": 207
+}
