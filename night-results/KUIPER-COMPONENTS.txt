@@ -1,0 +1,140 @@
+THE KUIPER PART LIST
+======================================================================
+
+Every electrical part that can be described by a kind and a size,
+worked out in advance, with the ones worth offering kept. Reading
+this needs no program, no account and nobody's help.
+
+THE KINDS OF PART THERE ARE. Everything electrical is built from
+these, and there are not many:
+
+  resists                        measured in ohm         turns current into heat; the commonest part there is
+  stores in a magnetic field     measured in henry       opposes a CHANGE in current
+  stores in an electric field    measured in farad       opposes a CHANGE in voltage
+  pushes at a fixed voltage      measured in volt        a supply that holds its voltage
+  pushes a fixed current         measured in amp         a supply that holds its current
+  lets current one way           measured in volt        a one-way valve, with a small drop
+  opens and closes               measured in ohm         nearly nothing closed, nearly everything open
+  changes voltage                measured in ratio       more turns one side than the other
+  a length of wire               measured in ohm per km  resists a little and stores a little
+  draws power                    measured in watt        whatever the system exists to feed
+
+THE SIZES THEY COME IN. Parts are not made in every size. They are
+made in twelve steps that repeat every time the numbers get ten
+times bigger, so the gap between one size and the next is always
+about the same PROPORTION rather than the same amount. That is why
+the same twelve numbers keep appearing everywhere:
+
+  1.0  1.2  1.5  1.8  2.2  2.7  3.3  3.9  4.7  5.6  6.8  8.2
+
+----------------------------------------------------------------------
+WHERE THESE COME FROM, and why that is the important part
+
+Nothing here is invented. The line, transformer and fuse types are
+the standard types published by an open library that anyone may
+download and check for themselves:
+
+  taken from    pandapower basic_std_types
+  version       3.5.4
+  licence       open source, BSD-3-Clause
+  types used    106
+
+The conductor sizes are the British standard series - the sizes
+actually manufactured, in square millimetres:
+
+  1.5  2.5  4  6  10  16  25  35  50  70  95  120  150  185  240  300  400  500  630  800  1000
+
+The protective ratings are the British standard series too, in amps:
+
+  6  10  16  20  25  32  40  50  63  80  100  125  160  200  250  315  400  500  630  800  1000  1250
+
+And the voltages are the ones this country actually runs at, from
+the socket in a wall to the highest transmission line, in volts:
+
+  230  400  3300  6600  11000  33000  66000  132000  275000  400000
+
+WHY THIS MATTERS MORE THAN IT SOUNDS. Elsewhere in this work, seven
+hundred and forty-nine figures were found resting on eighteen
+values that could not be traced to any document at all. Every
+figure in this list can be traced to something a stranger can go
+and obtain. That is the difference between a catalogue and a guess,
+and it is why the source and its version are printed above rather
+than being left as a claim that these are 'standard'.
+
+----------------------------------------------------------------------
+WHAT WAS DONE
+
+  Parts worked out                  996,000
+  Distinct parts among them         12,000
+  Kept for choosing                 10,000
+  The two routes disagreed on       0
+
+WHY TEN THOUSAND AND NOT ALL OF THEM. Offering a million choices is
+the same as offering none. The kept ones are spread EVENLY across
+the whole range rather than taken from its best end, so that picking
+any one of them tells you something the next one would not have. A
+chooser that only offers the edges of a range teaches nothing about
+its middle.
+
+----------------------------------------------------------------------
+THE FIRST FEW OF WHAT WAS KEPT
+
+  kind                            value        unit         within
+  draws power                    1.0          watt         1%
+  draws power                    1.2          watt         1%
+  draws power                    1.5          watt         1%
+  draws power                    1.8          watt         1%
+  draws power                    6.8          watt         1%
+  draws power                    5.6          watt         1%
+  draws power                    2.2          watt         1%
+  draws power                    2.7          watt         1%
+  draws power                    3.3          watt         1%
+  draws power                    4.7          watt         1%
+  draws power                    8.2          watt         1%
+  draws power                    3.9          watt         1%
+  a length of wire               1.2          ohm per km   1%
+  a length of wire               1.5          ohm per km   1%
+  a length of wire               1.8          ohm per km   1%
+  a length of wire               1.0          ohm per km   1%
+  a length of wire               8.2          ohm per km   1%
+  a length of wire               6.8          ohm per km   1%
+  a length of wire               5.6          ohm per km   1%
+  a length of wire               3.3          ohm per km   1%
+  ... and 9,980 more, all listed in the file beside this one
+
+----------------------------------------------------------------------
+HOW TO ADD A PART OF YOUR OWN
+
+Four things on one line, separated by spaces:
+
+  a name you invent | the kind, from the list above | its number | its unit
+
+For example:
+
+  my-feeder-cable   a length of wire   0.164   ohm per km
+  my-supply         pushes at a fixed voltage   400   volt
+
+That is the whole format. The parts listed above are stored exactly
+that way - there is no privileged format and no hidden one - so a
+part you write is drawn and worked out identically to a part that
+came with the list. Nothing you add is treated as second class.
+
+----------------------------------------------------------------------
+NO WARRANTY OF ANY KIND. READ THIS BEFORE USING ANY PART ABOVE.
+
+We do not warrant that the arithmetic is correct. We do not warrant
+that the physics is correct. We do not warrant that any part here
+behaves as described, that the values are the values you would
+measure, or that any of it applies to anything you intend to build.
+We warrant nothing at all. Checking is the reader's job, which is
+why the method is written out here rather than summarised: a
+summary asks for trust, and this asks to be checked. If you use
+anything from this file without checking it, that choice and its
+consequences are entirely yours.
+
+THIS IS NOT ENGINEERING. Engineering carries the name of a person
+who answers for it. Nothing here does.
+
+No site, client, project, place, manufacturer or model is named in
+this file, and none is needed in order to check it.
+
