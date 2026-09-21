@@ -1,0 +1,153 @@
+{
+  "cases_failing_at_least_one_rule": 73291709,
+  "joint_truth_table": {
+    "none": 27568291,
+    "over_fuse": 0,
+    "over_mppt": 18226963,
+    "over_mppt+over_fuse": 0,
+    "over_string": 0,
+    "over_string+over_fuse": 0,
+    "over_string+over_mppt": 22812506,
+    "over_string+over_mppt+over_fuse": 0,
+    "over_volts": 12241484,
+    "over_volts+over_fuse": 0,
+    "over_volts+over_mppt": 7569017,
+    "over_volts+over_mppt+over_fuse": 0,
+    "over_volts+over_string": 0,
+    "over_volts+over_string+over_fuse": 0,
+    "over_volts+over_string+over_mppt": 12441739,
+    "over_volts+over_string+over_mppt+over_fuse": 0
+  },
+  "limits": {
+    "max_system_volts": {
+      "source": "FROM-DATASHEET: both source documents print 1500 V DC",
+      "value": 1500.0
+    },
+    "mppt_input_amps": {
+      "source": "NO SOURCE: recorded absent from both source documents",
+      "value": 40.0
+    },
+    "series_fuse_amps": {
+      "source": "FROM-DATASHEET: max_series_fuse_a printed on both documents",
+      "value": 35.0
+    },
+    "string_current_amps": {
+      "source": "NO SOURCE: this limit appears nowhere in the evidence base",
+      "value": 20.0
+    }
+  },
+  "pair_rule": {
+    "agreed_exactly": true,
+    "implementations": [
+      "cuda_raw_kernel",
+      "cupy_array_path"
+    ]
+  },
+  "q1_implications": [
+    {
+      "antecedent": "over_string",
+      "cases_where_antecedent_true": 35254245,
+      "consequent": "over_mppt",
+      "counterexamples": 0
+    }
+  ],
+  "q2_exclusions": [
+    {
+      "a": "over_mppt",
+      "b": "over_fuse",
+      "cases_true_together": 0
+    },
+    {
+      "a": "over_string",
+      "b": "over_fuse",
+      "cases_true_together": 0
+    },
+    {
+      "a": "over_volts",
+      "b": "over_fuse",
+      "cases_true_together": 0
+    }
+  ],
+  "q3_dead_rules": [
+    "over_fuse"
+  ],
+  "q4_equivalences": [],
+  "q5_binding_order": {
+    "T_plus25_down_to_minus20C": {
+      "first_rule_to_fail": {
+        "over_fuse": 0,
+        "over_mppt": 79710,
+        "over_string": 48540,
+        "over_volts": 36648
+      },
+      "lines_total": 123000,
+      "lines_with_a_failure": 97460,
+      "lines_with_no_failure": 25540
+    },
+    "rear_0_to_30pct": {
+      "first_rule_to_fail": {
+        "over_fuse": 0,
+        "over_mppt": 83668,
+        "over_string": 0,
+        "over_volts": 39332
+      },
+      "lines_total": 123000,
+      "lines_with_a_failure": 123000,
+      "lines_with_no_failure": 0
+    },
+    "series_20_to_34": {
+      "first_rule_to_fail": {
+        "over_fuse": 0,
+        "over_mppt": 4070015,
+        "over_string": 2350283,
+        "over_volts": 2653985
+      },
+      "lines_total": 6724000,
+      "lines_with_a_failure": 6724000,
+      "lines_with_no_failure": 0
+    }
+  },
+  "rule_region_sizes": {
+    "over_fuse": 0,
+    "over_mppt": 61050225,
+    "over_string": 35254245,
+    "over_volts": 32252240
+  },
+  "space": {
+    "bins": [
+      "T645",
+      "T650",
+      "T655",
+      "T660",
+      "T665",
+      "W750",
+      "W755",
+      "W760",
+      "W765",
+      "W770"
+    ],
+    "cell_temperature_C": {
+      "from": -20.0,
+      "steps": 820,
+      "to": 25.0
+    },
+    "rear_gain_fraction": {
+      "from": 0.0,
+      "steps": 820,
+      "to": 0.3
+    },
+    "series": {
+      "from": 20,
+      "steps": 15,
+      "to": 34
+    },
+    "total_cases": 100860000
+  },
+  "what_this_does_not_prove": [
+    "This is logic over a stated space at a stated resolution. Outside that box, or between its grid points, nothing here holds.",
+    "Two of the four limits have NO SOURCE. The 20 A string limit appears nowhere in the evidence base; the 40 A MPPT limit is recorded absent from both source documents.",
+    "Redundancy between two invented constants is not a fact about the world. An implication resting on an unsourced number is a fact about the number, not about any hardware.",
+    "No diode, cable, inverter, tracker or wiring loss is modelled. Voc, Isc and Imp are datasheet values scaled by printed coefficients only.",
+    "Rear gain is applied as a linear phi from a bin's k_corr; one source document does not define the rear-irradiance condition its k_corr comes from."
+  ]
+}

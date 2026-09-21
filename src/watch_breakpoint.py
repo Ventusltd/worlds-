@@ -1,4 +1,9 @@
 """
+PATHS ARE NOT WRITTEN DOWN HERE. This repository is public and an
+absolute path names a machine and an account. Set GRID_DATA (and where
+needed GRID_REPOS or CLAUDE_TRANSCRIPT) in the environment instead.
+See src/paths.py for why.
+
 watch_breakpoint.py -- the photon that did not return, turned into code.
 
 WHAT THIS IS
@@ -65,7 +70,7 @@ import os
 
 import cupy as cp
 
-OUT = r"C:\Users\vikra\Documents\GitHub\worlds-\night-results\breakpoint.json"
+OUT = os.environ.get("GRID_REPOS", "")
 W0, W1 = 600, 760                 # the band under test, 1 px resolution
 SH_BRK, CT_BRK = 640, 700         # shell narrow(), cartridge media query
 

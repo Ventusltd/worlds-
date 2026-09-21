@@ -13,7 +13,7 @@
  "space": 2026125150,
  "the_three_channels": "1: an NVRTC-compiled fused kernel. 2: a CuPy array-operator graph - different compiler, different execution path. 3: the same voltage by the DISTRIBUTIVE LAW, se*voc + se*voc*b instead of se*(voc*(1+b)) - algebraically identical, and not identical in floating point, because the expanded form rounds twice where the factored form rounds once. Two channels can agree by sharing a habit. Three written differently cannot.",
  "timing_not_in_digest": {
-  "seconds": 1.699
+  "seconds": 1.575
  },
  "verdict_mask_counts": [
   268096756,

@@ -1,4 +1,9 @@
-"""THE TRANSLATOR: turn a worksheet's plain-English maths into enumeration.
+"""
+PATHS ARE NOT WRITTEN DOWN HERE. This repository is public and an
+absolute path names a machine and an account. Set GRID_DATA (and where
+needed GRID_REPOS or CLAUDE_TRANSCRIPT) in the environment instead.
+See src/paths.py for why.
+THE TRANSLATOR: turn a worksheet's plain-English maths into enumeration.
 
 Everything else in this night finds problems. This file does one job: it takes
 a finding's `maths` string - a statement of axes and a predicate, written for a
@@ -77,8 +82,7 @@ HARVEST_DIR = r"E:\swarm\harvest"
 # collide with it and neither sheet has to be moved to be read.
 HARVEST_DIRS = [HARVEST_DIR, r"E:\swarm\harvest2"]
 NIGHT_WORKSHEET = os.path.join(ROOT, "night-results", "worksheet.geojson")
-CARTRIDGE_DIR = (r"C:\Users\vikra\Documents\GitHub\globalgrid2050\kuiper-grid"
-                 r"\i0073\cartridges")
+CARTRIDGE_DIR = os.environ.get("GRID_REPOS", "")
 
 BNPI_REAR = 0.135          # rear 135 W/m2 over front 1000, printed on the sheet
 V_CEIL = 1500.0            # equipment rating: module max system, inverter max PV

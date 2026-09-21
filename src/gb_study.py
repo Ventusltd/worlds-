@@ -1,4 +1,9 @@
-"""The GB transmission network, every circuit, every single outage, on the card.
+"""
+PATHS ARE NOT WRITTEN DOWN HERE. This repository is public and an
+absolute path names a machine and an account. Set GRID_DATA (and where
+needed GRID_REPOS or CLAUDE_TRANSCRIPT) in the environment instead.
+See src/paths.py for why.
+The GB transmission network, every circuit, every single outage, on the card.
 
 The data is the estate's own: derived/gb-transmission-network.v1.json, built
 from the published ten-year statement. 921 sites, 2,679 nodes, 1,392 circuits
@@ -35,8 +40,7 @@ import time
 
 import numpy as np
 
-SRC = (r"C:\Users\vikra\Documents\GitHub\data-grid-gb\derived"
-       r"\gb-transmission-network.v1.json")
+SRC = os.environ.get("GRID_REPOS", "")   # public repo: no machine path written down
 
 
 def load():

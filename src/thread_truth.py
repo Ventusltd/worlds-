@@ -1,4 +1,9 @@
-"""Did the numbers I said out loud come from anywhere?
+"""
+PATHS ARE NOT WRITTEN DOWN HERE. This repository is public and an
+absolute path names a machine and an account. Set GRID_DATA (and where
+needed GRID_REPOS or CLAUDE_TRANSCRIPT) in the environment instead.
+See src/paths.py for why.
+Did the numbers I said out loud come from anywhere?
 
 WHAT THIS IS, AND WHAT IT IS NOT
 A GPU cannot read a transcript for meaning; that is a model's job and this file
@@ -43,8 +48,7 @@ import time
 
 import numpy as np
 
-TRANSCRIPT = (r"C:\Users\vikra\.claude\projects\C--Windows-system32"
-              r"\202ddc32-6dd1-4520-b821-ee1d6a4c639c.jsonl")
+TRANSCRIPT = os.environ.get("CLAUDE_TRANSCRIPT", "")   # set it; never written down here
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 RESULTS = os.path.join(ROOT, "night-results")
 SRC = os.path.join(ROOT, "src")
