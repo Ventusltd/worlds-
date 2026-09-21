@@ -1,0 +1,3488 @@
+{
+ "anonymised": "No project, site, client, maker or model anywhere.",
+ "body_sha256": "e003472db04ce38253d08e528338460b74bff55f9fce77a1f228c8ad6fd8ea20",
+ "buffer_per_predicate": 40,
+ "cases": 5315872772,
+ "host_agreed": 138,
+ "host_check": "Every recorded case was re-evaluated on the CPU in Python - a second, independent implementation of the same two channels, through a different compiler. host_agrees_it_parts is true only where the host also found the two channels disagreeing. A false or null there is a DISAGREEMENT between card and host and is not a finding.",
+ "host_disagreed": 0,
+ "not_proved": "This does NOT prove any of these designs is wrong, unsafe or non-compliant. It proves only that in the spaces the worksheets state, these cases land exactly on a threshold, so their verdict is decided by whether the rule says 'or equal to' rather than by the design. It does not say the space is the right space or the predicate the right question. It holds no site, no weather record and no as-built drawing, so it says nothing about any real installation. The recorded examples are a BOUNDED sample: where buffer_full is true, more partings exist than are shown, and partings_seen is the honest total. The axis values are written as Python repr of the double, so no precision is hidden.",
+ "partings_seen": 21463,
+ "partings_stored": 138,
+ "per_predicate": [
+  {
+   "buffer_full": false,
+   "cases": 46965,
+   "id": "K01-01",
+   "partings_seen": 0,
+   "partings_stored": 0,
+   "predicate": "series*45.90*uplift*(1+(-0.25)/100*(tmin-25)) > 1500",
+   "recorded": [],
+   "slots_claimed": 0,
+   "what": "The string voltage is worked out at the standard-test open-circuit voltage and corrected f"
+  },
+  {
+   "buffer_full": false,
+   "cases": 1515,
+   "id": "K01-02",
+   "partings_seen": 0,
+   "partings_stored": 0,
+   "predicate": "series*45.90*(1+(-0.25)/100*(tmin-25)) <= 1500 and series*46.10*(1+(-0.25)/100*(tmin-25)) > 1500",
+   "recorded": [],
+   "slots_claimed": 0,
+   "what": "The voltage test uses the open-circuit voltage of the bin that was asked for, while the po"
+  },
+  {
+   "buffer_full": false,
+   "cases": 8415,
+   "id": "K01-03",
+   "partings_seen": 0,
+   "partings_stored": 0,
+   "predicate": "series*45.90*(1+(-0.25)/100*(tmin-25)) > ceiling",
+   "recorded": [],
+   "slots_claimed": 0,
+   "what": "The ceiling the string voltage is judged against is a single constant written into the pro"
+  },
+  {
+   "buffer_full": false,
+   "cases": 4590,
+   "id": "K01-04",
+   "partings_seen": 0,
+   "partings_stored": 0,
+   "predicate": "series*50.65*(1+(-0.22)/100*(tmin-25)) > comp_rating",
+   "recorded": [],
+   "slots_claimed": 0,
+   "what": "Only the module's own system-voltage rating is tested; the connector and the string cable "
+  },
+  {
+   "buffer_full": false,
+   "cases": 31365,
+   "id": "K01-05",
+   "partings_seen": 0,
+   "partings_stored": 0,
+   "predicate": "series*45.90*(1+(-0.25)/100*(tmin-25)+curv*(tmin-25)*(tmin-25)) > 1500",
+   "recorded": [],
+   "slots_claimed": 0,
+   "what": "The temperature correction is a straight line taken from a coefficient printed at one refe"
+  },
+  {
+   "buffer_full": false,
+   "cases": 615,
+   "id": "K01-06",
+   "partings_seen": 0,
+   "partings_stored": 0,
+   "predicate": "series*45.90*(1+(-0.25)/100*(tmin-25)) > 1500",
+   "recorded": [],
+   "slots_claimed": 0,
+   "what": "The temperature the voltage is assessed at is clamped by the input box to a floor that is "
+  },
+  {
+   "buffer_full": false,
+   "cases": 13005,
+   "id": "K01-07",
+   "partings_seen": 0,
+   "partings_stored": 0,
+   "predicate": "series*45.90*(1+beta/100*(tmin-25)) > 1500",
+   "recorded": [],
+   "slots_claimed": 0,
+   "what": "The temperature coefficient of open-circuit voltage is carried as a single printed figure "
+  },
+  {
+   "buffer_full": false,
+   "cases": 1515,
+   "id": "K01-08",
+   "partings_seen": 0,
+   "partings_stored": 0,
+   "predicate": "series*50.65*(1+(-0.22)/100*(tmin-25)) > 1500",
+   "recorded": [],
+   "slots_claimed": 0,
+   "what": "The number of modules a string may hold is offered as one fixed range for every class, alt"
+  },
+  {
+   "buffer_full": false,
+   "cases": 11041,
+   "id": "K02-01",
+   "partings_seen": 0,
+   "partings_stored": 0,
+   "predicate": "18.45*(1+(1.0943-1)/0.135*rear)*(1+0.04/100*(tcell-25)) > 18.45*(1+(1.0943-1)/0.135*rear)*(1+0.04/100*(-10-25))",
+   "recorded": [],
+   "slots_claimed": 0,
+   "what": "Both currents are evaluated only at the COLD assessment temperature, with a POSITIVE Isc c"
+  },
+  {
+   "buffer_full": false,
+   "cases": 11041,
+   "id": "K02-02",
+   "partings_seen": 0,
+   "partings_stored": 0,
+   "predicate": "17.35*(1+(1.0943-1)/0.135*rear)*(1+0.04/100*(tcell-25)) <= 20 and 18.45*(1+(1.0943-1)/0.135*rear)*(1+0.04/100*(tcell-25)) > 20",
+   "recorded": [],
+   "slots_claimed": 0,
+   "what": "One machine, two limits, judged on two different currents: the string-input test is writte"
+  },
+  {
+   "buffer_full": false,
+   "cases": 11041,
+   "id": "K02-03",
+   "partings_seen": 0,
+   "partings_stored": 0,
+   "predicate": "1.25*18.45*(1+(1.0943-1)/0.135*rear)*(1+0.04/100*(tcell-25)) > 35 and 1.25*18.45*(1+(1.0943-1)/0.135*rear)*(1+0.04/100*(-10-25)) <= 35",
+   "recorded": [],
+   "slots_claimed": 0,
+   "what": "The continuous-current factor is applied to the fuse and cable number only, and that numbe"
+  },
+  {
+   "buffer_full": false,
+   "cases": 2501,
+   "id": "K02-04",
+   "partings_seen": 0,
+   "partings_stored": 0,
+   "predicate": "18.45*(1+(1.0943-1)/0.135*rear)*(1+0.04/100*(tset-25)) > 18.45*(1+(1.0943-1)/0.135*rear)",
+   "recorded": [],
+   "slots_claimed": 0,
+   "what": "The only temperature the operator can type is bounded at or below freezing, so the hot cas"
+  },
+  {
+   "buffer_full": false,
+   "cases": 11041,
+   "id": "K02-05",
+   "partings_seen": 0,
+   "partings_stored": 0,
+   "predicate": "2*18.45*(1+(1.0943-1)/0.135*rear)*(1+0.04/100*(tcell-25)) > 40 and 17.35*(1+(1.0943-1)/0.135*rear)*(1+0.04/100*(tcell-25)) <= 20",
+   "recorded": [],
+   "slots_claimed": 0,
+   "what": "Because the two limits are judged on two different currents, the pair of strings can be ov"
+  },
+  {
+   "buffer_full": false,
+   "cases": 765,
+   "id": "K03-01",
+   "partings_seen": 0,
+   "partings_stored": 0,
+   "predicate": "series*50.65*(1+(-0.22/100)*(-10-25)) > vceil",
+   "recorded": [],
+   "slots_claimed": 0,
+   "what": "The voltage ceiling is the only one of the four limits carried as a bare constant with a c"
+  },
+  {
+   "buffer_full": false,
+   "cases": 256,
+   "id": "K03-02",
+   "partings_seen": 0,
+   "partings_stored": 0,
+   "predicate": "1.25*18.68 > min(fuse_a, string_input_a)",
+   "recorded": [],
+   "slots_claimed": 0,
+   "what": "Of the four numbers only the series fuse is printed on every datasheet and reproduced per "
+  },
+  {
+   "buffer_full": false,
+   "cases": 176,
+   "id": "K03-03",
+   "partings_seen": 0,
+   "partings_stored": 0,
+   "predicate": "(sizing/100)*18.00 > string_input_a",
+   "recorded": [],
+   "slots_claimed": 0,
+   "what": "The string input limit has no provenance anywhere in the estate: not a datasheet, not the "
+  },
+  {
+   "buffer_full": false,
+   "cases": 224,
+   "id": "K03-04",
+   "partings_seen": 0,
+   "partings_stored": 0,
+   "predicate": "1.25*18.68*strings_per_mppt > mppt_limit",
+   "recorded": [],
+   "slots_claimed": 0,
+   "what": "The machine input limit is recorded in the estate's own standards note as absent from both"
+  },
+  {
+   "buffer_full": false,
+   "cases": 338,
+   "id": "K03-05",
+   "partings_seen": 0,
+   "partings_stored": 0,
+   "predicate": "inputs*per_input_a > 480",
+   "recorded": [],
+   "slots_claimed": 0,
+   "what": "Strings per tracker input sits on the same line as the limits as though it were one, but t"
+  },
+  {
+   "buffer_full": false,
+   "cases": 399,
+   "id": "K03-06",
+   "partings_seen": 0,
+   "partings_stored": 0,
+   "predicate": "(parallel-1)*1.25*1.1151*18.68 + backfeed_a > 35",
+   "recorded": [],
+   "slots_claimed": 0,
+   "what": "The fuse verdict compares one string's sized current against the datasheet maximum series "
+  },
+  {
+   "buffer_full": false,
+   "cases": 806,
+   "id": "K03-07",
+   "partings_seen": 0,
+   "partings_stored": 0,
+   "predicate": "series*50.65*(1+(-0.22/100)*(tmin-25)) > 1500 and (series < 20 or series > 34)",
+   "recorded": [],
+   "slots_claimed": 0,
+   "what": "The band a user may type is narrower than the band over which the voltage ceiling decides "
+  },
+  {
+   "buffer_full": false,
+   "cases": 121,
+   "id": "K03-08",
+   "partings_seen": 0,
+   "partings_stored": 0,
+   "predicate": "min(vceil_module, vceil_other) < 34*50.65*(1+(-0.22/100)*(-10-25))",
+   "recorded": [],
+   "slots_claimed": 0,
+   "what": "The ceiling is taken from the module alone. A DC circuit is held to the lowest maximum sys"
+  },
+  {
+   "buffer_full": false,
+   "cases": 25536,
+   "id": "K04-01",
+   "partings_seen": 18,
+   "partings_stored": 18,
+   "predicate": "nsymring*16 + nplainring*5 > 896 and nsymring*16 + nplainring*3 <= 896",
+   "recorded": [
+    {
+     "axes": {
+      "nplainring": "16.0",
+      "nsymring": "53.0"
+     },
+     "case_index": 158643,
+     "host_agrees_it_parts": true,
+     "on_the_line": [
+      {
+       "left": "nsymring * 16 + nplainring * 3",
+       "right": "896",
+       "value": "896.0"
+      }
+     ],
+     "verdict_as_written": true,
+     "verdict_if_strict": false
+    },
+    {
+     "axes": {
+      "nplainring": "32.0",
+      "nsymring": "50.0"
+     },
+     "case_index": 159552,
+     "host_agrees_it_parts": true,
+     "on_the_line": [
+      {
+       "left": "nsymring * 16 + nplainring * 3",
+       "right": "896",
+       "value": "896.0"
+      }
+     ],
+     "verdict_as_written": true,
+     "verdict_if_strict": false
+    },
+    {
+     "axes": {
+      "nplainring": "48.0",
+      "nsymring": "47.0"
+     },
+     "case_index": 160461,
+     "host_agrees_it_parts": true,
+     "on_the_line": [
+      {
+       "left": "nsymring * 16 + nplainring * 3",
+       "right": "896",
+       "value": "896.0"
+      }
+     ],
+     "verdict_as_written": true,
+     "verdict_if_strict": false
+    },
+    {
+     "axes": {
+      "nplainring": "64.0",
+      "nsymring": "44.0"
+     },
+     "case_index": 161370,
+     "host_agrees_it_parts": true,
+     "on_the_line": [
+      {
+       "left": "nsymring * 16 + nplainring * 3",
+       "right": "896",
+       "value": "896.0"
+      }
+     ],
+     "verdict_as_written": true,
+     "verdict_if_strict": false
+    },
+    {
+     "axes": {
+      "nplainring": "80.0",
+      "nsymring": "41.0"
+     },
+     "case_index": 162279,
+     "host_agrees_it_parts": true,
+     "on_the_line": [
+      {
+       "left": "nsymring * 16 + nplainring * 3",
+       "right": "896",
+       "value": "896.0"
+      }
+     ],
+     "verdict_as_written": true,
+     "verdict_if_strict": false
+    },
+    {
+     "axes": {
+      "nplainring": "96.0",
+      "nsymring": "38.0"
+     },
+     "case_index": 163188,
+     "host_agrees_it_parts": true,
+     "on_the_line": [
+      {
+       "left": "nsymring * 16 + nplainring * 3",
+       "right": "896",
+       "value": "896.0"
+      }
+     ],
+     "verdict_as_written": true,
+     "verdict_if_strict": false
+    },
+    {
+     "axes": {
+      "nplainring": "112.0",
+      "nsymring": "35.0"
+     },
+     "case_index": 164097,
+     "host_agrees_it_parts": true,
+     "on_the_line": [
+      {
+       "left": "nsymring * 16 + nplainring * 3",
+       "right": "896",
+       "value": "896.0"
+      }
+     ],
+     "verdict_as_written": true,
+     "verdict_if_strict": false
+    },
+    {
+     "axes": {
+      "nplainring": "128.0",
+      "nsymring": "32.0"
+     },
+     "case_index": 165006,
+     "host_agrees_it_parts": true,
+     "on_the_line": [
+      {
+       "left": "nsymring * 16 + nplainring * 3",
+       "right": "896",
+       "value": "896.0"
+      }
+     ],
+     "verdict_as_written": true,
+     "verdict_if_strict": false
+    },
+    {
+     "axes": {
+      "nplainring": "144.0",
+      "nsymring": "29.0"
+     },
+     "case_index": 165915,
+     "host_agrees_it_parts": true,
+     "on_the_line": [
+      {
+       "left": "nsymring * 16 + nplainring * 3",
+       "right": "896",
+       "value": "896.0"
+      }
+     ],
+     "verdict_as_written": true,
+     "verdict_if_strict": false
+    },
+    {
+     "axes": {
+      "nplainring": "160.0",
+      "nsymring": "26.0"
+     },
+     "case_index": 166824,
+     "host_agrees_it_parts": true,
+     "on_the_line": [
+      {
+       "left": "nsymring * 16 + nplainring * 3",
+       "right": "896",
+       "value": "896.0"
+      }
+     ],
+     "verdict_as_written": true,
+     "verdict_if_strict": false
+    },
+    {
+     "axes": {
+      "nplainring": "176.0",
+      "nsymring": "23.0"
+     },
+     "case_index": 167733,
+     "host_agrees_it_parts": true,
+     "on_the_line": [
+      {
+       "left": "nsymring * 16 + nplainring * 3",
+       "right": "896",
+       "value": "896.0"
+      }
+     ],
+     "verdict_as_written": true,
+     "verdict_if_strict": false
+    },
+    {
+     "axes": {
+      "nplainring": "192.0",
+      "nsymring": "20.0"
+     },
+     "case_index": 168642,
+     "host_agrees_it_parts": true,
+     "on_the_line": [
+      {
+       "left": "nsymring * 16 + nplainring * 3",
+       "right": "896",
+       "value": "896.0"
+      }
+     ],
+     "verdict_as_written": true,
+     "verdict_if_strict": false
+    },
+    {
+     "axes": {
+      "nplainring": "208.0",
+      "nsymring": "17.0"
+     },
+     "case_index": 169551,
+     "host_agrees_it_parts": true,
+     "on_the_line": [
+      {
+       "left": "nsymring * 16 + nplainring * 3",
+       "right": "896",
+       "value": "896.0"
+      }
+     ],
+     "verdict_as_written": true,
+     "verdict_if_strict": false
+    },
+    {
+     "axes": {
+      "nplainring": "224.0",
+      "nsymring": "14.0"
+     },
+     "case_index": 170460,
+     "host_agrees_it_parts": true,
+     "on_the_line": [
+      {
+       "left": "nsymring * 16 + nplainring * 3",
+       "right": "896",
+       "value": "896.0"
+      }
+     ],
+     "verdict_as_written": true,
+     "verdict_if_strict": false
+    },
+    {
+     "axes": {
+      "nplainring": "240.0",
+      "nsymring": "11.0"
+     },
+     "case_index": 171369,
+     "host_agrees_it_parts": true,
+     "on_the_line": [
+      {
+       "left": "nsymring * 16 + nplainring * 3",
+       "right": "896",
+       "value": "896.0"
+      }
+     ],
+     "verdict_as_written": true,
+     "verdict_if_strict": false
+    },
+    {
+     "axes": {
+      "nplainring": "256.0",
+      "nsymring": "8.0"
+     },
+     "case_index": 172278,
+     "host_agrees_it_parts": true,
+     "on_the_line": [
+      {
+       "left": "nsymring * 16 + nplainring * 3",
+       "right": "896",
+       "value": "896.0"
+      }
+     ],
+     "verdict_as_written": true,
+     "verdict_if_strict": false
+    },
+    {
+     "axes": {
+      "nplainring": "272.0",
+      "nsymring": "5.0"
+     },
+     "case_index": 173187,
+     "host_agrees_it_parts": true,
+     "on_the_line": [
+      {
+       "left": "nsymring * 16 + nplainring * 3",
+       "right": "896",
+       "value": "896.0"
+      }
+     ],
+     "verdict_as_written": true,
+     "verdict_if_strict": false
+    },
+    {
+     "axes": {
+      "nplainring": "288.0",
+      "nsymring": "2.0"
+     },
+     "case_index": 174096,
+     "host_agrees_it_parts": true,
+     "on_the_line": [
+      {
+       "left": "nsymring * 16 + nplainring * 3",
+       "right": "896",
+       "value": "896.0"
+      }
+     ],
+     "verdict_as_written": true,
+     "verdict_if_strict": false
+    }
+   ],
+   "slots_claimed": 18,
+   "what": "A plain ring is built with a floor of dots the comment calls the least that reads as a cir"
+  },
+  {
+   "buffer_full": false,
+   "cases": 802816,
+   "id": "K04-02",
+   "partings_seen": 0,
+   "partings_stored": 0,
+   "predicate": "npieces*deficit > 8960",
+   "recorded": [],
+   "slots_claimed": 0,
+   "what": "The balance loop is capped at ten turns per dot and burns a turn on every piece already si"
+  },
+  {
+   "buffer_full": false,
+   "cases": 320000,
+   "id": "K04-03",
+   "partings_seen": 0,
+   "partings_stored": 0,
+   "predicate": "piecelen*896 < 5*totallen",
+   "recorded": [],
+   "slots_claimed": 0,
+   "what": "The layout reports one spacing for the whole drawing, the average length per dot, and the "
+  },
+  {
+   "buffer_full": false,
+   "cases": 40000,
+   "id": "K04-04",
+   "partings_seen": 0,
+   "partings_stored": 0,
+   "predicate": "2*3.14159265358979*ringr/5 > totallen/896",
+   "recorded": [],
+   "slots_claimed": 0,
+   "what": "The same reported spacing is wrong in the other direction for a floored ring that is long "
+  },
+  {
+   "buffer_full": false,
+   "cases": 320000,
+   "id": "K04-05",
+   "partings_seen": 0,
+   "partings_stored": 0,
+   "predicate": "piecelen*896 > 2.5*totallen",
+   "recorded": [],
+   "slots_claimed": 0,
+   "what": "Rounding, not the floor, decides a plain piece once its length passes a fraction of the to"
+  },
+  {
+   "buffer_full": false,
+   "cases": 400000000,
+   "id": "K05-01",
+   "partings_seen": 0,
+   "partings_stored": 0,
+   "predicate": "(min(w-16, max(16, h-furn-16))/2*0.80)/sqrt(space)*0.34 <= 1",
+   "recorded": [],
+   "slots_claimed": 0,
+   "what": "the point-size floor fires: the shader clamps the dot up, so a dot is drawn wider than the"
+  },
+  {
+   "buffer_full": false,
+   "cases": 400000000,
+   "id": "K05-02",
+   "partings_seen": 0,
+   "partings_stored": 0,
+   "predicate": "(min(w-16, max(16, h-furn-16))/2*0.80)/sqrt(space)*0.34 >= 9",
+   "recorded": [],
+   "slots_claimed": 0,
+   "what": "the point-size ceiling fires: past it the dot stops growing with zoom, so zooming in no lo"
+  },
+  {
+   "buffer_full": false,
+   "cases": 400000000,
+   "id": "K05-03",
+   "partings_seen": 0,
+   "partings_stored": 0,
+   "predicate": "(min(w-16, max(16, h-furn-16))/2*0.80)/sqrt(space) < 1.5 * max(1, min(9, (min(w-16, max(16, h-furn-16))/2*0.80)/sqrt(space)*0.34))",
+   "recorded": [],
+   "slots_claimed": 0,
+   "what": "nearest-neighbour gap falls below three dot radii: neighbouring keys touch or overlap at t"
+  },
+  {
+   "buffer_full": true,
+   "cases": 922341,
+   "id": "K05-04",
+   "partings_seen": 213,
+   "partings_stored": 40,
+   "predicate": "h - furn - 16 <= 16",
+   "recorded": [
+    {
+     "axes": {
+      "furn": "288.0",
+      "h": "320.0"
+     },
+     "case_index": 1202196295,
+     "host_agrees_it_parts": true,
+     "on_the_line": [
+      {
+       "left": "h - furn - 16",
+       "right": "16",
+       "value": "16.0"
+      }
+     ],
+     "verdict_as_written": true,
+     "verdict_if_strict": false
+    },
+    {
+     "axes": {
+      "furn": "289.0",
+      "h": "321.0"
+     },
+     "case_index": 1202198137,
+     "host_agrees_it_parts": true,
+     "on_the_line": [
+      {
+       "left": "h - furn - 16",
+       "right": "16",
+       "value": "16.0"
+      }
+     ],
+     "verdict_as_written": true,
+     "verdict_if_strict": false
+    },
+    {
+     "axes": {
+      "furn": "290.0",
+      "h": "322.0"
+     },
+     "case_index": 1202199979,
+     "host_agrees_it_parts": true,
+     "on_the_line": [
+      {
+       "left": "h - furn - 16",
+       "right": "16",
+       "value": "16.0"
+      }
+     ],
+     "verdict_as_written": true,
+     "verdict_if_strict": false
+    },
+    {
+     "axes": {
+      "furn": "291.0",
+      "h": "323.0"
+     },
+     "case_index": 1202201821,
+     "host_agrees_it_parts": true,
+     "on_the_line": [
+      {
+       "left": "h - furn - 16",
+       "right": "16",
+       "value": "16.0"
+      }
+     ],
+     "verdict_as_written": true,
+     "verdict_if_strict": false
+    },
+    {
+     "axes": {
+      "furn": "300.0",
+      "h": "332.0"
+     },
+     "case_index": 1202218399,
+     "host_agrees_it_parts": true,
+     "on_the_line": [
+      {
+       "left": "h - furn - 16",
+       "right": "16",
+       "value": "16.0"
+      }
+     ],
+     "verdict_as_written": true,
+     "verdict_if_strict": false
+    },
+    {
+     "axes": {
+      "furn": "339.0",
+      "h": "371.0"
+     },
+     "case_index": 1202290237,
+     "host_agrees_it_parts": true,
+     "on_the_line": [
+      {
+       "left": "h - furn - 16",
+       "right": "16",
+       "value": "16.0"
+      }
+     ],
+     "verdict_as_written": true,
+     "verdict_if_strict": false
+    },
+    {
+     "axes": {
+      "furn": "340.0",
+      "h": "372.0"
+     },
+     "case_index": 1202292079,
+     "host_agrees_it_parts": true,
+     "on_the_line": [
+      {
+       "left": "h - furn - 16",
+       "right": "16",
+       "value": "16.0"
+      }
+     ],
+     "verdict_as_written": true,
+     "verdict_if_strict": false
+    },
+    {
+     "axes": {
+      "furn": "341.0",
+      "h": "373.0"
+     },
+     "case_index": 1202293921,
+     "host_agrees_it_parts": true,
+     "on_the_line": [
+      {
+       "left": "h - furn - 16",
+       "right": "16",
+       "value": "16.0"
+      }
+     ],
+     "verdict_as_written": true,
+     "verdict_if_strict": false
+    },
+    {
+     "axes": {
+      "furn": "342.0",
+      "h": "374.0"
+     },
+     "case_index": 1202295763,
+     "host_agrees_it_parts": true,
+     "on_the_line": [
+      {
+       "left": "h - furn - 16",
+       "right": "16",
+       "value": "16.0"
+      }
+     ],
+     "verdict_as_written": true,
+     "verdict_if_strict": false
+    },
+    {
+     "axes": {
+      "furn": "343.0",
+      "h": "375.0"
+     },
+     "case_index": 1202297605,
+     "host_agrees_it_parts": true,
+     "on_the_line": [
+      {
+       "left": "h - furn - 16",
+       "right": "16",
+       "value": "16.0"
+      }
+     ],
+     "verdict_as_written": true,
+     "verdict_if_strict": false
+    },
+    {
+     "axes": {
+      "furn": "344.0",
+      "h": "376.0"
+     },
+     "case_index": 1202299447,
+     "host_agrees_it_parts": true,
+     "on_the_line": [
+      {
+       "left": "h - furn - 16",
+       "right": "16",
+       "value": "16.0"
+      }
+     ],
+     "verdict_as_written": true,
+     "verdict_if_strict": false
+    },
+    {
+     "axes": {
+      "furn": "345.0",
+      "h": "377.0"
+     },
+     "case_index": 1202301289,
+     "host_agrees_it_parts": true,
+     "on_the_line": [
+      {
+       "left": "h - furn - 16",
+       "right": "16",
+       "value": "16.0"
+      }
+     ],
+     "verdict_as_written": true,
+     "verdict_if_strict": false
+    },
+    {
+     "axes": {
+      "furn": "346.0",
+      "h": "378.0"
+     },
+     "case_index": 1202303131,
+     "host_agrees_it_parts": true,
+     "on_the_line": [
+      {
+       "left": "h - furn - 16",
+       "right": "16",
+       "value": "16.0"
+      }
+     ],
+     "verdict_as_written": true,
+     "verdict_if_strict": false
+    },
+    {
+     "axes": {
+      "furn": "347.0",
+      "h": "379.0"
+     },
+     "case_index": 1202304973,
+     "host_agrees_it_parts": true,
+     "on_the_line": [
+      {
+       "left": "h - furn - 16",
+       "right": "16",
+       "value": "16.0"
+      }
+     ],
+     "verdict_as_written": true,
+     "verdict_if_strict": false
+    },
+    {
+     "axes": {
+      "furn": "348.0",
+      "h": "380.0"
+     },
+     "case_index": 1202306815,
+     "host_agrees_it_parts": true,
+     "on_the_line": [
+      {
+       "left": "h - furn - 16",
+       "right": "16",
+       "value": "16.0"
+      }
+     ],
+     "verdict_as_written": true,
+     "verdict_if_strict": false
+    },
+    {
+     "axes": {
+      "furn": "349.0",
+      "h": "381.0"
+     },
+     "case_index": 1202308657,
+     "host_agrees_it_parts": true,
+     "on_the_line": [
+      {
+       "left": "h - furn - 16",
+       "right": "16",
+       "value": "16.0"
+      }
+     ],
+     "verdict_as_written": true,
+     "verdict_if_strict": false
+    },
+    {
+     "axes": {
+      "furn": "353.0",
+      "h": "385.0"
+     },
+     "case_index": 1202316025,
+     "host_agrees_it_parts": true,
+     "on_the_line": [
+      {
+       "left": "h - furn - 16",
+       "right": "16",
+       "value": "16.0"
+      }
+     ],
+     "verdict_as_written": true,
+     "verdict_if_strict": false
+    },
+    {
+     "axes": {
+      "furn": "397.0",
+      "h": "429.0"
+     },
+     "case_index": 1202397073,
+     "host_agrees_it_parts": true,
+     "on_the_line": [
+      {
+       "left": "h - furn - 16",
+       "right": "16",
+       "value": "16.0"
+      }
+     ],
+     "verdict_as_written": true,
+     "verdict_if_strict": false
+    },
+    {
+     "axes": {
+      "furn": "398.0",
+      "h": "430.0"
+     },
+     "case_index": 1202398915,
+     "host_agrees_it_parts": true,
+     "on_the_line": [
+      {
+       "left": "h - furn - 16",
+       "right": "16",
+       "value": "16.0"
+      }
+     ],
+     "verdict_as_written": true,
+     "verdict_if_strict": false
+    },
+    {
+     "axes": {
+      "furn": "399.0",
+      "h": "431.0"
+     },
+     "case_index": 1202400757,
+     "host_agrees_it_parts": true,
+     "on_the_line": [
+      {
+       "left": "h - furn - 16",
+       "right": "16",
+       "value": "16.0"
+      }
+     ],
+     "verdict_as_written": true,
+     "verdict_if_strict": false
+    },
+    {
+     "axes": {
+      "furn": "400.0",
+      "h": "432.0"
+     },
+     "case_index": 1202402599,
+     "host_agrees_it_parts": true,
+     "on_the_line": [
+      {
+       "left": "h - furn - 16",
+       "right": "16",
+       "value": "16.0"
+      }
+     ],
+     "verdict_as_written": true,
+     "verdict_if_strict": false
+    },
+    {
+     "axes": {
+      "furn": "401.0",
+      "h": "433.0"
+     },
+     "case_index": 1202404441,
+     "host_agrees_it_parts": true,
+     "on_the_line": [
+      {
+       "left": "h - furn - 16",
+       "right": "16",
+       "value": "16.0"
+      }
+     ],
+     "verdict_as_written": true,
+     "verdict_if_strict": false
+    },
+    {
+     "axes": {
+      "furn": "402.0",
+      "h": "434.0"
+     },
+     "case_index": 1202406283,
+     "host_agrees_it_parts": true,
+     "on_the_line": [
+      {
+       "left": "h - furn - 16",
+       "right": "16",
+       "value": "16.0"
+      }
+     ],
+     "verdict_as_written": true,
+     "verdict_if_strict": false
+    },
+    {
+     "axes": {
+      "furn": "403.0",
+      "h": "435.0"
+     },
+     "case_index": 1202408125,
+     "host_agrees_it_parts": true,
+     "on_the_line": [
+      {
+       "left": "h - furn - 16",
+       "right": "16",
+       "value": "16.0"
+      }
+     ],
+     "verdict_as_written": true,
+     "verdict_if_strict": false
+    },
+    {
+     "axes": {
+      "furn": "404.0",
+      "h": "436.0"
+     },
+     "case_index": 1202409967,
+     "host_agrees_it_parts": true,
+     "on_the_line": [
+      {
+       "left": "h - furn - 16",
+       "right": "16",
+       "value": "16.0"
+      }
+     ],
+     "verdict_as_written": true,
+     "verdict_if_strict": false
+    },
+    {
+     "axes": {
+      "furn": "405.0",
+      "h": "437.0"
+     },
+     "case_index": 1202411809,
+     "host_agrees_it_parts": true,
+     "on_the_line": [
+      {
+       "left": "h - furn - 16",
+       "right": "16",
+       "value": "16.0"
+      }
+     ],
+     "verdict_as_written": true,
+     "verdict_if_strict": false
+    },
+    {
+     "axes": {
+      "furn": "406.0",
+      "h": "438.0"
+     },
+     "case_index": 1202413651,
+     "host_agrees_it_parts": true,
+     "on_the_line": [
+      {
+       "left": "h - furn - 16",
+       "right": "16",
+       "value": "16.0"
+      }
+     ],
+     "verdict_as_written": true,
+     "verdict_if_strict": false
+    },
+    {
+     "axes": {
+      "furn": "407.0",
+      "h": "439.0"
+     },
+     "case_index": 1202415493,
+     "host_agrees_it_parts": true,
+     "on_the_line": [
+      {
+       "left": "h - furn - 16",
+       "right": "16",
+       "value": "16.0"
+      }
+     ],
+     "verdict_as_written": true,
+     "verdict_if_strict": false
+    },
+    {
+     "axes": {
+      "furn": "455.0",
+      "h": "487.0"
+     },
+     "case_index": 1202503909,
+     "host_agrees_it_parts": true,
+     "on_the_line": [
+      {
+       "left": "h - furn - 16",
+       "right": "16",
+       "value": "16.0"
+      }
+     ],
+     "verdict_as_written": true,
+     "verdict_if_strict": false
+    },
+    {
+     "axes": {
+      "furn": "456.0",
+      "h": "488.0"
+     },
+     "case_index": 1202505751,
+     "host_agrees_it_parts": true,
+     "on_the_line": [
+      {
+       "left": "h - furn - 16",
+       "right": "16",
+       "value": "16.0"
+      }
+     ],
+     "verdict_as_written": true,
+     "verdict_if_strict": false
+    },
+    {
+     "axes": {
+      "furn": "457.0",
+      "h": "489.0"
+     },
+     "case_index": 1202507593,
+     "host_agrees_it_parts": true,
+     "on_the_line": [
+      {
+       "left": "h - furn - 16",
+       "right": "16",
+       "value": "16.0"
+      }
+     ],
+     "verdict_as_written": true,
+     "verdict_if_strict": false
+    },
+    {
+     "axes": {
+      "furn": "458.0",
+      "h": "490.0"
+     },
+     "case_index": 1202509435,
+     "host_agrees_it_parts": true,
+     "on_the_line": [
+      {
+       "left": "h - furn - 16",
+       "right": "16",
+       "value": "16.0"
+      }
+     ],
+     "verdict_as_written": true,
+     "verdict_if_strict": false
+    },
+    {
+     "axes": {
+      "furn": "459.0",
+      "h": "491.0"
+     },
+     "case_index": 1202511277,
+     "host_agrees_it_parts": true,
+     "on_the_line": [
+      {
+       "left": "h - furn - 16",
+       "right": "16",
+       "value": "16.0"
+      }
+     ],
+     "verdict_as_written": true,
+     "verdict_if_strict": false
+    },
+    {
+     "axes": {
+      "furn": "460.0",
+      "h": "492.0"
+     },
+     "case_index": 1202513119,
+     "host_agrees_it_parts": true,
+     "on_the_line": [
+      {
+       "left": "h - furn - 16",
+       "right": "16",
+       "value": "16.0"
+      }
+     ],
+     "verdict_as_written": true,
+     "verdict_if_strict": false
+    },
+    {
+     "axes": {
+      "furn": "461.0",
+      "h": "493.0"
+     },
+     "case_index": 1202514961,
+     "host_agrees_it_parts": true,
+     "on_the_line": [
+      {
+       "left": "h - furn - 16",
+       "right": "16",
+       "value": "16.0"
+      }
+     ],
+     "verdict_as_written": true,
+     "verdict_if_strict": false
+    },
+    {
+     "axes": {
+      "furn": "462.0",
+      "h": "494.0"
+     },
+     "case_index": 1202516803,
+     "host_agrees_it_parts": true,
+     "on_the_line": [
+      {
+       "left": "h - furn - 16",
+       "right": "16",
+       "value": "16.0"
+      }
+     ],
+     "verdict_as_written": true,
+     "verdict_if_strict": false
+    },
+    {
+     "axes": {
+      "furn": "463.0",
+      "h": "495.0"
+     },
+     "case_index": 1202518645,
+     "host_agrees_it_parts": true,
+     "on_the_line": [
+      {
+       "left": "h - furn - 16",
+       "right": "16",
+       "value": "16.0"
+      }
+     ],
+     "verdict_as_written": true,
+     "verdict_if_strict": false
+    },
+    {
+     "axes": {
+      "furn": "464.0",
+      "h": "496.0"
+     },
+     "case_index": 1202520487,
+     "host_agrees_it_parts": true,
+     "on_the_line": [
+      {
+       "left": "h - furn - 16",
+       "right": "16",
+       "value": "16.0"
+      }
+     ],
+     "verdict_as_written": true,
+     "verdict_if_strict": false
+    },
+    {
+     "axes": {
+      "furn": "465.0",
+      "h": "497.0"
+     },
+     "case_index": 1202522329,
+     "host_agrees_it_parts": true,
+     "on_the_line": [
+      {
+       "left": "h - furn - 16",
+       "right": "16",
+       "value": "16.0"
+      }
+     ],
+     "verdict_as_written": true,
+     "verdict_if_strict": false
+    },
+    {
+     "axes": {
+      "furn": "470.0",
+      "h": "502.0"
+     },
+     "case_index": 1202531539,
+     "host_agrees_it_parts": true,
+     "on_the_line": [
+      {
+       "left": "h - furn - 16",
+       "right": "16",
+       "value": "16.0"
+      }
+     ],
+     "verdict_as_written": true,
+     "verdict_if_strict": false
+    }
+   ],
+   "slots_claimed": 213,
+   "what": "the safe band is the 16 px clamp rather than the real space: max(top+24, bot-8) inverts th"
+  },
+  {
+   "buffer_full": true,
+   "cases": 400000000,
+   "id": "K05-05",
+   "partings_seen": 18231,
+   "partings_stored": 40,
+   "predicate": "min(625, max(16, h-hdr-hud-foot-cardh-26)) / min(625, max(16, h-hdr-foot-16)) <= 0.62",
+   "recorded": [
+    {
+     "axes": {
+      "cardh": "0.0",
+      "foot": "112.0",
+      "h": "552.0",
+      "hdr": "24.0",
+      "hud": "142.0"
+     },
+     "case_index": 1272501441,
+     "host_agrees_it_parts": true,
+     "on_the_line": [
+      {
+       "left": "min(625, max(16, h - hdr - hud - foot - cardh - 26)) / min(625, max(16, h - hdr - foot - 16))",
+       "right": "0.62",
+       "value": "0.62"
+      }
+     ],
+     "verdict_as_written": true,
+     "verdict_if_strict": false
+    },
+    {
+     "axes": {
+      "cardh": "0.0",
+      "foot": "116.0",
+      "h": "456.0",
+      "hdr": "24.0",
+      "hud": "104.0"
+     },
+     "case_index": 1275189508,
+     "host_agrees_it_parts": true,
+     "on_the_line": [
+      {
+       "left": "min(625, max(16, h - hdr - hud - foot - cardh - 26)) / min(625, max(16, h - hdr - foot - 16))",
+       "right": "0.62",
+       "value": "0.62"
+      }
+     ],
+     "verdict_as_written": true,
+     "verdict_if_strict": false
+    },
+    {
+     "axes": {
+      "cardh": "0.0",
+      "foot": "116.0",
+      "h": "556.0",
+      "hdr": "24.0",
+      "hud": "142.0"
+     },
+     "case_index": 1275618724,
+     "host_agrees_it_parts": true,
+     "on_the_line": [
+      {
+       "left": "min(625, max(16, h - hdr - hud - foot - cardh - 26)) / min(625, max(16, h - hdr - foot - 16))",
+       "right": "0.62",
+       "value": "0.62"
+      }
+     ],
+     "verdict_as_written": true,
+     "verdict_if_strict": false
+    },
+    {
+     "axes": {
+      "cardh": "0.0",
+      "foot": "116.0",
+      "h": "560.0",
+      "hdr": "28.0",
+      "hud": "142.0"
+     },
+     "case_index": 1275619647,
+     "host_agrees_it_parts": true,
+     "on_the_line": [
+      {
+       "left": "min(625, max(16, h - hdr - hud - foot - cardh - 26)) / min(625, max(16, h - hdr - foot - 16))",
+       "right": "0.62",
+       "value": "0.62"
+      }
+     ],
+     "verdict_as_written": true,
+     "verdict_if_strict": false
+    },
+    {
+     "axes": {
+      "cardh": "0.0",
+      "foot": "120.0",
+      "h": "360.0",
+      "hdr": "24.0",
+      "hud": "66.0"
+     },
+     "case_index": 1277877575,
+     "host_agrees_it_parts": true,
+     "on_the_line": [
+      {
+       "left": "min(625, max(16, h - hdr - hud - foot - cardh - 26)) / min(625, max(16, h - hdr - foot - 16))",
+       "right": "0.62",
+       "value": "0.62"
+      }
+     ],
+     "verdict_as_written": true,
+     "verdict_if_strict": false
+    },
+    {
+     "axes": {
+      "cardh": "0.0",
+      "foot": "120.0",
+      "h": "460.0",
+      "hdr": "24.0",
+      "hud": "104.0"
+     },
+     "case_index": 1278306791,
+     "host_agrees_it_parts": true,
+     "on_the_line": [
+      {
+       "left": "min(625, max(16, h - hdr - hud - foot - cardh - 26)) / min(625, max(16, h - hdr - foot - 16))",
+       "right": "0.62",
+       "value": "0.62"
+      }
+     ],
+     "verdict_as_written": true,
+     "verdict_if_strict": false
+    },
+    {
+     "axes": {
+      "cardh": "0.0",
+      "foot": "120.0",
+      "h": "464.0",
+      "hdr": "28.0",
+      "hud": "104.0"
+     },
+     "case_index": 1278307714,
+     "host_agrees_it_parts": true,
+     "on_the_line": [
+      {
+       "left": "min(625, max(16, h - hdr - hud - foot - cardh - 26)) / min(625, max(16, h - hdr - foot - 16))",
+       "right": "0.62",
+       "value": "0.62"
+      }
+     ],
+     "verdict_as_written": true,
+     "verdict_if_strict": false
+    },
+    {
+     "axes": {
+      "cardh": "0.0",
+      "foot": "120.0",
+      "h": "560.0",
+      "hdr": "24.0",
+      "hud": "142.0"
+     },
+     "case_index": 1278736007,
+     "host_agrees_it_parts": true,
+     "on_the_line": [
+      {
+       "left": "min(625, max(16, h - hdr - hud - foot - cardh - 26)) / min(625, max(16, h - hdr - foot - 16))",
+       "right": "0.62",
+       "value": "0.62"
+      }
+     ],
+     "verdict_as_written": true,
+     "verdict_if_strict": false
+    },
+    {
+     "axes": {
+      "cardh": "0.0",
+      "foot": "120.0",
+      "h": "564.0",
+      "hdr": "28.0",
+      "hud": "142.0"
+     },
+     "case_index": 1278736930,
+     "host_agrees_it_parts": true,
+     "on_the_line": [
+      {
+       "left": "min(625, max(16, h - hdr - hud - foot - cardh - 26)) / min(625, max(16, h - hdr - foot - 16))",
+       "right": "0.62",
+       "value": "0.62"
+      }
+     ],
+     "verdict_as_written": true,
+     "verdict_if_strict": false
+    },
+    {
+     "axes": {
+      "cardh": "0.0",
+      "foot": "120.0",
+      "h": "568.0",
+      "hdr": "32.0",
+      "hud": "142.0"
+     },
+     "case_index": 1278737853,
+     "host_agrees_it_parts": true,
+     "on_the_line": [
+      {
+       "left": "min(625, max(16, h - hdr - hud - foot - cardh - 26)) / min(625, max(16, h - hdr - foot - 16))",
+       "right": "0.62",
+       "value": "0.62"
+      }
+     ],
+     "verdict_as_written": true,
+     "verdict_if_strict": false
+    },
+    {
+     "axes": {
+      "cardh": "4.0",
+      "foot": "60.0",
+      "h": "400.0",
+      "hdr": "24.0",
+      "hud": "100.0"
+     },
+     "case_index": 1307875777,
+     "host_agrees_it_parts": true,
+     "on_the_line": [
+      {
+       "left": "min(625, max(16, h - hdr - hud - foot - cardh - 26)) / min(625, max(16, h - hdr - foot - 16))",
+       "right": "0.62",
+       "value": "0.62"
+      }
+     ],
+     "verdict_as_written": true,
+     "verdict_if_strict": false
+    },
+    {
+     "axes": {
+      "cardh": "4.0",
+      "foot": "60.0",
+      "h": "500.0",
+      "hdr": "24.0",
+      "hud": "138.0"
+     },
+     "case_index": 1308304993,
+     "host_agrees_it_parts": true,
+     "on_the_line": [
+      {
+       "left": "min(625, max(16, h - hdr - hud - foot - cardh - 26)) / min(625, max(16, h - hdr - foot - 16))",
+       "right": "0.62",
+       "value": "0.62"
+      }
+     ],
+     "verdict_as_written": true,
+     "verdict_if_strict": false
+    },
+    {
+     "axes": {
+      "cardh": "4.0",
+      "foot": "60.0",
+      "h": "504.0",
+      "hdr": "28.0",
+      "hud": "138.0"
+     },
+     "case_index": 1308305916,
+     "host_agrees_it_parts": true,
+     "on_the_line": [
+      {
+       "left": "min(625, max(16, h - hdr - hud - foot - cardh - 26)) / min(625, max(16, h - hdr - foot - 16))",
+       "right": "0.62",
+       "value": "0.62"
+      }
+     ],
+     "verdict_as_written": true,
+     "verdict_if_strict": false
+    },
+    {
+     "axes": {
+      "cardh": "4.0",
+      "foot": "64.0",
+      "h": "404.0",
+      "hdr": "24.0",
+      "hud": "100.0"
+     },
+     "case_index": 1310993060,
+     "host_agrees_it_parts": true,
+     "on_the_line": [
+      {
+       "left": "min(625, max(16, h - hdr - hud - foot - cardh - 26)) / min(625, max(16, h - hdr - foot - 16))",
+       "right": "0.62",
+       "value": "0.62"
+      }
+     ],
+     "verdict_as_written": true,
+     "verdict_if_strict": false
+    },
+    {
+     "axes": {
+      "cardh": "4.0",
+      "foot": "64.0",
+      "h": "504.0",
+      "hdr": "24.0",
+      "hud": "138.0"
+     },
+     "case_index": 1311422276,
+     "host_agrees_it_parts": true,
+     "on_the_line": [
+      {
+       "left": "min(625, max(16, h - hdr - hud - foot - cardh - 26)) / min(625, max(16, h - hdr - foot - 16))",
+       "right": "0.62",
+       "value": "0.62"
+      }
+     ],
+     "verdict_as_written": true,
+     "verdict_if_strict": false
+    },
+    {
+     "axes": {
+      "cardh": "4.0",
+      "foot": "64.0",
+      "h": "508.0",
+      "hdr": "28.0",
+      "hud": "138.0"
+     },
+     "case_index": 1311423199,
+     "host_agrees_it_parts": true,
+     "on_the_line": [
+      {
+       "left": "min(625, max(16, h - hdr - hud - foot - cardh - 26)) / min(625, max(16, h - hdr - foot - 16))",
+       "right": "0.62",
+       "value": "0.62"
+      }
+     ],
+     "verdict_as_written": true,
+     "verdict_if_strict": false
+    },
+    {
+     "axes": {
+      "cardh": "4.0",
+      "foot": "68.0",
+      "h": "408.0",
+      "hdr": "24.0",
+      "hud": "100.0"
+     },
+     "case_index": 1314110343,
+     "host_agrees_it_parts": true,
+     "on_the_line": [
+      {
+       "left": "min(625, max(16, h - hdr - hud - foot - cardh - 26)) / min(625, max(16, h - hdr - foot - 16))",
+       "right": "0.62",
+       "value": "0.62"
+      }
+     ],
+     "verdict_as_written": true,
+     "verdict_if_strict": false
+    },
+    {
+     "axes": {
+      "cardh": "4.0",
+      "foot": "68.0",
+      "h": "412.0",
+      "hdr": "28.0",
+      "hud": "100.0"
+     },
+     "case_index": 1314111266,
+     "host_agrees_it_parts": true,
+     "on_the_line": [
+      {
+       "left": "min(625, max(16, h - hdr - hud - foot - cardh - 26)) / min(625, max(16, h - hdr - foot - 16))",
+       "right": "0.62",
+       "value": "0.62"
+      }
+     ],
+     "verdict_as_written": true,
+     "verdict_if_strict": false
+    },
+    {
+     "axes": {
+      "cardh": "4.0",
+      "foot": "68.0",
+      "h": "512.0",
+      "hdr": "28.0",
+      "hud": "138.0"
+     },
+     "case_index": 1314540482,
+     "host_agrees_it_parts": true,
+     "on_the_line": [
+      {
+       "left": "min(625, max(16, h - hdr - hud - foot - cardh - 26)) / min(625, max(16, h - hdr - foot - 16))",
+       "right": "0.62",
+       "value": "0.62"
+      }
+     ],
+     "verdict_as_written": true,
+     "verdict_if_strict": false
+    },
+    {
+     "axes": {
+      "cardh": "4.0",
+      "foot": "72.0",
+      "h": "416.0",
+      "hdr": "28.0",
+      "hud": "100.0"
+     },
+     "case_index": 1317228549,
+     "host_agrees_it_parts": true,
+     "on_the_line": [
+      {
+       "left": "min(625, max(16, h - hdr - hud - foot - cardh - 26)) / min(625, max(16, h - hdr - foot - 16))",
+       "right": "0.62",
+       "value": "0.62"
+      }
+     ],
+     "verdict_as_written": true,
+     "verdict_if_strict": false
+    },
+    {
+     "axes": {
+      "cardh": "4.0",
+      "foot": "72.0",
+      "h": "420.0",
+      "hdr": "32.0",
+      "hud": "100.0"
+     },
+     "case_index": 1317229472,
+     "host_agrees_it_parts": true,
+     "on_the_line": [
+      {
+       "left": "min(625, max(16, h - hdr - hud - foot - cardh - 26)) / min(625, max(16, h - hdr - foot - 16))",
+       "right": "0.62",
+       "value": "0.62"
+      }
+     ],
+     "verdict_as_written": true,
+     "verdict_if_strict": false
+    },
+    {
+     "axes": {
+      "cardh": "4.0",
+      "foot": "72.0",
+      "h": "516.0",
+      "hdr": "28.0",
+      "hud": "138.0"
+     },
+     "case_index": 1317657765,
+     "host_agrees_it_parts": true,
+     "on_the_line": [
+      {
+       "left": "min(625, max(16, h - hdr - hud - foot - cardh - 26)) / min(625, max(16, h - hdr - foot - 16))",
+       "right": "0.62",
+       "value": "0.62"
+      }
+     ],
+     "verdict_as_written": true,
+     "verdict_if_strict": false
+    },
+    {
+     "axes": {
+      "cardh": "4.0",
+      "foot": "72.0",
+      "h": "520.0",
+      "hdr": "32.0",
+      "hud": "138.0"
+     },
+     "case_index": 1317658688,
+     "host_agrees_it_parts": true,
+     "on_the_line": [
+      {
+       "left": "min(625, max(16, h - hdr - hud - foot - cardh - 26)) / min(625, max(16, h - hdr - foot - 16))",
+       "right": "0.62",
+       "value": "0.62"
+      }
+     ],
+     "verdict_as_written": true,
+     "verdict_if_strict": false
+    },
+    {
+     "axes": {
+      "cardh": "4.0",
+      "foot": "76.0",
+      "h": "320.0",
+      "hdr": "28.0",
+      "hud": "62.0"
+     },
+     "case_index": 1319916616,
+     "host_agrees_it_parts": true,
+     "on_the_line": [
+      {
+       "left": "min(625, max(16, h - hdr - hud - foot - cardh - 26)) / min(625, max(16, h - hdr - foot - 16))",
+       "right": "0.62",
+       "value": "0.62"
+      }
+     ],
+     "verdict_as_written": true,
+     "verdict_if_strict": false
+    },
+    {
+     "axes": {
+      "cardh": "4.0",
+      "foot": "76.0",
+      "h": "324.0",
+      "hdr": "32.0",
+      "hud": "62.0"
+     },
+     "case_index": 1319917539,
+     "host_agrees_it_parts": true,
+     "on_the_line": [
+      {
+       "left": "min(625, max(16, h - hdr - hud - foot - cardh - 26)) / min(625, max(16, h - hdr - foot - 16))",
+       "right": "0.62",
+       "value": "0.62"
+      }
+     ],
+     "verdict_as_written": true,
+     "verdict_if_strict": false
+    },
+    {
+     "axes": {
+      "cardh": "4.0",
+      "foot": "76.0",
+      "h": "420.0",
+      "hdr": "28.0",
+      "hud": "100.0"
+     },
+     "case_index": 1320345832,
+     "host_agrees_it_parts": true,
+     "on_the_line": [
+      {
+       "left": "min(625, max(16, h - hdr - hud - foot - cardh - 26)) / min(625, max(16, h - hdr - foot - 16))",
+       "right": "0.62",
+       "value": "0.62"
+      }
+     ],
+     "verdict_as_written": true,
+     "verdict_if_strict": false
+    },
+    {
+     "axes": {
+      "cardh": "4.0",
+      "foot": "76.0",
+      "h": "424.0",
+      "hdr": "32.0",
+      "hud": "100.0"
+     },
+     "case_index": 1320346755,
+     "host_agrees_it_parts": true,
+     "on_the_line": [
+      {
+       "left": "min(625, max(16, h - hdr - hud - foot - cardh - 26)) / min(625, max(16, h - hdr - foot - 16))",
+       "right": "0.62",
+       "value": "0.62"
+      }
+     ],
+     "verdict_as_written": true,
+     "verdict_if_strict": false
+    },
+    {
+     "axes": {
+      "cardh": "4.0",
+      "foot": "80.0",
+      "h": "328.0",
+      "hdr": "32.0",
+      "hud": "62.0"
+     },
+     "case_index": 1323034822,
+     "host_agrees_it_parts": true,
+     "on_the_line": [
+      {
+       "left": "min(625, max(16, h - hdr - hud - foot - cardh - 26)) / min(625, max(16, h - hdr - foot - 16))",
+       "right": "0.62",
+       "value": "0.62"
+      }
+     ],
+     "verdict_as_written": true,
+     "verdict_if_strict": false
+    },
+    {
+     "axes": {
+      "cardh": "4.0",
+      "foot": "80.0",
+      "h": "428.0",
+      "hdr": "32.0",
+      "hud": "100.0"
+     },
+     "case_index": 1323464038,
+     "host_agrees_it_parts": true,
+     "on_the_line": [
+      {
+       "left": "min(625, max(16, h - hdr - hud - foot - cardh - 26)) / min(625, max(16, h - hdr - foot - 16))",
+       "right": "0.62",
+       "value": "0.62"
+      }
+     ],
+     "verdict_as_written": true,
+     "verdict_if_strict": false
+    },
+    {
+     "axes": {
+      "cardh": "4.0",
+      "foot": "80.0",
+      "h": "436.0",
+      "hdr": "40.0",
+      "hud": "100.0"
+     },
+     "case_index": 1323465884,
+     "host_agrees_it_parts": true,
+     "on_the_line": [
+      {
+       "left": "min(625, max(16, h - hdr - hud - foot - cardh - 26)) / min(625, max(16, h - hdr - foot - 16))",
+       "right": "0.62",
+       "value": "0.62"
+      }
+     ],
+     "verdict_as_written": true,
+     "verdict_if_strict": false
+    },
+    {
+     "axes": {
+      "cardh": "4.0",
+      "foot": "80.0",
+      "h": "532.0",
+      "hdr": "36.0",
+      "hud": "138.0"
+     },
+     "case_index": 1323894177,
+     "host_agrees_it_parts": true,
+     "on_the_line": [
+      {
+       "left": "min(625, max(16, h - hdr - hud - foot - cardh - 26)) / min(625, max(16, h - hdr - foot - 16))",
+       "right": "0.62",
+       "value": "0.62"
+      }
+     ],
+     "verdict_as_written": true,
+     "verdict_if_strict": false
+    },
+    {
+     "axes": {
+      "cardh": "4.0",
+      "foot": "80.0",
+      "h": "540.0",
+      "hdr": "44.0",
+      "hud": "138.0"
+     },
+     "case_index": 1323896023,
+     "host_agrees_it_parts": true,
+     "on_the_line": [
+      {
+       "left": "min(625, max(16, h - hdr - hud - foot - cardh - 26)) / min(625, max(16, h - hdr - foot - 16))",
+       "right": "0.62",
+       "value": "0.62"
+      }
+     ],
+     "verdict_as_written": true,
+     "verdict_if_strict": false
+    },
+    {
+     "axes": {
+      "cardh": "4.0",
+      "foot": "84.0",
+      "h": "332.0",
+      "hdr": "32.0",
+      "hud": "62.0"
+     },
+     "case_index": 1326152105,
+     "host_agrees_it_parts": true,
+     "on_the_line": [
+      {
+       "left": "min(625, max(16, h - hdr - hud - foot - cardh - 26)) / min(625, max(16, h - hdr - foot - 16))",
+       "right": "0.62",
+       "value": "0.62"
+      }
+     ],
+     "verdict_as_written": true,
+     "verdict_if_strict": false
+    },
+    {
+     "axes": {
+      "cardh": "4.0",
+      "foot": "84.0",
+      "h": "340.0",
+      "hdr": "40.0",
+      "hud": "62.0"
+     },
+     "case_index": 1326153951,
+     "host_agrees_it_parts": true,
+     "on_the_line": [
+      {
+       "left": "min(625, max(16, h - hdr - hud - foot - cardh - 26)) / min(625, max(16, h - hdr - foot - 16))",
+       "right": "0.62",
+       "value": "0.62"
+      }
+     ],
+     "verdict_as_written": true,
+     "verdict_if_strict": false
+    },
+    {
+     "axes": {
+      "cardh": "4.0",
+      "foot": "84.0",
+      "h": "436.0",
+      "hdr": "36.0",
+      "hud": "100.0"
+     },
+     "case_index": 1326582244,
+     "host_agrees_it_parts": true,
+     "on_the_line": [
+      {
+       "left": "min(625, max(16, h - hdr - hud - foot - cardh - 26)) / min(625, max(16, h - hdr - foot - 16))",
+       "right": "0.62",
+       "value": "0.62"
+      }
+     ],
+     "verdict_as_written": true,
+     "verdict_if_strict": false
+    },
+    {
+     "axes": {
+      "cardh": "4.0",
+      "foot": "88.0",
+      "h": "448.0",
+      "hdr": "44.0",
+      "hud": "100.0"
+     },
+     "case_index": 1329701373,
+     "host_agrees_it_parts": true,
+     "on_the_line": [
+      {
+       "left": "min(625, max(16, h - hdr - hud - foot - cardh - 26)) / min(625, max(16, h - hdr - foot - 16))",
+       "right": "0.62",
+       "value": "0.62"
+      }
+     ],
+     "verdict_as_written": true,
+     "verdict_if_strict": false
+    },
+    {
+     "axes": {
+      "cardh": "4.0",
+      "foot": "88.0",
+      "h": "452.0",
+      "hdr": "48.0",
+      "hud": "100.0"
+     },
+     "case_index": 1329702296,
+     "host_agrees_it_parts": true,
+     "on_the_line": [
+      {
+       "left": "min(625, max(16, h - hdr - hud - foot - cardh - 26)) / min(625, max(16, h - hdr - foot - 16))",
+       "right": "0.62",
+       "value": "0.62"
+      }
+     ],
+     "verdict_as_written": true,
+     "verdict_if_strict": false
+    },
+    {
+     "axes": {
+      "cardh": "4.0",
+      "foot": "88.0",
+      "h": "556.0",
+      "hdr": "52.0",
+      "hud": "138.0"
+     },
+     "case_index": 1330132435,
+     "host_agrees_it_parts": true,
+     "on_the_line": [
+      {
+       "left": "min(625, max(16, h - hdr - hud - foot - cardh - 26)) / min(625, max(16, h - hdr - foot - 16))",
+       "right": "0.62",
+       "value": "0.62"
+      }
+     ],
+     "verdict_as_written": true,
+     "verdict_if_strict": false
+    },
+    {
+     "axes": {
+      "cardh": "4.0",
+      "foot": "92.0",
+      "h": "560.0",
+      "hdr": "52.0",
+      "hud": "138.0"
+     },
+     "case_index": 1333249718,
+     "host_agrees_it_parts": true,
+     "on_the_line": [
+      {
+       "left": "min(625, max(16, h - hdr - hud - foot - cardh - 26)) / min(625, max(16, h - hdr - foot - 16))",
+       "right": "0.62",
+       "value": "0.62"
+      }
+     ],
+     "verdict_as_written": true,
+     "verdict_if_strict": false
+    },
+    {
+     "axes": {
+      "cardh": "4.0",
+      "foot": "100.0",
+      "h": "576.0",
+      "hdr": "60.0",
+      "hud": "138.0"
+     },
+     "case_index": 1339486130,
+     "host_agrees_it_parts": true,
+     "on_the_line": [
+      {
+       "left": "min(625, max(16, h - hdr - hud - foot - cardh - 26)) / min(625, max(16, h - hdr - foot - 16))",
+       "right": "0.62",
+       "value": "0.62"
+      }
+     ],
+     "verdict_as_written": true,
+     "verdict_if_strict": false
+    }
+   ],
+   "slots_claimed": 18231,
+   "what": "the 640/641 step: one CSS pixel changes which furniture counts, because narrow() restacks "
+  },
+  {
+   "buffer_full": false,
+   "cases": 400000000,
+   "id": "K05-06",
+   "partings_seen": 0,
+   "partings_stored": 0,
+   "predicate": "(max(16, h-hdr-hud-foot-cardh-26) < 625) and (max(16, h-hdr-foot-16) >= 625)",
+   "recorded": [],
+   "slots_claimed": 0,
+   "what": "the wide branch is width-bound while the narrow branch is height-bound, so crossing 640 sw"
+  },
+  {
+   "buffer_full": false,
+   "cases": 16123107,
+   "id": "K05-07",
+   "partings_seen": 0,
+   "partings_stored": 0,
+   "predicate": "(min(w-16, max(16, w-furn-16))/2*0.80)/sqrt(space)*0.34 <= 1",
+   "recorded": [],
+   "slots_claimed": 0,
+   "what": "home re-fit on rotation uses the same clamped band, so a phone turned to landscape lands o"
+  },
+  {
+   "buffer_full": false,
+   "cases": 6030,
+   "id": "K06-01",
+   "partings_seen": 0,
+   "partings_stored": 0,
+   "predicate": "((3000.0 + m) > 3000.0) != ((3000.0 + m + vk*0.00000000000000093383) > 3000.0)",
+   "recorded": [],
+   "slots_claimed": 0,
+   "what": "The card kernel divides the permeability constant by a pi literal truncated to 15 digits w"
+  },
+  {
+   "buffer_full": false,
+   "cases": 1600,
+   "id": "K06-03",
+   "partings_seen": 0,
+   "partings_stored": 0,
+   "predicate": "abs(n*475.2 - bps*9856.0) < 0.001",
+   "recorded": [],
+   "slots_claimed": 0,
+   "what": "The declared block power and the per-inverter DC power implied by the printed configuratio"
+  },
+  {
+   "buffer_full": false,
+   "cases": 60,
+   "id": "K06-04",
+   "partings_seen": 0,
+   "partings_stored": 0,
+   "predicate": "abs(k*bps - 51.0) < 0.5",
+   "recorded": [],
+   "slots_claimed": 0,
+   "what": "The plant is divided into blocks by a ceiling on the target divided by the block power, an"
+  },
+  {
+   "buffer_full": false,
+   "cases": 2265,
+   "id": "K06-05",
+   "partings_seen": 0,
+   "partings_stored": 0,
+   "predicate": "((se*w/1000.0)*24.0/320.0 >= 1.15 and (se*w/1000.0)*24.0/320.0 <= 1.40) != ((se*w/1000.0)*24.0/320.0 >= 1.10 and (se*w/1000.0)*24.0/320.0 <= 1.45)",
+   "recorded": [],
+   "slots_claimed": 0,
+   "what": "The DC-to-AC band is chosen by the author and published by no maker and no standard, and t"
+  },
+  {
+   "buffer_full": false,
+   "cases": 28341,
+   "id": "K06-06",
+   "partings_seen": 0,
+   "partings_stored": 0,
+   "predicate": "(dcac < 1.15 or dcac > 1.40) and (1400.0 + vk) > 3000.0",
+   "recorded": [],
+   "slots_claimed": 0,
+   "what": "The DC-to-AC band test is evaluated before the transient test in both the kernel and the r"
+  },
+  {
+   "buffer_full": false,
+   "cases": 8000,
+   "id": "K06-07",
+   "partings_seen": 0,
+   "partings_stored": 0,
+   "predicate": "(1.0 - pow(1.0 - f, n)) > 0.5",
+   "recorded": [],
+   "slots_claimed": 0,
+   "what": "The agreement between card and processor is asserted from a strided probe of a fixed, smal"
+  },
+  {
+   "buffer_full": false,
+   "cases": 55034919,
+   "id": "K07-01",
+   "partings_seen": 0,
+   "partings_stored": 0,
+   "predicate": "0.0000004*(log(d/rad)+0.25)*len < 0.00004 or 0.0000004*(log(d/rad)+0.25)*len > 0.0004",
+   "recorded": [],
+   "slots_claimed": 0,
+   "what": "One file sweeps the loop inductance as an invented input band while the other derives the "
+  },
+  {
+   "buffer_full": false,
+   "cases": 400000000,
+   "id": "K07-02",
+   "partings_seen": 0,
+   "partings_stored": 0,
+   "predicate": "0.0000004*(log(d/rad)+0.25)*len*17.35/t + vdc > 3000",
+   "recorded": [],
+   "slots_claimed": 0,
+   "what": "The break time at which the derived-inductance transient plus the standing string voltage "
+  },
+  {
+   "buffer_full": false,
+   "cases": 400000000,
+   "id": "K07-03",
+   "partings_seen": 0,
+   "partings_stored": 0,
+   "predicate": "0.0000004*(log(d/rad)+0.25)*len*17.35/t + vdc > 2000",
+   "recorded": [],
+   "slots_claimed": 0,
+   "what": "Against the conservative lower withstand the admissible break time is longer still, and th"
+  },
+  {
+   "buffer_full": false,
+   "cases": 400000000,
+   "id": "K07-04",
+   "partings_seen": 0,
+   "partings_stored": 0,
+   "predicate": "0.0000004*(log(d/rad)+0.25)*len*17.35/t + vdc > 3000",
+   "recorded": [],
+   "slots_claimed": 0,
+   "what": "The declared sub-microsecond break target is asserted in the prose but never tested agains"
+  },
+  {
+   "buffer_full": false,
+   "cases": 400000000,
+   "id": "K07-05",
+   "partings_seen": 0,
+   "partings_stored": 0,
+   "predicate": "(0.0000004*(log(2*d/rad)+0.25)*len*17.35/t + vdc > 3000) and not (0.0000004*(log(d/rad)+0.25)*len*17.35/t + vdc > 3000)",
+   "recorded": [],
+   "slots_claimed": 0,
+   "what": "The derived model depends on the logarithm of separation over radius, but the separation l"
+  },
+  {
+   "buffer_full": false,
+   "cases": 400000000,
+   "id": "K07-06",
+   "partings_seen": 0,
+   "partings_stored": 0,
+   "predicate": "(0.0000004*(log(d/rad)+0.25)*len*17.35/t + vdc > 3000) and not (0.0000004*(log(d/(2*rad))+0.25)*len*17.35/t + vdc > 3000)",
+   "recorded": [],
+   "slots_claimed": 0,
+   "what": "Conductor radius enters the same logarithm and is taken from a bare cross-section with no "
+  },
+  {
+   "buffer_full": false,
+   "cases": 400000000,
+   "id": "K07-07",
+   "partings_seen": 0,
+   "partings_stored": 0,
+   "predicate": "(Lsw*17.35/t + vdc <= 3000) and (0.0000004*(log(d/rad)+0.25)*len*17.35/t + vdc > 3000)",
+   "recorded": [],
+   "slots_claimed": 0,
+   "what": "The two files can be made to disagree on the same case: the invented band admits inductanc"
+  },
+  {
+   "buffer_full": false,
+   "cases": 400000000,
+   "id": "K07-08",
+   "partings_seen": 0,
+   "partings_stored": 0,
+   "predicate": "0.0000004*(log(d/rad)+0.25)*len*cur/0.000001 + vdc > 3000",
+   "recorded": [],
+   "slots_claimed": 0,
+   "what": "The interrupted current is swept over a wide band in one file and pinned to a short list i"
+  },
+  {
+   "buffer_full": false,
+   "cases": 400000000,
+   "id": "K07-09",
+   "partings_seen": 0,
+   "partings_stored": 0,
+   "predicate": "(0.0000004*(log(dt/rad)+0.25)*len*17.35/t + vdc <= 3000) and (0.0000004*(log(dq/rad)+0.25)*len*17.35/t + vdc > 3000)",
+   "recorded": [],
+   "slots_claimed": 0,
+   "what": "The separation that distinguishes the two routings is the only axis that moves the inducta"
+  },
+  {
+   "buffer_full": false,
+   "cases": 6005001,
+   "id": "K08-01",
+   "partings_seen": 0,
+   "partings_stored": 0,
+   "predicate": "30*45.9*(1+(-0.25)/100*(tmin-25)) <= 1500 and 17.35*(1+0.698519*rear/100)*(1+0.04/100*(tmin-25)) <= 20 and 2*18.45*(1+0.698519*rear/100)*(1+0.04/100*(tmin-25)) <= 40 and 30*45.9*(1+(-0.25)/100*((-20)-25)) > 1500",
+   "recorded": [],
+   "slots_claimed": 0,
+   "what": "the clean-rear reduction is a max over the WHOLE temperature axis, so a group that breache"
+  },
+  {
+   "buffer_full": false,
+   "cases": 6005001,
+   "id": "K08-02",
+   "partings_seen": 0,
+   "partings_stored": 0,
+   "predicate": "17.35*(1+0.698519*rear/100)*(1+0.04/100*(tmin-25)) <= 20 and 17.35*(1+0.698519*rear/100)*(1+0.04/100*(0-25)) > 20",
+   "recorded": [],
+   "slots_claimed": 0,
+   "what": "how far the max-over-temperature answer overstates the current-limited gain: every rear ga"
+  },
+  {
+   "buffer_full": true,
+   "cases": 6005001,
+   "id": "K08-03",
+   "partings_seen": 3001,
+   "partings_stored": 40,
+   "predicate": "tmin <= (-20) + 22*0.01",
+   "recorded": [
+    {
+     "axes": {
+      "rear": "19.78",
+      "tmin": "-19.78"
+     },
+     "case_index": 5285870752,
+     "host_agrees_it_parts": true,
+     "on_the_line": [
+      {
+       "left": "tmin",
+       "right": "-20 + 22 * 0.01",
+       "value": "-19.78"
+      }
+     ],
+     "verdict_as_written": true,
+     "verdict_if_strict": false
+    },
+    {
+     "axes": {
+      "rear": "19.79",
+      "tmin": "-19.78"
+     },
+     "case_index": 5285870753,
+     "host_agrees_it_parts": true,
+     "on_the_line": [
+      {
+       "left": "tmin",
+       "right": "-20 + 22 * 0.01",
+       "value": "-19.78"
+      }
+     ],
+     "verdict_as_written": true,
+     "verdict_if_strict": false
+    },
+    {
+     "axes": {
+      "rear": "19.8",
+      "tmin": "-19.78"
+     },
+     "case_index": 5285870754,
+     "host_agrees_it_parts": true,
+     "on_the_line": [
+      {
+       "left": "tmin",
+       "right": "-20 + 22 * 0.01",
+       "value": "-19.78"
+      }
+     ],
+     "verdict_as_written": true,
+     "verdict_if_strict": false
+    },
+    {
+     "axes": {
+      "rear": "19.81",
+      "tmin": "-19.78"
+     },
+     "case_index": 5285870755,
+     "host_agrees_it_parts": true,
+     "on_the_line": [
+      {
+       "left": "tmin",
+       "right": "-20 + 22 * 0.01",
+       "value": "-19.78"
+      }
+     ],
+     "verdict_as_written": true,
+     "verdict_if_strict": false
+    },
+    {
+     "axes": {
+      "rear": "19.82",
+      "tmin": "-19.78"
+     },
+     "case_index": 5285870756,
+     "host_agrees_it_parts": true,
+     "on_the_line": [
+      {
+       "left": "tmin",
+       "right": "-20 + 22 * 0.01",
+       "value": "-19.78"
+      }
+     ],
+     "verdict_as_written": true,
+     "verdict_if_strict": false
+    },
+    {
+     "axes": {
+      "rear": "19.83",
+      "tmin": "-19.78"
+     },
+     "case_index": 5285870757,
+     "host_agrees_it_parts": true,
+     "on_the_line": [
+      {
+       "left": "tmin",
+       "right": "-20 + 22 * 0.01",
+       "value": "-19.78"
+      }
+     ],
+     "verdict_as_written": true,
+     "verdict_if_strict": false
+    },
+    {
+     "axes": {
+      "rear": "19.84",
+      "tmin": "-19.78"
+     },
+     "case_index": 5285870758,
+     "host_agrees_it_parts": true,
+     "on_the_line": [
+      {
+       "left": "tmin",
+       "right": "-20 + 22 * 0.01",
+       "value": "-19.78"
+      }
+     ],
+     "verdict_as_written": true,
+     "verdict_if_strict": false
+    },
+    {
+     "axes": {
+      "rear": "19.85",
+      "tmin": "-19.78"
+     },
+     "case_index": 5285870759,
+     "host_agrees_it_parts": true,
+     "on_the_line": [
+      {
+       "left": "tmin",
+       "right": "-20 + 22 * 0.01",
+       "value": "-19.78"
+      }
+     ],
+     "verdict_as_written": true,
+     "verdict_if_strict": false
+    },
+    {
+     "axes": {
+      "rear": "19.86",
+      "tmin": "-19.78"
+     },
+     "case_index": 5285870760,
+     "host_agrees_it_parts": true,
+     "on_the_line": [
+      {
+       "left": "tmin",
+       "right": "-20 + 22 * 0.01",
+       "value": "-19.78"
+      }
+     ],
+     "verdict_as_written": true,
+     "verdict_if_strict": false
+    },
+    {
+     "axes": {
+      "rear": "19.87",
+      "tmin": "-19.78"
+     },
+     "case_index": 5285870761,
+     "host_agrees_it_parts": true,
+     "on_the_line": [
+      {
+       "left": "tmin",
+       "right": "-20 + 22 * 0.01",
+       "value": "-19.78"
+      }
+     ],
+     "verdict_as_written": true,
+     "verdict_if_strict": false
+    },
+    {
+     "axes": {
+      "rear": "19.88",
+      "tmin": "-19.78"
+     },
+     "case_index": 5285870762,
+     "host_agrees_it_parts": true,
+     "on_the_line": [
+      {
+       "left": "tmin",
+       "right": "-20 + 22 * 0.01",
+       "value": "-19.78"
+      }
+     ],
+     "verdict_as_written": true,
+     "verdict_if_strict": false
+    },
+    {
+     "axes": {
+      "rear": "19.89",
+      "tmin": "-19.78"
+     },
+     "case_index": 5285870763,
+     "host_agrees_it_parts": true,
+     "on_the_line": [
+      {
+       "left": "tmin",
+       "right": "-20 + 22 * 0.01",
+       "value": "-19.78"
+      }
+     ],
+     "verdict_as_written": true,
+     "verdict_if_strict": false
+    },
+    {
+     "axes": {
+      "rear": "19.9",
+      "tmin": "-19.78"
+     },
+     "case_index": 5285870764,
+     "host_agrees_it_parts": true,
+     "on_the_line": [
+      {
+       "left": "tmin",
+       "right": "-20 + 22 * 0.01",
+       "value": "-19.78"
+      }
+     ],
+     "verdict_as_written": true,
+     "verdict_if_strict": false
+    },
+    {
+     "axes": {
+      "rear": "19.91",
+      "tmin": "-19.78"
+     },
+     "case_index": 5285870765,
+     "host_agrees_it_parts": true,
+     "on_the_line": [
+      {
+       "left": "tmin",
+       "right": "-20 + 22 * 0.01",
+       "value": "-19.78"
+      }
+     ],
+     "verdict_as_written": true,
+     "verdict_if_strict": false
+    },
+    {
+     "axes": {
+      "rear": "19.92",
+      "tmin": "-19.78"
+     },
+     "case_index": 5285870766,
+     "host_agrees_it_parts": true,
+     "on_the_line": [
+      {
+       "left": "tmin",
+       "right": "-20 + 22 * 0.01",
+       "value": "-19.78"
+      }
+     ],
+     "verdict_as_written": true,
+     "verdict_if_strict": false
+    },
+    {
+     "axes": {
+      "rear": "19.93",
+      "tmin": "-19.78"
+     },
+     "case_index": 5285870767,
+     "host_agrees_it_parts": true,
+     "on_the_line": [
+      {
+       "left": "tmin",
+       "right": "-20 + 22 * 0.01",
+       "value": "-19.78"
+      }
+     ],
+     "verdict_as_written": true,
+     "verdict_if_strict": false
+    },
+    {
+     "axes": {
+      "rear": "19.94",
+      "tmin": "-19.78"
+     },
+     "case_index": 5285870768,
+     "host_agrees_it_parts": true,
+     "on_the_line": [
+      {
+       "left": "tmin",
+       "right": "-20 + 22 * 0.01",
+       "value": "-19.78"
+      }
+     ],
+     "verdict_as_written": true,
+     "verdict_if_strict": false
+    },
+    {
+     "axes": {
+      "rear": "19.95",
+      "tmin": "-19.78"
+     },
+     "case_index": 5285870769,
+     "host_agrees_it_parts": true,
+     "on_the_line": [
+      {
+       "left": "tmin",
+       "right": "-20 + 22 * 0.01",
+       "value": "-19.78"
+      }
+     ],
+     "verdict_as_written": true,
+     "verdict_if_strict": false
+    },
+    {
+     "axes": {
+      "rear": "19.96",
+      "tmin": "-19.78"
+     },
+     "case_index": 5285870770,
+     "host_agrees_it_parts": true,
+     "on_the_line": [
+      {
+       "left": "tmin",
+       "right": "-20 + 22 * 0.01",
+       "value": "-19.78"
+      }
+     ],
+     "verdict_as_written": true,
+     "verdict_if_strict": false
+    },
+    {
+     "axes": {
+      "rear": "19.97",
+      "tmin": "-19.78"
+     },
+     "case_index": 5285870771,
+     "host_agrees_it_parts": true,
+     "on_the_line": [
+      {
+       "left": "tmin",
+       "right": "-20 + 22 * 0.01",
+       "value": "-19.78"
+      }
+     ],
+     "verdict_as_written": true,
+     "verdict_if_strict": false
+    },
+    {
+     "axes": {
+      "rear": "19.98",
+      "tmin": "-19.78"
+     },
+     "case_index": 5285870772,
+     "host_agrees_it_parts": true,
+     "on_the_line": [
+      {
+       "left": "tmin",
+       "right": "-20 + 22 * 0.01",
+       "value": "-19.78"
+      }
+     ],
+     "verdict_as_written": true,
+     "verdict_if_strict": false
+    },
+    {
+     "axes": {
+      "rear": "19.99",
+      "tmin": "-19.78"
+     },
+     "case_index": 5285870773,
+     "host_agrees_it_parts": true,
+     "on_the_line": [
+      {
+       "left": "tmin",
+       "right": "-20 + 22 * 0.01",
+       "value": "-19.78"
+      }
+     ],
+     "verdict_as_written": true,
+     "verdict_if_strict": false
+    },
+    {
+     "axes": {
+      "rear": "20.0",
+      "tmin": "-19.78"
+     },
+     "case_index": 5285870774,
+     "host_agrees_it_parts": true,
+     "on_the_line": [
+      {
+       "left": "tmin",
+       "right": "-20 + 22 * 0.01",
+       "value": "-19.78"
+      }
+     ],
+     "verdict_as_written": true,
+     "verdict_if_strict": false
+    },
+    {
+     "axes": {
+      "rear": "20.01",
+      "tmin": "-19.78"
+     },
+     "case_index": 5285870775,
+     "host_agrees_it_parts": true,
+     "on_the_line": [
+      {
+       "left": "tmin",
+       "right": "-20 + 22 * 0.01",
+       "value": "-19.78"
+      }
+     ],
+     "verdict_as_written": true,
+     "verdict_if_strict": false
+    },
+    {
+     "axes": {
+      "rear": "20.02",
+      "tmin": "-19.78"
+     },
+     "case_index": 5285870776,
+     "host_agrees_it_parts": true,
+     "on_the_line": [
+      {
+       "left": "tmin",
+       "right": "-20 + 22 * 0.01",
+       "value": "-19.78"
+      }
+     ],
+     "verdict_as_written": true,
+     "verdict_if_strict": false
+    },
+    {
+     "axes": {
+      "rear": "20.03",
+      "tmin": "-19.78"
+     },
+     "case_index": 5285870777,
+     "host_agrees_it_parts": true,
+     "on_the_line": [
+      {
+       "left": "tmin",
+       "right": "-20 + 22 * 0.01",
+       "value": "-19.78"
+      }
+     ],
+     "verdict_as_written": true,
+     "verdict_if_strict": false
+    },
+    {
+     "axes": {
+      "rear": "20.04",
+      "tmin": "-19.78"
+     },
+     "case_index": 5285870778,
+     "host_agrees_it_parts": true,
+     "on_the_line": [
+      {
+       "left": "tmin",
+       "right": "-20 + 22 * 0.01",
+       "value": "-19.78"
+      }
+     ],
+     "verdict_as_written": true,
+     "verdict_if_strict": false
+    },
+    {
+     "axes": {
+      "rear": "20.05",
+      "tmin": "-19.78"
+     },
+     "case_index": 5285870779,
+     "host_agrees_it_parts": true,
+     "on_the_line": [
+      {
+       "left": "tmin",
+       "right": "-20 + 22 * 0.01",
+       "value": "-19.78"
+      }
+     ],
+     "verdict_as_written": true,
+     "verdict_if_strict": false
+    },
+    {
+     "axes": {
+      "rear": "20.06",
+      "tmin": "-19.78"
+     },
+     "case_index": 5285870780,
+     "host_agrees_it_parts": true,
+     "on_the_line": [
+      {
+       "left": "tmin",
+       "right": "-20 + 22 * 0.01",
+       "value": "-19.78"
+      }
+     ],
+     "verdict_as_written": true,
+     "verdict_if_strict": false
+    },
+    {
+     "axes": {
+      "rear": "20.07",
+      "tmin": "-19.78"
+     },
+     "case_index": 5285870781,
+     "host_agrees_it_parts": true,
+     "on_the_line": [
+      {
+       "left": "tmin",
+       "right": "-20 + 22 * 0.01",
+       "value": "-19.78"
+      }
+     ],
+     "verdict_as_written": true,
+     "verdict_if_strict": false
+    },
+    {
+     "axes": {
+      "rear": "20.08",
+      "tmin": "-19.78"
+     },
+     "case_index": 5285870782,
+     "host_agrees_it_parts": true,
+     "on_the_line": [
+      {
+       "left": "tmin",
+       "right": "-20 + 22 * 0.01",
+       "value": "-19.78"
+      }
+     ],
+     "verdict_as_written": true,
+     "verdict_if_strict": false
+    },
+    {
+     "axes": {
+      "rear": "20.09",
+      "tmin": "-19.78"
+     },
+     "case_index": 5285870783,
+     "host_agrees_it_parts": true,
+     "on_the_line": [
+      {
+       "left": "tmin",
+       "right": "-20 + 22 * 0.01",
+       "value": "-19.78"
+      }
+     ],
+     "verdict_as_written": true,
+     "verdict_if_strict": false
+    },
+    {
+     "axes": {
+      "rear": "22.34",
+      "tmin": "-19.78"
+     },
+     "case_index": 5285871008,
+     "host_agrees_it_parts": true,
+     "on_the_line": [
+      {
+       "left": "tmin",
+       "right": "-20 + 22 * 0.01",
+       "value": "-19.78"
+      }
+     ],
+     "verdict_as_written": true,
+     "verdict_if_strict": false
+    },
+    {
+     "axes": {
+      "rear": "22.35",
+      "tmin": "-19.78"
+     },
+     "case_index": 5285871009,
+     "host_agrees_it_parts": true,
+     "on_the_line": [
+      {
+       "left": "tmin",
+       "right": "-20 + 22 * 0.01",
+       "value": "-19.78"
+      }
+     ],
+     "verdict_as_written": true,
+     "verdict_if_strict": false
+    },
+    {
+     "axes": {
+      "rear": "22.36",
+      "tmin": "-19.78"
+     },
+     "case_index": 5285871010,
+     "host_agrees_it_parts": true,
+     "on_the_line": [
+      {
+       "left": "tmin",
+       "right": "-20 + 22 * 0.01",
+       "value": "-19.78"
+      }
+     ],
+     "verdict_as_written": true,
+     "verdict_if_strict": false
+    },
+    {
+     "axes": {
+      "rear": "22.37",
+      "tmin": "-19.78"
+     },
+     "case_index": 5285871011,
+     "host_agrees_it_parts": true,
+     "on_the_line": [
+      {
+       "left": "tmin",
+       "right": "-20 + 22 * 0.01",
+       "value": "-19.78"
+      }
+     ],
+     "verdict_as_written": true,
+     "verdict_if_strict": false
+    },
+    {
+     "axes": {
+      "rear": "22.38",
+      "tmin": "-19.78"
+     },
+     "case_index": 5285871012,
+     "host_agrees_it_parts": true,
+     "on_the_line": [
+      {
+       "left": "tmin",
+       "right": "-20 + 22 * 0.01",
+       "value": "-19.78"
+      }
+     ],
+     "verdict_as_written": true,
+     "verdict_if_strict": false
+    },
+    {
+     "axes": {
+      "rear": "22.39",
+      "tmin": "-19.78"
+     },
+     "case_index": 5285871013,
+     "host_agrees_it_parts": true,
+     "on_the_line": [
+      {
+       "left": "tmin",
+       "right": "-20 + 22 * 0.01",
+       "value": "-19.78"
+      }
+     ],
+     "verdict_as_written": true,
+     "verdict_if_strict": false
+    },
+    {
+     "axes": {
+      "rear": "22.4",
+      "tmin": "-19.78"
+     },
+     "case_index": 5285871014,
+     "host_agrees_it_parts": true,
+     "on_the_line": [
+      {
+       "left": "tmin",
+       "right": "-20 + 22 * 0.01",
+       "value": "-19.78"
+      }
+     ],
+     "verdict_as_written": true,
+     "verdict_if_strict": false
+    },
+    {
+     "axes": {
+      "rear": "22.41",
+      "tmin": "-19.78"
+     },
+     "case_index": 5285871015,
+     "host_agrees_it_parts": true,
+     "on_the_line": [
+      {
+       "left": "tmin",
+       "right": "-20 + 22 * 0.01",
+       "value": "-19.78"
+      }
+     ],
+     "verdict_as_written": true,
+     "verdict_if_strict": false
+    }
+   ],
+   "slots_claimed": 3001,
+   "what": "the verification probe walks the first contiguous indices, and with the bin, series and ro"
+  },
+  {
+   "buffer_full": false,
+   "cases": 6005001,
+   "id": "K08-04",
+   "partings_seen": 0,
+   "partings_stored": 0,
+   "predicate": "tmin > (-20) + 22*0.01 and 17.35*(1+0.698519*rear/100)*(1+0.04/100*(tmin-25)) > 20",
+   "recorded": [],
+   "slots_claimed": 0,
+   "what": "the probe therefore never exercises the warm end, where the current tests bind; the reduct"
+  },
+  {
+   "buffer_full": false,
+   "cases": 6005001,
+   "id": "K08-05",
+   "partings_seen": 0,
+   "partings_stored": 0,
+   "predicate": "17.7*(1+0.850370*rear/100)*(1+0.04/100*(tmin-25)) <= 20 and 1.25*17.7*(1+0.850370*rear/100)*(1+0.04/100*(tmin-25)) > 20",
+   "recorded": [],
+   "slots_claimed": 0,
+   "what": "a sizing ratio is defined and never applied, so the string-input test compares the module "
+  },
+  {
+   "buffer_full": false,
+   "cases": 6005001,
+   "id": "K08-06",
+   "partings_seen": 0,
+   "partings_stored": 0,
+   "predicate": "17.35*(1+0.698519*rear/100)*(1+0.04/100*(tmin-25)) > 20 and 17.35*(1+0.698519*rear/100)*(1+0.04/100*((-20)-25)) <= 20",
+   "recorded": [],
+   "slots_claimed": 0,
+   "what": "the warmest-temperature justification in the kernel comment is inverted for the two curren"
+  },
+  {
+   "buffer_full": false,
+   "cases": 6005001,
+   "id": "K08-07",
+   "partings_seen": 0,
+   "partings_stored": 0,
+   "predicate": "17.7*(1+0.850370*rear/100)*(1+0.04/100*(tmin-25)) > 20 and 2*18.56*(1+0.850370*rear/100)*(1+0.04/100*(tmin-25)) <= 40",
+   "recorded": [],
+   "slots_claimed": 0,
+   "what": "the string-input test can never be the binding one: the machine-input test on short-circui"
+  },
+  {
+   "buffer_full": false,
+   "cases": 45015,
+   "id": "K08-08",
+   "partings_seen": 0,
+   "partings_stored": 0,
+   "predicate": "1 > 0",
+   "recorded": [],
+   "slots_claimed": 0,
+   "what": "the routing axis is read into the group index but voided in the kernel, so every case is e"
+  }
+ ],
+ "predicates": 56,
+ "refused": [
+  {
+   "id": "AN01",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "AN02",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "AN03",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "AN04",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "AN05",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "AN06",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "AN07",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "AN08",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "AN09",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "CI01",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "CI02",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "CI03",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "CI04",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "CI05",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "CI06",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "CI07",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "CI08",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "CI09",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "CI10",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "CO01",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "CO02",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "CO03",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "CO04",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "CO05",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "CO06",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "CO07",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "CO08",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "CO09",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "CO10",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "DA01",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "DA02",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "DA03",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "DA04",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "DA05",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "DA06",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "DA07",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "DA08",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "DR01",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "DR02",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "DR03",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "DR04",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "DR05",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "DR06",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "DR07",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "DR08",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "DR09",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "DR10",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "GS01",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "GS02",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "GS03",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "GS04",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "GS05",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "GS06",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "GS07",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "GS08",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "GS09",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "GS10",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "PA01",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "PA02",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "PA03",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "PA04",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "PA05",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "PA06",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "PA07",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "SH01",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "SH02",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "SH03",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "SH04",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "SH05",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "SH06",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "SH07",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "SH08",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "SH09",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "SP01",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "SP02",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "SP03",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "SP04",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "SP05",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "SP06",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "SP07",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "SP08",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "SP09",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "SP10",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "TS01",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "TS02",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "TS03",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "TS04",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "TS05",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "TS06",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "TS07",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "TS08",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "TS09",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "TS10",
+   "why": "no 'sweep ... , count where ...'"
+  },
+  {
+   "id": "K01-09",
+   "why": "axis name offset shadows a kernel identifier, so its channels cannot be trusted"
+  },
+  {
+   "id": "K06-02",
+   "why": "axis name e shadows a kernel identifier, so its channels cannot be trusted"
+  }
+ ],
+ "refused_count": 95,
+ "schema": "ggs.collapse/1",
+ "slots_claimed": 21463,
+ "the_pair": "The electron channel is the predicate as written; the positron channel is the same predicate with every comparison made strict. They differ on exactly one set of cases - where the two sides are EQUAL. The counts are carried as a pair too: partings_seen from the kernel's own counter against slots_claimed from its cursor; if those ever differ the run is not to be trusted.",
+ "totals_agree": true
+}

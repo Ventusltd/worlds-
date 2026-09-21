@@ -1,0 +1,58 @@
+{
+  "band": {
+    "cartridge_breakpoint_px": 700,
+    "disagreement_band_px": [
+      641,
+      700
+    ],
+    "disagreement_band_width_px": 60,
+    "shell_breakpoint_px": 640
+  },
+  "cases": {
+    "combos_in_band": 4131887760,
+    "combos_in_band_failing_three_radii_after_fix": 2699795220,
+    "combos_in_band_failing_three_radii_today": 2490173280,
+    "furniture_grid_size": 9837828,
+    "space_values": [
+      1000,
+      4000,
+      16000,
+      65536,
+      262144,
+      1048576,
+      4000000
+    ],
+    "widths_swept": [
+      600,
+      760
+    ]
+  },
+  "jump": {
+    "discontinuity_between_px": [
+      640,
+      641
+    ],
+    "mean_diameter_delta_px": 57.195331165,
+    "ratio_max": 27.5,
+    "ratio_mean": 2.146724832,
+    "ratio_median": 1.001602564,
+    "ratio_min": 1.001602564,
+    "runner_up_step_at_px": 641,
+    "runner_up_step_delta_px": 0.595670996,
+    "share_of_cases_that_step": 1.0
+  },
+  "unify_on_700": {
+    "cost_mean_diameter_ratio_in_band": 0.815333206,
+    "largest_step_after_delta_px": 63.193599563,
+    "largest_step_after_px": [
+      700,
+      701
+    ],
+    "removes_step": false,
+    "verdict": "moves, does not remove"
+  },
+  "verification": {
+    "method": "cupy ElementwiseKernel vs cupy array expressions, exact equality",
+    "status": "agreed"
+  }
+}

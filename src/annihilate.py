@@ -176,6 +176,25 @@ __DISPATCH__
 """
 
 
+def namespace(expr, axes):
+    """Give every axis variable a prefix before it reaches CUDA.
+
+    WHY, and it cost a published number. The generated kernel declares its own
+    locals - `int e` for the electron channel, `int q` for the positron, and it
+    takes a parameter called `offset` for the prefix table. A worksheet is free
+    to name an axis anything, and two of them did: one axis is called `e` and
+    another `offset`. C let the axis SHADOW the accumulator without a word, so
+    `e = (...) ? 1 : 0;` wrote the axis instead of the verdict and the positron
+    then read a corrupted value. That predicate's 161 "partings" were not found;
+    they were manufactured by this generator, and they were published.
+
+    Nothing about the arithmetic changes. Only the names do, and now they cannot
+    collide with anything the kernel owns."""
+    for a in axes:
+        expr = re.sub(r"\b" + re.escape(a["name"]) + r"\b", "v_" + a["name"], expr)
+    return expr
+
+
 def build(specs):
     """One kernel, every predicate, dispatched on the prefix table."""
     blocks = []
@@ -186,11 +205,11 @@ def build(specs):
             lines.append("      int a%d = (int)(rr %% %d); rr /= %d;"
                          % (ai, a["n"], a["n"]))
         for ai, a in enumerate(s["axes"]):
-            lines.append("      double %s = %.17g + (%.17g - %.17g) * (double)a%d "
-                         "/ (%d - 1.0);"
+            lines.append("      double v_%s = %.17g + (%.17g - %.17g) * "
+                         "(double)a%d / (%d - 1.0);"
                          % (a["name"], a["lo"], a["hi"], a["lo"], ai, a["n"]))
-        lines.append("      e = (%s) ? 1 : 0;" % s["c"])
-        lines.append("      q = (%s) ? 1 : 0;" % s["cm"])
+        lines.append("      e = (%s) ? 1 : 0;" % namespace(s["c"], s["axes"]))
+        lines.append("      q = (%s) ? 1 : 0;" % namespace(s["cm"], s["axes"]))
         lines.append("    }")
         blocks.append("\n".join(lines))
     return KERNEL.replace("__DISPATCH__", "\n".join(blocks))
@@ -289,7 +308,6 @@ def main():
         print("\n  THE PREDICATES WHOSE CHANNELS PARTED - these cases sit")
         print('  EXACTLY on a threshold, so it is whether the rule')
         print('  says or-equal-to that decides them, not the design:')
-        print("  that decide them, not the design:")
         order = sorted(range(len(specs)), key=lambda i: -D[i])
         for i in order[:8]:
             if not D[i]:

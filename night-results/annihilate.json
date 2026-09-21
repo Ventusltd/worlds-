@@ -1,9 +1,9 @@
 {
- "agreed": 5315886734,
+ "agreed": 5315886895,
  "anonymised": "No project, site, client, maker or model anywhere.",
- "body_sha256": "916f035382c0c4470be64b6099f4c92a33b4fc51f80b6c5d59b2b683803e7f05",
+ "body_sha256": "713c104998d8f37c4584c2d2cc303951ee044a03a541bb856e6b26be8a42b0f5",
  "cases": 5315908358,
- "did_not_annihilate": 21624,
+ "did_not_annihilate": 21463,
  "evaluations": 10631816716,
  "not_claimed": "This settles arithmetic over the spaces the worksheets state. It does not say a space is the right space or a predicate the right question. A zero here means no case in THIS grid parted, not that none exists. It holds no site, no weather record and no as-built drawing, so it says nothing about any real installation.",
  "per_predicate": [
@@ -254,8 +254,8 @@
   },
   {
    "cases": 4221,
-   "did_not_annihilate": 161,
-   "held": 0,
+   "did_not_annihilate": 0,
+   "held": 322,
    "id": "K06-02",
    "what": "The kernel forms the cold string voltage as series count times an already-multiplied modul"
   },
@@ -793,8 +793,8 @@
  "schema": "ggs.annihilate/1",
  "the_pair": "Each case is computed twice in the same thread. The electron channel evaluates the predicate as the worksheet wrote it. The positron channel makes every comparison STRICT: <= becomes <, >= becomes >. Those differ on exactly one set of cases - where the two sides are EQUAL. So a pair that does not annihilate is a case sitting exactly on its threshold, where the verdict is decided by whether the rule says 'or equal to'. That is a convention, not a measurement. An earlier version of this file described the positron as computing the complement of its opposite, which is a no-op and would have detected nothing; the description was wrong and has been corrected to match the code.",
  "timing_not_in_digest": {
-  "cases_per_second": 2335975775,
+  "cases_per_second": 2333145246,
   "observed": false,
-  "seconds": 2.2757
+  "seconds": 2.2784
  }
 }
