@@ -1,0 +1,56 @@
+{
+ "cases": 8000132,
+ "seconds": 0.001,
+ "verified_differ": 0,
+ "gate": "verdict",
+ "question": "Does a verdict ever report a value it cannot justify as inside a rating?",
+ "old_predicate": "v > limit",
+ "new_predicate": "!(v <= limit)",
+ "limits": [
+  {
+   "limit": "the 1500 V equipment rating",
+   "value": 1500.0,
+   "checked": 2000033,
+   "agree": 1749638,
+   "disagree_on_a_finite_number": 0,
+   "disagree_on_a_non_finite_number": 250395,
+   "old_predicate_calls_it_inside_the_rating": 250395,
+   "new_predicate_refuses_it": 250396
+  },
+  {
+   "limit": "the 20 A string input",
+   "value": 20.0,
+   "checked": 2000033,
+   "agree": 1749638,
+   "disagree_on_a_finite_number": 0,
+   "disagree_on_a_non_finite_number": 250395,
+   "old_predicate_calls_it_inside_the_rating": 250395,
+   "new_predicate_refuses_it": 250396
+  },
+  {
+   "limit": "the 40 A machine input",
+   "value": 40.0,
+   "checked": 2000033,
+   "agree": 1749638,
+   "disagree_on_a_finite_number": 0,
+   "disagree_on_a_non_finite_number": 250395,
+   "old_predicate_calls_it_inside_the_rating": 250395,
+   "new_predicate_refuses_it": 250396
+  },
+  {
+   "limit": "the 35 A maximum series fuse",
+   "value": 35.0,
+   "checked": 2000033,
+   "agree": 1749638,
+   "disagree_on_a_finite_number": 0,
+   "disagree_on_a_non_finite_number": 250395,
+   "old_predicate_calls_it_inside_the_rating": 250395,
+   "new_predicate_refuses_it": 250396
+  }
+ ],
+ "finite_disagreements": 0,
+ "non_finite_passed_by_old_predicate": 1001580,
+ "reading": "On every finite number the two predicates agree exactly, so this changes no real design. They differ only where the value is not a number - and there the live predicate answers INSIDE THE RATING, because a comparison against NaN is false. A tool that signs designs off may return an error or a fail; it must never return a pass it cannot justify.",
+ "not_claimed": "This gate checks a comparison, not a design. It says nothing about whether the limits themselves are right, and nothing about any physics.",
+ "anonymised": "No project, site, maker or model anywhere."
+}
