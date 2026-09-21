@@ -1,12 +1,12 @@
 {
  "anonymised": "No project, site, client, maker or model anywhere.",
- "artefact_files": 699,
+ "artefact_files": 698,
  "backed": 40,
- "body_sha256": "cd50fb0702c35c9bd670261d29585d042c9edc64659eca33fed552425052f795",
+ "body_sha256": "2eef998812a64dffa616613edfbaa2c122fe677cac25a34390f5ca8a52657fc2",
  "derived_from_numbers_beside_the_claim": 4,
  "false_absorption_after": [
   {
-   "band_usable": true,
+   "band_can_discriminate": "yes",
    "decoys": 1248,
    "decoys_absorbed": 3,
    "false_absorption_pct": 0.2,
@@ -16,7 +16,7 @@
    "real_claims": 156
   },
   {
-   "band_usable": true,
+   "band_can_discriminate": "yes",
    "decoys": 480,
    "decoys_absorbed": 0,
    "false_absorption_pct": 0.0,
@@ -26,7 +26,7 @@
    "real_claims": 60
   },
   {
-   "band_usable": true,
+   "band_can_discriminate": "yes",
    "decoys": 224,
    "decoys_absorbed": 0,
    "false_absorption_pct": 0.0,
@@ -36,7 +36,7 @@
    "real_claims": 28
   },
   {
-   "band_usable": true,
+   "band_can_discriminate": "yes",
    "decoys": 64,
    "decoys_absorbed": 0,
    "false_absorption_pct": 0.0,
@@ -46,7 +46,7 @@
    "real_claims": 8
   },
   {
-   "band_usable": true,
+   "band_can_discriminate": "yes",
    "decoys": 32,
    "decoys_absorbed": 0,
    "false_absorption_pct": 0.0,
@@ -56,7 +56,7 @@
    "real_claims": 4
   },
   {
-   "band_usable": true,
+   "band_can_discriminate": "thin",
    "decoys": 8,
    "decoys_absorbed": 0,
    "false_absorption_pct": 0.0,
@@ -66,7 +66,7 @@
    "real_claims": 1
   },
   {
-   "band_usable": true,
+   "band_can_discriminate": "yes",
    "decoys": 40,
    "decoys_absorbed": 0,
    "false_absorption_pct": 0.0,
@@ -76,7 +76,7 @@
    "real_claims": 5
   },
   {
-   "band_usable": true,
+   "band_can_discriminate": "thin",
    "decoys": 8,
    "decoys_absorbed": 0,
    "false_absorption_pct": 0.0,
@@ -86,7 +86,7 @@
    "real_claims": 1
   },
   {
-   "band_usable": true,
+   "band_can_discriminate": "yes",
    "decoys": 32,
    "decoys_absorbed": 0,
    "false_absorption_pct": 0.0,
@@ -98,7 +98,7 @@
  ],
  "false_absorption_before": [
   {
-   "band_usable": false,
+   "band_can_discriminate": "no",
    "decoys": 1248,
    "decoys_absorbed": 1248,
    "false_absorption_pct": 100.0,
@@ -108,7 +108,7 @@
    "real_claims": 156
   },
   {
-   "band_usable": false,
+   "band_can_discriminate": "no",
    "decoys": 480,
    "decoys_absorbed": 480,
    "false_absorption_pct": 100.0,
@@ -118,7 +118,7 @@
    "real_claims": 60
   },
   {
-   "band_usable": false,
+   "band_can_discriminate": "no",
    "decoys": 224,
    "decoys_absorbed": 126,
    "false_absorption_pct": 56.2,
@@ -128,7 +128,7 @@
    "real_claims": 28
   },
   {
-   "band_usable": true,
+   "band_can_discriminate": "yes",
    "decoys": 64,
    "decoys_absorbed": 1,
    "false_absorption_pct": 1.6,
@@ -138,7 +138,7 @@
    "real_claims": 8
   },
   {
-   "band_usable": true,
+   "band_can_discriminate": "yes",
    "decoys": 32,
    "decoys_absorbed": 0,
    "false_absorption_pct": 0.0,
@@ -148,7 +148,7 @@
    "real_claims": 4
   },
   {
-   "band_usable": true,
+   "band_can_discriminate": "thin",
    "decoys": 8,
    "decoys_absorbed": 0,
    "false_absorption_pct": 0.0,
@@ -158,7 +158,7 @@
    "real_claims": 1
   },
   {
-   "band_usable": true,
+   "band_can_discriminate": "yes",
    "decoys": 40,
    "decoys_absorbed": 0,
    "false_absorption_pct": 0.0,
@@ -168,7 +168,7 @@
    "real_claims": 5
   },
   {
-   "band_usable": true,
+   "band_can_discriminate": "thin",
    "decoys": 8,
    "decoys_absorbed": 0,
    "false_absorption_pct": 0.0,
@@ -178,7 +178,7 @@
    "real_claims": 1
   },
   {
-   "band_usable": true,
+   "band_can_discriminate": "yes",
    "decoys": 32,
    "decoys_absorbed": 0,
    "false_absorption_pct": 0.0,
@@ -197,6 +197,7 @@
  "sieve": {
   "claims_with_no_operands": 0,
   "decoy_seed": 20260921,
+  "decoys_a_band_needs_before_it_is_vouched_for": 30,
   "decoys_per_claim": 8,
   "false_absorption_ceiling_pct": 25.0,
   "operand_pool_largest": 37,
@@ -1526,6 +1527,10 @@
  "truly_unbacked": 263,
  "unbacked": 267,
  "uninformative_bands": [],
+ "unmeasured_bands": [
+  "1e8",
+  "1e10"
+ ],
  "verdict_is_informative": true,
  "verdict_reason": "decoys 0.1% against real claims 1.5%"
 }

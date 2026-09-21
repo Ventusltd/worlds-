@@ -91,6 +91,21 @@ NUM = re.compile(r"(?<![\w.])(\d[\d,]{2,})(?![\w])")
 # records of the place the claim was made, and at most this many operands are
 # kept, nearest first. Both are printed, so a reader can see the size of the
 # net that produced the verdict.
+#
+# The window is not a taste. It was swept against the decoy arm, and 20 is
+# where the sieve separates best - real absorption ten times the false:
+#
+#    window    median pool    real absorbed    decoys absorbed
+#         0              2            0.4%              0.00%
+#         5              5            0.4%              0.05%
+#        20              9            1.5%              0.14%
+#        40             11            1.9%              0.47%
+#        80             16            2.2%              1.08%
+#       400             38            7.9%              3.75%
+#
+# Widen it and the sieve absorbs more of everything, real and invented alike,
+# which is the old failure creeping back. Anyone who changes this number is
+# obliged to rerun the sweep and look at the second column.
 NEAR_WINDOW = 20
 NEAR_CAP = 400
 WIDE_CAP = 4000             # what the old sieve used: the whole corpus, in effect
@@ -101,8 +116,11 @@ DECOYS_PER_CLAIM = 8
 DECOY_SEED = 20260921
 
 # A band is only usable if a number nobody said is absorbed less often than
-# this. Above it, the count of survivors in that band means nothing.
+# this. Above it, the count of survivors in that band means nothing. And a
+# band with a handful of decoys has not measured anything either: zero out of
+# eight is not evidence of a tight net, so say so instead of claiming it.
 FALSE_ABSORPTION_CEILING = 0.25
+MIN_DECOYS_PER_BAND = 30
 
 
 def numbers_in(text):
@@ -388,8 +406,22 @@ def pct(hit, n):
     return (100.0 * hit / n) if n else 0.0
 
 
-def band_usable(row):
-    return bool(row[2]) and pct(row[3], row[2]) <= 100.0 * FALSE_ABSORPTION_CEILING
+def band_verdict(row):
+    """Three answers, not two. A band can discriminate, or it demonstrably
+    cannot, or nobody measured it hard enough to say - and the third is not
+    the first."""
+    if row[2] < MIN_DECOYS_PER_BAND:
+        return "thin"
+    if pct(row[3], row[2]) > 100.0 * FALSE_ABSORPTION_CEILING:
+        return "no"
+    return "yes"
+
+
+VERDICT_WORDS = {
+    "yes": "yes",
+    "thin": "too few decoys to say",
+    "no": "NO - a survivor count here means nothing",
+}
 
 
 def print_table(title, rows, note):
@@ -402,7 +434,7 @@ def print_table(title, rows, note):
         print("    1e%-7d %9s of %-7s %6.1f%% %9s of %-7s %6.1f%%   %s"
               % (b, "{:,}".format(rh), "{:,}".format(rn), pct(rh, rn),
                  "{:,}".format(dh), "{:,}".format(dn), pct(dh, dn),
-                 "yes" if band_usable(rows[b]) else "NO - count means nothing"))
+                 VERDICT_WORDS[band_verdict(rows[b])]))
     print("    %s" % note)
 
 
@@ -569,11 +601,17 @@ def main():
               "evidence of anything, and must not be quoted." % why_near)
 
     bad = sorted(b for b, r in results["near"]["rows"].items()
-                 if not band_usable(r))
+                 if band_verdict(r) == "no")
+    thin = sorted(b for b, r in results["near"]["rows"].items()
+                  if band_verdict(r) == "thin")
     if bad:
         print("  bands where the sieve still cannot discriminate, and where a "
               "survivor count means nothing: %s"
               % ", ".join("1e%d" % b for b in bad))
+    if thin:
+        print("  bands with fewer than %d decoys - not measured, so not "
+              "vouched for: %s"
+              % (MIN_DECOYS_PER_BAND, ", ".join("1e%d" % b for b in thin)))
 
     print("\n  THE NUMBERS TO READ - stated in a sentence, found in no file,")
     print("  and not a sum, difference or exact quotient of two numbers that")
@@ -596,7 +634,7 @@ def main():
                  "decoys": rows[b][2],
                  "decoys_absorbed": rows[b][3],
                  "false_absorption_pct": round(pct(rows[b][3], rows[b][2]), 1),
-                 "band_usable": band_usable(rows[b])}
+                 "band_can_discriminate": band_verdict(rows[b])}
                 for b in sorted(rows)]
 
     body = {
@@ -612,6 +650,7 @@ def main():
         "verdict_is_informative": bool(ok_near),
         "verdict_reason": why_near,
         "uninformative_bands": ["1e%d" % b for b in bad],
+        "unmeasured_bands": ["1e%d" % b for b in thin],
         "sieve": {
             "operands_must_co_occur_within_records": NEAR_WINDOW,
             "operands_kept_per_claim_at_most": NEAR_CAP,
@@ -622,6 +661,7 @@ def main():
             "decoys_per_claim": DECOYS_PER_CLAIM,
             "decoy_seed": DECOY_SEED,
             "false_absorption_ceiling_pct": 100.0 * FALSE_ABSORPTION_CEILING,
+            "decoys_a_band_needs_before_it_is_vouched_for": MIN_DECOYS_PER_BAND,
         },
         "false_absorption_before": table_json(results["wide"]["rows"]),
         "false_absorption_after": table_json(results["near"]["rows"]),
