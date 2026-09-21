@@ -1,0 +1,89 @@
+name: Weekly, hosted - the gates on this repository
+
+# Runs once a week on a hosted runner, whatever the state of any machine of
+# ours. Two gates, each of which proves it can both pass and fail before it
+# judges anything, and each of which fails the run rather than warning:
+#
+#   private-paths  no tracked file may name a drive, a home directory or a
+#                  share. Locations only are printed, never the text.
+#   verdicts       no comparison that decides a verdict may report PASS
+#                  when handed something that is not a number. The gate
+#                  first runs itself against a broken fixture (must exit 1)
+#                  and a corrected one (must exit 0), then scans src/.
+#
+# The third gate of this repository, provenance (where did every published
+# limit come from?), needs the evidence base, which is not public. It
+# refuses on a hosted runner - exit 2, nothing examined, not a pass - so it
+# is not run here. It runs weekly where the evidence lives, from the site
+# repository's weekly-card.yml, and its result appears in that run's summary.
+#
+# Nothing is committed and nothing is deployed by this workflow. A red run
+# needs no one tonight: the log names the file and line, and it will say it
+# again next week.
+
+on:
+  schedule:
+    # Monday 05:47 UTC
+    - cron: '47 5 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: weekly-gates
+  cancel-in-progress: false
+
+jobs:
+  private-paths:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - name: No tracked file may name a drive, a home directory or a share
+        env:
+          GRID_PRIVATE_MARKERS: ${{ secrets.GRID_PRIVATE_MARKERS }}
+          GRID_PRIVATE_ROOTS: ${{ secrets.GRID_PRIVATE_ROOTS }}
+        run: |
+          python3 scripts/check_no_private_paths.py | tee report.txt
+          code=${PIPESTATUS[0]}
+          {
+            echo "## No private paths"
+            echo
+            echo '```'
+            grep -v '^    ' report.txt
+            n=$(grep -c '^    ' report.txt || true)
+            echo "locations listed in the job log: $n"
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
+          exit "$code"
+
+  verdicts:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - name: No verdict may pass a non-number
+        run: |
+          python3 src/verdict_gate.py --run --ci | tee report.txt
+          code=${PIPESTATUS[0]}
+          {
+            echo "## Verdicts fed a non-number"
+            echo
+            echo '```'
+            tail -n 40 report.txt
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
+          exit "$code"
+      - name: Keep the evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: verdict-gate
+          path: night-results/verdict-gate.json
+          if-no-files-found: warn
+          retention-days: 90

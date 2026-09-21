@@ -30,8 +30,16 @@ Windows drive-letter path, no /home/<name> or /Users/<name>, no UNC share.
 Those catch a new leak that no list of remembered strings would have known to
 look for.
 
-    python scripts/check_no_private_paths.py          # scan tracked files
+    python scripts/check_no_private_paths.py          # self-test, then scan
     python scripts/check_no_private_paths.py --list   # what it enforces
+    python scripts/check_no_private_paths.py --self-test   # the fixtures only
+
+THE GATE PROVES IT CAN DO BOTH BEFORE IT JUDGES ANYTHING. Every scan first
+builds a throwaway repository containing this file and one line in the shape
+of a drive-letter path, and runs itself there: that run must exit 1. The line
+is then removed and the run must exit 0. A gate never observed to pass AND to
+fail has not been shown to gate anything, so if either fixture misbehaves the
+scan does not happen and the exit is 2.
 
 Exit 0 clean, 1 on any hit, 2 if it could not scan (which is not a pass).
 """
@@ -39,8 +47,10 @@ import argparse
 import io
 import os
 import re
+import shutil
 import subprocess
 import sys
+import tempfile
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -63,7 +73,9 @@ SHAPE_RULES = [
     ("drive-letter path",
      re.compile(r"(?<![A-Za-z0-9])[A-Za-z]:[\\/](?![\\/])")),
     ("posix home directory",
-     re.compile(r"/(?:home|Users)/[A-Za-z0-9._-]+")),
+     # not preceded by a hostname or path character: "site.example/home/x"
+     # is a URL route, "/home/x" at the start of a token is a directory
+     re.compile(r"(?<![A-Za-z0-9.:_-])/(?:home|Users)/[A-Za-z0-9._-]+")),
     ("UNC share",
      re.compile(r"\\\\[A-Za-z0-9._-]+\\[A-Za-z0-9._$-]+")),
 ]
@@ -129,12 +141,80 @@ def scan(files, rules, shape_rules):
     return hits, read, skipped
 
 
+def _git(cwd, *args):
+    r = subprocess.run(["git", "-C", cwd] + list(args), capture_output=True,
+                       text=True, timeout=60,
+                       env=dict(os.environ, GIT_AUTHOR_NAME="gate",
+                                GIT_AUTHOR_EMAIL="gate@localhost",
+                                GIT_COMMITTER_NAME="gate",
+                                GIT_COMMITTER_EMAIL="gate@localhost"))
+    if r.returncode != 0:
+        raise SystemExit("COULD NOT SELF-TEST: git %s exit %d\n%s"
+                         % (" ".join(args), r.returncode, r.stderr.strip()))
+    return r.stdout
+
+
+def self_test():
+    """Two fixtures in a throwaway repository: one that must fail, one that
+    must pass. Returns True only if both outcomes were observed. The dirty
+    line is assembled at run time so that this source holds no drive-letter
+    path itself."""
+    me = os.path.abspath(__file__)
+    tmp = tempfile.mkdtemp(prefix="no-private-paths-")
+    try:
+        os.makedirs(os.path.join(tmp, "scripts"))
+        copy = os.path.join(tmp, "scripts", "check_no_private_paths.py")
+        shutil.copyfile(me, copy)
+        _git(tmp, "init", "-q")
+        dirty = os.path.join(tmp, "fixture.txt")
+        with io.open(dirty, "w", encoding="utf-8") as fh:
+            fh.write("a line naming a drive: " + "Q:" + "\\" + "fixture\n")
+        _git(tmp, "add", "-A")
+        _git(tmp, "commit", "-q", "-m", "fixture with a private shape")
+
+        def run():
+            env = dict(os.environ)
+            env.pop("GRID_PRIVATE_MARKERS", None)
+            env.pop("GRID_PRIVATE_ROOTS", None)
+            r = subprocess.run([sys.executable, copy, "--skip-self-test"],
+                               capture_output=True, text=True, timeout=120,
+                               env=env, cwd=tmp)
+            return r.returncode
+
+        e_dirty = run()
+        os.remove(dirty)
+        _git(tmp, "add", "-A")
+        _git(tmp, "commit", "-q", "-m", "fixture cleaned")
+        e_clean = run()
+    finally:
+        shutil.rmtree(tmp, ignore_errors=True)
+
+    print("SELF-TEST (a throwaway repository, two commits)")
+    print("  with one drive-letter line     exit %d, expected 1   %s"
+          % (e_dirty, "as expected" if e_dirty == 1 else "WRONG"))
+    print("  with that line removed          exit %d, expected 0   %s"
+          % (e_clean, "as expected" if e_clean == 0 else "WRONG"))
+    ok = (e_dirty == 1 and e_clean == 0)
+    print("  %s" % ("both outcomes observed: this gate discriminates"
+                    if ok else "NOT BOTH OUTCOMES: this gate has not been "
+                    "shown to gate anything"))
+    return ok
+
+
 def main():
     ap = argparse.ArgumentParser(
         description="refuse a private path in a public repository")
     ap.add_argument("--list", action="store_true",
                     help="what this gate enforces, and what it cannot see")
+    ap.add_argument("--self-test", action="store_true",
+                    help="run the two fixtures and stop")
+    ap.add_argument("--skip-self-test", action="store_true",
+                    help="scan without the fixtures (used by the self-test "
+                         "itself)")
     a = ap.parse_args()
+
+    if a.self_test:
+        return 0 if self_test() else 2
 
     rules = env_rules()
     if a.list:
@@ -154,6 +234,13 @@ def main():
               "clones.")
         print("    binary files, and anything git does not track.")
         return 0
+
+    if not a.skip_self_test:
+        if not self_test():
+            print("\nREFUSED TO SCAN: the gate did not prove it can both pass "
+                  "and fail.")
+            return 2
+        print("")
 
     files = tracked()
     hits, read, skipped = scan(files, rules, SHAPE_RULES)

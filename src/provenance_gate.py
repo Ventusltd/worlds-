@@ -44,6 +44,7 @@ WHAT THIS GATE DOES **NOT** CHECK - read this before trusting a pass
 
 EXIT
     1 if any number used as a LIMIT is UNSOURCED, 0 otherwise.
+    2 if the evidence base is absent: nothing examined, which is not a pass.
     Writes night-results/provenance.json - sorted keys, no timestamps in body.
 """
 
@@ -386,6 +387,18 @@ def scan_markdown(ev, findings):
 # ---------------------------------------------------------------- main
 def main():
     sourced, derived, absent_fields, have_feed = load_evidence()
+    if not have_feed:
+        # A gate that reads no evidence must not answer. Without the feed
+        # every number is UNSOURCED and the exit is 1 for a reason nobody
+        # asked about: the input was missing, not the source. That is a
+        # gate getting louder when blind, which is the same fault as one
+        # getting quieter. Refuse, distinctly.
+        print("PROVENANCE GATE - where did the number come from?")
+        print("  COULD NOT CHECK: the evidence base is not present at")
+        print("  the configured root (set GRID_DATA to the directory that")
+        print("  holds feed/MODULES.json). Nothing was examined, nothing")
+        print("  was written. This is not a pass and not a finding.")
+        return 2
     ev = {"sourced": sourced, "derived": derived,
           "absent": load_absent_numbers()}
 
