@@ -1,2 +1,5 @@
 __pycache__/
 *.pyc
+
+# GPU furnace data folder (outside the repo in practice; see gpu-furnace/README.md)
+furnace-data/
